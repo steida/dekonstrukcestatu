@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Deconstruction of the State",
+  title: "Dekonstrukce státu",
 };
 
 export default function Page() {
   return (
     <>
-      <h1>Deconstruction of the State</h1>
-      <Link href="/cs">Česky</Link>
+      <h1>Dekonstrukce státu</h1>
+      <Link href="/">English</Link>
       <p>Soon.</p>
     </>
   );
