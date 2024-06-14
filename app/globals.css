@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply pb-4 pt-6 text-2xl text-gray-800;
+  }
+  h2 {
+    @apply pb-4 text-xl text-gray-800;
+  }
+  p {
+    @apply pb-4 text-gray-800;
+  }
+  a {
+    @apply text-blue-800 hover:underline;
+  }
+  ul {
+    @apply list-inside list-disc pb-4;
+  }
+}

@@ -7,8 +7,10 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <Link className="block text-right" href="/cs">
+        česky
+      </Link>
       <h1>Deconstruction of the State</h1>
-      <Link href="/cs">Česky</Link>
       <p>
         We have a problem. The problem is the State's complexity. The State is
         so complex that it's impossible to manage through the election process.
@@ -23,17 +25,6 @@ export default function Page() {
         Deconstruction of the State is an independent research lab working on
         this problem.
       </p>
-      <q>
-        The trouble with every office and court is that it has a monopoly on
-        handling cases of a certain kind. If twenty private agencies were
-        competing on the market, they would treat you differently because you
-        would bring them "business". So yes, the office, the court, and the
-        state, in general, are often not interested in solving your problem to
-        your satisfaction but in getting rid of it with as little effort as
-        possible by the worker in question. Those people act purely economically
-        and logically. A monopoly behaves and always will behave differently
-        than someone who knows he lives off his customers.
-      </q>
       <h2>Our Research</h2>
       <p>TBA</p>
       <h2>Slides</h2>
@@ -47,16 +38,19 @@ export default function Page() {
           </a>
         </li>
       </ul>
-      <hr />
-      <div>
-        <a href="https://x.com/steida" target="_blank">
-          x.com/steida
-        </a>
-        &nbsp;-&nbsp;
-        <a href="https://github.com/steida/ds.show" target="_blank">
-          github.com/steida/ds.show
-        </a>
-      </div>
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a href="https://x.com/steida" target="_blank">
+            x.com/steida
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/steida/ds.show" target="_blank">
+            github.com/steida/ds.show
+          </a>
+        </li>
+      </ul>
     </>
   );
 }

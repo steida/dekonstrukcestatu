@@ -7,8 +7,10 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <Link className="block text-right" href="/">
+        english
+      </Link>
       <h1>Dekonstrukce státu</h1>
-      <Link href="/">English</Link>
       <p>
         Máme problém. Ten problém je složitost státu. Stát se stal tak složitým,
         že je nemožné jej řídit prostřednictvím volebního procesu. Jeden hlas
@@ -24,19 +26,9 @@ export default function Page() {
         Dekonstrukce státu je nezávislá výzkumná laboratoř pracující na tomto
         problému.
       </p>
-      <q>
-        Potíž každého úřadu a soudu je v tom, že má monopol na vyřizování
-        případů určitého druhu. Kdyby si na trhu konkurovalo dvacet soukromých
-        agentur, chovaly by se k vám jinak, protože byste jim přinesli „byznys“.
-        Takže ano, úřad, soud a vůbec stát často nemají zájem vyřešit váš
-        problém k vaší spokojenosti, ale zbavit se ho s co nejmenší námahou
-        dotyčného pracovníka. Ti lidé jednají čistě ekonomicky a logicky.
-        Monopol se chová a vždy bude chovat jinak než někdo, kdo ví, že žije ze
-        svých zákazníků.
-      </q>
       <h2>Náš výzkum</h2>
       <p>TBA</p>
-      <h2>Slides</h2>
+      <h2>Prezentace</h2>
       <ul>
         <li>
           <a
@@ -47,16 +39,19 @@ export default function Page() {
           </a>
         </li>
       </ul>
-      <hr />
-      <div>
-        <a href="https://x.com/steidacz" target="_blank">
-          x.com/steidacz
-        </a>
-        &nbsp;-&nbsp;
-        <a href="https://github.com/steida/ds.show" target="_blank">
-          github.com/steida/ds.show
-        </a>
-      </div>
+      <h2>Odkazy</h2>
+      <ul>
+        <li>
+          <a href="https://x.com/steida" target="_blank">
+            x.com/steida
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/steida/ds.show" target="_blank">
+            github.com/steida/ds.show
+          </a>
+        </li>
+      </ul>
     </>
   );
 }
