@@ -20,9 +20,22 @@ export default function Page() {
         transformuje na akciovou společnost, od které každý občan dostane jednu
         akcii, aby mohl vykonávat svá akcionářská práva.
       </p>
-      <a href="https://x.com/steidacz" target="_blank">
-        x.com/steidacz
-      </a>
+      <p>
+        Dekonstrukce státu je nezávislá výzkumná laboratoř pracující na tomto
+        problému.
+      </p>
+      <q>
+        Potíž každého úřadu a soudu je v tom, že má monopol na vyřizování
+        případů určitého druhu. Kdyby si na trhu konkurovalo dvacet soukromých
+        agentur, chovaly by se k vám jinak, protože byste jim přinesli „byznys“.
+        Takže ano, úřad, soud a vůbec stát často nemají zájem vyřešit váš
+        problém k vaší spokojenosti, ale zbavit se ho s co nejmenší námahou
+        dotyčného pracovníka. Ti lidé jednají čistě ekonomicky a logicky.
+        Monopol se chová a vždy bude chovat jinak než někdo, kdo ví, že žije ze
+        svých zákazníků.
+      </q>
+      <h2>Náš výzkum</h2>
+      <p>TBA</p>
       <h2>Slides</h2>
       <ul>
         <li>
@@ -34,6 +47,16 @@ export default function Page() {
           </a>
         </li>
       </ul>
+      <hr />
+      <div>
+        <a href="https://x.com/steidacz" target="_blank">
+          x.com/steidacz
+        </a>
+        &nbsp;-&nbsp;
+        <a href="https://github.com/steida/ds.show" target="_blank">
+          github.com/steida/ds.show
+        </a>
+      </div>
     </>
   );
 }
