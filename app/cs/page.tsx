@@ -42,8 +42,8 @@ export default function Page() {
       <h2>Odkazy</h2>
       <ul>
         <li>
-          <a href="https://x.com/steida" target="_blank">
-            x.com/steida
+          <a href="https://x.com/steidacz" target="_blank">
+            x.com/steidacz
           </a>
         </li>
         <li>
