@@ -7,7 +7,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Link className="block text-right" href="/cs">
+      <Link className="block text-right" href="/cz">
         česky
       </Link>
       <h1>Deconstruction of the State</h1>
