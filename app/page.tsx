@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BitcoinLightning } from "../components/BitcoinLightning";
 
 export const metadata = {
   title: "Deconstruction of the State",
@@ -64,6 +65,9 @@ export default function Page() {
           </a>
         </li>
       </ul>
+      <h2>Support us</h2>
+      <p>Bitcoin Lightning</p>
+      <BitcoinLightning />
     </>
   );
 }
