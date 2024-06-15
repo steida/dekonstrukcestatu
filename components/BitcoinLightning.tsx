@@ -5,8 +5,8 @@ export const BitcoinLightning = () => {
     <Image
       src="/bitcoinlightning.jpg"
       alt="Bitcoin Lightning"
-      width="268"
-      height="268"
+      width="200"
+      height="200"
     />
   );
 };
