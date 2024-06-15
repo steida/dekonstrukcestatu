@@ -28,6 +28,19 @@ export default function Page() {
       </p>
       <h2>Náš výzkum</h2>
       <p>TBA</p>
+      <h2>Přednášky</h2>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=uAfFLU-WvJo">
+            Demonopolizace, přednáška pro Letní školu Občanského institutu
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=jclUOz9h4rc">
+            Dekonstrukce státu - ChainCamp 2020
+          </a>
+        </li>
+      </ul>
       <h2>Prezentace</h2>
       <ul>
         <li>
