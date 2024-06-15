@@ -65,9 +65,9 @@ export default function Page() {
           </a>
         </li>
       </ul>
-      <h2>Support us</h2>
+      {/* <h2>Support us</h2>
       <p>Bitcoin Lightning</p>
-      <BitcoinLightning />
+      <BitcoinLightning /> */}
     </>
   );
 }

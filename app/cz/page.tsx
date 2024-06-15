@@ -67,8 +67,10 @@ export default function Page() {
         </li>
       </ul>
       <h2>Podpořte nás</h2>
-      <p>Převod (1000701012/3030) nebo Bitcoin Lightning</p>
-      <BitcoinLightning />
+      <p>Převod (1000701012/3030)</p>
+      {/* <BitcoinLightning /> */}
+      {/* <p>Převod (1000701012/3030) nebo Bitcoin Lightning</p>
+      <BitcoinLightning /> */}
     </>
   );
 }
