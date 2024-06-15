@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BitcoinLightning } from "../components/BitcoinLightning";
 
 export const metadata = {
-  title: "Deconstruction of the State",
+  title: "Deconstruction of the State - let's return the state to the people",
 };
 
 export default function Page() {
@@ -63,6 +63,12 @@ export default function Page() {
           <a href="https://github.com/steida/ds.show" target="_blank">
             github.com/steida/ds.show
           </a>
+        </li>
+        <li>
+          <a href="https://www.evolu.dev/" target="_blank">
+            evolu.dev
+          </a>{" "}
+          (restoring data ownership)
         </li>
       </ul>
       <h2>Support us</h2>
