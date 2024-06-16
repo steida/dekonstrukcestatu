@@ -60,7 +60,7 @@ export default function Page() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/ds-show/web" target="_blank">
+          <a href="https://github.com/steida/ds.show" target="_blank">
             github.com/steida/ds.show
           </a>
         </li>
