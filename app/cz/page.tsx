@@ -25,7 +25,9 @@ export default function Page() {
       <h2>Náš výzkum</h2>
       <ul>
         <li>
-          <Link href="/cz/manifest">Manifest</Link>
+          <Link href="/cz/manifest">
+            Manifest dekonstrukce státu (návrh) 🔥📜
+          </Link>
         </li>
       </ul>
       <h2>Přednášky</h2>
