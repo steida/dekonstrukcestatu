@@ -9,13 +9,22 @@
   h2 {
     @apply pb-4 text-xl text-gray-800;
   }
+  h3 {
+    @apply pb-4 text-lg text-gray-800;
+  }
   p {
     @apply pb-4 text-gray-800;
+  }
+  q {
+    @apply block pb-4 text-gray-800;
   }
   a {
     @apply text-blue-800 hover:underline;
   }
   ul {
     @apply list-inside list-disc pb-4;
+  }
+  li {
+    @apply text-gray-800;
   }
 }

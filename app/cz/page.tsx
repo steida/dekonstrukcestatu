@@ -19,21 +19,20 @@ export default function Page() {
         státu.
       </p>
       <p>
-        Řešením je dekonstrukce státu do menších částí, z nichž každá se
-        transformuje na akciovou společnost, od které každý občan dostane jednu
-        akcii, aby mohl vykonávat svá akcionářská práva.
-      </p>
-      <p>
         Dekonstrukce státu je nezávislá výzkumná laboratoř pracující na tomto
         problému.
       </p>
       <h2>Náš výzkum</h2>
-      <p>TBA</p>
+      <ul>
+        <li>
+          <Link href="/cz/manifest">Manifest</Link>
+        </li>
+      </ul>
       <h2>Přednášky</h2>
       <ul>
         <li>
           <a href="https://www.youtube.com/watch?v=uAfFLU-WvJo">
-            Demonopolizace, přednáška pro Letní školu Občanského institutu
+            Přednáška pro Letní školu Občanského institutu
           </a>
         </li>
         <li>
@@ -55,6 +54,11 @@ export default function Page() {
       </ul>
       <h2>Odkazy</h2>
       <ul>
+        <li>
+          <a href="https://discord.gg/c3KJhyu5Aw" target="_blank">
+            Discord
+          </a>
+        </li>
         <li>
           <a href="https://x.com/steidacz" target="_blank">
             x.com/steidacz
