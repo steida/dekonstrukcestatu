@@ -213,6 +213,12 @@ export default function Page() {
         nikdo neví, dokud o tom nebudeme jako akcionáři akciové společnosti
         Pražský hrad hlasovat.
       </p>
+      <h3>Co dekonstrukce státu není</h3>
+      <p>
+        Dekonstrukce státu není privatizace. Dekonstrukce státu je změna
+        volebního systému. Privatizace je převod vlastnictví na jeden subjekt.
+        Dekonstrukce státu je převod vlastnictví všem občanům rovným dílem.
+      </p>
       <p>TODO:</p>
       <ul>
         <li>Problémy, které můžeme předvídat.</li>
