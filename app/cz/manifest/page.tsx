@@ -67,14 +67,14 @@ export default function Page() {
         ospravedlňoval právo komunistického státu o všem rozhodovat a vše
         vlastnit. Nevím kolik tužeb mám, co ale vím naprosto jistě, že nemám ani
         tušení, co vše stát lidem "připravil". Jinými slovy, co vše stát vlastně
-        je. Někdo by mohl namítnout, zda-li je vůbec nutné to vědět. No, pokud
-        to občané platí, a ve volbách o tom rozhodují, tak by se hodilo mít
-        takovou encyklopedii státu, aby občané věděli, co vše to vlastně mají.
-        Jako mladík jsem se rozhodl to zjistil, záhy jsem však narazil na
-        problém, že není koho se zeptat. Člověk by předpokládal, že to bude
-        vědět Ministerstvo financí, že to půjde vyčíst z rozpočtu, ale není tomu
-        tak. Státní rozpočet peníze přerozděluje, ale už neříká, kam konkrétně.
-        Po kratším pátrání jsem došel až na hackathon pořádaný NKÚ (Nejvyšší
+        je. Někdo by mohl namítnout, zdali je vůbec nutné to vědět. No, pokud to
+        občané platí, a ve volbách o tom rozhodují, tak by se hodilo mít takovou
+        encyklopedii státu, aby občané věděli, co vše to vlastně mají. Jako
+        mladík jsem se rozhodl to zjistil, záhy jsem však narazil na problém, že
+        není koho se zeptat. Člověk by předpokládal, že to bude vědět
+        Ministerstvo financí, že to půjde vyčíst z rozpočtu, ale není tomu tak.
+        Státní rozpočet peníze přerozděluje, ale už neříká, kam konkrétně. Po
+        kratším pátrání jsem došel až na hackathon pořádaný NKÚ (Nejvyšší
         kontrolní úřad), kde jsem se zeptal samotného prezidenta NKÚ, jestli
         nemá nějaký seznam všech státních úřadů, organizací, firem, prostě
         všeho, co se financuje z rozpočtu, že bych z toho udělal hezký web. Long
