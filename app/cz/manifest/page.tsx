@@ -213,12 +213,74 @@ export default function Page() {
         nikdo neví, dokud o tom nebudeme jako akcionáři akciové společnosti
         Pražský hrad hlasovat.
       </p>
-      <h3>Co dekonstrukce státu není</h3>
+      <h2>Listárna 💬</h2>
+      <q>
+        Myšlenka je to nádherná, ale aby to fungovalo, musela by být většina
+        populace inteligentní.
+      </q>
       <p>
-        Dekonstrukce státu není privatizace. Dekonstrukce státu je změna
-        volebního systému. Privatizace je převod vlastnictví na jeden subjekt.
-        Dekonstrukce státu je převod vlastnictví všem občanům rovným dílem.
+        Dekonstrukce státu volby zjednodušuje. Místo rozhodování jedním hlasem o
+        všem, občané by rozhodovali jen o těch tématech, která je zajímají, a
+        pokud člověka něco zajímá, tak tomu zpravidla i lépe rozumí. V těch
+        případech, kdy občana dané téma (akciovka) nezajímá, nebo na to nemá
+        čas, tak může svou volbu delegovat na někoho jiného, klidně i politickou
+        stranu.
       </p>
+      <q>Bylo by možné “akcii” prodat a co děti narození po rozdělení?</q>
+      <p>
+        Děti narození po rozdělení dědí od rodičů. Děti bez rodičů by dostaly
+        akcie státu až po dosažení plnoletosti. Co se týká prodeje akcií, ano,
+        ale ne hned. Jako první je třeba, aby se občané s dekonstrukcí státu
+        sžili. Aby si to vyzkoušeli a ošahali. Prostě aby nestřelili svou akcii
+        Pražského hradu prvnímu koženému, který jim slíbí jistotu desetinásobku.
+        Proto je třeba předtím vytvořit tržiště (burzu), která teprve vyjeví
+        reálné ceny. Pokud i poté vymění svou akcii za koblihu, nestane se nic,
+        co by se masově nedělo už teď. Dekonstrukce státu není zárukou moudrého
+        nakládání se státem. Složitost státu však zárukou nemoudrého nakládání
+        se státem je.
+      </p>
+      <q>
+        Copak volit, to umíme. A jak by to dopadlo? Stejně jako to dopadá teď.
+        Volení zástupci jsou obrázkem svých voličů.
+      </q>
+      <p>
+        Je rozdíl volit univerzální politiky (brouky Pytlíky) a volit jedince s
+        konkrétním programem. Lépe se to i kontroluje. A pokud akcionáři zvolí
+        špatně, členy představenstva lze odvolat. Nemusí se kvůli tomu svolávat
+        volby celého státu. Dekonstrukce státu je mnohem levnější a mnohem
+        efektivnější než klasické volby jedním hlasem o všem jednou za x let.
+      </p>
+      <q>Tohle je privatizace státu!</q>
+      <p>
+        No to záleží, jak definujete slovo "privatizace". Pokud to slovo ve vás
+        vzbuzuje odpor, patrně proto, že nějaký darebák ukradl kus státu lidem,
+        rád bych zdůraznil, že dekonstrukce státu je vracení "ukradeného" lidem
+        zpět, protože stát lidem tak jak teď funguje, nepatří. Dalo by se to
+        také nazvat restitucí státu, ale i "restituce" mají negativní konotace,
+        a ani to by nebylo přesné.
+      </p>
+      <q>
+        Zpřesním - kuponová privatizace :) Podle manifestu by tam docházelo ke
+        směně vlastnictví mezi občany. Ten model je velmi obdobný.
+      </q>
+      <p>
+        Kuponovka byla speciální formou privatizace, při které se stát musel co
+        nejrychleji zbavit státního majetku, protože jakmile se povolilo
+        soukromé vlastnictví, tak si babišové a další agenti STB začali okamžitě
+        stát rozkrádat pro sebe. Připomínám, že soukromé vlastnictví si lidé
+        vydemonstrovali. Kupovka, na rozdíl od dekonstrukce státu, nebyla "všem
+        stejně". Občané si vybírali, ale insideři (členové státu) měli
+        konkurenční výhodu, a mnohdy nečleny státu předběhli. Dekonstrukce státu
+        se nesnaží o co nejrychlejší převod, ale o co nejspravedlivější. Proto
+        každý občan automaticky dostane jednu akcii od každé části státu, a ne
+        všechny najednou, protože to by bylo příliš mnoho nových informací, z
+        čehož by opět těžili ti, co v tom umí chodit. Dekonstrukce státu není
+        převod vlastnictví státu na jeden subjekt ale všem občanům rovným dílem.
+        Berte to jako takovou zábavnou celospolečenskou hru, při které občané
+        zjistí, co stát vlastně je, co ze státu vlastně mají, a co s tím vším
+        vlastně dělat.
+      </p>
+      <hr />
       <p>TODO:</p>
       <ul>
         <li>Problémy, které můžeme předvídat.</li>

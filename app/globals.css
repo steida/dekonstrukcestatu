@@ -16,7 +16,7 @@
     @apply pb-4 text-gray-800;
   }
   q {
-    @apply block pb-4 text-gray-800;
+    @apply block pb-4 italic text-gray-800;
   }
   a {
     @apply text-blue-800 hover:underline;
@@ -26,5 +26,8 @@
   }
   li {
     @apply text-gray-800;
+  }
+  hr {
+    @apply my-8;
   }
 }
