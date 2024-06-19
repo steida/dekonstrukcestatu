@@ -213,7 +213,7 @@ export default function Page() {
         nikdo neví, dokud o tom nebudeme jako akcionáři akciové společnosti
         Pražský hrad hlasovat.
       </p>
-      <h2>Listárna 💬</h2>
+      <h2 id="listarna">Listárna 💬</h2>
       <q>
         Myšlenka je to nádherná, ale aby to fungovalo, musela by být většina
         populace inteligentní.
