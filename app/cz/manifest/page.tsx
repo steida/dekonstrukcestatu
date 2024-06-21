@@ -110,7 +110,7 @@ export default function Page() {
         Ne. Prodloužení volebního cyklu by nic dobrého nepřineslo a zkrácení
         také ne.
       </p>
-      <h3>Kdo státu vládne?</h3>
+      <h3>Kdo státu vládne</h3>
       <p>
         Pokud státu nevládnou občané ani politici, kdo státu vládne?
         Zjednodušeně řečeno, stát si vládne sám. Konkrétně státu vládnou ti jeho
@@ -122,7 +122,7 @@ export default function Page() {
         (a kdy) se podepsat. Lidé, kteří státu doopravdy vládnou, se kontrolují
         sami.
       </p>
-      <h3>Proč se stát nevyvíjí?</h3>
+      <h3>Proč se stát nevyvíjí</h3>
       <p>
         Zatímco počet agend státu stále narůstá, agendy samotné se nevyvíjí.
         Vládci státu nemají motivaci cokoliv měnit, protože proč? Byla by to
