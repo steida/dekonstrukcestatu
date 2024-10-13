@@ -54,8 +54,8 @@ export default function Page() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/steida/ds.show" target="_blank">
-            github.com/steida/ds.show
+          <a href="https://github.com/steida/dekonstrukcestatu" target="_blank">
+            github.com/steida/dekonstrukcestatu
           </a>
         </li>
       </ul>
