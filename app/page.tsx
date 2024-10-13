@@ -1,44 +1,56 @@
 import Link from "next/link";
-import { BitcoinLightning } from "../components/BitcoinLightning";
+import Image from "next/image";
 
 export const metadata = {
-  title: "Deconstruction of the State - let's return the state to the people",
+  title: "Dekonstrukce státu",
 };
 
 export default function Page() {
   return (
     <>
-      <Link className="block text-right" href="/cz">
-        česky
-      </Link>
-      <h1>Deconstruction of the State</h1>
+      <h1>Dekonstrukce státu</h1>
       <p>
-        We have a problem. The problem is the State's complexity. The State is
-        so complex that it's impossible to manage through the election process.
-        One vote can't decide almost infinite issues related to the State.
+        Máme problém. Ten problém je složitost státu. Stát se stal tak složitým,
+        že je nemožné jej řídit prostřednictvím volebního procesu. Jeden hlas
+        nemůže rozhodnout o téměř nekonečném množství otázek týkajících se
+        státu.
       </p>
       <p>
-        Deconstruction of the State is an independent research lab working on
-        this problem.
+        Dekonstrukce státu je nezávislý think-tank pracující na tomto problému.
       </p>
-      <h2>Our Research</h2>
-      <p>TBA</p>
-      <h2>Slides</h2>
+      <h2>Kniha 📖</h2>
+      <p>
+        <a
+          href="https://www.startovac.cz/projekty/kniha-dekonstrukce-statu"
+          target="_blank"
+        >
+          startovac.cz/projekty/kniha-dekonstrukce-statu 💰
+        </a>
+      </p>
+      <h2>Náš výzkum</h2>
       <ul>
         <li>
-          <a
-            target="blank"
-            href="https://docs.google.com/presentation/d/1jMV7FbzONYyuTHvQZLJmxGwYf9_at2QK3XqRL7sV8v0"
-          >
-            Bitcoin - the endgame (PragueBTC 2024)
+          <Link href="/manifest">Manifest dekonstrukce státu (návrh) 📜</Link>
+        </li>
+      </ul>
+      <h2>Přednášky</h2>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=uAfFLU-WvJo">
+            Přednáška pro Letní školu Občanského institutu
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=jclUOz9h4rc">
+            Dekonstrukce státu - ChainCamp 2020
           </a>
         </li>
       </ul>
-      <h2>Links</h2>
+      <h2>Odkazy</h2>
       <ul>
         <li>
-          <a href="https://x.com/steida" target="_blank">
-            x.com/steida
+          <a href="https://x.com/steidacz" target="_blank">
+            x.com/steidacz
           </a>
         </li>
         <li>
@@ -46,15 +58,18 @@ export default function Page() {
             github.com/steida/ds.show
           </a>
         </li>
-        <li>
-          <a href="https://www.evolu.dev/" target="_blank">
-            evolu.dev
-          </a>{" "}
-          (restoring data ownership)
-        </li>
       </ul>
-      <h2>Support us</h2>
-      <BitcoinLightning />
+      <h2>Podpořte nás</h2>
+      <p>Bankovní účet: 1000701012/3030</p>
+      <p>Bitcoin: bc1qehhc88w0m3lq6fphg0639sd4yjxgmf4psqwv7e</p>
+      <p>Bitcoin Lightning</p>
+      <Image
+        priority
+        src="/bitcoinlightning.png"
+        alt="Bitcoin Lightning"
+        width="150"
+        height="150"
+      />
     </>
   );
 }

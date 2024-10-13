@@ -7,7 +7,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Link className="block text-right" href="/cz">
+      <Link className="block text-right" href="/">
         domů
       </Link>
       <h1>Manifest dekonstrukce státu (návrh)</h1>
@@ -30,7 +30,7 @@ export default function Page() {
         nikdo pořádně nepíše, protože to je vzhledem k složitosti státu
         sisyfovská práce. A je to ještě horší. Politici, kteří nejsou u moci,
         neví, protože vědět nemohou (nejsou u moci), co vše řízení státu obnáší.
-        Polici, kteří u moci jsou, pak na sepisování programů už nemají čas,
+        Politici, kteří u moci jsou, pak na sepisování programů už nemají čas,
         protože musí vládnout. Proto jsou politické programy plné obecných
         frází, a proto je také skoro nikdo nečte. Přirozenou lidskou reakcí na
         složitost je zjednodušení. Je v tom paradox: Čím je stát složitější, tím
@@ -268,8 +268,8 @@ export default function Page() {
         nejrychleji zbavit státního majetku, protože jakmile se povolilo
         soukromé vlastnictví, tak si babišové a další agenti STB začali okamžitě
         stát rozkrádat pro sebe. Připomínám, že soukromé vlastnictví si lidé
-        vydemonstrovali. Kupovka, na rozdíl od dekonstrukce státu, nebyla "všem
-        stejně". Občané si vybírali, ale insideři (členové státu) měli
+        vydemonstrovali. Kuponovka, na rozdíl od dekonstrukce státu, nebyla
+        "všem stejně". Občané si vybírali, ale insideři (členové státu) měli
         konkurenční výhodu, a mnohdy nečleny státu předběhli. Dekonstrukce státu
         se nesnaží o co nejrychlejší převod, ale o co nejspravedlivější. Proto
         každý občan automaticky dostane jednu akcii od každé části státu, a ne
