@@ -1,0 +1,2 @@
+# Vercel redirected trailing slashes with 308; Cloudflare's default is 307.
+/*/ /:splat 308

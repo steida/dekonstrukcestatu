@@ -1,0 +1,3 @@
+# Next.js puts a content hash in these paths.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable

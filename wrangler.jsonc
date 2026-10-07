@@ -1,0 +1,20 @@
+// Serves the static export in out/ as an assets-only Worker: Cloudflare
+// serves the files and runs no Worker code. Workers Builds builds and deploys
+// it on every push to main.
+// https://developers.cloudflare.com/workers/static-assets/
+{
+  "name": "dekonstrukcestatu",
+  "compatibility_date": "2026-10-07",
+  "assets": {
+    "directory": "./out",
+    // Unknown paths get 404.html with status 404.
+    "not_found_handling": "404-page",
+  },
+  // dekonstrukcestatu.cz redirects here with a Redirect Rule in the zone.
+  // Cloudflare refuses a Custom Domain while the hostname has DNS records that
+  // Workers did not create, so the old ones were deleted by hand when it was
+  // first attached.
+  "routes": [{ "pattern": "www.dekonstrukcestatu.cz", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false,
+}
