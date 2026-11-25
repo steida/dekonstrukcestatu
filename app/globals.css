@@ -1,33 +1,270 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "../typography.mts";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+  --bg: #f7f4ed;
+  --surface: #efebe1;
+  --surface-elevated: #fcfbf8;
+  --ink: #171614;
+  --ink-muted: #524d46;
+  --ink-faint: #666057;
+  --border: rgba(23, 22, 20, 0.13);
+  --border-strong: rgba(23, 22, 20, 0.28);
+  --accent: #a81e1e;
+  --accent-hover: #871616;
+  --accent-soft: rgba(168, 30, 30, 0.08);
+  --radius: 0px;
+  --radius-sm: 0px;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #141312;
+  --surface: #1d1b19;
+  --surface-elevated: #24211e;
+  --ink: #ebe5da;
+  --ink-muted: #a8a095;
+  --ink-faint: #948c82;
+  --border: rgba(244, 239, 230, 0.13);
+  --border-strong: rgba(244, 239, 230, 0.28);
+  --accent: #ed7368;
+  --accent-hover: #f58b81;
+  --accent-soft: rgba(237, 115, 104, 0.12);
+}
 
 @layer base {
-  h1 {
-    @apply pb-4 pt-6 text-2xl text-gray-800;
+  html {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-size: 106.25%;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-  h2 {
-    @apply pb-4 text-xl text-gray-800;
+
+  @media (min-width: 640px) {
+    html {
+      font-size: 112.5%;
+    }
   }
-  h3 {
-    @apply pb-4 text-lg text-gray-800;
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    min-height: 100dvh;
   }
-  p {
-    @apply pb-4 text-gray-800;
+
+  /* Offset anchor scroll position for sticky header (2-row on mobile, 1-row on md+) */
+  [id] {
+    scroll-margin-top: 7.25rem;
   }
-  q {
-    @apply block pb-4 italic text-gray-800;
+
+  @media (min-width: 768px) {
+    [id] {
+      scroll-margin-top: 5.5rem;
+    }
   }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--accent-soft);
+    color: var(--ink);
+  }
+}
+
+/* Editorial prose enhancements */
+.prose-ds {
+  overflow-wrap: break-word;
+}
+
+.prose-ds .table-wrap {
+  margin-top: 1.65rem;
+  margin-bottom: 1.65rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--surface-elevated);
+}
+
+.prose-ds .table-wrap table {
+  min-width: 100%;
+}
+
+.prose-ds .table-wrap thead th {
+  white-space: normal;
+  min-width: 7rem;
+}
+
+.prose-ds .table-wrap tbody td {
+  min-width: 6.5rem;
+}
+
+.prose-ds .table-wrap thead th:first-child,
+.prose-ds .table-wrap tbody td:first-child {
+  min-width: auto;
+}
+
+@media (max-width: 639px) {
+  .prose-ds .table-wrap table {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .prose-ds .table-wrap thead th,
+  .prose-ds .table-wrap tbody td {
+    padding: 0.55rem 0.55rem;
+    min-width: 5.5rem;
+  }
+
+  .prose-ds .table-wrap thead th:first-child,
+  .prose-ds .table-wrap tbody td:first-child {
+    min-width: auto;
+  }
+}
+
+.prose-ds .table-wrap th[align="right"] {
+  text-align: right;
+}
+
+.prose-ds .table-wrap th[align="center"] {
+  text-align: center;
+}
+
+.prose-ds .table-wrap tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--surface) 45%, transparent);
+}
+
+/* Heading autolink anchor (#) */
+.prose-ds :is(h2, h3, h4) {
+  position: relative;
+}
+
+.prose-ds .heading-anchor {
+  margin-left: 0.45rem;
+  color: var(--ink-faint);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 150ms ease, color 150ms ease;
+}
+
+.prose-ds :is(h2, h3, h4):hover .heading-anchor,
+.prose-ds .heading-anchor:focus-visible {
+  opacity: 1;
+}
+
+.prose-ds .heading-anchor:hover {
+  color: var(--accent);
+}
+
+@media (hover: none) {
+  .prose-ds .heading-anchor {
+    opacity: 1;
+  }
+}
+
+/* Math / KaTeX overflow safety */
+.prose-ds .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.65rem 0.25rem;
+  margin: 1.25rem 0;
+}
+
+.prose-ds .katex {
+  font-size: 1.02em;
+}
+
+/* Tabular numbers utility */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Print stylesheet: crisp black-on-white editorial print */
+@media print {
+  :root,
+  .dark {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #f5f5f5;
+    --surface-elevated: #ffffff;
+    --ink: #000000;
+    --ink-muted: #262626;
+    --ink-faint: #4a4a4a;
+    --border: rgba(0, 0, 0, 0.25);
+    --border-strong: rgba(0, 0, 0, 0.6);
+    --accent: #000000;
+    --accent-hover: #000000;
+    --accent-soft: #f5f5f5;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  body > header,
+  footer,
+  nav,
+  aside,
+  .no-print,
+  details.toc-box,
+  .prose-ds .heading-anchor {
+    display: none !important;
+  }
+
+  main {
+    display: block !important;
+  }
+
+  article,
+  .prose-ds {
+    max-width: 100% !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  table,
+  blockquote,
+  pre,
+  .postcard-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .prose-ds .table-wrap {
+    overflow: visible !important;
+    border: 1px solid #000000 !important;
+  }
+
   a {
-    @apply text-blue-800 hover:underline;
-  }
-  ul {
-    @apply list-inside list-disc pb-4;
-  }
-  li {
-    @apply text-gray-800;
-  }
-  hr {
-    @apply my-8;
+    color: #000000 !important;
+    text-decoration: underline !important;
   }
 }

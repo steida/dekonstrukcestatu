@@ -1,3 +1,18 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
 # Next.js puts a content hash in these paths.
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/kniha.webp
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/icon.svg
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400

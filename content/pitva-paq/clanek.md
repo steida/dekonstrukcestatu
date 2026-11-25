@@ -1,0 +1,135 @@
+# Zjednodušovači, komplikátoři a 224 stran Chytřejších daní
+
+Někteří lidé svět zjednodušují, jiní ho komplikují. To je mimochodem důvod, proč umělá inteligence nikdy nepřipraví lidi o práci: spolehlivá část lidstva bude pomocí AI práci ostatním neustále přidělávat.
+
+Učebnicovou ukázkou druhé skupiny je 224stránková studie [Chytřejší daně](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf) (září 2025), která z dnešního daňového chaosu vyrábí chaos ještě větší. Stojí za ní PAQ Research, Centrum veřejných financí (CVF) a IDEA při CERGE-EI. Studii vedli a editovali Petr Vilím, Markéta Koscielniak (Malá), Daniel Prokop, Petr Janský a Daniel Münich se širším týmem výzkumníků.
+
+Studii jsem přečetl od obálky po metodické přílohy. Tady je to nejdůležitější, na co jsem cestou narazil.
+
+---
+
+## Dvě pohlednice versus 224 stran
+
+*Chytřejší daně* jsou přesný opak návrhu z mého předchozího článku [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma) — systému na dvě pohlednice podle ekonomů Roberta Halla (v říjnu 2026 dostal Nobelovu cenu) a Alvina Rabushky. Jedna pohlednice slouží člověku, druhá podnikání jen podle skutečných příjmů a výdajů, s jedinou sazbou a v čisté podobě i s koncem ostatních daní (uvnitř EU pak vedle vykuchané jednotné 15% DPH a unijních minim spotřebních daní). **Můj návrh je navíc rozpočtově neutrální rámec — sám o sobě výběr daní ani nesnižuje, ani nezvyšuje**, a právě tím bez příkras ukazuje, že bez škrtů výdajů si 3bilionový stát (při nezdanitelném minimu X = 150–250 tis. Kč ročně) vynutí sazbu 65–74 % (resp. 61–70 % vedle samotné povinné 15% DPH, příp. 53–62 % v hotovostním EU-hybridu i se spotřebními daněmi a poplatky). Velikost státu je politická otázka, kterou vyřeší dva viditelné knoflíky: nezdanitelné minimum **X** a jediná sazba **Y %**. Chce levice štědrý stát? Stačí zvednout **X** i **Y %**, jen u toho poprvé přizná skutečnou cenovku státu, místo aby ji schovávala do „odvodů zaměstnavatele“ a deseti dalších daní.
+
+Cílem je ušetřit práci všem — kromě daňových poradců. Upřímně ale pochybuji, že věčné kličkování v pětisetstránkových záplatách baví i je. Mnohem lépe se uplatní ve **finančním a manažerském účetnictví**, které je na rozdíl od daňových obstrukcí skrz naskrz racionální.
+
+*Chytřejší daně* jdou přesně opačným směrem: na starý systém lepí přes třicet nových mechanismů. A navíc nejsou ani rozpočtově neutrální — hlavní varianta zvedá výběr o **73 miliard korun ročně** (str. 8, 50, 53). Zdanění práce přitom v jejich vlastním grafu (str. 38) klesne jen z **18,3 % na 18,2 % HDP** — o jedinou desetinu procentního bodu. Úlevu zaměstnancům (−41,8 mld.) totiž z víc než poloviny smaže nárůst daní OSVČ (+23,9 mld., str. 92).
+
+---
+
+## Přiznané komplikátorství
+
+Autoři si zaslouží uznání za upřímnost na stranách 55–56: zjednodušení administrativy podle nich *„není jedním z našich hlavních cílů v této studii“* (str. 55) a ačkoliv část zdanění zaměstnanců zůstává skrytá v odvodech zaměstnavatele, *„není zvýšení transparentnosti mezi hlavními cíli námi navrhované reformy“* (str. 56).
+
+Na téže straně 55 si v tabulce administrativní náročnosti vystavili vlastní vysvědčení: celkem **8 minusů proti 4 plusům**, z toho pro občany a firmy **3 minusy proti jedinému plusu** (okamžité odpisy vybraného majetku, str. 55, 191). Majetkovou administrativu plátců do tabulky ani nedopsali.
+
+Jak vypadá třicet nových záplat v praxi?
+
+- **Konec jednoduchého režimu OSVČ:** Paušální daň studie fakticky škrtá. Nechává ji jen pro tři oblasti (pohostinství, řemesla se zemědělstvím, obchod) a limit sráží na 1 milion korun (str. 83), ačkoliv medián dnešních plátců činí 1,03 milionu (str. 77). Výdajové paušály dělí do pěti kategorií (čtyři pro OSVČ včetně vyčlenění kancelářských profesí podle statistických kódů NACE, pátá pro pronájem) se státní kontrolou oborů (str. 55, 76, 82). Téměř 70 % nízkopříjmových OSVČ si nepolepší (polepší si jen 30,3 %, str. 41) a vyšší desítky až přes sto tisíc živnostníků míří zpět k přiznáním a účetním.
+- **Rozevřená DPH, daň ze sladidel a plošné EET:** Místo jedné sazby DPH hlavní varianta rozevírá nůžky ze současných 12 % a 21 % na 10 % a 21 % (tedy z 9 na **11 procentních bodů**, str. 101); knihy skáčou z 0 % na 21 %, nahoru míří i pohostinství a kultura. Přibývají tři pásma daně z tichého vína a ciderů (str. 119) a pásmová daň ze slazených nápojů, která korunou za litr zasáhne i **nekalorická umělá sladidla** (str. 114–115). K tomu automatické každoroční zvyšování (valorizace) spotřebních daní o inflaci po vzoru Maďarska a Francie *„bez nutnosti spolehnutí na momentální politickou vůli“* (str. 105–106) a návrat **EET** *„v plném rozsahu sektorů, nejen pohostinství“* (str. 122).
+- **Cenové zóny, dědictví a šperky přes pojišťovny:** Daň z nemovitostí dělí katastrální území do osmi cenových skupin (u podnikatelských budov v osmé skupině skáče mediánová sazba ze 7,6 na 188,1 Kč/m², tedy **24,8násobek**, str. 147) s výhledem na státní cenovou mapu pozemků (str. 144). Hlavní návrh přidává **23% dědickou daň** nad vyšší limit; přísnější z jejich tří modelů (Model 3) až **40% dědickou daň**, která si podle autorů vynucuje rovnou **40% daň z příjmu** nad čtyřnásobek průměrné mzdy, aby lidé majetek neprodávali před smrtí (str. 165). V úvahách o dani z bohatství pak zmiňují oceňování aut, obrazů a šperků přes systémy pojišťoven (str. 170).
+- **Hodnotitelé TAČR a záplaty na vedlejší škody:** K odpočtům na výzkum a vývoj chtějí vedle hotovostního bonusu pro ztrátové firmy zapojit Technologickou agenturu ČR (TAČR) pro volitelné předběžné posuzování — má prý *„databázi několika tisíc hodnotitelů“* (str. 195). Vyšší nepřímé daně přitom vyvolají inflaci (+1,4 %) a spolu s daní z nemovitostí zdraží život mediánové domácnosti důchodců a pečujících o 4 371 Kč ročně před kompenzacemi (str. 42, 46). Vlastní inflací tak návrh spouští dodatečnou valorizaci důchodů a vynucuje novelu čerstvé „superdávky“ (sjednocené státní sociální pomoci z října 2025, str. 46). Kvůli příjmům obcí z nemovitostí přidávají i přestavbu rozpočtového určení daní — klíče, jak se daně dělí mezi stát a obce (str. 50–51).
+
+Každé nové pásmo i každá výjimka jsou přitom ideálním palivem pro lobbing i bipolární poruchu státu po každých volbách.
+
+---
+
+## Švy mezi týmy: když levá ruka ničí pravou
+
+Na textu je ale na první pohled znát ještě něco: jednotlivé kapitoly psaly různé týmy — a na konci je nikdo nesladil. Tiráž (str. 1) mluví jasně: kapitolu 4 o majetku psalo **čistě PAQ Research** (nikdo z CVF ani IDEA), hned další kapitolu 5 o firmách **CVF** s jedním spoluautorem působícím i v IDEA (nikdo z PAQ), práci PAQ s IDEA a modelování směs všech tří. Právě na těchto švech si studie podráží nohy.
+
+**České inovativní firmy proti dědické dani.** Kapitola 5 (CVF/IDEA) sama varuje před odlivem zisků do ciziny a chce budovat české inovativní firmy (str. 183, 187, 194). O třicet stran zpět v kapitole 4 (PAQ) se dočtete, že *„nižší dostupnost domácích úspor navíc může být v otevřené ekonomice nahrazena zahraničním kapitálem“* (str. 152). Týž tým označuje zrušení časových testů na prodej firemních podílů za *„žádoucí“* (str. 156; hlavní varianta zatím ruší jen test u investičních bytů) a navrhuje 23% dědickou daň (v Modelu 3 až 40 %, str. 165), kterou výslovně zdůvodňuje i zdaněním nerealizovaného zisku — doslova *„rostoucí hodnota firemního podílu, který není nikdy prodán“* (str. 161).
+
+I když pro rodinné firmy připouští odklad, splátky či podmíněnou úlevu (str. 166–167), základní asymetrii oproti veřejně obchodovaným korporacím a institucionálním fondům ze zahraničí tím nezmění: ty nemají jediného smrtelného zakladatele s nelikvidním podílem, takže českou dědickou daň ani pětiletý úřední dohled nad firmou řešit nebudou. Kapitola 4 tak systematicky vyrábí přesně ten odliv vlastnictví do zahraničí, proti němuž bojuje kapitola 5.
+
+**Dluh napřeskáčku.** Kapitola 4 (PAQ, str. 159) správně kritizuje daňové zvýhodnění dluhu oproti vlastnímu kapitálu. Kapitola 5 (CVF) ale při vyšší firemní dani (22–23 %) a 100% odpisech nechává odpočet úroků netknutý, čímž dluh oproti vlastnímu kapitálu daňově zvýhodňuje ještě víc (firma si odečte celý stroj při nákupu a navrch úroky z půjčky na něj). V literatuře kapitoly 5 (str. 198) po tématu zůstal už jen osiřelý, v textu necitovaný odkaz na evropský návrh *DEBRA* proti zvýhodnění dluhu.
+
+**Inflace napřeskáčku.** Kapitola 5 zavádí okamžité odpisy, protože inflace skrytě daní investice (str. 189), zatímco kapitola 4 ruší časový test bytů bez povinného očištění o inflaci v hlavním návrhu (na str. 151 ho jen nezávazně zmiňuje ke zvážení — v českém zákoně by tak stát v klidu danil i znehodnocení peněz, ač na str. 154 zdanění inflace sami kritizují).
+
+**Švy v číslech a mezi větami.** Stačí položit vedle sebe čtyři místa v textu:
+
+- Souhrnná tabulka připisuje růst HDP efektu *„Zvýšení participace na oficiálním trhu práce a vyšší počet odpracovaných hodin“* (str. 40); o 176 stran dál modelovací příloha výslovně říká, že počet odpracovaných hodin nemodeluje (str. 216).
+- Na straně 18 text hlásí, že nejchudší desetina platí **42,5 %** a nejbohatší **40,2 %** — otočíte na stranu 19 a v grafu stojí **46,3 %** proti **42,0 %** (po přepočtu modelu někdo zapomněl přepsat text).
+- Na straně 80 sami ukážou, že konzistentní vyměřovací základ OSVČ je **75 %** pro daň i pojistné — o tři strany dál (str. 83) ale z kompromisu stejně ponechají dva různé základy (**75 %** pro daň a **65 %** pro pojistné).
+- Na straně 84 autoři uklidňují, že mluví o souboru úprav *„nezasahujících do dalších veřejných systémů (důchody a zdravotnictví […])“*. O stranu dříve (str. 83) přitom ruší strop pojistného zaměstnavatele nad čtyřnásobek průměrné mzdy — a v první kapitole (str. 36, pozn. 4) k tomu rovnou dopisují *„zrušení limitu pro výpočet důchodů“*. Daň z každé další koruny nad dnešní strop kvůli tomu stoupá o 12,3 bodu na 45,8 % (viz parametry na str. 83 a křivku na str. 88).
+
+**Rovná daň v jedné větě pod čarou.** Když už jsem zmínil Nobelovu cenu za ekonomii 2026: Robert E. Hall ze Stanfordu ji v říjnu dostal s Michaelem Woodfordem — nutno poctivě dodat, že za mikroekonomické základy makroekonomické stabilizace, ne přímo za Hallovu rovnou daň. Ředitel CERGE-EI Marek Kapička to tehdy ocenil slovy, že Bob Hall a Michael Woodford *„zásadním způsobem ovlivnili naše uvažování o fiskální a monetární politice“*.
+
+V 224stránkové studii ze září 2025, na jejíž obálce stojí *IDEA při GERGE-EI* (ano, s G), se jména Hall a Rabushka nevyskytují ani jednou. Rovnou daň vyřizuje jedna věta pod čarou na straně 17 — staví v ní progresivní daň do protikladu k rovné sazbě (přitom s nezdanitelným minimem **X** je i rovná sazba progresivní od nuly výš) a tvrdí, že progrese vede k *„vyššímu celkovému užitku“*. Jako by se dal užitek objektivně měřit a mezi lidmi sčítat — nedá. Od 30. let minulého století je to základní učebnicový fakt: z klesajícího užitku u jednoho člověka žádný „vyšší celkový užitek společnosti“ neplyne, dokud si nejprve politicky neurčíte, čí koruna má větší váhu.
+
+---
+
+## Černá skříňka modelů: jak se vaří grafy a HDP
+
+Studie působí neprůstřelně díky technickým přílohám a značce Oxford Economics. Jakmile černou skříňku otevřete, uvidíte, na čem slavné titulky stojí.
+
+Nejcitovanější graf celé studie (str. 8 a 19) tvrdí, že nejchudší desetina pracujících odvede ze svých příjmů na všech daních dohromady vyšší procento (**46,3 %**) než nejbohatší desetina (**42,0 %**). Samotné daně z práce (daň z příjmu a odvody) jsou přitom i v datech autorů **progresivní** — nejchudší desetina z práce odvádí nižší procento (30,1 %) než lidé se středními a vysokými příjmy (32–34 % od třetí desetiny výše, str. 19). Jak tedy autoři došli k titulku, že bohatí platí méně než chudí? Výsledek přetočily čtyři metodické volby:
+
+1. **Vypařených 93,9 % firemní daně:** Ze 329 miliard firemní daně připíšou domácnostem jen **6,1 %** (20 mld. odpovídajících dividendám; zbytek vynechají mj. kvůli cizím vlastníkům a chybějící horní desetině procenta, str. 208–211). Do příjmů jim ale plně započtou celých **116,4 miliardy** odhadovaných kapitálových výnosů z akcií i nemovitostí (str. 208, 219–220) — takže akciové zhodnocení z již zdaněných nerozdělených zisků v příjmu nejbohatší desetiny figuruje, zatímco odpovídající firemní daň mizí a sazba bohatých padá dolů.
+2. **Daň z bytů účtovaná akcionářům:** Hlavní varianta ruší časový test jen u investičních bytů (9 mld. Kč), ne u akcií. Na straně 208 ale autoři všech **9 miliard daně z prodeje bytů** rozdělí výhradně podle držených *akcií* (59 % drží nejbohatší desetina, str. 156). Progresivita reformy pak v grafu září jasněji.
+3. **První desetina hluboko pod minimální mzdou:** Graf třídí jednotlivce, ne domácnosti (str. 8), a za aktivního bere už člověka se 120 tisíci ročně včetně odvodů zaměstnavatele — tedy 10 tisíc měsíčně (str. 211). Do nejchudší desetiny tak spadnou brigádníci, studenti, sezónní pracovníci či lidé žijící z dávek, úspor a neoficiálních příjmů, které nevstupují do výdělku, ale utrácejí se v obchodech. Výsledek: absurdních **18,7 %** příjmu včetně odvodů zaměstnavatele (přes čtvrtinu čistého) jen na DPH a spotřebních daních (str. 19).
+4. **Chybějící bilion v příjmech:** Do příjmů se počítá i fiktivní „imputované nájemné“ (domnělý příjem z vlastního bydlení). Ve validační tabulce (str. 213) ho ale chybí 70 % a celkem v součtu příjmů chybí **1 105 miliard korun** (−22,7 %), zatímco pojistné je o 5 % vyšší než v realitě. Komentář nad tabulkou: *„Výsledky naznačují velkou přesnost v modelovaných daních, ale mírné podhodnocení příjmů“* (str. 213).
+
+Stejně jednosměrný je slibovaný růst HDP: **0,44 až 0,71 %** za deset let do roku 2035 (str. 40, 217), tedy **0,04 až 0,07 procentního bodu ročně**. Na straně 215 autoři doslova přiznávají, že do modelu Oxford Economics poslali jen dva kladné impulsy (levnější práci a odpisy), zatímco *„dopad reformy zdanění majetku a spotřeby nebereme v potaz, protože na tyto faktory by měly spíše zanedbatelný vliv“*. Nulovou váhu tak má 68 miliard vyšších spotřebních daní a DPH (srážejících reálnou mzdu) i 45 miliard majetkových daní — celkem 73 miliard čistě vytažených ze soukromého sektoru — stejně jako náklady EET a byrokracie.
+
+Přímo na straně 40 (v textu i pod tabulkou) sami dodávají, že část efektu může být jen „vybělení“ šedé ekonomiky, aniž by se vyrobilo cokoliv navíc, a krátkodobě může být dopad i záporný. Při „nezávislém ověření“ (str. 217–218) navíc všechny novější studie leží pod jejich dolní mezí — interval zachraňuje až práce z roku 2011, o níž hned o odstavec výš sami napíšou, že může být nadhodnocená.
+
+---
+
+## Když papír mlčí a AI pomáhá
+
+Vraťme se k úvodní poznámce o umělé inteligenci. Překlep se stane každému — potíž nastává, když se studie tváří jako neprůstřelná věda, ale při běžné kontrole kalkulačkou se v ní sypou základní součty.
+
+V tabulce DPH (str. 210) dává součet 501,7 a 5,0 miliardy výsledek **77,4 miliardy korun** — chybu o **429,3 miliardy** (místo součtu někdo odečetl 5,0 od 82,4). V tabulce prorozpočtové varianty (str. 53) ukazuje celkový řádek 199 miliard místo správných 226 miliard — odchylka **27 miliard**. V poznámce k důchodům (str. 46) má 1,2 % ze 706 miliard činit 7,4 miliardy (kalkulačka trvá na 8,47 miliardy). A na straně 123 vzrostou nízkopříjmovým domácnostem náklady o *„6–9 korun ročně“*: vypadlo skromné slovo *tisíc* — jde o 6 225 až 9 035 korun. (Navíc autoři hned v předchozí větě vydávají vyšší korunovou částku u bohatých za progresivitu, ačkoliv v procentech příjmu dopadá zdražení tvrději na chudé.)
+
+A nekončí to u kalkulačky:
+
+- **Polsko na protějších stranách (str. 163 vs. 164):** Na straně 163 studie tvrdí, že Polsko u dědické daně osvobozuje jen prvních zhruba 210 tisíc korun se sazbou 3–7 % — otočíte list na stranu 164 a ve vlastní tabulce stojí, že Polsko přímou linii osvobozuje úplně (0 %).
+- **Průměry v textu, mediány v grafu (str. 89–90):** Text odkazuje na graf B s průměrnou úsporou 14 a 6 tisíc korun pro zaměstnance a nárůstem 82 a 10 tisíc pro OSVČ, zatímco graf přímo pod textem zobrazuje mediány (−10 709, −7 751, +56 528 a +4 791 Kč).
+- **Nemožná kombinace u bytů (str. 219):** V odhadu zdanění prodeje bytů počítá vyšší varianta současně s dvakrát častějším prodejem (šestinásobek místo trojnásobku) i o 60 % delším držením (osm let místo pěti), ačkoliv delší držení znamená méně častý prodej.
+- **Estonsko bez pointy (str. 58):** V rámečku o Estonsku autoři zmiňují vyšší firemní daň a *„2% obrannou daň“*, aniž by řekli, že Estonsko daní reinvestované zisky nulou — a že tamní parlament 2% obrannou daň z firemních zisků už v červnu 2025, tři měsíce před vydáním studie, zrušil právě proto, aby tenhle princip nezničil.
+- **Časové a redakční třešničky:** V dokumentu ze září 2025 najdete citaci budoucích dat *EU-SILC 2026* (str. 156), *„8,8 % DPH“* místo HDP (str. 22), přeskočené podkapitoly 4.4.3–4.4.4 i překlep *„Finanční zpráva“* (str. 122).
+
+Drobným redakčním symptomem téhož spěchu jsou i dvě nevyčištěné položky v seznamu literatury: německá celní správa na str. 126 (citace s překlepem *Steurhöhe* v názvu a odkazem s **?utm_source=chatgpt.com**) a německé ministerstvo financí na str. 177 se stejným parametrem v adrese. Proti používání AI při rešerších nic nemám — ukazuje to jen, že u 224stránkového dokumentu už na konci nikdo neprošel ani odkazy.
+
+Právě v tom je nejnázornější pointa celé studie: sama počtem vlastních chyb demonstruje, jaké peklo na zemi složitost je. Když ani desítky chytrých ekonomů ze tří prestižních institucí nedokážou udržet pohromadě vlastní 224stránkový návrh bez základních chyb v součtech, protichůdných kapitol a metodických rozporů (takže místy vlastně ani nevědí, co chtějí vytvořit), jak asi dopadne realita, až to projde Sněmovnou a budou se podle toho muset řídit miliony lidí a firem?
+
+---
+
+## Férový účet: kde mají autoři pravdu
+
+Poctivá kritika musí říct i to, kde má protistrana pravdu. A v překvapivě mnoha bodech diagnózy se s autory plně shoduji — jejich výpočty jsou skvělou municí proti dnešnímu chaosu.
+
+- **Okamžité 100% odpisy a jejich reálný dopad na rozpočet (str. 189–192):** U vybraného majetku (1.–3. odpisová skupina bez spalovacích aut) kapitola 5 výborně dokládá princip klíčový i pro mou druhou pohlednici. Počáteční snížení inkasa firemní daně (16,6 mld. ročně) je jen dočasný souběh starých a nových odpisů; **skutečný dlouhodobý fiskální dopad činí jen 4,7 miliardy ročně** (stát firmám nic neplatí — jen si od nich přestává brát vynucený bezúročný úvěr pomalým odpisováním).
+- **Šílené zdanění nízkopříjmové práce (str. 18, 69–75):** Naprostá shoda. Stát lidem s nejnižšími příjmy bere přes třetinu ceny jejich práce, spodní pětina odvede 69 miliard a v dávkách dostane zpět jen 5 miliard. A odvody zaměstnavatele jsou skrytá daň z práce.
+- **Zrušení křivících výjimek a přímých dotací (str. 22, 79–80, 107, 141–142, 173, 187):** Z pohledu zjednodušení dává smysl konec selektivních odpočtů hypotečních úroků (při nepružné nabídce nafukují ceny bytů) a životního pojištění i odstranění ostrého zlomu u slevy na manželku — ovšem výhradně výměnou za plošné snížení sazeb či vyšší nezdanitelné minimum **X**, nikoli jako skryté zvýšení daní v 73miliardovém balíku. Správné je i odmítnutí návratu daně z nabytí nemovitostí, kritika přímých dotací velkým firmám a pojmenování lobbistické asymetrie u alkoholu (jen jejím řešením není nová daň z tichého vína, kde je minimum EU 0 Kč, nýbrž snížení daní na pivo a lihoviny k minimům EU).
+- **Odvaha zveřejnit metodické přílohy a limity (str. 8, 40, 169, 206, 213):** Respekt si zaslouží publikování validační tabulky, poctivý popis toho, proč daň z bohatství řada evropských zemí od 90. let zrušila, i přiznání chybějící horní desetiny procenta v datech a rizika přeludu šedé ekonomiky. Kdyby tyto přílohy nezveřejnili, polovinu děr v jejich modelech by zvenčí nikdo neodhalil.
+
+Chyba není v diagnóze, ale v léčbě. Kdykoliv autoři narazí na pokřivenou daň, odmítnou ji přestavět od základu a přilepí další pásma a kontroly. Práce je předaněná? Místo sloučení tří odvodů do jedné daně zavedou vyprchávající slevu a dva vratné bonusy — a k tomu uškrtí paušální daň. Snížená DPH v absolutních korunách nejvíc ušetří bohatším, takže nefunguje jako sociální nástroj? Místo jedné sazby rozevřou nůžky z 9 na 11 bodů.
+
+Firmy se bojí nejistoty u odpočtů na vývoj? Celý ten problém existuje jen proto, že stát u „výzkumu“ nabízí superodpočet (stejnou korunu si firma odečte dvakrát až dvaapůlkrát, v návrhu studie dokonce s hotovostním bonusem), takže finančák zpětně kádruje, co má „ocenitelný prvek novosti“ a co je jen běžný vývoj — a při kontrole odpočty shazuje s penále. Místo jednoduchého 100% odpisu všech reálných výdajů (kde nikdo nemusí posuzovat, co je a není výzkum) ale autoři přidají další razítko — volitelné předběžné posuzování u TAČR.
+
+---
+
+## Proč tohle vůbec vzniká
+
+Nemyslím, že ten ještě větší chaos byl úmysl. Je to přirozený výsledek motivací akademie a grantově-nadačních think-tanků — prostředí bez přímé tržní zpětné vazby, které navíc navrhuje zákony vynucované bez dobrovolného souhlasu plátců. Jakmile chybí možnost říct vlastní peněženkou ne, zpětnou vazbu nahrazuje byrokracie a arbitrární metriky: počet citací, rozsah publikací, navazující studie — práce pro práci. Studie o 224 stranách proto působí „vědečtěji“ než devítistránkový whitepaper Bitcoinu (který stvořil celý nový ekosystém). Kdyby měla deset stran, vypadalo by to divně — jednoduše proto, že tak se v akademii nepracuje.
+
+Složitost v daních je problém, protože ekonomové radící státu jsou programátoři svého druhu — doslova programují, jak se lidé budou muset chovat. Zákony jsou zdrojový kód a stát jeho vykonavatel. Místo refaktoringu — tedy vyčištění a zjednodušení starého, rozbitého kódu — na něj ale *Chytřejší daně* jen lepí další vrstvy záplat, pravidel a kompenzací.
+
+Jako programátor zbytečnou složitost nenávidím — mým cílem není uprogramovat se k smrti, ale napsat co nejméně kódu, který problém vyřeší, abych mohl dělat něco užitečnějšího. Kód není cíl, kód je překážka. Nejlepší kód je ten, který nemusel být napsán. Druhý nejlepší kód je ten, ze kterého už nejde odebrat ani jeden řádek. Proč? Protože každý řádek navíc je budoucí chyba, nebo minimálně místo, u kterého někdo musí přemýšlet, proč tam je.
+
+Tohle se člověk nenaučí za den — v programování mám oproti teoretickým akademikům tu výhodu, že svůj kód musím číst a počítač mi chybu neodpustí, takže mám skutečnou zpětnou vazbu, zatímco papír snese vše. V daňové politice jsou přitom motivace přesně opačné: náklady kontrol kódů NACE, návratu k plnému účetnictví, obhajoby odpočtů u finančáku i předávání rodinné firmy neponesou autoři studie, ale stovky tisíc živnostníků a firem.
+
+---
+
+## Závěr
+
+Právě tomuhle byrokratickému vrstvení se snaží předejít dvě pohlednice (Hall–Rabushka). Nepředstírají, že vyřeší spor pravice a levice o velikost státu. Jen odstraňují mlhu, ve které mizí biliony korun a miliony hodin lidské práce. Chce stát vybrat víc, nebo míň? Stačí otočit dvěma viditelnými knoflíky **X** a **Y %** — bez cenových map, kódů NACE, daně z umělých sladidel, plošného EET a dědické daně, která znevýhodňuje české rodinné firmy oproti nadnárodním korporacím bez jediného smrtelného zakladatele.
+
+Když jsem nedávno psal, že daňová složitost neslouží chudým, ale hlavně k tomu, aby občan neviděl skutečnou cenovku státu, nečekal jsem (dobře, trochu jsem to čekal), že 224stránková studie nejvlivnějších českých think-tanků dodá tak názorný důkaz z praxe.
+
+Nechci však, aby to vyznělo, že autoři jsou nějací lajdáci. To si nemyslím. Přál bych si, abyste tenhle text četli jako obžalobu zbytečné složitosti a lépe tak chápali leitmotiv *Dekonstrukce státu*: největší problém státu není to, že existuje (jak byste od anarchisty asi čekali), ale že je tak strašně složitý, že prakticky vylučuje smysluplnou debatu — takže se o smyslu státu nemůžeme ani bavit. Myslíte, že si živnostník večer u čaje nebo piva bude pročítat 224 stran ekonomického ptydepe? Nebude. Já to udělal jen proto, že jsem musel, protože to za víc než rok, pokud vím (a hledal jsem), nikdo jiný do hloubky neudělal.
+
+Kompletní šestikapitolovou pitvu studie — se všemi tabulkami, výpočty, katalogem chyb a 46 ověřenými citacemi s přesnými čísly stran — najdete na [dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit).

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dekonstrukce státu</title>
+    <link>https://www.dekonstrukcestatu.cz</link>
+    <description>Nezávislý think-tank Daniela Steigerwalda zaměřený na odstraňování složitosti státu, daňovou jednoduchost a forenzní analýzy.</description>
+    <language>cs</language>
+    <atom:link href="https://www.dekonstrukcestatu.cz/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Nov 2026 23:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/dekonstrukce-statu-vs-chytrejsi-dane</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/dekonstrukce-statu-vs-chytrejsi-dane</guid>
+      <pubDate>Wed, 25 Nov 2026 23:00:00 +0100</pubDate>
+      <description>Férové tříminutové srovnání dvou pohlednic a 224 stran Chytřejších daní (PAQ Research, CVF a IDEA): tabulka v 8 oblastech, shody i zásadní rozdíly.</description>
+    </item>
+    <item>
+      <title>„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/danime-praci-ale-majetek-temer-vubec</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/danime-praci-ale-majetek-temer-vubec</guid>
+      <pubDate>Wed, 25 Nov 2026 20:00:00 +0100</pubDate>
+      <description>48 vystoupení Daniela Prokopa v Českém rozhlase za 12 měsíců, vlastní týdenní pořad bez oponenta a fact-check 10 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).</description>
+    </item>
+    <item>
+      <title>Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy</guid>
+      <pubDate>Wed, 25 Nov 2026 16:00:00 +0100</pubDate>
+      <description>Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a 82,3 % rozdílu uváděného PAQ tvoří jen opakované daně ze samotné držby, převodu a dědění majetku.</description>
+    </item>
+    <item>
+      <title>Zjednodušovači, komplikátoři a 224 stran Chytřejších daní</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori</guid>
+      <pubDate>Wed, 25 Nov 2026 14:00:00 +0100</pubDate>
+      <description>Proč 224stránková studie PAQ Research, CVF a IDEA místo refaktoringu lepí přes třicet nových záplat, kde se kapitoly perou samy se sebou, co ukazuje černá skříňka modelů — a v čem mají autoři pravdu.</description>
+    </item>
+    <item>
+      <title>Komplikátoři v praxi: Kompletní šestikapitolová pitva Chytřejších daní</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit</guid>
+      <pubDate>Wed, 25 Nov 2026 12:00:00 +0100</pubDate>
+      <description>Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a 46 doslovných citací.</description>
+    </item>
+    <item>
+      <title>Daňová reforma: Realistická implementace pro Česko v rámci EU</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu</guid>
+      <pubDate>Wed, 25 Nov 2026 11:00:00 +0100</pubDate>
+      <description>Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní a pojistky.</description>
+    </item>
+    <item>
+      <title>Doplnění #1–#9 k článku Daňová reforma podle Dekonstrukce státu</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/doplneni</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/doplneni</guid>
+      <pubDate>Wed, 25 Nov 2026 10:00:00 +0100</pubDate>
+      <description>Průběžný archiv zpřesnění a odpovědí na praktické námitky z diskuse: přenos ztrát, OSVČ, dvě pohlednice, dividendy, vykuchaná 15% DPH v EU, pojišťovny, 0 % z kapitálových výnosů a rodiny s dětmi.</description>
+    </item>
+    <item>
+      <title>Daňová reforma podle Dekonstrukce státu</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma</guid>
+      <pubDate>Tue, 24 Nov 2026 14:00:00 +0100</pubDate>
+      <description>Dvě pohlednice, dva parametry (X a Y %). Jak by vypadal nejméně škodlivý daňový systém odolný vůči bipolární poruše státu — model Hall–Rabushka Flat Tax.</description>
+    </item>
+    <item>
+      <title>Hloubkový výzkum Hall–Rabushka Flat Tax (studie 01–05)</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum</guid>
+      <pubDate>Tue, 24 Nov 2026 12:00:00 +0100</pubDate>
+      <description>Pět odborných studií k modelu Hall–Rabushka Flat Tax: mechanika, světová praxe, makroekonomické propočty pro ČR v rámci EU, nejsilnější verze kritiky a 5 cest pro DPH.</description>
+    </item>
+    <item>
+      <title>Manifest dekonstrukce státu (návrh)</title>
+      <link>https://www.dekonstrukcestatu.cz/manifest</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/manifest</guid>
+      <pubDate>Tue, 01 Sep 2020 12:00:00 +0200</pubDate>
+      <description>Základní text o problému složitosti státu, jeho postupné dekonstrukci a odpovědích v listárně.</description>
+    </item>
+  </channel>
+</rss>

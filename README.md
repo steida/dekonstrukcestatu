@@ -1,1 +1,1 @@
-# ds.show
+# Dekonstrukce státu (www.dekonstrukcestatu.cz)

@@ -131,3 +131,9 @@ dist
 
 # wrangler
 /.wrangler/
+
+# macOS
+.DS_Store
+
+# Next.js dev auto-generated file
+AGENTS.md

@@ -1,0 +1,221 @@
+# Audit Kapitoly 1 studie PAQ Research, CVF a IDEA *Chytřejší daně* (2025): Rámování, „komplikátorství“ a slepé uličky alternativ
+
+> **Co text zkoumá:** Titulní stranu, *O studii*, *Shrnutí* a celou Kapitolu 1 (*Souhrnná daňová reforma*, tištěné str. 1–66) studie PAQ Research, Centra veřejných financí (CVF) a IDEA při CERGE-EI [*Chytřejší daně: Návrh reformy pro odolné a prosperující Česko* (PDF, 11. 9. 2025)](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf).
+> **Hlavní závěr:** Autoři na str. 55–56 výslovně vyřazují zjednodušení administrativy i transparentnost z hlavních cílů reformy, přes kotevní číslo „chybí až 512 mld. Kč“ obhajují balík s +73 mld. Kč vyšších daní a více než 25 novými či přestavěnými mechanismy v souhrnné tabulce (celkem přes 30 napříč šesti kapitolami) pro slibovaných +0,4–0,7 % HDP za 10 let — a v kapitole nechávají hrubé chyby včetně 27miliardového součtového omylu v `T1.6.1`.
+> **Kde pokračovat:** Syntézu všech šesti kapitol najdete v [hlavní pitvě](/blog/zjednodusovaci-a-komplikatori/audit), navazující rozbor v [auditu Kapitoly 2 (Zdanění práce)](/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace) a koncepční alternativu v článku [Daňová reforma podle Dekonstrukce státu](/danova-reforma).
+
+*Konvence stránkování a citací: Veškeré odkazy `str. XX` uvádějí tištěné číslo strany v patičce studie (číslo strany v PDF je o 1 vyšší kvůli obálce). Všechny citace v uvozovkách jsou doslovné a ověřené proti originálnímu PDF.*
+
+---
+
+## Hlavní zjištění
+
+Kapitola 1 není návrhem na jednodušší ani čitelnější daňový systém — a autoři se k tomu na samém konci kapitoly dokonce otevřeně přiznávají: **zjednodušení administrativy ani zvýšení transparentnosti nepatří mezi hlavní cíle jejich reformy** (str. 55–56). Jde o učebnicový projev **„komplikátorství“**: 224stránkový technokratický návrh přelaďuje všechny čtyři daňové pilíře najednou pomocí **více než 25 nových či přestavěných mechanismů v souhrnné tabulce** (celkem přes 30 napříč šesti kapitolami, včetně 3 zcela nových daní, EET a státních cenových map pozemků), a aby vyžehlil škody způsobené vlastní reformou (inflační šok `+1,4 %`, zásah do důchodců a přelití 24 mld. Kč do přebytkových obcí), vynucuje si další **tři velké mimodaňové záplaty** (důchodové kompenzace, novelu zbrusu nové „superdávky“ a reformu rozpočtového určení daní).
+
+Celý tento masivní legislativní kolos (+73 mld. Kč daní navíc) má podle vlastních modelů autorů přinést dlouhodobý dopad na HDP ve výši pouhých **`+0,4 až +0,7 %` do roku 2035** (tedy zhruba 0,04–0,07 p. b. ročně — přičemž sami přiznávají, že část efektu může být pouhé „vybělení“ šedé ekonomiky, nikoli reálný růst, str. 40). Navíc Kapitola 1 obsahuje **závažné vnitřní datové a početní chyby** — včetně nepřepsaného jádrového odstavce o daňové zátěži 1. decilu (str. 18 uvádí `42,5 %`, zatímco Graf G1.3.1.B hned na str. 19 a Shrnutí na str. 7 uvádějí `46,3 %`), **27miliardové chyby v součtu Pro-rozpočtové varianty** v Tabulce T1.6.1 (str. 53) a chybného výpočtu důchodové kompenzace na str. 46 (`1,2 %` ze 706 mld. Kč je `8,47 mld.`, nikoli `7,4 mld.`).
+
+---
+
+## 1. Index „komplikátorství“ (záplaty na záplaty)
+
+### 1.1 Rozvaha z Grafu 1 (str. 7) a Tabulky T1.4 (str. 36–37)
+
+Vyvážená (hlavní) varianta má v Grafu 1 (*G1*, str. 7) a Grafu *G1.5.4.A* (str. 50) **8 agregovaných bloků** s čistým výnosem **`+73 mld. Kč`**:
+
+| Blok v Grafu 1 (str. 7 / str. 50) | Dopad (mld. Kč) | Co se pod „jedním sloupcem“ ve skutečnosti skrývá (T1.4, str. 36–37) |
+|---|---:|---|
+| 1. Nižší zdanění zaměstnanců | **−43** *(pozn. 2 str. 4 uvádí −42)* | Vyšší sleva na poplatníka (41 904 Kč) + čerpání v bonusu (se stropem bez minim) + lineární vyprchávání 1×–3× průměrná mzda + jednotná sleva na děti 24 840 Kč (jiný strop bonusu) + nová sleva na dítě do 3 let (24 840 Kč) + automatická valorizace + nové minimum ZP (40 % průměrné mzdy) + zrušení odpočtu hypoték a životního pojištění + převod penzijních odpočtů do slevy + zrušení slevy na manželku + zrušení stropu SP 4×, ale nové odpuštění zaměstnanecké části SP od 3× + zrušení stropu důchodů. |
+| 2. Rovnější zdanění OSVČ | **+25** *(T1.6.1 str. 53 uvádí +24)* | Snížení paušálů (kancelářské z 60 % na 30 %) + sektorové omezení paušální daně (jen řemeslníci, obchod, pohostinství do 1 mil. Kč) + **dvojí vyměřovací základ** (65 % pro pojistné, 75 % pro DPFO) + zrušení osvobození od minim SP pro vedlejší OSVČ + **nová sleva 5 p. b.** na SP pro vedlejší OSVČ bez souběhu. |
+| 3. Valorizace spotřebních daní | **+27** | **Nová daň na tiché víno** + vyšší a diferencovaná daň na pivo podle alkoholu (+ částečné výjimky pro malé producenty) + **nová daň na slazené nápoje** + přenastavení tabáku (výše pro volný tabák/doutníky, zastropování e-cigaret/zahřívaného tabáku) + vyšší nafta/LPG + automatická valorizace sazeb. |
+| 4. Reforma DPH a omezení úniků | **+41** | Ponechání 2 sazeb DPH + ruční přesun „zbytných“ položek (hotely, restaurace, rekreace, kultura) do 21 % + snížení snížené sazby z 12 % na **10 %** + **znovuzavedení EET**. |
+| 5. Vyšší zdanění hodnotných nemovitostí | **+29** | Nové zdanění podle hodnoty pozemku přes **státní cenové mapy** + vyšší efektivní sazby pro hodnotnější nemovitosti + **nová sleva na poplatníka** + **dodatečná sleva pro důchodce**. |
+| 6. Zdanění dědictví a prodejů investičních bytů | **+16** *(T1.6.1: +9 a +7)* | **Nová dědická a darovací daň** (osvobození 1. nemovitosti, práh 5 mil. Kč/dědic, sazba 23 %) + zrušení 10letého časového testu u investičních nemovitostí + nový odečet daně z nemovitostí od DPFO z nájmu + zvýšení paušálu z nájmu (30 % → 40 %) + omezení reálných nákladů pronajímatelů. |
+| 7. Rychlejší odpisy firem a odpočty na VaV v bonusu | **−15** | Okamžité odpisy strojů, zařízení a nehmotných aktiv + **nový daňový bonus pro nevyčerpané odpočty na VaV** + **zvýšení sazby DPPO z 21 % na 22 %**. |
+| 8. Kompenzace pro důchodce, pečující aj. | **−7** *(text str. 46: −7,4)* | Automatická důchodová valorizace jako záplata na vlastní inflační šok `+1,4 %` (+ přiznaná nutnost novely „superdávky“ pro zbývajících 46 % dopadu na ekonomicky neaktivní, str. 46). |
+| **Celková změna výběru** | **+73** | **+ navrch vyžádaná komplexní reforma RUD** (str. 8, 50–51) pro odebrání 24 mld. Kč přebytkovým samosprávám. |
+
+### 1.2 Bilance: Co skutečně ruší vs. co přidávají
+
+| Kategorie | Počet | Konkrétní výčet (s odkazem na stranu) |
+|---|---:|---|
+| **A. Čistá, nenahrazená zrušení (skutečné zjednodušení)** | **3** | 1. Zrušení odpočtu hypotečních úroků (str. 36).<br>2. Zrušení odpočtu životního pojištění (str. 36; penzijní produkty ale *neruší*, jen je převádějí do slevy při zachování odlišného režimu pro příspěvky zaměstnavatele, pozn. 3).<br>3. Okamžité daňové odpisy strojů, zařízení a nehmotných aktiv (str. 37 — v Kapitole 5 na str. 191 navíc omezeno jen na 1.–3. odpisovou skupinu vyjma vozidel se spalovacími motory; budovy zůstávají). |
+| **B. „Falešná rušení“ (ruší výjimku, ale ihned ji nahrazují novým pravidlem či vyšší evidencí)** | **5** | 1. Zrušení slevy na manželku → **nahrazeno** novou slevou 24 840 Kč na dítě do 3 let (str. 36).<br>2. Zrušení stropu SP na 4× průměrné mzdy → **nahrazeno** novým zlomem odpuštění zaměstnaneckého SP od 3× + zrušením stropu důchodů (str. 36, pozn. 4).<br>3. Zrušení osvobození vedlejších OSVČ od minim SP → **nahrazeno** novou speciální slevou 5 p. b. na SP pro vedlejší OSVČ bez souběhu se zaměstnáním (str. 36).<br>4. Zrušení nulové výjimky pro tiché víno → **nahrazeno** novou daní **s částečnými výjimkami pro malé producenty** (str. 37).<br>5. Zrušení časového testu u investičních nemovitostí → ruší výjimku, ale **zavádí novou evidenční povinnost** dokládat historické pořizovací ceny a náklady po dekádách držení (zatímco testy 3/5 let pro cenné papíry/podíly a vlastní bydlení zůstávají, str. 32, 37). |
+| **C. Zcela NOVÉ daně** | **3** | 1. Spotřební daň na tiché víno (str. 37).<br>2. Spotřební daň na slazené nápoje (str. 37).<br>3. Dědická a darovací daň (osvobození 1. nemovitosti, práh 5 mil. Kč/dědic, sazba 23 %; str. 37). |
+| **D. Nové kontrolní, oceňovací a selektivní mechanismy státu** | **6** | 1. Znovuzavedení **EET** (str. 6, 30, 37).<br>2. **Státní cenové mapy pozemků** s nutností průběžné aktualizace (str. 37, 55).<br>3. **Nová kontrola oborů činnosti OSVČ** kvůli vyčlenění živností se 60% paušálem (T1.6.2, str. 55).<br>4. **Sektorová selekce v paušální dani** (povolena jen řemeslníkům, obchodu a pohostinství do 1 mil. Kč; ostatní zpět k přiznání, str. 36, 55).<br>5. **Ruční selekce „zbytných“ položek v DPH** při zachování dvojí sazby 21 % / 10 % (hotely, restaurace, rekreace, kultura; str. 37).<br>6. **Administrace nového bonusu na odpočty VaV** v prostředí, o kterém sami píší, že trpí vysokou nejistotou ex-post uznávání a byrokracií (str. 34, 55). |
+| **E. Nové slevy, bonusy, pásma, stropy a koeficienty** | **11** | 1. Bonusové čerpání slevy na poplatníka se stropem „zaplacené pojistné kromě minim“ + speciální nezabavitelnost v exekuci (str. 36, 39).<br>2. Lineární vyprchávání slevy na poplatníka (1×–3× průměrná mzda, str. 36).<br>3. Druhý, odlišný strop bonusu pro slevu na děti („veškeré odvedené pojistné vč. zaměstnavatele“, pozn. 2 str. 36).<br>4. Nová sleva na dítě do 3 let (24 840 Kč, str. 36).<br>5. Dvojí vyměřovací základ OSVČ (65 % pro pojistné vs. 75 % pro DPFO, str. 36).<br>6. Převod penzijních odpočtů do slevy (str. 36).<br>7. Diferenciace daně na pivo podle obsahu alkoholu + výjimky pro malé producenty (str. 37).<br>8. Zastropování daně u e-cigaret / zahřívaného tabáku vs. vyšší daň na volný tabák/doutníky (str. 37).<br>9. Dva nové automatické valorizační mechanismy (slevy podle mezd + spotřební daně podle Francie/Maďarska, str. 36–37).<br>10. Dvě nové slevy uvnitř daně z nemovitých věcí (na poplatníka + dodatečná pro důchodce, str. 37).<br>11. Odečet daně z nemovitostí od DPFO z nájmu + zvýšení paušálu z nájmu na 40 % + omezení reálných nákladů pronajímatelů (str. 37). |
+| **F. Vynucené záplaty MIMO daňové zákony (hašení škod vlastní reformy)** | **3** | 1. **Důchodová kompenzace (−7,4 mld. Kč)** za vlastní zdražení spotřeby (`+1,4 %` inflace, str. 46).<br>2. **Novela zbrusu nové „superdávky“ z října 2025** (zvýšení normativů na bydlení + rozšíření definice zranitelných, protože důchodová valorizace pokryje jen 54 % zásahu do ekonomicky neaktivních, str. 46).<br>3. **Komplexní reforma rozpočtového určení daní (RUD)** vč. nového „sociálního parametru“, aby stát odebral samosprávám 24 mld. Kč, které jim navrhovaná reforma automaticky přihraje do přebytkových rozpočtů (str. 8, 50–51). |
+
+**Výsledek Indexu komplikátorství:** Proti **3 čistým zjednodušením** staví Kapitola 1 **23 nových daní, sazeb, bonusových stropů, cenových map, kontrolních systémů a kompenzačních záplat** (plus 5 „falešných rušení“ nahrazených novým pravidlem). A nejlepší důkaz dává **vlastní Tabulka T1.6.2 (str. 55)**: v ní autoři vykazují skóre dopadu na administrativní náročnost **5 minusů vs. 3 plusy pro stát** a **3 minusy vs. 1 jediné plus pro plátce** — přičemž v kolonce „Pro plátce“ ještě zcela opomenuli administrativu dědické daně, zrušení časového testu bytů, nájmů, změn DPH i vyprchávání slev!
+
+---
+
+## 2. Obskurantismus & „anti-ekonomie“
+
+### 2.1 Pitva rámování „chybí až 512 mld. Kč“ a likvidace fiskálně neutrální varianty
+
+Celou 224stránkovou studii otevírá a rámuje gigantické číslo **`512 mld. Kč ročně`** (*Shrnutí* str. 5, podkapitola 1.1 str. 10–11, Graf *G1.1.B*, sekce 1.3.1 str. 21). Jak k němu CVF/PAQ (Bělohradský a kol., 2025a) dospěly? Jednoduše sečetly **strukturální deficit (`168 mld.`)** s **pěti ministerskými seznamy přání a politickými strategiemi** (Graf *G1.1.B*, str. 11):
+- Strukturální deficit: `168 mld. Kč` (2 % HDP)
+- Doprava (Střednědobý plán dopravní infrastruktury): `+126 mld. Kč`
+- Obrana (závazek NATO 3,5 % HDP až do roku 2035!): `+84 mld. Kč`
+- Energetika (náklady na dostavbu Dukovan): `+56 mld. Kč`
+- Věda, výzkum, inovace, *„dále digitalizaci a průmyslové politiky“* (Inovační strategie 2019): `+48 mld. Kč`
+- Vzdělávání (dorovnání průměru OECD): `+30 mld. Kč`
+- **Součet = „Chybějící financování: 512 mld. Kč“** (str. 10–11).
+
+**Čím je toto rámování klasickým kotevním (anchoring) trikem:**
+1. **Převrácená kauzalita deficitu:** Strukturální schodek 168 mld. Kč nevznikl „podfinancováním státu“, ale expanzí běžných výdajů. Přilepit na něj dalších 344 mld. Kč nefinancovaných „strategií“ (včetně „průmyslových politik“ a jednorázové investice Dukovan rozpočítané jako trvalý roční výdaj) vytváří optickou iluzi půlbilionové díry, vůči níž pak zvýšení daní o **+73 mld. Kč** vypadá jako „umírněná, vyvážená varianta“.
+2. **Úspory odbité jedním odstavcem a nulové „škrty“:** Slovo **„škrt“** se v celé 224stránkové studii nevyskytuje ani **jednou (`0×`)**. Na str. 22 sice zmíní audit 83 mld. Kč národních dotací a odkáží na externí blog D. Prokopa (2025) o úspoře 100 mld., ale hned dodají, že *„větší reformy však bývají politicky a implementačně náročné a není možné se tak spoléhat pouze na úspory“* (str. 22). Paradoxu si nevšímají: u úspor je politická a implementační náročnost důvodem, proč na ně nespoléhat, zatímco u jejich vlastní 224stránkové daňové megareformy (+ RUD + superdávka + EET + dědická daň + cenové mapy) stejná politická a implementační náročnost překážkou není.
+3. **Okamžité shození fiskálně neutrální varianty:** Hned na str. 5–6 je fiskálně neutrální varianta rámována jako nezodpovědná: *„Tato varianta nereflektuje současnou neudržitelnost veřejných rozpočtů a je realistická pouze za předpokladu významného omezení veřejných služeb či důležitých investic zmíněných výše.“* (str. 6; obdoba str. 52). Tím je bez jakékoli analýzy výdajové efektivity státu (kdy stát přerozděluje přes 3 biliony Kč) z debaty vyřazena možnost snižovat velikost státu.
+4. **Falešná trichotomie v T1.6.1 (str. 53) — s forenzní 27miliardovou chybou v součtu!**
+   - U **Fiskálně neutrální varianty** nechávají stejných `+27 mld.` na spotřebních daních, `+8 mld.` na EET a `+29 mld.` na dani z nemovitostí (celkem `+64 mld.` vyšších daní dopadajících i na důchodce!), ale do řádku *Kompenzace v důchodovém a dávkovém systému* napíší **`(nevyčísleno)`** — čímž uměle dosáhnou nuly (bez započtení ~4 mld. automatické valorizace důchodů z 27miliardového zdražení spotřeby).
+   - U **Pro-rozpočtové varianty** (str. 52 i Tabulka T1.6.1 na str. 53) uvádějí celkový výběr **`+199 mld. Kč`**. Jenže když sečtete všechny řádky sloupce v jejich vlastní Tabulce T1.6.1 (`-16 + 30 + 27 + 133 + 51 + 20 + 7 - 6 - 20`), dostanete **`+226 mld. Kč`**! Chybí přesně **`27 mld. Kč`** ze sloučeného řádku *II.A Spotřební daně* (`-16 + 30 + 133 + 51 + 20 + 7 - 6 - 20 = 199` přesně na korunu!). Poznámka pod tabulkou o zaokrouhlování (`sumy nemusí sedět kvůli zaokrouhlování`) nemůže vysvětlit 27miliardový rozdíl v součtu 9 celých čísel.
+
+### 2.2 Schovávání metodických předpokladů do 6řádkových poznámek (Grafy 2, 3, G1.3.1.B)
+
+Hlavní mediální titulek celé studie stojí na tvrzení, že český daňový systém je **regresivní** — že 1. decil ekonomicky aktivních odvádí `46,3 %` příjmu, zatímco 10. decil jen `42,0 %` (Graf 2 str. 8, Graf *G1.3.1.B* str. 19). Z čeho se však tento šokující obraz ve skutečnosti vaří, je schováno v **6řádkové poznámce pod čarou drobným písmem pod Grafem 2 (str. 8) a Grafem G1.3.1.B (str. 19)** (a v šedém boxu na str. 43):
+
+> „Celkově zaplacené daně z práce, spotřeby a majetku, mínus nepojistné dávky, v poměru k příjmům z ekonomické činnosti (vč. odvodů zaměstnavatele a imputovaného nájemného). Zahrnuje část daní placených právnickými osobami, která odpovídá poměru celkového distribuovaného zisku domácnostem k celkovému zisku firem v Česku po zdanění. Pouze ekonomicky aktivní. Nebere v potaz počet osob v domácnosti daného jednotlivce. Průměr za jednotlivé decily. Vůči daňovému systému roku 2024 a v cenách roku 2024. Nedostatečně reflektuje skupiny podreprezentované v dotazníkových šetřeních (např. 0,1 % nejmajetnějších).“ (str. 8, str. 19)
+
+**Rozbor pěti klíčových metodických zásahů ukrytých v těchto šesti řádcích:**
+1. **Imputované nájemné v jmenovateli:** Do „příjmů z ekonomické činnosti“ započítávají fiktivní (nikdy neinkasované) *imputované nájemné* vlastníků nemovitostí, přičemž na str. 47 sami přiznávají, že v datech EU-SILC je „podhodnocené“. Přidání nezdaněného fiktivního příjmu bohatším vlastníkům snižuje jejich zdánlivou efektivní sazbu.
+2. **Dělení podle jednotlivců BEZ ohledu na domácnost a velmi nízký práh aktivity:**
+   - Poznámka přiznává *„Nebere v potaz počet osob v domácnosti daného jednotlivce“* a za ekonomicky aktivního model bere už člověka se `120 000 Kč` ročně včetně odvodů zaměstnavatele (`10 000 Kč` měsíčně, str. 211; průměr 1. decilu je jen `21 374 Kč` superhrubě, str. 214). Přestože spotřebu domácnosti model rozpočítává mezi plnoleté členy v poměru jejich čistých pracovních příjmů a důchodů (str. 211), v „1. decilu jednotlivců“ končí brigádníci, studenti, sezónní pracovníci či lidé žijící z dávek, úspor, transferů a neoficiálních (příp. kapitálových) příjmů, které nevstupují do individuálního výdělku, ale utrácejí se v obchodech — a k tomu se sčítá `−12 % až −22 %` podhodnocení pracovních příjmů v `EU-SILC` (str. 213).
+   - Výsledek v Grafu *G1.3.1.B* (str. 19): **1. decil má spotřební daně a DPH ve výši neuvěřitelných `18,7 %` svého celkového superhrubého příjmu** (v 10. decilu `7,8 %`). Kdyby totiž člověk s nízkým příjmem skutečně utratil 100 % čisté mzdy (~70 % superhrubého příjmu) při průměrné efektivní sazbě DPH+SD kolem 16–18 %, jeho spotřební daně by činily ~11–13 % superhrubého příjmu — číslo **`18,7 %`** je možné jen tehdy, když dotyčný **spotřebovává výrazně víc, než činí jeho vykazovaný příjem z práce**!
+   - Celá „regrese“ v 1. decilu je tedy z velké části **artefakt neekvivalizovaných nízkopříjmových jednotlivců a spotřeby převyšující vykazovaný příjem** (daně ze samotné práce v Grafu *G1.3.1.B* jsou naopak od 3. decilu výše progresivní oproti spodním dvěma decilům: `30,1 %` v 1. decilu a `29,9 %` ve 2. decilu oproti `32,0–34,0 %` ve 3.–10. decilu!).
+3. **Pouze aritmetický průměr (nikoli medián) a vyříznutí osy Y na 30 %:** V Grafu 2 (str. 8) a *G1.5.2.D* (str. 44) volí aritmetický průměr, protože jak sami píší v boxu na str. 43, uvádějí jej, *„abychom ukázali vliv extrémních hodnot některých jednotlivců ve skupině“* — a hned na str. 44 u mediánového grafu *G1.5.2.E* přiznávají: *„Identifikovaná regrese při využití mediánu je nižší.“* Osa Y u Grafu 2 (str. 8) i *G1.5.2.D/E* (str. 44) navíc začíná na **`30 %`**, čímž opticky nafukuje rozdíl pár procentních bodů.
+4. **Oříznutá DPPO (jen „distribuovaný zisk“):** Firemní daň (DPPO) zahrnují do daňové zátěže jen v podílu distribuovaných zisků — nerozdělené zisky českých firem (a jejich 21% zdanění) z daňové zátěže vlastníků mizí, přestože zdanění firem patří do vlastního 4. pilíře studie.
+5. **Vynechání 0,1 % nejbohatších + obskurní citace jiných metodik vedle sebe:** Pod Grafem *G1.3.1.B* (str. 19) varují, že data nezachycují 0,1 % nejbohatších — a hned pod něj umístí Graf *G1.3.1.C* (Blanchet a kol., 2022) pro porovnání s USA a západní Evropou, s drobnou poznámkou, že *„ve zdrojovém článku je použita jiná metodologie výpočtu, než používá PAQ Research“*.
+
+### 2.3 Poměr kolosu (+73 mld. Kč, 224 stran) vs. slibovaný dopad na HDP (`+0,4–0,7 %`)
+
+Ekonomická nepřiměřenost (poměr nákladů a rizik vs. přínosu) je v Kapitole 1 do očí bijící:
+- **Vstup (cena reformy):** Překopání všech 4 daňových pilířů na 224 stranách, +23 nových mechanismů v kap. 1 (vč. 3 nových daní, EET a cenových map; přes 30 napříč studií), čisté **zvýšení daní o +73 mld. Kč ročně** (z toho 85 % přímo na domácnosti, str. 50), inflační šok `+1,4 %` (str. 46), pokles spotřeby ekonomicky aktivních domácností o `-13 mld. Kč` (str. 51), novela superdávky (str. 46), reforma RUD (str. 50).
+- **Slíbený výstup (Tabulka T1.5.1.C, str. 40):** Celkový dopad na hladinu HDP v dlouhodobém horizontu (**rok 2035**, tedy za **10 let**) činí **`+0,44 až +0,71 %`** (ve Shrnutí zaokrouhleno na `+0,4–0,7 %`, str. 7).
+  - Rozpočítáno na desetiletý horizont (2025–2035) jde o **+0,04 až +0,07 procentního bodu ročního růstu HDP** — číslo menší než běžná statistická chyba ČSÚ a zcela zanedbatelné oproti tomu, jak Česko zaostalo za Polskem a Slovinskem o 7,2 p. b. za pět let (str. 5, 9)!
+  - **Proč je efekt tak titěrný?** Protože v jejich vlastním Grafu *G1.5.1.A* (str. 38) klesne celkové zdanění práce jako podíl na HDP z **`18,3 %` na `18,2 %`** (tedy o **jedinou desetinu procentního bodu** — úleva zaměstnancům `-43 mld.` je z větší části pohlcena zvýšením daní OSVČ `+25 mld.`)!
+  - **A sami modelářsky „vymažou“ jakékoli negativní efekty zvýšení daní o +113 mld. hrubého:** V Tabulce *T1.5.1.C* (str. 40) mají jak *Majetek* (`+45 mld.`), tak *Spotřeba* (`+68 mld.`) dopad na HDP označený jako **`- (zhruba neutrální)`** — jejich dopad do modelu **vůbec nezahrnují** (*„ve výpočtu je nezohledňujeme“*, str. 40)! Dokonce ani v krátkodobém horizontu nezaručují růst: *„v krátkodobém horizontu by byl efekt celkové reformy nejasný – mohl by být mírně negativní či mírně pozitivní“* (str. 40).
+  - **Korunní poznámka pod T1.5.1.C (str. 40):** Sami pod čarou přiznávají, že i ten titěrný výsledek `+0,44–0,71 %` může být z části **statistický přelud**: *„Odhad může z části zahrnovat efekt vyšších reportovaných příjmů při přechodech z šedé do legální ekonomiky, ne reálné navýšení ekonomického potenciálu.“* (str. 40).
+
+### 2.4 KLÍČOVÁ PITVA SEKCE 1.6 (*Alternativní reformy a limitace návrhu*, str. 52–56)
+
+Sekce 1.6 nese ambiciózní název *Alternativní reformy a limitace návrhu*. Čtenář by čekal poctivé srovnání s radikálně jednoduššími daňovými architekturami a vyčíslení administrativních nákladů (nákladů na splnění daňové povinnosti). Realita na str. 52–56 je devastující:
+
+1. **Co v sekci 1.6 (a v celé 224stránkové studii) ZCELA CHYBÍ:**
+   - **Hall–Rabushka Flat Tax / spotřebně-příjmová rovná daň na 2 pohlednice:** **`0` zmínek** v celé studii (`Rabushka`: 0×, `flat tax`: 0×; slovo `Hall` se v Kapitole 1 nevyskytuje vůbec).
+   - **Rovná daň:** V celých 224 stranách je zmíněna **jedinýkrát** — nikoli v sekci 1.6 o alternativních reformách, ale v **jednověté poznámce pod čarou č. 2 na str. 17**, kde je smetena ze stolu na základě klesajícího mezního užitku spotřeby (*„Na základě tohoto předpokladu by progresivní daňový systém vedl k vyššímu celkovému užitku ve srovnání s rovnou daňovou sazbou.“*) — bez zmínky, že rovná daň s vysokým nezdanitelným minimem `X` **je progresivní v průměrné sazbě**, a bez uznání, že meziosobní srovnávání užitku není empiricky měřitelný fakt, ale hodnotový soud.
+   - **Škrty výdajů státu / zmenšení přerozdělování:** **`0` výskytů slova „škrt“** v celé studii. Sekce 1.6.1 jako „alternativy“ nenabízí žádné jiné daňové filozofie, ale jen **dva jiné posuvníky téhož 25bodového komplikátorského stroje** (Fiskálně neutrální = 0 mld., Pro-rozpočtová = +199 / fakticky +226 mld.).
+   - **Teorie veřejné volby (Public Choice), lobbing, Lafferova křivka:** **`0` zmínek** v celé studii.
+
+2. **Co sekce 1.6.2 (*Limitace návrhu*, str. 54–56) ŘÍKÁ o administrativě, nákladech na splnění daňové povinnosti a transparentnosti — OTEVŘENÁ KAPITULACE:**
+   - **O administrativních nákladech (nákladech na splnění daňové povinnosti, str. 54–55):**
+     - Náklady na splnění daňové povinnosti na straně občanů a firem (čas, účetní, daňoví poradci, EET, právní rizika) **vůbec nevyčíslují** — v textu se objeví jediné závorkové slovní spojení *„(snížení nákladů na splnění daňové povinnosti)“* (str. 54).
+     - Jako důkaz, že výběr daní v Česku „není špatný“, citují jediné číslo z OECD (2024a): poměr provozních výdajů **samotné Finanční správy** k vybraným daním (`1,19 %`, str. 54). Tím naprosto ignorují soukromé náklady plátců na splnění daňové povinnosti, které jsou v literatuře řádově vyšší než rozpočet úřadu!
+     - A pak přichází klíčová věta celé studie (str. 55):
+       > „Tato implementační náročnost a nutnost vhledu do interního fungování finanční správy je důvodem, proč **zjednodušení daňové administrativy není jedním z našich hlavních cílů v této studii.**“
+     - Následující Tabulka *T1.6.2* (str. 55) pak černé na bílém ukazuje, že reforma administrativní náročnost **čistě zhoršuje** (**5× minus vs. 3× plus** pro stát; **3× minus vs. 1× plus** pro plátce!).
+   - **O transparentnosti daňového systému (str. 56):**
+     - Autoři výslovně přiznávají, že současný systém mate veřejnost (*„Nízká srozumitelnost daňového systému omezuje informovanost veřejnosti o skutečném rozsahu a struktuře zdanění, a tím tak snižuje tlak na efektivní a férovou tvorbu daňové politiky. Příkladem nedostatků je daňové zatížení zaměstnanců, které je částečně skryto ve vysokém pojistném placeném zaměstnavatelem.“*, str. 56).
+     - Jenže ihned nato tento problém odsunou se stejným argumentem jako u administrativy:
+       > „Jejich zavedení by znamenalo výraznou změnu konstrukce zdanění příjmů fyzických osob. I z toho důvodu **není zvýšení transparentnosti mezi hlavními cíli námi navrhované reformy.**“ (str. 56)
+   - **O čem dalším v 1.6.2 sní (směr další komplikace):** Místo úvah o zjednodušení věnují zbytek sekce 1.6.2 úvahám o **dani ze superbohatství** (0,1 % osob, str. 54), zmiňují **uhlíkové daně / ETS2** (str. 54), přesuny zisků nadnárodních firem (až 40 mld. Kč, str. 55–56) a **daň z finančních transakcí a digitální daň** (str. 56). Jejich jediný horizont „limitací“ tedy míří k tomu, *jaké další daně a modely ještě nestihli přidat*.
+
+---
+
+## 3. Vnitřní rozpory & slepá místa
+
+### 3.1 Ideové a ekonomické vnitřní rozpory
+
+1. **Vykostění vlastního teoretického vzoru — Mirrlees Review (str. 15 vs. str. 55–56):**
+   - Na str. 15 (pozn. 1) se autoři zaštiťují britskou *Mirrlees Review* (2011) — tedy prací vycházející z mainstreamové tradice „optimálního zdanění“, která sama technokratickým zásahům (pozemkovým, dědickým či Pigouovým daním) nijak nebrání. I tento jejich vlastní citovaný vzor však kladl mezi základní pilíře **minimalizaci administrativních nákladů**, **transparentnost**, neutralitu, **jednoduchost** a **stabilitu**.
+   - V rámci imanentní kritiky je o to výmluvnější, že vlastní 4 principy autorů (str. 15) právě jednoduchost, stabilitu a transparentnost tiše vynechají (a na str. 55–56 výslovně přiznají, že nejsou jejich cílem) — a místo nich si dopíší 4. princip **„Adekvátnost výběru“** (= vybrat víc peněz pro stát).
+
+2. **„Snižujeme zdanění práce a zvyšujeme růst“ vs. skutečná čísla v Grafu G1.5.1.A (str. 38) a daňová kvóta (str. 14, 23):**
+   - Celá kapitola opakuje mantru o „přesunu ze zdanění práce k méně škodlivým daním“. Ve vlastním Grafu *G1.5.1.A* (str. 38) však zdanění práce klesá jen z **`18,3 %` na `18,2 %` HDP** (o pouhých **`−0,1 p. b.`**!), zatímco zdanění spotřeby vyskočí z `10,3 %` na `11,2 %` (`+0,9 p. b.`) a majetku z `1,3 %` na `1,8 %` (`+0,5 p. b.`).
+   - Současně argumentují, že česká daňová kvóta byla v roce 2023 o `1,7 % HDP` nižší než v „podobných zemích“ (`33,7 %` vs. průměr `35,4 %`, str. 23). Sami ale o pár řádků níž (str. 14 a 23) přiznávají, že konsolidační balíček už v letech 2024–2025 zvedl českou kvótu o **cca `+1 p. b.`** (na ~`34,7 %`, tedy *nad* Maďarsko `34,2 %` a na dohled Polska `35,1 %`). Přidáním navrhované reformy (`+1 % HDP`) by Česko vyskočilo k **~`35,7 %` HDP** — tedy **nad Polsko (`35,1 %`), Maďarsko (`34,2 %`) i Slovensko (`35,5 %`)** (Graf *G1.3.1.D*, str. 23)!
+
+3. **„Odstraňujeme regresi“ vs. vlastní grafy G2 (str. 8) a G1.5.2.D/E (str. 44):**
+   - Text tvrdí, že návrh *„odstranil regresi“* (str. 44) a že by reforma *„narovnala regresi“* (str. 43). Přitom na jejich vlastních grafech *G2* (str. 8) a *G1.5.2.D* (str. 44) tmavomodrá křivka reformy **stále klesá z 8. decilu (~`48 %`) přes 9. decil (~`47 %`) na 10. decil (`45,4 %`)** — horní desetina tedy i po 224stránkové reformě platí **nižší průměrnou sazbu než 4., 5., 6., 7., 8. i 9. decil**! Reforma tak selhává dokonce i podle vlastních deklarovaných měřítek autorů (z pohledu jednoduchého systému se přitom nadměrná zátěž spodních decilů neřeší zvedáním horních sazeb, ale plošným snížením odvodů a vysokým nezdanitelným minimem).
+   - A v Grafu 3 (str. 8) skupině 1,98 milionu pracujících s celkovým zdaněním nad 45 % klesne sazba z `52,5 %` na **`52,4 %`** — změna o jednu desetinu procentního bodu!
+
+4. **„Pomáháme nízkopříjmovým“ vs. tvrdý dopad na chudé OSVČ a nekompenzované důchodce:**
+   - V poznámce pod čarou č. 2 na str. 41 tiše přiznávají: *„Reforma by se tak vyplatila jen **30,3 % OSVČ s příjmy pod medián**, oproti 65,8 % zaměstnanců s příjmy pod medián.“* Téměř **70 % nízkopříjmových OSVČ** tedy z „pro-nízkopříjmové“ reformy neprofituje (nebo tratí)!
+   - Mediánové ekonomicky neaktivní domácnosti (důchodci, pečující) zvedne reforma souhrn daní ze spotřeby a nemovitostí o **`+4 371 Kč` ročně před kompenzacemi** (Graf *G1.5.2.B*, str. 42; text str. 46). Automatická valorizace důchodů (`7,4 mld. Kč`) podle jejich vlastního výpočtu pokryje jen **`54 %`** celkového dopadu na ekonomicky neaktivní (str. 46) — zbylých **`46 %`** nechávají na imaginární „opravě“ nové superdávky.
+
+5. **Bipolární porucha státu, lobbing a selektivní i zastaralá citace Estonska (str. 58):**
+   - Na str. 20 (Tabulka *T1.3.1.D*) autoři kritizují chaotické daňové změny posledních let (zrušení superhrubé mzdy, změny paušální daně, zvyšování minim OSVČ, úsporný balíček). Přesto navrhují systém s maximálním počtem lobbistických bodů útoku: **znovuzavedení EET** (už jednou zavedeno, pozastaveno a zrušeno), **sektorové výjimky** (paušální daň jen pro řemeslníky/obchod/pohostinství; úlevy pro malé pivovary/vinaře), **dvě sazby DPH s ručně tříděnými „zbytnými“ položkami** (hotely, restaurace, kultura — okamžitý terč lobbistů!) a **desítky parametrů**, z nichž každý může příští vláda rozbít.
+   - Na str. 58 dávají za vzor konsenzuální **estonskou daňovou reformu 2025** — ale zamlčují, že estonský systém je pravý opak návrhu studie: je radikálně jednoduchý (jedna rovná sazba DPFO a **0% daň na reinvestované zisky firem**, tj. zdanění jen rozdělených zisků), takže Estonsku k reakci na výdaje na obranu stačilo pohnout základními sazbami (DPH 22→24 %, DPFO i daň z rozděleného zisku 20→22 % — plánovaný růst na 24 % nakonec zrušilo) a zvednout nezdanitelný základ na 700 EUR — přesně v duchu odolnosti vůči „bipolární poruše státu“ z článku [Daňová reforma podle Dekonstrukce státu](/danova-reforma).
+   - Navíc je rámeček na str. 58 **fakticky zastaralý**: uvádí *„zavedení 2% obranné daně na příjmy“*, ačkoliv estonský parlament navrhovanou 2% obrannou daň z firemních zisků už v **červnu 2025** (tři měsíce před vydáním studie!) zrušil ještě před spuštěním právě proto, aby nezničil nulové zdanění reinvestovaných zisků!
+
+6. **Stát jako dokonalý investor bez mrtvé ztráty:**
+   - Na str. 40 píší, že *„další pozitivní efekt, který výpočet nezahrnuje, by mohl být ekonomický růst v důsledku vyšších veřejných investic do vzdělávání a infrastruktury, které by reforma mohla financovat“* a v pozn. 1 dokonce dodávají, že *„efekt na spotřebu by mohl být celkově dokonce pozitivní, pokud by stát dodatečné příjmy promítnul ve vyšších výdajích“*.
+   - Zcela však vynechávají zrcadlový efekt: **alternativní náklady 73 mld. Kč sebraných soukromému sektoru** a neefektivitu veřejných výdajů (kterou sami na str. 10 pozn. 4 u školství a vědy a na str. 22 u 83 mld. dotací připouštějí!).
+
+### 3.2 Tvrdé datové, početní a redakční chyby přímo uvnitř Kapitoly 1
+
+Při forenzní kontrole textu a PDF tabulek v Kapitole 1 byly odhaleny následující prokazatelné chyby:
+
+| # | Místo v textu | Co je v publikované studii | Ověřená chyba / rozpor |
+|---|---|---|---|
+| **1** | **Str. 18** vs. **str. 7 a 19** | Text str. 18: 1. decil odvádí **`42,5 %`** (dávky **`3,2 %`**), 10. decil **`40,2 %`** (*„graf B“*). | Hned na **str. 19** (*G1.3.1.B*) a ve *Shrnutí* (**str. 7**) je 1. decil **`46,3 %`** (dávky **`3,6 %`**) a 10. decil **`42,0 %`**! Autoři přepočítali model (+3,8 p. b. u 1. decilu!), opravili grafy a Shrnutí, ale zapomněli přepsat hlavní odstavec na str. 18. |
+| **2** | **Str. 53** (*T1.6.1*) a **str. 52** | Pro-rozpočtová varianta: celková změna výběru **`+199 mld. Kč`**. | Součet položek sloupce v *T1.6.1* je `-16 + 30 + 27 + 133 + 51 + 20 + 7 - 6 - 20 =` **`+226 mld. Kč`**. Přesně **`199`** vyjde, když vynecháte sloučený řádek `II.A` (**`+27 mld.`** spotřebních daní)! |
+| **3** | **Str. 46**, pozn. 1 | *„Státní rozpočet počítal na rok 2024 s důchody 706 mld. Kč (dle MF); **1,2 % z nich tak je 7,4 mld.**“* | Elementární chyba v procentech: `1,2 %` ze `706 mld.` je **`8,47 mld. Kč`**, nikoli `7,4 mld.` (`7,4 mld.` je 1,05 %). Rozdíl přes 1 mld. Kč. |
+| **4** | **Str. 4, 7, 50, 53** | Zaměstnanci: **`−42 mld.`** (str. 4 pozn. 2) vs. **`−43 mld.`** (G1 str. 7, T1.6.1 str. 53). OSVČ: **`+25 mld.`** (G1 str. 7, G1.5.4.A str. 50) vs. **`+24 mld.`** (T1.6.1 str. 53). | Nekonzistentní čísla pro stejnou hlavní variantu mezi grafy, poznámkami a souhrnnou tabulkou (v *T1.6.1* dávají řádky Vyvážené varianty součet `+72 mld.` místo uvedených `+73 mld.`). |
+| **5** | **Str. 5** vs. **str. 23** | Str. 5: daňový výběr 2023 *„o cca **1 % HDP** nižší než v podobných státech“*. Str. 23: *„o **1,7 % HDP** menší než průměr podobných zemí“*. | Rozpor 0,7 % HDP (~60 mld. Kč) pro stejný rok 2023 (skutečný rozdíl dle G1.3.1.D na str. 23 je `35,425 − 33,7 = 1,725 %`). |
+| **6** | **Str. 22** | *„Další zlepšení (například na **8,8 % DPH**, což je úroveň Německa)“* | Záměna **DPH** za **HDP** (jde o rozsah šedé ekonomiky v % HDP z věty předtím: 13,5 % HDP vs. 17,3 % EU). |
+| **7** | **Obálka, str. 7, 18, 26, 39, 40, 53, 59** | Rozbité odkazy a redakční přešlapy: obálka **`IDEA při GERGE-EI`** (místo CERGE-EI); str. 7 odkazuje na HDP metodiku v **`příloze 6.3.`** (je v **6.2**, 6.3 jsou časové testy); str. 18 pozn. 2 odkazuje na neexistující **`příloze 3`** a **`kapitole 6`**; str. 53 odkazuje na **`příloha 1`**; mediánová mzda za Q1 2025 dle ČSÚ je na str. 26 **`38 335 Kč`**, na str. 39 **`38 385 Kč`**; klíčový zdroj je citován jako `Akgun` (str. 5, 16, 40) i `Agkun` (str. 40 pozn. 2, seznam zdrojů str. 59). | Ukazuje na narychlo splácanou finalizaci 224stránkového dokumentu, v níž se ztratila vnitřní konzistence mezi verzemi modelů. |
+
+---
+
+## 4. Férový účet: Kde mají autoři pravdu
+
+Aby byla kritika studie PAQ Research, CVF a IDEA neprůstřelná a intelektuálně poctivá, je nutné v Kapitole 1 jasně ocenit body, kde mají autoři ekonomicky pravdu nebo projevují metodickou otevřenost:
+
+1. **Správný pohled na pojistné jako na daň (str. 14):** Autoři správně a přímo nazývají sociální a zdravotní pojistné daní (*„jedná se o povinnou platbu státu, za kterou poplatník, striktně vzato, nedostává přímou protihodnotu“*, str. 14) a hodnotí zdanění práce jako celek včetně odvodů zaměstnavatele — přesně v souladu s realitou.
+2. **Přesná diagnóza drcení nízkopříjmových zaměstnanců a dávkového kolotoče (str. 18, 26–27):** Zjištění, že zaměstnanec s minimální mzdou odvede ~120 tis. Kč ročně (36 % nákladu práce), že přechod z DPP na HPP má mezní sazbu až **52 %** (str. 26) a že dolní pětina pracujících domácností státu odvede **69 mld. Kč**, zatímco na nepojistných dávkách dostane zpět jen **5 mld. Kč** s dodatečnou administrativní režií (str. 18), je silný a platný argument proti současnému českému systému.
+3. **Ekonomicky správný princip okamžitých firemních odpisů (str. 33, 37, 39, 191):** Samotný princip 100% okamžitého odpisu investic v roce nákupu je nejzdravější myšlenkou celé studie a potkává se s druhou pohlednicí Hall–Rabushky — v Kapitole 5 (str. 191–193) jej však autoři překomplikovaným britským provedením (jen 1.–3. skupina bez spalovacích aut, jen PO bez OSVČ, s ponechaným odpočtem úroků z dluhu a zvýšením DPPO na 22 %) výrazně deformují. Správná je i jejich kritika nekoncepčních mimořádných odpisů jen pro bezemisní vozidla (str. 33 — o to paradoxnější je, že na str. 191 výjimku proti spalovacím vozidlům tiše ponechávají).
+4. **Oprávněná kritika vybraných deformací (str. 22, 28, 34, 56):** Z pohledu zjednodušení dává smysl zrušení selektivního odpočtu hypotečních úroků (při nepružné nabídce se promítá do vyšších cen bydlení, str. 28) i odstranění ostrého zlomu 68 tis. Kč u slevy na manželku (participační daňová sazba až 57 %, str. 28 pozn. 1) — ovšem **pouze výměnou za plošně nižší sazby či vyšší (a v rodinách s dětmi jednoduše přenositelné) nezdanitelné minimum `X`**, nikoli jako skryté zvýšení daní v +73mld. balíku nebo trest pro rodiny s jedním živitelem. Smysluplný je i požadavek na audit 83 mld. Kč národních dotací (str. 22), zdravá skepse vůči sektorové digitální dani a obava z dopadu daně z finančních transakcí na český kapitálový trh (str. 56).
+5. **Poctivé přiznání metodických omezení (str. 40, 47, 54–56):** Na rozdíl od řady politických pamfletů autoři v poznámkách a sekcích 1.5.2 a 1.6.2 skutečně vypisují slabiny vlastního návrhu: otevřeně uznávají přesun reálné daňové incidence v čase (str. 47 — snížení DPFO částečně přejde do nižších hrubých mezd!), absenci behaviorálních reakcí, možnost vyššího zatajování tržeb OSVČ (str. 47, 51), statistický přelud šedé ekonomiky v HDP (str. 40) i fakt, že jednoduchost a transparentnost vůbec neřeší (str. 55–56). Jejich poctivost v poznámkách pod čarou je však v ostrém rozporu s marketingovým tónem hlavního textu a grafů.
+
+---
+
+## 5. Klíčové doslovné citace (8 ověřených výroků s tištěnými stranami)
+
+### Citace 1 — Otevřená kapitulace před jednoduchostí (str. 55)
+> „Tato implementační náročnost a nutnost vhledu do interního fungování finanční správy je důvodem, proč zjednodušení daňové administrativy není jedním z našich hlavních cílů v této studii.“
+
+- **Komentář:** Hned pod touto větou následuje Tabulka T1.6.2, kde reforma sama sobě napočítá čisté zhoršení administrativy 5:3 pro stát a 3:1 pro plátce.
+
+### Citace 2 — Otevřená kapitulace před transparentností daní (str. 56)
+> „Nízká srozumitelnost daňového systému omezuje informovanost veřejnosti o skutečném rozsahu a struktuře zdanění, a tím tak snižuje tlak na efektivní a férovou tvorbu daňové politiky. Příkladem nedostatků je daňové zatížení zaměstnanců, které je částečně skryto ve vysokém pojistném placeném zaměstnavatelem. [...] Jejich zavedení by znamenalo výraznou změnu konstrukce zdanění příjmů fyzických osob. I z toho důvodu není zvýšení transparentnosti mezi hlavními cíli námi navrhované reformy.“
+
+- **Komentář:** Přímé potvrzení teze *Dekonstrukce státu*, že komplikátoři nechávají skutečnou cenovku státu schovanou před občany.
+
+### Citace 3 — Zbytečný kolotoč státu: vlastní citace proti státu jako přerozdělovači (str. 18)
+> „...dolní pětina pracujících domácností odvedla v roce 2024 na daních a pojistném cca 69 miliard Kč, zatímco na dávkách státní sociální podpory a hmotné nouze jim je vyplaceno cca 5 miliard korun ročně (Vilím, 2024). To s sebou nese dodatečné náklady na daňovou a dávkovou administraci.“
+
+- **Komentář:** Perfektní argument pro vysoké nezdanitelné minimum `X` na jedné pohlednici — a zároveň usvědčení, proč je absurdní navrhovat v téže studii nové záplaty v dávkách a důchodech.
+
+### Citace 4 — Záplata na vlastní záplatu: inflační šok + oprava čerstvé „superdávky“ (str. 46)
+> „Od celkových fiskálních dopadů odečítáme 7,4 mld. Kč (54 % z celkového dopadu na ekonomicky neaktivní), které korespondují k dodatečné automatické valorizaci důchodů, pokud by se námi navrhované zvýšení daní ze spotřeby plně propsalo do cen. [...] Pro další kompenzaci zranitelným domácnostem by bylo nutné opravit nedostatky nové dávky státní sociální pomoci platné od října 2025 – například zvýšením normativů na bydlení v oblastech s dražším bydlením či rozšířením definice zranitelných.“
+
+- **Komentář:** Navrch v pozn. 1 na téže straně spočítali, že 1,2 % z důchodů 706 mld. Kč je 7,4 mld., ačkoli je to 8,47 mld. Kč!
+
+### Citace 5 — Přiznání, že i miniaturní růst HDP (+0,4–0,7 % za 10 let) může být jen statistický přelud (str. 40, pozn. pod T1.5.1.C)
+> „Odhad může z části zahrnovat efekt vyšších reportovaných příjmů při přechodech z šedé do legální ekonomiky, ne reálné navýšení ekonomického potenciálu.“
+
+- **Komentář:** A v hlavním textu o pár řádků výš dodávají: „v krátkodobém horizontu by byl efekt celkové reformy nejasný – mohl by být mírně negativní či mírně pozitivní“.
+
+### Citace 6 — Přiznání dlouhodobé incidence: jak snížení DPFO ve skutečnosti brzdí růst hrubých mezd (str. 47, text i pozn. 2)
+> „Například ze snížení DPFO v krátkodobém horizontu benefitují zaměstnanci ve vyšší čisté mzdě. To však umožňuje zaměstnavatelům v budoucnu nabídnout relativně nižší hrubé mzdy, než by jinak museli. V dlouhodobém horizontu se tak snížení DPFO rozdělí mezi zaměstnance a zaměstnavatele.“ *(pozn. 2: „Dlouhodobým dopadem naší reformy by tak mohla být nižší úroveň hrubých mezd.“)*
+
+- **Komentář:** Přesto veškeré efektní distribuční grafy v celé studii počítají se 100% incidencí DPFO na zaměstnance.
+
+### Citace 7 — „Pro-nízkopříjmová“ reforma, která se nevyplatí téměř 70 % chudých OSVČ (str. 41, pozn. 2)
+> „Reforma by se tak vyplatila jen 30,3 % OSVČ s příjmy pod medián, oproti 65,8 % zaměstnanců s příjmy pod medián.“
+
+- **Komentář:** Schováno v poznámce pod čarou pod titulkem „Reforma by snížila daňovou zátěž nízkopříjmovým“.
+
+### Citace 8 — Rovná daň vyřízená jednou větou v poznámce pod čarou (str. 17, pozn. 2)
+> „Tento princip se opírá o předpoklad klesajícího mezního užitku spotřeby – jak jednotlivec spotřebovává více jednotek statku či služby, přináší mu každá další jednotka menší dodatečné uspokojení (užitek). Na základě tohoto předpokladu by progresivní daňový systém vedl k vyššímu celkovému užitku ve srovnání s rovnou daňovou sazbou.“
+
+- **Komentář:** V celé 224stránkové studii jde o jedinou zmínku rovné daně — bez jediného slova o Hall–Rabushkově rovné dani s nezdanitelným minimem, která přitom progresivní průměrnou sazbu vytváří pomocí dvou jediných parametrů `X` a `Y %`.
