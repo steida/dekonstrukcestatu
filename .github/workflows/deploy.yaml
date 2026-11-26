@@ -1,0 +1,99 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+# Keeps at most one run pending: a newly queued run cancels the pending one.
+# The Deploy step skips any commit that main no longer points to.
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  # Runs the site's dependencies without any secret.
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+        with:
+          cache: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm build
+
+      - run: pnpm typecheck
+
+      - run: pnpm verify
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: site
+          path: out
+          if-no-files-found: error
+          retention-days: 1
+
+  # The job holding the Cloudflare token runs no code from the site's
+  # dependencies: its sparse checkout adds only deploy/ to the root files, and
+  # it installs Wrangler from deploy/package-lock.json, which pins every
+  # package by integrity, without install scripts (deploy/.npmrc).
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    # The environment holds the Cloudflare token (a secret) and account ID
+    # (a variable), and only main can deploy to it.
+    environment: cloudflare
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: deploy
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Install Wrangler
+        working-directory: deploy
+        run: npm ci --no-audit --no-fund
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: site
+          path: out
+
+      # GitHub does not guarantee the order queued runs start in, so only the
+      # commit main points to deploys. The commit becomes the version's message
+      # in the Cloudflare dashboard, which lists versions to roll back to.
+      - name: Deploy
+        run: |
+          main=$(git ls-remote --exit-code origin refs/heads/main)
+          main=${main%%[[:space:]]*}
+          if [ "$main" != "$GITHUB_SHA" ]; then
+            echo "::notice::main is at $main, so its own run deploys."
+            exit 0
+          fi
+          deploy/node_modules/.bin/wrangler deploy --message "$GITHUB_SHA"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          WRANGLER_SEND_METRICS: false

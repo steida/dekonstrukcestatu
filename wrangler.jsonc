@@ -1,6 +1,6 @@
 // Serves the static export in out/ as an assets-only Worker: Cloudflare
-// serves the files and runs no Worker code. Workers Builds builds and deploys
-// it on every push to main.
+// serves the files and runs no Worker code. .github/workflows/deploy.yaml
+// builds and deploys it on every push to main.
 // https://developers.cloudflare.com/workers/static-assets/
 {
   "name": "dekonstrukcestatu",
