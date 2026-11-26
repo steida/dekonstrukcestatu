@@ -8,7 +8,7 @@ import {
   PITVA_PAQ_ESSAY,
   PITVA_PAQ_MAIN,
 } from "@/lib/documents";
-import { renderMarkdownFile } from "@/lib/markdown";
+import { getMarkdownReadingMinutes, renderMarkdownFile } from "@/lib/markdown";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -31,6 +31,10 @@ export default async function PitvaPaqAuditPage() {
       },
     },
   );
+  const essayReadingMinutes = getMarkdownReadingMinutes(
+    PITVA_PAQ_ESSAY.filePath,
+    { linkifyXHandles: true },
+  );
   const { prev, next } = getPrevNext(PITVA_PAQ_ALL, PITVA_PAQ_MAIN.url);
 
   const quickJumpBox = (
@@ -40,7 +44,7 @@ export default async function PitvaPaqAuditPage() {
     >
       <p>
         <strong className="font-semibold text-[var(--ink)]">
-          Hledáte čtivý přehled (cca 18 min)?
+          Hledáte čtivý přehled (cca {essayReadingMinutes} min)?
         </strong>{" "}
         <Link
           href="/blog/zjednodusovaci-a-komplikatori"

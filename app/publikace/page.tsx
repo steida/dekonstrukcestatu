@@ -179,9 +179,8 @@ export default function PublikacePage() {
             </div>
             <p className="mt-1 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
               Konkrétní právní a rozpočtová roadmapa: jednotná 15% DPH (s
-              hotovostním režimem do 50 mil. Kč po konzultaci v EU), spotřební
-              daně na unijním minimu, přechodová pravidla a pojistky proti
-              lobbistům.
+              dobrovolným hotovostním režimem do 50 mil. Kč), spotřební daně na
+              unijním minimu, přechodová pravidla a pojistky proti lobbistům.
             </p>
           </li>
 

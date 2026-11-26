@@ -8,7 +8,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 const PAGE_URL = "/danova-reforma/implementace-eu";
 const PAGE_TITLE = "Daňová reforma: Realistická implementace pro Česko v rámci EU";
 const PAGE_DESC =
-  "Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní a pojistky.";
+  "Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní (a 0 % u energií domácností) a pojistky.";
 
 export const metadata: Metadata = buildPageMetadata({
   path: PAGE_URL,
@@ -27,11 +27,15 @@ const ROADMAP_ITEMS = [
     body: (
       <>
         Minimum povolené směrnicí EU (jediná sazba bez snížených a nulových
-        sazeb — zůstanou jen povinná unijní osvobození: bez nároku na odpočet
-        dle čl. 132 a 135 a s nárokem na odpočet u vývozu a dodání do jiného
-        členského státu dle čl. 146 a 138) a
-        zavedení v ČR dosud nevyužitého dobrovolného hotovostního režimu do
-        50 mil. Kč (po konzultaci s Výborem pro DPH EU; viz{" "}
+        sazeb — zůstanou jen povinná unijní osvobození, zejména bez nároku na
+        odpočet dle čl. 132, 135 a 136 a s nárokem na odpočet u vývozu, dodání
+        do jiného členského státu a mezinárodní dopravy dle čl. 146, 138 a 148,
+        dále např. osvobození dovozu a diplomatická osvobození dle čl. 143 a
+        151; osvobození malých podniků podle čl. 284 zůstává se stropem až
+        85 000 EUR) a zavedení v ČR dosud nevyužitého dobrovolného hotovostního
+        režimu (čl. 66 písm. b) směrnice) s odkladem odpočtu podle čl. 167a do
+        obratu 2 mil. EUR (~50 mil. Kč; od 1. 1. 2025 bez konzultace s Výborem
+        pro DPH podle směrnice 2020/285; viz{" "}
         <Link
           href="/danova-reforma/doplneni#6"
           className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
@@ -54,9 +58,14 @@ const ROADMAP_ITEMS = [
     title: "Spotřební daně na unijní minimum (a 0 % tam, kde to EU dovoluje)",
     body: (
       <>
-        Stažení paliv, energií, tabáku, piva a lihovin na povinné unijní
-        minimum; nulová sazba u vína (minimum EU 0 EUR/hl) i neharmonizovaných
-        slazených nápojů; žádné nové „daně z hříchu“ (viz{" "}
+        Stažení pohonných hmot, paliv a elektřiny mimo osvobozenou spotřebu
+        domácností, tabáku, piva a lihovin na povinné unijní minimum; nulová
+        sazba u vína (minimum EU 0 EUR/hl), u neharmonizovaných slazených nápojů
+        a u elektřiny, zemního plynu, uhlí a pevných paliv pro domácnosti
+        (čl. 15 odst. 1 písm. h) směrnice 2003/96/ES; u malých nezávislých
+        pivovarů dovoluje čl. 4 směrnice 92/83/EHS sazbu až o 50 % pod
+        standardní národní sazbou i pod minimem); žádné nové „daně z hříchu“
+        (viz{" "}
         <Link
           href="/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla"
           className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
@@ -107,7 +116,7 @@ const ROADMAP_ITEMS = [
       <>
         Smlouvy o zamezení dvojího zdanění (SZDZ), směrnice o mateřských a
         dceřiných společnostech (PSD), směrnice ATAD, globální minimální daň
-        (Pilíř 2) a zápočet daně v USA (IRS § 901; viz{" "}
+        (Pilíř 2) a zápočet daně v USA (IRC § 901, tj. 26 U.S.C. § 901; viz{" "}
         <Link
           href="/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla"
           className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"

@@ -110,7 +110,7 @@ Plný textový přehled: ${SITE_URL}/llms-full.txt
 
 ## Daňová reforma podle Dekonstrukce státu
 
-- [Daňová reforma podle Dekonstrukce státu](${SITE_URL}/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), model Hall–Rabushka Flat Tax a ankap okénko.
+- [Daňová reforma podle Dekonstrukce státu](${SITE_URL}/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), systém podle modelu Hall–Rabushka Flat Tax a ankap okénko.
 - [Doplnění #1–#9 k článku Daňová reforma](${SITE_URL}/danova-reforma/doplneni): Průběžný archiv zpřesnění a odpovědí na námitky z diskuse (ztráty z odpisů, OSVČ, dvě pohlednice, dividendy, 15% DPH v EU, pojišťovny, kapitálové výnosy a rodiny s dětmi).
 - [Výzkum Hall–Rabushka (studie 01–05)](${SITE_URL}/danova-reforma/vyzkum): Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax.
   - [01 — Přesná mechanika, okrajové případy a moderní varianty](${SITE_URL}/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady)
@@ -118,7 +118,7 @@ Plný textový přehled: ${SITE_URL}/llms-full.txt
   - [03 — Česko, EU a makroekonomické propočty (2024–2026)](${SITE_URL}/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla)
   - [04 — Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek](${SITE_URL}/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty)
   - [05 — DPH, mezinárodní obchod a 5 „hacků“ na DPH](${SITE_URL}/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky)
-- [Daňová reforma: Realistická implementace pro Česko v rámci EU (rozpracovaný návrh)](${SITE_URL}/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (jednotná 15% DPH s hotovostním režimem do 50 mil. Kč, minimální spotřební daně, přechodová pravidla, soulad s právem EU/SZDZ a pojistky proti lobbistům).
+- [Daňová reforma: Realistická implementace pro Česko v rámci EU (rozpracovaný návrh)](${SITE_URL}/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (jednotná 15% DPH s dobrovolným hotovostním režimem do 2 mil. EUR / ~50 mil. Kč, minimální spotřební daně a 0 % u energií domácností, přechodová pravidla, soulad s právem EU/SZDZ a pojistky proti lobbistům).
 `;
 
 fs.writeFileSync(path.join(WEB_ROOT, "public/llms.txt"), LLMS_TXT, "utf8");
@@ -214,7 +214,7 @@ const RSS_ITEMS = [
     url: `${SITE_URL}/blog/fact-check-danovy-raj-evropy`,
     pubDate: "Wed, 25 Nov 2026 16:00:00 +0100",
     description:
-      "Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé; 82,3 % rozdílu uváděného PAQ přitom tvoří jen opakované daně ze samotné držby, převodu a dědění majetku.",
+      "Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé; 82,1 % rozdílu uváděného PAQ přitom tvoří složka Stock of capital (hlavně nižší daně z držby majetku domácností i firem a absence daní z převodu a dědění, 0,44 vs. 2,07 % HDP).",
   },
   {
     title: "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní",
@@ -236,7 +236,7 @@ const RSS_ITEMS = [
     url: `${SITE_URL}/danova-reforma/implementace-eu`,
     pubDate: "Wed, 25 Nov 2026 11:00:00 +0100",
     description:
-      "Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní a pojistky.",
+      "Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní (a 0 % u energií domácností) a pojistky.",
   },
   {
     title: "Doplnění #1–#9 k článku Daňová reforma podle Dekonstrukce státu",
@@ -250,7 +250,7 @@ const RSS_ITEMS = [
     url: `${SITE_URL}/danova-reforma`,
     pubDate: "Tue, 24 Nov 2026 14:00:00 +0100",
     description:
-      "Dvě pohlednice, dva parametry (X a Y %). Jak by vypadal nejméně škodlivý daňový systém odolný vůči bipolární poruše státu — model Hall–Rabushka Flat Tax.",
+      "Dvě pohlednice, dva parametry (X a Y %). Jak by vypadal nejméně škodlivý daňový systém odolný vůči bipolární poruše státu — podle modelu Hall–Rabushka Flat Tax.",
   },
   {
     title: "Hloubkový výzkum Hall–Rabushka Flat Tax (studie 01–05)",

@@ -39,7 +39,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   },
   {
     outlet: "CryptoByte 2025",
-    date: "5. 6. 2025",
+    date: "zveřejněno 5. 6. 2025",
     title: "Daniel Steigerwald – Dekonstrukce státu",
     href: "https://www.youtube.com/watch?v=3HoOah2oke0",
     note: "Konferenční přednáška o složitosti státu a o tom, jak jej postupně dekonstruovat.",
@@ -53,21 +53,21 @@ const CURATED_MEDIA: MediaEntry[] = [
   },
   {
     outlet: "ChainCamp 2024",
-    date: "24. 10. 2024",
+    date: "zveřejněno 24. 10. 2024",
     title: "Emigrace je možnost, ale není to řešení",
     href: "https://www.youtube.com/watch?v=gpHkdjt66J0",
     note: "Proč útěk ze země neřeší příčinu složitosti státu.",
   },
   {
     outlet: "BTC Prague 2024 Keynote (EN)",
-    date: "21. 6. 2024",
+    date: "zveřejněno 21. 6. 2024",
     title: "Bitcoin: The End Game",
     href: "https://www.youtube.com/watch?v=PxHpruxr82Y",
     note: "Hlavní přednáška o zdravých penězích a motivacích států.",
   },
   {
     outlet: "BTC Prague 2023 (CZ)",
-    date: "26. 7. 2023",
+    date: "zveřejněno 26. 7. 2023",
     title: "Slabiny a rizika bitcoinu",
     href: "https://www.youtube.com/watch?v=45ympdflZjI",
     note: "Kritický pohled na limity a rizika Bitcoinu.",
@@ -81,7 +81,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   },
   {
     outlet: "ChainCamp 2020",
-    date: "28. 9. 2020",
+    date: "zveřejněno 28. 9. 2020",
     title: "Dekonstrukce státu",
     href: "https://www.youtube.com/watch?v=jclUOz9h4rc",
     note: "Úvodní přednáška představující myšlenku dekonstrukce státu.",

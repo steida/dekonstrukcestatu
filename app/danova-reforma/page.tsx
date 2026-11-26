@@ -108,9 +108,9 @@ export default async function DanovaReformaPage() {
             A jak tohle provést v praxi uvnitř EU?
           </strong>{" "}
           Tento článek drží čisté první principy; praktický plán pro Česko
-          (jednotná 15% DPH s hotovostním režimem do 50 mil. Kč po konzultaci s
-          Výborem pro DPH EU, minimální spotřební daně, přechodová pravidla a
-          pojistky proti lobbistům) najdete v rozpracovaném návrhu{" "}
+          (jednotná 15% DPH s dobrovolným hotovostním režimem do 50 mil. Kč,
+          minimální spotřební daně, přechodová pravidla a pojistky proti
+          lobbistům) najdete v rozpracovaném návrhu{" "}
           <Link
             href="/danova-reforma/implementace-eu"
             className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"

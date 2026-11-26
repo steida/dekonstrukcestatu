@@ -384,10 +384,10 @@ function rehypeExternalLinks() {
   };
 }
 
-export async function renderMarkdownFile(
+function prepareMarkdown(
   relativeFilePath: string,
-  options: RenderOptions = {},
-): Promise<RenderedMarkdown> {
+  options: Pick<RenderOptions, "linkifyXHandles"> = {},
+): { prepared: string; wordCount: number; readingMinutes: number } {
   const absolutePath = path.join(process.cwd(), relativeFilePath);
   const raw = fs.readFileSync(absolutePath, "utf8");
 
@@ -406,6 +406,29 @@ export async function renderMarkdownFile(
     .trim()
     .split(/\s+/)
     .filter(Boolean).length;
+
+  return {
+    prepared,
+    wordCount: plainWords,
+    readingMinutes: Math.max(1, Math.round(plainWords / 210)),
+  };
+}
+
+export function getMarkdownReadingMinutes(
+  relativeFilePath: string,
+  options: Pick<RenderOptions, "linkifyXHandles"> = {},
+): number {
+  return prepareMarkdown(relativeFilePath, options).readingMinutes;
+}
+
+export async function renderMarkdownFile(
+  relativeFilePath: string,
+  options: RenderOptions = {},
+): Promise<RenderedMarkdown> {
+  const { prepared, wordCount, readingMinutes } = prepareMarkdown(
+    relativeFilePath,
+    options,
+  );
 
   const toc: TocItem[] = [];
 
@@ -435,7 +458,7 @@ export async function renderMarkdownFile(
   return {
     html: String(file),
     toc,
-    wordCount: plainWords,
-    readingMinutes: Math.max(1, Math.round(plainWords / 210)),
+    wordCount,
+    readingMinutes,
   };
 }

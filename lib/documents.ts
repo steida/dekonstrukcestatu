@@ -108,7 +108,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
       "Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ",
     seoTitle: "Audit Chytřejších daní · Kap. 1: Rámování",
     description:
-      "Audit úvodu a kapitoly 1 studie Chytřejší daně (str. 1–66): proč zjednodušení není cílem reformy, desítky nových mechanismů a tři mimodaňové záplaty.",
+      "Audit úvodu a kapitoly 1 studie Chytřejší daně (str. 1–66): proč zjednodušení administrativy ani transparentnost nejsou hlavními cíli reformy, desítky nových mechanismů a tři mimodaňové záplaty.",
     filePath: "content/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy.md",
     url: "/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy",
     date: "25. 11. 2026",
@@ -320,7 +320,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
       "Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH",
     seoTitle: "Hall–Rabushka 05: DPH, obchod a 5 hacků",
     description:
-      "Feldstein–Krugmanův klam (Amazon vs. Alza, Škoda Auto), japonská lekce a audit 5 „hacků“ na DPH: proč v EU legálně projde jen „vykuchaná“ 15% DPH s hotovostním režimem.",
+      "Feldstein–Krugmanův test (Amazon vs. Alza, Škoda Auto) a klam o „dvojí dani na export“, japonská lekce a audit 5 „hacků“ na DPH: proč v EU legálně projde jen „vykuchaná“ 15% DPH s hotovostním režimem.",
     filePath: "content/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky.md",
     url: "/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky",
     date: "24. 11. 2026",

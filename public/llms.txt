@@ -37,7 +37,7 @@ Plný textový přehled: https://www.dekonstrukcestatu.cz/llms-full.txt
 
 ## Daňová reforma podle Dekonstrukce státu
 
-- [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), model Hall–Rabushka Flat Tax a ankap okénko.
+- [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), systém podle modelu Hall–Rabushka Flat Tax a ankap okénko.
 - [Doplnění #1–#9 k článku Daňová reforma](https://www.dekonstrukcestatu.cz/danova-reforma/doplneni): Průběžný archiv zpřesnění a odpovědí na námitky z diskuse (ztráty z odpisů, OSVČ, dvě pohlednice, dividendy, 15% DPH v EU, pojišťovny, kapitálové výnosy a rodiny s dětmi).
 - [Výzkum Hall–Rabushka (studie 01–05)](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum): Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax.
   - [01 — Přesná mechanika, okrajové případy a moderní varianty](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady)
@@ -45,4 +45,4 @@ Plný textový přehled: https://www.dekonstrukcestatu.cz/llms-full.txt
   - [03 — Česko, EU a makroekonomické propočty (2024–2026)](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla)
   - [04 — Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty)
   - [05 — DPH, mezinárodní obchod a 5 „hacků“ na DPH](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky)
-- [Daňová reforma: Realistická implementace pro Česko v rámci EU (rozpracovaný návrh)](https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (jednotná 15% DPH s hotovostním režimem do 50 mil. Kč, minimální spotřební daně, přechodová pravidla, soulad s právem EU/SZDZ a pojistky proti lobbistům).
+- [Daňová reforma: Realistická implementace pro Česko v rámci EU (rozpracovaný návrh)](https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (jednotná 15% DPH s dobrovolným hotovostním režimem do 2 mil. EUR / ~50 mil. Kč, minimální spotřební daně a 0 % u energií domácností, přechodová pravidla, soulad s právem EU/SZDZ a pojistky proti lobbistům).

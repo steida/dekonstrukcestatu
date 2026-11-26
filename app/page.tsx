@@ -36,7 +36,7 @@ const TOP_MEDIA = [
   },
   {
     outlet: "CryptoByte 2025",
-    date: "5. 6. 2025",
+    date: "zveřejněno 5. 6. 2025",
     title: "Daniel Steigerwald – Dekonstrukce státu",
     href: "https://www.youtube.com/watch?v=3HoOah2oke0",
     note: "Přednáška o složitosti státu a o tom, jak jej postupně zjednodušovat.",
@@ -52,7 +52,7 @@ const TOP_MEDIA = [
   },
   {
     outlet: "ChainCamp 2024",
-    date: "24. 10. 2024",
+    date: "zveřejněno 24. 10. 2024",
     title: "Emigrace je možnost, ale není to řešení",
     href: "https://www.youtube.com/watch?v=gpHkdjt66J0",
     note: "Přednáška o tom, proč nestačí před složitým státem utéct.",
@@ -60,7 +60,7 @@ const TOP_MEDIA = [
   },
   {
     outlet: "BTC Prague 2024 Keynote (EN)",
-    date: "21. 6. 2024",
+    date: "zveřejněno 21. 6. 2024",
     title: "Bitcoin: The End Game",
     href: "https://www.youtube.com/watch?v=PxHpruxr82Y",
     note: "Zdravé peníze a motivace státu.",

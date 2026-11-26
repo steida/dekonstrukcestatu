@@ -10,7 +10,7 @@ export const TwoPostcards: FC = () => (
     <div className="mb-5 flex flex-wrap items-baseline justify-between gap-3">
       <div>
         <p className="font-mono text-xs font-semibold tracking-widest text-[var(--accent)] uppercase">
-          Model Hall–Rabushka · 2 formuláře, 2 parametry (X a Y %)
+          Podle modelu Hall–Rabushka · 2 formuláře, 2 parametry (X a Y %)
         </p>
         <h2 className="mt-1 text-xl font-bold tracking-tight text-[var(--ink)]">
           Celý daňový systém na dvě pohlednice
@@ -56,8 +56,8 @@ export const TwoPostcards: FC = () => (
                 <span className="mr-2 font-mono text-xs text-[var(--ink-faint)]">
                   2.
                 </span>
-                Odpočet nezdanitelného minima <strong>X</strong> (příp. navýšení{" "}
-                <strong>X</strong> za každé dítě, viz{" "}
+                Odpočet ročního nezdanitelného minima <strong>X</strong> (příp.
+                navýšení <strong>X</strong> za každé dítě, viz{" "}
                 <Link
                   href="/danova-reforma/doplneni#9"
                   className="underline decoration-[var(--border-strong)] underline-offset-2 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)] print:no-underline"
