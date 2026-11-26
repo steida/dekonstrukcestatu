@@ -94,9 +94,10 @@
 
 /* Editorial prose enhancements */
 .prose-ds {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
+.prose-ds a,
 .prose-ds code {
   overflow-wrap: anywhere;
 }
@@ -115,6 +116,13 @@
 
 .prose-ds .table-wrap table {
   min-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.prose-ds .table-wrap table a,
+.prose-ds .table-wrap table code {
+  overflow-wrap: break-word;
 }
 
 .prose-ds .table-wrap thead th {
