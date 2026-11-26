@@ -23,7 +23,7 @@ export const DANOVA_REFORMA_DOC: DocMeta = {
   seoTitle: "Daňová reforma podle Dekonstrukce státu",
   description:
     "Dvě pohlednice, dva parametry (X a Y %). Jak by vypadal nejméně škodlivý daňový systém odolný vůči bipolární poruše státu — pro státisty i anarchisty.",
-  filePath: "content/danova-reforma/clanek.md",
+  filePath: "content/danova-reforma/index.md",
   url: "/danova-reforma",
   date: "24. 11. 2026",
   isoDate: "2026-11-24",
@@ -54,7 +54,7 @@ export const SROVNANI_REFOREM_DOC: DocMeta = {
   seoTitle: "Srovnání: dvě pohlednice vs. Chytřejší daně",
   description:
     "Férové tříminutové srovnání dvou pohlednic a 224 stran Chytřejších daní (PAQ Research, CVF a IDEA): tabulka v 8 oblastech, shody i zásadní rozdíly.",
-  filePath: "content/blog/srovnani-reforem.md",
+  filePath: "content/blog/dekonstrukce-statu-vs-chytrejsi-dane.md",
   url: "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
@@ -71,7 +71,7 @@ export const PITVA_PAQ_ESSAY: DocMeta = {
   seoTitle: "Zjednodušovači, komplikátoři a Chytřejší daně",
   description:
     "Proč 224stránková studie PAQ Research, CVF a IDEA místo zjednodušení od základů lepí přes třicet záplat, kde se kapitoly perou a v čem mají autoři pravdu.",
-  filePath: "content/pitva-paq/clanek.md",
+  filePath: "content/blog/zjednodusovaci-a-komplikatori/index.md",
   url: "/blog/zjednodusovaci-a-komplikatori",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
@@ -89,7 +89,7 @@ export const PITVA_PAQ_MAIN: DocMeta = {
   seoTitle: "Pitva Chytřejších daní (PAQ, CVF, IDEA)",
   description:
     "Forenzní audit 224stránkové studie Chytřejší daně (PAQ, CVF, IDEA): tabulky, výpočty, katalog 12 chyb, 15 klíčových citací (46 v kapitolových auditech) a srovnání se dvěma pohlednicemi.",
-  filePath: "content/pitva-paq/00-komplikatori-hlavni-pitva.md",
+  filePath: "content/blog/zjednodusovaci-a-komplikatori/audit.md",
   url: "/blog/zjednodusovaci-a-komplikatori/audit",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
@@ -109,7 +109,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     seoTitle: "Audit Chytřejších daní · Kap. 1: Rámování",
     description:
       "Audit úvodu a kapitoly 1 studie Chytřejší daně (str. 1–66): proč zjednodušení není cílem reformy, desítky nových mechanismů a tři mimodaňové záplaty.",
-    filePath: "content/pitva-paq/01-ramovani-a-alternativy.md",
+    filePath: "content/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy.md",
     url: "/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
@@ -126,7 +126,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     seoTitle: "Audit Chytřejších daní · Kap. 2: Práce",
     description:
       "Audit kapitoly 2 (str. 67–97): parametrické záplaty místo sloučení odvodů, přifouknutá elasticita práce a klam nominální čisté mzdy.",
-    filePath: "content/pitva-paq/02-zdaneni-prace.md",
+    filePath: "content/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace.md",
     url: "/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
@@ -143,7 +143,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     seoTitle: "Audit Chytřejších daní · Kap. 3: Spotřeba",
     description:
       "Audit kapitoly 3 (str. 98–135): regresivní daně z hříchu, výchovné sociální inženýrství, EET a inflační šok přenesený na domácnosti.",
-    filePath: "content/pitva-paq/03-zdaneni-spotreby.md",
+    filePath: "content/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby.md",
     url: "/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
@@ -160,7 +160,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     seoTitle: "Audit Chytřejších daní · Kap. 4: Majetek",
     description:
       "Audit kapitoly 4 (str. 136–182): cenové mapy pozemků, nelikvidita vlastníků, 8 cenových skupin katastrálních území, dědická daň, daň z bohatství a exit tax.",
-    filePath: "content/pitva-paq/04-zdaneni-majetku.md",
+    filePath: "content/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku.md",
     url: "/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
@@ -177,7 +177,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     seoTitle: "Audit Chytřejších daní · Kap. 5: Firmy",
     description:
       "Audit kapitoly 5 (str. 183–202): dobrá obhajoba okamžitých odpisů zadušená byrokratickými výjimkami, stropy a etatistickým vybíráním vítězů.",
-    filePath: "content/pitva-paq/05-zdaneni-firem.md",
+    filePath: "content/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem.md",
     url: "/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
@@ -195,7 +195,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     seoTitle: "Audit Chytřejších daní · Kap. 6: Metodika",
     description:
       "Audit příloh (str. 203–222): černá skříňka Oxford Economics, arbitrární volby, časové testy a křížové ověření tvrdých čísel studie.",
-    filePath: "content/pitva-paq/06-metodika-a-obskurantismus.md",
+    filePath: "content/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus.md",
     url: "/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
@@ -214,7 +214,7 @@ export const PITVA_PAQ_DANOVY_RAJ: DocMeta = {
   seoTitle: "Fact-check: Daňový ráj Evropy (PAQ 2026)",
   description:
     "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026): s DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je ČR přesně na mediánu EU27 (5,62 % HDP); i bez dočasné daně z neočekávaných zisků (~5,17 %) je nad všemi sousedy.",
-  filePath: "content/pitva-paq/07-danovy-raj-evropy.md",
+  filePath: "content/blog/fact-check-danovy-raj-evropy.md",
   url: "/blog/fact-check-danovy-raj-evropy",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
@@ -231,7 +231,7 @@ export const PITVA_PAQ_IROZHLAS: DocMeta = {
   seoTitle: "Fact-check iROZHLASu: Daníme práci a majetek?",
   description:
     "48 záznamů Daniela Prokopa v ČRo za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).",
-  filePath: "content/pitva-paq/irozhlas-prokop.md",
+  filePath: "content/blog/danime-praci-ale-majetek-temer-vubec.md",
   url: "/blog/danime-praci-ale-majetek-temer-vubec",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
@@ -257,7 +257,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     seoTitle: "Hall–Rabushka 01: Mechanika a okrajové případy",
     description:
       "Design R. Halla a A. Rabushky (1981–2007), neutralita Caryho Browna, přenos ztrát s úročením, benefity, penze a srovnání s X-Tax, DBCFT a estonskou DPT.",
-    filePath: "content/vyzkum/05-hr-mechanika-a-okrajove-pripady.md",
+    filePath: "content/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady.md",
     url: "/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
@@ -273,7 +273,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     seoTitle: "Hall–Rabushka 02: Praxe ve světě a historie",
     description:
       "Slovensko 2004, Estonsko 1994–2026, Pobaltí, britské Full Expensing, Česko 2008 a empirická literatura o investicích a compliance nákladech.",
-    filePath: "content/vyzkum/06-hr-praxe-ve-svete-a-historie.md",
+    filePath: "content/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie.md",
     url: "/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
@@ -289,7 +289,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     seoTitle: "Hall–Rabushka 03: Česko, EU a makropropočty",
     description:
       "Makroekonomický propočet sazeb (X, Y %) pro 3bilionový český stát, 15% DPH, směrnice EU, OECD Pilíř 2, SZDZ, IRS Foreign Tax Credit a RUD.",
-    filePath: "content/vyzkum/07-hr-cesko-eu-a-makro-cisla.md",
+    filePath: "content/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla.md",
     url: "/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
@@ -305,7 +305,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     seoTitle: "Hall–Rabushka 04: Kritika a 15 námitek",
     description:
       "Nejsilnější odborné námitky z ekonomické literatury, fiskální praxe, daňového práva i rakouské školy — 5 hlavních min a 15 nejtvrdších otázek.",
-    filePath: "content/vyzkum/08-hr-kritika-a-protiargumenty.md",
+    filePath: "content/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty.md",
     url: "/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
@@ -321,7 +321,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     seoTitle: "Hall–Rabushka 05: DPH, obchod a 5 hacků",
     description:
       "Feldstein–Krugmanův klam (Amazon vs. Alza, Škoda Auto), japonská lekce a audit 5 „hacků“ na DPH: proč v EU legálně projde jen „vykuchaná“ 15% DPH s hotovostním režimem.",
-    filePath: "content/vyzkum/09-hr-dph-obchod-a-hacky.md",
+    filePath: "content/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky.md",
     url: "/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",

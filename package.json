@@ -5,10 +5,11 @@
   "packageManager": "pnpm@11.27.1",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-feeds.mjs",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "sync-content": "node scripts/sync-content.mjs",
+    "generate-feeds": "node scripts/generate-feeds.mjs",
     "verify": "node scripts/verify-export.mjs"
   },
   "dependencies": {

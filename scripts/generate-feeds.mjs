@@ -4,148 +4,9 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = path.resolve(__dirname, "..");
-const REPO_PARENT = path.resolve(WEB_ROOT, "..");
 const SITE_URL = "https://www.dekonstrukcestatu.cz";
 const PAQ_PUBLIC_PDF =
   "https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf";
-
-const NO_COPY = process.argv.includes("--no-copy");
-
-const CONTENT_FILES = [
-  {
-    src: "clanek-dane-x.md",
-    dest: "content/danova-reforma/clanek.md",
-    url: "/danova-reforma",
-    title: "Daňová reforma podle Dekonstrukce státu",
-  },
-  {
-    src: "clanek-dane-doplneni.md",
-    dest: "content/danova-reforma/doplneni.md",
-    url: "/danova-reforma/doplneni",
-    title: "Doplnění #1–#9 k článku Daňová reforma podle Dekonstrukce státu",
-  },
-  {
-    src: "clanek-srovnani-reforem.md",
-    dest: "content/blog/srovnani-reforem.md",
-    url: "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
-    title: "Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty",
-  },
-  {
-    src: "clanek-irozhlas-prokop.md",
-    dest: "content/pitva-paq/irozhlas-prokop.md",
-    url: "/blog/danime-praci-ale-majetek-temer-vubec",
-    title: "„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)",
-  },
-  {
-    src: "clanek-pitva-paq-x.md",
-    dest: "content/pitva-paq/clanek.md",
-    url: "/blog/zjednodusovaci-a-komplikatori",
-    title: "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní",
-  },
-  {
-    src: "research/paq-audit/00-komplikatori-hlavni-pitva.md",
-    dest: "content/pitva-paq/00-komplikatori-hlavni-pitva.md",
-    url: "/blog/zjednodusovaci-a-komplikatori/audit",
-    title:
-      "Komplikátoři v praxi: kompletní šestikapitolová pitva studie Chytřejší daně",
-  },
-  {
-    src: "research/paq-audit/01-ramovani-a-alternativy.md",
-    dest: "content/pitva-paq/01-ramovani-a-alternativy.md",
-  },
-  {
-    src: "research/paq-audit/02-zdaneni-prace.md",
-    dest: "content/pitva-paq/02-zdaneni-prace.md",
-  },
-  {
-    src: "research/paq-audit/03-zdaneni-spotreby.md",
-    dest: "content/pitva-paq/03-zdaneni-spotreby.md",
-  },
-  {
-    src: "research/paq-audit/04-zdaneni-majetku.md",
-    dest: "content/pitva-paq/04-zdaneni-majetku.md",
-  },
-  {
-    src: "research/paq-audit/05-zdaneni-firem.md",
-    dest: "content/pitva-paq/05-zdaneni-firem.md",
-  },
-  {
-    src: "research/paq-audit/06-metodika-a-obskurantismus.md",
-    dest: "content/pitva-paq/06-metodika-a-obskurantismus.md",
-  },
-  {
-    src: "research/paq-audit/07-danovy-raj-evropy.md",
-    dest: "content/pitva-paq/07-danovy-raj-evropy.md",
-  },
-  {
-    src: "research/05-hr-mechanika-a-okrajove-pripady.md",
-    dest: "content/vyzkum/05-hr-mechanika-a-okrajove-pripady.md",
-  },
-  {
-    src: "research/06-hr-praxe-ve-svete-a-historie.md",
-    dest: "content/vyzkum/06-hr-praxe-ve-svete-a-historie.md",
-  },
-  {
-    src: "research/07-hr-cesko-eu-a-makro-cisla.md",
-    dest: "content/vyzkum/07-hr-cesko-eu-a-makro-cisla.md",
-  },
-  {
-    src: "research/08-hr-kritika-a-protiargumenty.md",
-    dest: "content/vyzkum/08-hr-kritika-a-protiargumenty.md",
-  },
-  {
-    src: "research/09-hr-dph-obchod-a-hacky.md",
-    dest: "content/vyzkum/09-hr-dph-obchod-a-hacky.md",
-  },
-];
-
-const IMAGE_FILES = [
-  {
-    src: "qr-podpora.png",
-    dest: "public/images/qr-podpora.png",
-    required: false,
-  },
-];
-
-function copyFileEnsuringDir(srcAbs, destAbs) {
-  fs.mkdirSync(path.dirname(destAbs), { recursive: true });
-  fs.copyFileSync(srcAbs, destAbs);
-}
-
-let copiedCount = 0;
-
-if (!NO_COPY) {
-  for (const item of CONTENT_FILES) {
-    const srcAbs = path.join(REPO_PARENT, item.src);
-    const destAbs = path.join(WEB_ROOT, item.dest);
-    if (!fs.existsSync(srcAbs)) {
-      console.error(`ERROR: Source markdown not found: ${srcAbs}`);
-      process.exit(1);
-    }
-    copyFileEnsuringDir(srcAbs, destAbs);
-    copiedCount++;
-  }
-
-  for (const img of IMAGE_FILES) {
-    const srcAbs = path.join(REPO_PARENT, img.src);
-    const destAbs = path.join(WEB_ROOT, img.dest);
-    if (fs.existsSync(srcAbs)) {
-      copyFileEnsuringDir(srcAbs, destAbs);
-      console.log(`Copied image: ${img.src} -> ${img.dest}`);
-    } else if (img.required) {
-      console.error(`ERROR: Required image not found: ${srcAbs}`);
-      process.exit(1);
-    } else if (fs.existsSync(destAbs)) {
-      console.log(
-        `Kept existing image: ${img.dest} (source ${img.src} not in parent dir)`,
-      );
-    } else {
-      console.warn(
-        `WARN: Optional image missing in both parent and web: ${img.dest}`,
-      );
-    }
-  }
-}
 
 // Sanitize markdown for llms-full.txt (mirrors lib/markdown.ts hygiene rules)
 const INTERNAL_LINE_RE = /^\s*\*?\s*\*{0,2}(?:Zpracoval|Autor auditu)\s*:/i;
@@ -265,22 +126,22 @@ fs.writeFileSync(path.join(WEB_ROOT, "public/llms.txt"), LLMS_TXT, "utf8");
 // Generate public/llms-full.txt from sanitized flagship texts
 const flagshipDocs = [
   {
-    file: "content/blog/srovnani-reforem.md",
+    file: "content/blog/dekonstrukce-statu-vs-chytrejsi-dane.md",
     url: `${SITE_URL}/blog/dekonstrukce-statu-vs-chytrejsi-dane`,
     label: "Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty",
   },
   {
-    file: "content/pitva-paq/irozhlas-prokop.md",
+    file: "content/blog/danime-praci-ale-majetek-temer-vubec.md",
     url: `${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec`,
     label: "„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)",
   },
   {
-    file: "content/pitva-paq/clanek.md",
+    file: "content/blog/zjednodusovaci-a-komplikatori/index.md",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori`,
     label: "Hlavní esej — Pitva Chytřejších daní",
   },
   {
-    file: "content/danova-reforma/clanek.md",
+    file: "content/danova-reforma/index.md",
     url: `${SITE_URL}/danova-reforma`,
     label: "Hlavní návrh — Daňová reforma podle Dekonstrukce státu",
   },
@@ -290,12 +151,12 @@ const flagshipDocs = [
     label: "Doplnění #1–#9 k Daňové reformě",
   },
   {
-    file: "content/pitva-paq/00-komplikatori-hlavni-pitva.md",
+    file: "content/blog/zjednodusovaci-a-komplikatori/audit.md",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit`,
     label: "Kompletní šestikapitolová syntéza — Audit Chytřejších daní (PAQ, CVF, IDEA)",
   },
   {
-    file: "content/pitva-paq/07-danovy-raj-evropy.md",
+    file: "content/blog/fact-check-danovy-raj-evropy.md",
     url: `${SITE_URL}/blog/fact-check-danovy-raj-evropy`,
     label: "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026)",
   },
@@ -307,12 +168,14 @@ const fullSections = [
 
 for (const doc of flagshipDocs) {
   const abs = path.join(WEB_ROOT, doc.file);
-  if (fs.existsSync(abs)) {
-    const cleaned = sanitizeForLlmsFull(fs.readFileSync(abs, "utf8"), doc.url);
-    fullSections.push(
-      `\n---\n\n<!-- ${doc.label} | ${doc.url} -->\n\nURL: ${doc.url}\n\n${cleaned}\n`,
-    );
+  if (!fs.existsSync(abs)) {
+    console.error(`ERROR: Flagship markdown not found: ${abs}`);
+    process.exit(1);
   }
+  const cleaned = sanitizeForLlmsFull(fs.readFileSync(abs, "utf8"), doc.url);
+  fullSections.push(
+    `\n---\n\n<!-- ${doc.label} | ${doc.url} -->\n\nURL: ${doc.url}\n\n${cleaned}\n`,
+  );
 }
 
 fs.writeFileSync(
@@ -430,5 +293,5 @@ ${RSS_ITEMS.map(
 fs.writeFileSync(path.join(WEB_ROOT, "public/rss.xml"), rssXml, "utf8");
 
 console.log(
-  `${NO_COPY ? "Skipped content copy (--no-copy); generated" : `Synced ${copiedCount} markdown files and generated`} public/llms.txt, public/llms-full.txt, and public/rss.xml.`,
+  `Generated public/llms.txt, public/llms-full.txt (${flagshipDocs.length} flagship docs), and public/rss.xml from content/.`,
 );
