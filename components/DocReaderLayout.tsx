@@ -58,7 +58,10 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-[15.5rem_minmax(0,1fr)]">
         {/* Desktop sticky sidebar */}
-        <aside className="no-print hidden lg:block">
+        <aside
+          aria-label={`Postranní panel: ${sidebarTitle}`}
+          className="no-print hidden lg:block"
+        >
           <div className="sticky top-20 max-h-[calc(100dvh-6rem)] overflow-y-auto pr-1">
             <div className="mb-3 flex items-center justify-between border-b border-[var(--border-strong)] pb-2">
               <span className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-muted)] uppercase">
@@ -67,7 +70,7 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
               {seriesIndexHref && (
                 <Link
                   href={seriesIndexHref}
-                  className="font-mono text-xs text-[var(--accent)] hover:underline"
+                  className="font-mono text-xs text-[var(--accent)] hover:underline focus-visible:outline-offset-[-2px]"
                 >
                   Přehled
                 </Link>
@@ -77,32 +80,45 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
             <nav aria-label={sidebarTitle}>
               {essayItem && (
                 <div className="mb-3 border-b border-[var(--border)] pb-3">
-                  <p className="mb-1.5 px-3 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
+                  <p
+                    id="sidebar-group-essay"
+                    className="mb-1.5 px-3 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase"
+                  >
                     Hlavní esej
                   </p>
-                  <Link
-                    href={essayItem.url}
-                    aria-current={
-                      essayItem.url === currentDoc.url ? "page" : undefined
-                    }
-                    className={
-                      essayItem.url === currentDoc.url
-                        ? "block border-l-2 border-[var(--accent)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--ink)]"
-                        : "block border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface)]/50 hover:text-[var(--ink)]"
-                    }
-                  >
-                    {essayItem.shortTitle}
-                  </Link>
+                  <ul aria-labelledby="sidebar-group-essay">
+                    <li>
+                      <Link
+                        href={essayItem.url}
+                        aria-current={
+                          essayItem.url === currentDoc.url ? "page" : undefined
+                        }
+                        className={
+                          essayItem.url === currentDoc.url
+                            ? "block border-l-2 border-[var(--accent)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                            : "block border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface)]/50 hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                        }
+                      >
+                        {essayItem.shortTitle}
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               )}
 
               {essayItem && (
-                <p className="mb-1.5 px-3 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
+                <p
+                  id="sidebar-group-audit"
+                  className="mb-1.5 px-3 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase"
+                >
                   Forenzní audit (00–06)
                 </p>
               )}
 
-              <ul className="space-y-1">
+              <ul
+                aria-labelledby={essayItem ? "sidebar-group-audit" : undefined}
+                className="space-y-1"
+              >
                 {numberedItems.map((item) => {
                   const isActive = item.url === currentDoc.url;
                   return (
@@ -112,8 +128,8 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                         aria-current={isActive ? "page" : undefined}
                         className={
                           isActive
-                            ? "flex items-start gap-2 border-l-2 border-[var(--accent)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--ink)]"
-                            : "flex items-start gap-2 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface)]/50 hover:text-[var(--ink)]"
+                            ? "flex items-start gap-2 border-l-2 border-[var(--accent)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                            : "flex items-start gap-2 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface)]/50 hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
                         }
                       >
                         {item.code && (
@@ -136,10 +152,16 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
 
               {followupItems.length > 0 && (
                 <div className="mt-3 border-t border-[var(--border)] pt-3">
-                  <p className="mb-1.5 px-3 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
+                  <p
+                    id="sidebar-group-followups"
+                    className="mb-1.5 px-3 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase"
+                  >
                     Navazující fact-checky
                   </p>
-                  <ul className="space-y-1">
+                  <ul
+                    aria-labelledby="sidebar-group-followups"
+                    className="space-y-1"
+                  >
                     {followupItems.map((item) => {
                       const isActive = item.url === currentDoc.url;
                       return (
@@ -149,8 +171,8 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                             aria-current={isActive ? "page" : undefined}
                             className={
                               isActive
-                                ? "flex items-start gap-2 border-l-2 border-[var(--accent)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--ink)]"
-                                : "flex items-start gap-2 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface)]/50 hover:text-[var(--ink)]"
+                                ? "flex items-start gap-2 border-l-2 border-[var(--accent)] bg-[var(--surface)] px-3 py-2 text-sm font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                                : "flex items-start gap-2 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface)]/50 hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
                             }
                           >
                             {item.code && (
@@ -181,13 +203,15 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
         {/* Main reading column */}
         <div className="min-w-0">
           {/* Mobile zero-JS chapter switcher */}
-          <details className="no-print group mb-6 overflow-hidden rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)]/75 lg:hidden">
+          <details className="no-print group mb-6 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface)]/75 lg:hidden">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-semibold text-[var(--ink)] select-none [&::-webkit-details-marker]:hidden">
               <span className="flex min-w-0 items-center gap-2">
                 <span className="shrink-0 font-mono text-xs tracking-wider text-[var(--accent)] uppercase">
                   {sidebarTitle}
                 </span>
-                <span className="text-[var(--ink-muted)]">·</span>
+                <span aria-hidden="true" className="text-[var(--ink-muted)]">
+                  ·
+                </span>
                 <span className="truncate font-normal text-[var(--ink-muted)]">
                   {currentDoc.code ? `${currentDoc.code} ` : ""}
                   {currentDoc.shortTitle}
@@ -221,8 +245,8 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                     }
                     className={
                       essayItem.url === currentDoc.url
-                        ? "flex items-baseline gap-2.5 bg-[var(--bg)] px-3 py-2 text-sm font-semibold text-[var(--ink)]"
-                        : "flex items-baseline gap-2.5 px-3 py-2 text-sm text-[var(--ink-muted)] hover:bg-[var(--bg)]/60 hover:text-[var(--ink)]"
+                        ? "flex items-baseline gap-2.5 border-l-2 border-[var(--accent)] bg-[var(--bg)] px-3 py-2 text-sm font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                        : "flex items-baseline gap-2.5 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] hover:bg-[var(--bg)]/60 hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
                     }
                   >
                     <span className="font-mono text-xs font-semibold text-[var(--accent)] uppercase">
@@ -242,8 +266,8 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                         aria-current={isActive ? "page" : undefined}
                         className={
                           isActive
-                            ? "flex items-baseline gap-2 bg-[var(--bg)] px-3 py-2 text-sm font-semibold text-[var(--ink)]"
-                            : "flex items-baseline gap-2 px-3 py-2 text-sm text-[var(--ink-muted)] hover:bg-[var(--bg)]/60 hover:text-[var(--ink)]"
+                            ? "flex items-baseline gap-2 border-l-2 border-[var(--accent)] bg-[var(--bg)] px-3 py-2 text-sm font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                            : "flex items-baseline gap-2 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] hover:bg-[var(--bg)]/60 hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
                         }
                       >
                         {item.code && (
@@ -259,10 +283,16 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
               </ul>
               {followupItems.length > 0 && (
                 <div className="mt-2 border-t border-[var(--border)] pt-2">
-                  <p className="px-3 pb-1 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
+                  <p
+                    id="mobile-group-followups"
+                    className="px-3 pb-1 font-mono text-[0.6875rem] font-semibold tracking-wider text-[var(--ink-faint)] uppercase"
+                  >
                     Navazující fact-checky
                   </p>
-                  <ul className="space-y-0.5">
+                  <ul
+                    aria-labelledby="mobile-group-followups"
+                    className="space-y-0.5"
+                  >
                     {followupItems.map((item) => {
                       const isActive = item.url === currentDoc.url;
                       return (
@@ -272,8 +302,8 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                             aria-current={isActive ? "page" : undefined}
                             className={
                               isActive
-                                ? "flex items-baseline gap-2 bg-[var(--bg)] px-3 py-2 text-sm font-semibold text-[var(--ink)]"
-                                : "flex items-baseline gap-2 px-3 py-2 text-sm text-[var(--ink-muted)] hover:bg-[var(--bg)]/60 hover:text-[var(--ink)]"
+                                ? "flex items-baseline gap-2 border-l-2 border-[var(--accent)] bg-[var(--bg)] px-3 py-2 text-sm font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                                : "flex items-baseline gap-2 border-l-2 border-transparent px-3 py-2 text-sm text-[var(--ink-muted)] hover:bg-[var(--bg)]/60 hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
                             }
                           >
                             {item.code && (
@@ -306,7 +336,7 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                   </>
                 )}
                 <span aria-hidden="true">/</span>
-                <span>{currentDoc.date}</span>
+                <time dateTime={currentDoc.isoDate}>{currentDoc.date}</time>
                 <span aria-hidden="true">/</span>
                 <span>cca {readingMinutes} min čtení</span>
               </div>

@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Element, Root } from "hast";
+import type { Element, ElementContent, Root, Text } from "hast";
 import { toString as hastToString } from "hast-util-to-string";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
@@ -336,9 +336,285 @@ function rehypeCollectToc(toc: TocItem[]) {
   };
 }
 
+const KATEX_ACCENT_COMPOSE: Record<string, Record<string, string>> = {
+  "ˊ": {
+    a: "á",
+    e: "é",
+    ı: "í",
+    i: "í",
+    o: "ó",
+    u: "ú",
+    y: "ý",
+    A: "Á",
+    E: "É",
+    I: "Í",
+    O: "Ó",
+    U: "Ú",
+    Y: "Ý",
+  },
+  "´": {
+    a: "á",
+    e: "é",
+    ı: "í",
+    i: "í",
+    o: "ó",
+    u: "ú",
+    y: "ý",
+    A: "Á",
+    E: "É",
+    I: "Í",
+    O: "Ó",
+    U: "Ú",
+    Y: "Ý",
+  },
+  "ˇ": {
+    c: "č",
+    d: "ď",
+    e: "ě",
+    n: "ň",
+    r: "ř",
+    s: "š",
+    t: "ť",
+    z: "ž",
+    C: "Č",
+    D: "Ď",
+    E: "Ě",
+    N: "Ň",
+    R: "Ř",
+    S: "Š",
+    T: "Ť",
+    Z: "Ž",
+  },
+  "˚": {
+    u: "ů",
+    U: "Ů",
+  },
+  "¨": {
+    a: "ä",
+    o: "ö",
+    u: "ü",
+    A: "Ä",
+    O: "Ö",
+    U: "Ü",
+  },
+};
+
+function hasClass(node: Element, cls: string): boolean {
+  const c = node.properties?.className;
+  return Array.isArray(c) && c.includes(cls);
+}
+
+function isPlainMordSpan(node: ElementContent): node is Element {
+  if (node.type !== "element" || node.tagName !== "span") return false;
+  const cls = node.properties?.className;
+  if (!Array.isArray(cls) || cls.length !== 1 || cls[0] !== "mord") return false;
+  const keys = Object.keys(node.properties || {}).filter(
+    (k) => k !== "className" && node.properties?.[k] !== undefined,
+  );
+  if (keys.length > 0) return false;
+  return node.children.every((ch) => ch.type === "text");
+}
+
+function isPlainMtext(node: ElementContent): node is Element {
+  if (node.type !== "element" || node.tagName !== "mtext") return false;
+  const keys = Object.keys(node.properties || {}).filter(
+    (k) => node.properties?.[k] !== undefined,
+  );
+  if (keys.length > 0) return false;
+  return node.children.every((ch) => ch.type === "text");
+}
+
+function extractComposedFromKatexHtmlAccent(node: Element): string | null {
+  let base = "";
+  let accent = "";
+
+  const walk = (el: Element, inAccentBody: boolean) => {
+    const nextInAccentBody = inAccentBody || hasClass(el, "accent-body");
+    for (const child of el.children) {
+      if (child.type === "element") {
+        if (child.tagName === "span" && hasClass(child, "pstrut")) continue;
+        walk(child, nextInAccentBody);
+      } else if (child.type === "text") {
+        const val = child.value.trim();
+        if (!val) continue;
+        if (nextInAccentBody) {
+          accent += val;
+        } else {
+          base += val;
+        }
+      }
+    }
+  };
+
+  walk(node, false);
+  return KATEX_ACCENT_COMPOSE[accent]?.[base] ?? null;
+}
+
+/**
+ * Recompose KaTeX's decomposed Czech diacritics in both MathML (<mover accent="true">)
+ * and HTML (.mord.text > .mord.accent) so screen readers and copy-paste receive
+ * clean UTF-8 characters (č, ž, á, ř, š, ě, í, ů, ...) instead of split base+accent.
+ */
+function rehypeFixKatexCzechDiacritics() {
+  return () => (tree: Root) => {
+    visit(tree, "element", (node: Element) => {
+      // 1. MathML: replace <mover accent="true"><mtext>c</mtext><mo>ˇ</mo></mover> -> <mtext>č</mtext>
+      if (node.children.length > 0) {
+        let changedMathMl = false;
+        for (let i = 0; i < node.children.length; i++) {
+          const child = node.children[i];
+          if (
+            child.type === "element" &&
+            child.tagName === "mover" &&
+            String(child.properties?.accent) === "true" &&
+            child.children.length === 2 &&
+            child.children[0].type === "element" &&
+            child.children[0].tagName === "mtext" &&
+            child.children[1].type === "element" &&
+            child.children[1].tagName === "mo"
+          ) {
+            const base = hastToString(child.children[0]);
+            const accent = hastToString(child.children[1]);
+            const composed = KATEX_ACCENT_COMPOSE[accent]?.[base];
+            if (composed) {
+              node.children[i] = {
+                type: "element",
+                tagName: "mtext",
+                properties: {},
+                children: [{ type: "text", value: composed }],
+              };
+              changedMathMl = true;
+            }
+          }
+        }
+        if (changedMathMl) {
+          const merged: ElementContent[] = [];
+          for (const child of node.children) {
+            const prev = merged[merged.length - 1];
+            if (prev && isPlainMtext(prev) && isPlainMtext(child)) {
+              prev.children = [
+                {
+                  type: "text",
+                  value: hastToString(prev) + hastToString(child),
+                },
+              ];
+            } else {
+              merged.push(child);
+            }
+          }
+          node.children = merged;
+        }
+      }
+
+      // 2. Visual KaTeX HTML: inside <span class="mord text">, recompose <span class="mord accent">
+      if (
+        node.tagName === "span" &&
+        hasClass(node, "mord") &&
+        hasClass(node, "text")
+      ) {
+        let changedHtml = false;
+        for (let i = 0; i < node.children.length; i++) {
+          const child = node.children[i];
+          if (
+            child.type === "element" &&
+            child.tagName === "span" &&
+            hasClass(child, "mord") &&
+            hasClass(child, "accent")
+          ) {
+            const composed = extractComposedFromKatexHtmlAccent(child);
+            if (composed) {
+              node.children[i] = {
+                type: "element",
+                tagName: "span",
+                properties: { className: ["mord"] },
+                children: [{ type: "text", value: composed }],
+              };
+              changedHtml = true;
+            }
+          }
+        }
+        if (changedHtml) {
+          const merged: ElementContent[] = [];
+          for (const child of node.children) {
+            const prev = merged[merged.length - 1];
+            if (prev && isPlainMordSpan(prev) && isPlainMordSpan(child)) {
+              prev.children = [
+                {
+                  type: "text",
+                  value: hastToString(prev) + hastToString(child),
+                },
+              ];
+            } else {
+              merged.push(child);
+            }
+          }
+          node.children = merged;
+        }
+      }
+    });
+  };
+}
+
+function makeUniqueRegionLabel(
+  base: string,
+  used: Map<string, number>,
+): string {
+  const count = (used.get(base) ?? 0) + 1;
+  used.set(base, count);
+  return count === 1 ? base : `${base} (${count})`;
+}
+
+/**
+ * Make display math blocks (.katex-display) keyboard-scrollable regions with
+ * unique contextual aria-labels (WCAG 2.1 SC 2.1.1).
+ */
+function rehypeAccessibleKatexDisplay() {
+  return () => (tree: Root) => {
+    let currentHeading = "";
+    const usedLabels = new Map<string, number>();
+
+    visit(tree, "element", (node: Element) => {
+      if (
+        node.tagName === "h2" ||
+        node.tagName === "h3" ||
+        node.tagName === "h4" ||
+        node.tagName === "h5"
+      ) {
+        currentHeading = hastToString(node).trim();
+        return;
+      }
+
+      if (hasClass(node, "katex-display")) {
+        const base = currentHeading
+          ? `Matematický vzorec: ${currentHeading}`
+          : "Matematický vzorec";
+        node.properties = {
+          ...node.properties,
+          tabIndex: 0,
+          role: "region",
+          ariaLabel: makeUniqueRegionLabel(base, usedLabels),
+        };
+      }
+    });
+  };
+}
+
 function rehypeWrapTables() {
   return () => (tree: Root) => {
+    let currentHeading = "";
+    const usedLabels = new Map<string, number>();
+
     visit(tree, "element", (node: Element, index, parent) => {
+      if (
+        node.tagName === "h2" ||
+        node.tagName === "h3" ||
+        node.tagName === "h4" ||
+        node.tagName === "h5"
+      ) {
+        currentHeading = hastToString(node).trim();
+        return;
+      }
+
       if (
         node.tagName === "table" &&
         parent &&
@@ -350,6 +626,29 @@ function rehypeWrapTables() {
           parent.properties.className.includes("table-wrap")
         )
       ) {
+        // Add scope="col" to all column headers inside <thead>
+        const headerTexts: string[] = [];
+        visit(node, "element", (cell: Element) => {
+          if (cell.tagName === "thead") {
+            visit(cell, "element", (th: Element) => {
+              if (th.tagName === "th") {
+                if (!th.properties?.scope) {
+                  th.properties = { ...th.properties, scope: "col" };
+                }
+                const text = hastToString(th).trim();
+                if (text && headerTexts.length < 2) {
+                  headerTexts.push(text);
+                }
+              }
+            });
+          }
+        });
+
+        const contextName =
+          currentHeading ||
+          (headerTexts.length > 0 ? headerTexts.join(" / ") : "");
+        const baseLabel = contextName ? `Tabulka: ${contextName}` : "Tabulka";
+
         const wrapper: Element = {
           type: "element",
           tagName: "div",
@@ -357,13 +656,348 @@ function rehypeWrapTables() {
             className: ["table-wrap"],
             tabIndex: 0,
             role: "region",
-            ariaLabel: "Tabulka",
+            ariaLabel: makeUniqueRegionLabel(baseLabel, usedLabels),
           },
           children: [node],
         };
         parent.children[index] = wrapper;
       }
     });
+  };
+}
+
+const CZECH_DIACRITIC_RE = /[áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]/;
+
+const CZECH_DISQUALIFYING_WORDS = new Set([
+  "jako",
+  "nebo",
+  "ale",
+  "tak",
+  "jsou",
+  "neni",
+  "podle",
+  "pro",
+  "bez",
+  "mezi",
+  "nad",
+  "pod",
+  "pak",
+  "jen",
+  "ani",
+  "kde",
+  "kdy",
+  "jak",
+  "tedy",
+  "tuto",
+  "toto",
+  "tato",
+  "tyto",
+  "toho",
+  "tomu",
+  "jeho",
+  "jejich",
+  "cesko",
+  "dane",
+  "stat",
+  "firmy",
+  "lidi",
+  "mld",
+  "tis",
+  "kc",
+  "na",
+  "se",
+  "za",
+  "od",
+  "po",
+  "ve",
+  "ke",
+  "ze",
+  "je",
+  "pri",
+  "str",
+  "viz",
+]);
+
+const ENGLISH_FUNCTION_WORDS = new Set([
+  "the",
+  "and",
+  "of",
+  "that",
+  "with",
+  "from",
+  "does",
+  "not",
+  "have",
+  "has",
+  "had",
+  "which",
+  "their",
+  "would",
+  "should",
+  "could",
+  "these",
+  "those",
+  "this",
+  "are",
+  "was",
+  "were",
+  "into",
+  "between",
+  "under",
+  "without",
+  "may",
+  "can",
+  "cannot",
+  "will",
+  "is",
+  "for",
+  "our",
+  "they",
+  "them",
+  "its",
+  "than",
+  "more",
+  "less",
+  "most",
+  "some",
+  "such",
+  "been",
+  "only",
+  "also",
+  "because",
+  "whether",
+  "when",
+  "where",
+  "what",
+  "how",
+  "who",
+  "why",
+  "below",
+  "above",
+  "against",
+  "through",
+  "while",
+  "before",
+  "after",
+  "during",
+  "must",
+  "might",
+  "both",
+  "each",
+  "other",
+  "very",
+  "much",
+  "but",
+  "all",
+  "any",
+  "own",
+  "same",
+  "no",
+  "or",
+  "if",
+  "as",
+  "by",
+  "in",
+  "to",
+  "on",
+  "at",
+  "be",
+  "it",
+  "we",
+  "do",
+  "an",
+  "a",
+]);
+
+const ENGLISH_STRONG_WORDS = new Set([
+  "the",
+  "and",
+  "of",
+  "that",
+  "with",
+  "from",
+  "does",
+  "not",
+  "have",
+  "has",
+  "had",
+  "which",
+  "their",
+  "would",
+  "should",
+  "could",
+  "these",
+  "those",
+  "this",
+  "are",
+  "was",
+  "were",
+  "into",
+  "between",
+  "under",
+  "without",
+  "may",
+  "cannot",
+  "will",
+  "for",
+  "our",
+  "they",
+  "them",
+  "its",
+  "than",
+  "more",
+  "less",
+  "most",
+  "some",
+  "such",
+  "been",
+  "only",
+  "also",
+  "because",
+  "whether",
+  "when",
+  "where",
+  "what",
+  "how",
+  "who",
+  "why",
+  "below",
+  "above",
+  "against",
+  "through",
+  "while",
+  "must",
+  "might",
+  "other",
+]);
+
+function isClearlyEnglish(
+  text: string,
+  minWords = 5,
+  minStrongMatches = 2,
+): boolean {
+  const cleaned = text.trim();
+  if (!cleaned || CZECH_DIACRITIC_RE.test(cleaned)) return false;
+
+  const words = cleaned.toLowerCase().match(/\b[a-z]+(?:'[a-z]+)?\b/g) || [];
+  if (words.length < minWords) return false;
+
+  for (const w of words) {
+    if (CZECH_DISQUALIFYING_WORDS.has(w)) return false;
+  }
+
+  let strongHits = 0;
+  const distinctFn = new Set<string>();
+  for (const w of words) {
+    if (ENGLISH_FUNCTION_WORDS.has(w)) distinctFn.add(w);
+    if (ENGLISH_STRONG_WORDS.has(w)) strongHits++;
+  }
+
+  return strongHits >= minStrongMatches && distinctFn.size >= minStrongMatches;
+}
+
+const INLINE_QUOTE_RE = /(„[^“\n]{18,}“|“[^”\n]{18,}”)/g;
+
+/**
+ * Conservatively mark unambiguous English blockquotes, italicized English quotes/titles,
+ * and inline quoted English sentences with lang="en" (WCAG 2.1 SC 3.1.2).
+ */
+function rehypeEnglishLanguageParts() {
+  return () => (tree: Root) => {
+    const walk = (node: Root | Element, inEnglish: boolean) => {
+      if (node.type === "element") {
+        if (
+          node.tagName === "code" ||
+          node.tagName === "pre" ||
+          hasClass(node, "katex")
+        ) {
+          return;
+        }
+
+        const existingLang =
+          typeof node.properties?.lang === "string"
+            ? node.properties.lang.toLowerCase()
+            : "";
+        if (existingLang.startsWith("en")) {
+          return;
+        }
+
+        if (!inEnglish && node.tagName === "blockquote") {
+          const text = hastToString(node);
+          if (isClearlyEnglish(text, 6, 3)) {
+            node.properties = { ...node.properties, lang: "en" };
+            return;
+          }
+        }
+
+        if (!inEnglish && node.tagName === "em") {
+          const text = hastToString(node);
+          if (isClearlyEnglish(text, 4, 2)) {
+            node.properties = { ...node.properties, lang: "en" };
+            return;
+          }
+        }
+      }
+
+      if (!("children" in node) || !Array.isArray(node.children)) return;
+
+      const nextChildren: ElementContent[] = [];
+      for (const child of node.children) {
+        if (
+          !inEnglish &&
+          child.type === "text" &&
+          node.type === "element" &&
+          (node.tagName === "p" ||
+            node.tagName === "li" ||
+            node.tagName === "td" ||
+            node.tagName === "blockquote") &&
+          INLINE_QUOTE_RE.test(child.value)
+        ) {
+          INLINE_QUOTE_RE.lastIndex = 0;
+          let lastIndex = 0;
+          let matchedAny = false;
+          let match: RegExpExecArray | null;
+          while ((match = INLINE_QUOTE_RE.exec(child.value)) !== null) {
+            const quoted = match[0];
+            if (!isClearlyEnglish(quoted, 5, 2)) continue;
+            matchedAny = true;
+            if (match.index > lastIndex) {
+              nextChildren.push({
+                type: "text",
+                value: child.value.slice(lastIndex, match.index),
+              } as Text);
+            }
+            nextChildren.push({
+              type: "element",
+              tagName: "span",
+              properties: { lang: "en" },
+              children: [{ type: "text", value: quoted }],
+            });
+            lastIndex = match.index + quoted.length;
+          }
+          if (matchedAny) {
+            if (lastIndex < child.value.length) {
+              nextChildren.push({
+                type: "text",
+                value: child.value.slice(lastIndex),
+              } as Text);
+            }
+            continue;
+          }
+        }
+
+        if (child.type === "element") {
+          walk(child, inEnglish);
+        }
+        nextChildren.push(child as ElementContent);
+      }
+
+      if (node.type === "element") {
+        node.children = nextChildren;
+      }
+    };
+
+    walk(tree, false);
   };
 }
 
@@ -378,6 +1012,18 @@ function rehypeExternalLinks() {
             target: "_blank",
             rel: ["noopener", "noreferrer"],
           };
+          const alreadyHasHint = node.children.some(
+            (child) =>
+              child.type === "element" && hasClass(child, "sr-only"),
+          );
+          if (!alreadyHasHint) {
+            node.children.push({
+              type: "element",
+              tagName: "span",
+              properties: { className: ["sr-only"] },
+              children: [{ type: "text", value: " (otevře se v novém okně)" }],
+            });
+          }
         }
       }
     });
@@ -439,18 +1085,22 @@ export async function renderMarkdownFile(
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeKatex, { strict: false, trust: false })
+    .use(rehypeFixKatexCzechDiacritics())
     .use(rehypeSlug)
     .use(rehypeCustomHeadingIds(options.customHeadingId))
     .use(rehypeCollectToc(toc))
+    .use(rehypeAccessibleKatexDisplay())
+    .use(rehypeWrapTables())
     .use(rehypeAutolinkHeadings, {
       behavior: "append",
       properties: {
         className: ["heading-anchor"],
-        ariaLabel: "Odkaz na tuto sekci",
+        ariaHidden: "true",
+        tabIndex: -1,
       },
       content: { type: "text", value: "#" },
     })
-    .use(rehypeWrapTables())
+    .use(rehypeEnglishLanguageParts())
     .use(rehypeExternalLinks())
     .use(rehypeStringify)
     .process(prepared);

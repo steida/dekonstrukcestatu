@@ -20,10 +20,14 @@ export const AUTHOR_PERSON_LD = {
   image: `${SITE_URL}/images/daniel-steigerwald.jpg`,
   email: "mailto:daniel@steigerwald.cz",
   jobTitle: "Programátor a zakladatel Dekonstrukce státu",
-  sameAs: [
-    "https://x.com/steidacz",
-    "https://github.com/steida",
-    "https://www.evolu.dev/",
+  sameAs: ["https://x.com/steidacz", "https://github.com/steida"],
+  worksFor: [
+    { "@id": `${SITE_URL}/#organization` },
+    {
+      "@type": "Organization",
+      name: "Evolu",
+      url: "https://www.evolu.dev/",
+    },
   ],
 };
 
@@ -62,6 +66,7 @@ export function buildArticleJsonLd({
   title,
   description,
   datePublished,
+  dateModified,
   image = "/images/og-default.png",
   breadcrumbs,
 }: {
@@ -70,6 +75,7 @@ export function buildArticleJsonLd({
   title: string;
   description: string;
   datePublished: string;
+  dateModified?: string;
   image?: string;
   breadcrumbs: { name: string; path: string }[];
 }) {
@@ -82,7 +88,7 @@ export function buildArticleJsonLd({
         description,
         url: `${SITE_URL}${url}`,
         datePublished,
-        dateModified: datePublished,
+        dateModified: dateModified ?? datePublished,
         inLanguage: "cs-CZ",
         image: `${SITE_URL}${image}`,
         author: AUTHOR_PERSON_LD,

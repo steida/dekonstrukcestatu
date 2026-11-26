@@ -29,12 +29,12 @@ export const SiteHeader: FC = () => (
       </div>
     </div>
 
-    {/* Compact mobile navigation row (zero overflow on 360px–390px) */}
+    {/* Compact mobile navigation row (wraps gracefully at 320px and under WCAG 1.4.12 text-spacing) */}
     <div className="border-t border-[var(--border)] md:hidden">
-      <div className="mx-auto max-w-5xl overflow-x-auto overscroll-x-contain px-4 sm:px-6">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <SiteNav
-          className="flex items-center justify-between gap-3 py-0 text-[0.8125rem]"
-          linkClassName="py-2"
+          className="flex flex-wrap items-center justify-between gap-x-2.5 gap-y-0.5 py-0 text-xs min-[380px]:gap-x-3 min-[380px]:text-[0.8125rem]"
+          linkClassName="py-2 focus-visible:outline-offset-[-2px]"
         />
       </div>
     </div>

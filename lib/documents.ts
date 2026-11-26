@@ -9,12 +9,20 @@ export interface DocMeta {
   url: string;
   date: string;
   isoDate: string;
+  publishedTime?: string;
+  modifiedIsoDate?: string;
+  modifiedDate?: string;
   pages?: string;
   ogImage?: string;
   ogImageAlt?: string;
 }
 
 export const SITE_URL = "https://www.dekonstrukcestatu.cz";
+
+const OG_ALT_DANOVA_REFORMA =
+  "Daňová reforma podle Dekonstrukce státu — Pošlete finančáku pohlednici (Hall–Rabushka)";
+const OG_ALT_PITVA_PAQ =
+  "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní — Forenzní audit studie PAQ Research, CVF a IDEA";
 
 export const DANOVA_REFORMA_DOC: DocMeta = {
   slug: "danova-reforma",
@@ -27,9 +35,10 @@ export const DANOVA_REFORMA_DOC: DocMeta = {
   url: "/danova-reforma",
   date: "24. 11. 2026",
   isoDate: "2026-11-24",
+  publishedTime: "2026-11-24T14:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
   ogImage: "/images/og-danova-reforma.png",
-  ogImageAlt:
-    "Daňová reforma podle Dekonstrukce státu — Pošlete finančáku pohlednici",
+  ogImageAlt: OG_ALT_DANOVA_REFORMA,
 };
 
 export const DOPLNENI_DOC: DocMeta = {
@@ -43,8 +52,11 @@ export const DOPLNENI_DOC: DocMeta = {
   url: "/danova-reforma/doplneni",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
+  publishedTime: "2026-11-25T10:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
+  modifiedDate: "26. 11. 2026",
   ogImage: "/images/og-danova-reforma.png",
-  ogImageAlt: "Doplnění #1–#9 k článku Daňová reforma podle Dekonstrukce státu",
+  ogImageAlt: OG_ALT_DANOVA_REFORMA,
 };
 
 export const SROVNANI_REFOREM_DOC: DocMeta = {
@@ -58,6 +70,8 @@ export const SROVNANI_REFOREM_DOC: DocMeta = {
   url: "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
+  publishedTime: "2026-11-25T23:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
   ogImage: "/images/og-srovnani-reforem.png",
   ogImageAlt:
     "Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty",
@@ -75,9 +89,10 @@ export const PITVA_PAQ_ESSAY: DocMeta = {
   url: "/blog/zjednodusovaci-a-komplikatori",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
+  publishedTime: "2026-11-25T14:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
   ogImage: "/images/og-pitva-paq.png",
-  ogImageAlt:
-    "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní — Forenzní audit studie PAQ Research, CVF a IDEA",
+  ogImageAlt: OG_ALT_PITVA_PAQ,
 };
 
 export const PITVA_PAQ_MAIN: DocMeta = {
@@ -88,15 +103,16 @@ export const PITVA_PAQ_MAIN: DocMeta = {
     "Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)",
   seoTitle: "Pitva Chytřejších daní (PAQ, CVF, IDEA)",
   description:
-    "Forenzní audit 224stránkové studie Chytřejší daně (PAQ, CVF, IDEA): tabulky, výpočty, katalog 12 chyb, 15 klíčových citací (46 v kapitolových auditech) a srovnání se dvěma pohlednicemi.",
+    "Forenzní audit 224stránkové studie Chytřejší daně (PAQ, CVF, IDEA): tabulky, výpočty, katalog 12 chyb, citace a srovnání se dvěma pohlednicemi.",
   filePath: "content/blog/zjednodusovaci-a-komplikatori/audit.md",
   url: "/blog/zjednodusovaci-a-komplikatori/audit",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
+  publishedTime: "2026-11-25T12:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
   pages: "224 stran studie",
   ogImage: "/images/og-pitva-paq.png",
-  ogImageAlt:
-    "Komplikátoři v praxi — Forenzní audit studie Chytřejší daně (PAQ Research, CVF a IDEA)",
+  ogImageAlt: OG_ALT_PITVA_PAQ,
 };
 
 export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
@@ -108,15 +124,16 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
       "Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ",
     seoTitle: "Audit Chytřejších daní · Kap. 1: Rámování",
     description:
-      "Audit úvodu a kapitoly 1 studie Chytřejší daně (str. 1–66): proč zjednodušení administrativy ani transparentnost nejsou hlavními cíli reformy, desítky nových mechanismů a tři mimodaňové záplaty.",
+      "Audit kap. 1 studie Chytřejší daně (str. 1–66): proč zjednodušení ani transparentnost nejsou hlavním cílem reformy, desítky mechanismů a záplaty.",
     filePath: "content/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy.md",
     url: "/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
+    publishedTime: "2026-11-25T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     pages: "str. 1–66",
     ogImage: "/images/og-pitva-paq.png",
-    ogImageAlt:
-      "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 1: Rámování a alternativy",
+    ogImageAlt: OG_ALT_PITVA_PAQ,
   },
   {
     slug: "02-zdaneni-prace",
@@ -130,10 +147,11 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     url: "/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
+    publishedTime: "2026-11-25T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     pages: "str. 67–97",
     ogImage: "/images/og-pitva-paq.png",
-    ogImageAlt:
-      "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 2: Zdanění práce",
+    ogImageAlt: OG_ALT_PITVA_PAQ,
   },
   {
     slug: "03-zdaneni-spotreby",
@@ -147,10 +165,11 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     url: "/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
+    publishedTime: "2026-11-25T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     pages: "str. 98–135",
     ogImage: "/images/og-pitva-paq.png",
-    ogImageAlt:
-      "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 3: Zdanění spotřeby",
+    ogImageAlt: OG_ALT_PITVA_PAQ,
   },
   {
     slug: "04-zdaneni-majetku",
@@ -164,10 +183,11 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     url: "/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
+    publishedTime: "2026-11-25T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     pages: "str. 136–182",
     ogImage: "/images/og-pitva-paq.png",
-    ogImageAlt:
-      "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 4: Zdanění majetku",
+    ogImageAlt: OG_ALT_PITVA_PAQ,
   },
   {
     slug: "05-zdaneni-firem",
@@ -181,10 +201,11 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     url: "/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
+    publishedTime: "2026-11-25T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     pages: "str. 183–202",
     ogImage: "/images/og-pitva-paq.png",
-    ogImageAlt:
-      "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 5: Zdanění zisků firem",
+    ogImageAlt: OG_ALT_PITVA_PAQ,
   },
   {
     slug: "06-metodika-a-obskurantismus",
@@ -199,10 +220,11 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     url: "/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
+    publishedTime: "2026-11-25T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     pages: "str. 203–222",
     ogImage: "/images/og-pitva-paq.png",
-    ogImageAlt:
-      "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 6: Metodika a obskurantismus",
+    ogImageAlt: OG_ALT_PITVA_PAQ,
   },
 ];
 
@@ -213,11 +235,13 @@ export const PITVA_PAQ_DANOVY_RAJ: DocMeta = {
   title: "Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)",
   seoTitle: "Fact-check: Daňový ráj Evropy (PAQ 2026)",
   description:
-    "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026): s DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je ČR přesně na mediánu EU27 (5,62 % HDP); i bez dočasné daně z neočekávaných zisků (~5,17 %) je nad všemi sousedy.",
+    "Fact-check PAQ Daňový ráj Evropy (11/2026): s DPPO k ukazateli PAQ (bez OSVČ) je ČR na mediánu EU27 (5,62 % HDP), bez windfall (~5,17 %) nad sousedy.",
   filePath: "content/blog/fact-check-danovy-raj-evropy.md",
   url: "/blog/fact-check-danovy-raj-evropy",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
+  publishedTime: "2026-11-25T16:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
   pages: "Studie PAQ 11/2026",
   ogImage: "/images/og-danovy-raj-evropy.png",
   ogImageAlt: "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026)",
@@ -228,13 +252,15 @@ export const PITVA_PAQ_IROZHLAS: DocMeta = {
   code: "08",
   shortTitle: "Fact-check iROZHLASu (11/2026)",
   title: "„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)",
-  seoTitle: "Fact-check iROZHLASu: Daníme práci a majetek?",
+  seoTitle: "Fact-check: „Daníme práci, ale majetek téměř vůbec?“",
   description:
-    "48 záznamů Daniela Prokopa v ČRo za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).",
+    "48 záznamů Daniela Prokopa v ČRo za 12 měsíců, týdenní pořad bez oponenta a fact-check titulku i 9 klíčových výroků z rozhovoru na iROZHLASu.",
   filePath: "content/blog/danime-praci-ale-majetek-temer-vubec.md",
   url: "/blog/danime-praci-ale-majetek-temer-vubec",
   date: "25. 11. 2026",
   isoDate: "2026-11-25",
+  publishedTime: "2026-11-25T20:00:00+01:00",
+  modifiedIsoDate: "2026-11-26",
   ogImage: "/images/og-irozhlas-prokop.png",
   ogImageAlt: "„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)",
 };
@@ -261,8 +287,10 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     url: "/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
+    publishedTime: "2026-11-24T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     ogImage: "/images/og-danova-reforma.png",
-    ogImageAlt: "Hall–Rabushka 01 — Přesná mechanika a okrajové případy",
+    ogImageAlt: OG_ALT_DANOVA_REFORMA,
   },
   {
     slug: "06-hr-praxe-ve-svete-a-historie",
@@ -277,8 +305,10 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     url: "/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
+    publishedTime: "2026-11-24T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     ogImage: "/images/og-danova-reforma.png",
-    ogImageAlt: "Hall–Rabushka 02 — Praxe ve světě a historie",
+    ogImageAlt: OG_ALT_DANOVA_REFORMA,
   },
   {
     slug: "07-hr-cesko-eu-a-makro-cisla",
@@ -293,8 +323,10 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     url: "/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
+    publishedTime: "2026-11-24T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     ogImage: "/images/og-danova-reforma.png",
-    ogImageAlt: "Hall–Rabushka 03 — Česko, EU a makroekonomické propočty",
+    ogImageAlt: OG_ALT_DANOVA_REFORMA,
   },
   {
     slug: "08-hr-kritika-a-protiargumenty",
@@ -309,8 +341,10 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
     url: "/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
+    publishedTime: "2026-11-24T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     ogImage: "/images/og-danova-reforma.png",
-    ogImageAlt: "Hall–Rabushka 04 — Kritika a katalog 15 nejtvrdších námitek",
+    ogImageAlt: OG_ALT_DANOVA_REFORMA,
   },
   {
     slug: "09-hr-dph-obchod-a-hacky",
@@ -320,13 +354,15 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
       "Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH",
     seoTitle: "Hall–Rabushka 05: DPH, obchod a 5 hacků",
     description:
-      "Feldstein–Krugmanův test (Amazon vs. Alza, Škoda Auto) a klam o „dvojí dani na export“, japonská lekce a audit 5 „hacků“ na DPH: proč v EU legálně projde jen „vykuchaná“ 15% DPH s hotovostním režimem.",
+      "Feldstein–Krugmanův test (Alza vs. Amazon, Škoda Auto), japonská lekce a audit 5 „hacků“ na DPH: proč v EU projde jen 15% DPH s hotovostním režimem.",
     filePath: "content/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky.md",
     url: "/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky",
     date: "24. 11. 2026",
     isoDate: "2026-11-24",
+    publishedTime: "2026-11-24T12:00:00+01:00",
+    modifiedIsoDate: "2026-11-26",
     ogImage: "/images/og-danova-reforma.png",
-    ogImageAlt: "Hall–Rabushka 05 — DPH, mezinárodní obchod a 5 hacků na DPH",
+    ogImageAlt: OG_ALT_DANOVA_REFORMA,
   },
 ];
 

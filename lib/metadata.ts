@@ -10,6 +10,7 @@ export interface PageMetadataInput {
   image?: string;
   imageAlt?: string;
   publishedTime?: string;
+  modifiedTime?: string;
   noIndex?: boolean;
 }
 
@@ -26,6 +27,7 @@ export function buildPageMetadata({
   image = DEFAULT_OG_IMAGE,
   imageAlt = DEFAULT_OG_ALT,
   publishedTime,
+  modifiedTime,
   noIndex = false,
 }: PageMetadataInput): Metadata {
   const canonicalPath = path.startsWith("/") ? path : `/${path}`;
@@ -74,7 +76,8 @@ export function buildPageMetadata({
       ...(type === "article" && publishedTime
         ? {
             publishedTime,
-            authors: ["Daniel Steigerwald"],
+            ...(modifiedTime ? { modifiedTime } : {}),
+            authors: [`${SITE_URL}/o-autorovi`],
           }
         : {}),
     },
@@ -84,7 +87,7 @@ export function buildPageMetadata({
       creator: "@steidacz",
       title: fullTitle,
       description,
-      images: [image],
+      images: [{ url: image, alt: imageAlt }],
     },
   };
 }

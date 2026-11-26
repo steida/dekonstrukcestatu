@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { type FC, useEffect, useRef } from "react";
 
 export type TaxSectionKey =
@@ -25,6 +26,9 @@ const TABS: { key: TaxSectionKey; href: string; label: string }[] = [
 ];
 
 export const TaxSubNav: FC<{ active: TaxSectionKey }> = ({ active }) => {
+  const rawPathname = usePathname() || "/";
+  const pathname =
+    rawPathname.length > 1 ? rawPathname.replace(/\/+$/, "") : rawPathname;
   const listRef = useRef<HTMLUListElement>(null);
   const activeRef = useRef<HTMLAnchorElement>(null);
 
@@ -49,20 +53,21 @@ export const TaxSubNav: FC<{ active: TaxSectionKey }> = ({ active }) => {
     >
       <ul
         ref={listRef}
-        className="-mb-px flex flex-nowrap gap-x-4 overflow-x-auto overscroll-x-contain whitespace-nowrap text-sm sm:gap-x-5"
+        className="scroll-fade-x -mb-px flex flex-nowrap gap-x-4 overflow-x-auto overscroll-x-contain whitespace-nowrap text-sm sm:gap-x-5"
       >
         {TABS.map((tab) => {
           const isActive = tab.key === active;
+          const isExact = pathname === tab.href;
           return (
             <li key={tab.key}>
               <Link
                 ref={isActive ? activeRef : undefined}
                 href={tab.href}
-                aria-current={isActive ? "page" : undefined}
+                aria-current={isExact ? "page" : isActive ? "true" : undefined}
                 className={
                   isActive
-                    ? "inline-block border-b-2 border-[var(--accent)] pb-2.5 font-semibold text-[var(--ink)]"
-                    : "inline-block border-b-2 border-transparent pb-2.5 text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:text-[var(--ink)]"
+                    ? "inline-block border-b-2 border-[var(--accent)] px-0.5 py-2 font-semibold text-[var(--ink)] focus-visible:outline-offset-[-2px]"
+                    : "inline-block border-b-2 border-transparent px-0.5 py-2 text-[var(--ink-muted)] transition-colors hover:border-[var(--border-strong)] hover:text-[var(--ink)] focus-visible:outline-offset-[-2px]"
                 }
               >
                 {tab.label}

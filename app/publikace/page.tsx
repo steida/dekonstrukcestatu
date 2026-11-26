@@ -81,9 +81,12 @@ export default function PublikacePage() {
                     {doc.title}
                   </Link>
                 </h3>
-                <span className="shrink-0 font-mono text-xs text-[var(--ink-faint)] tabular-nums">
+                <time
+                  dateTime={doc.isoDate}
+                  className="shrink-0 font-mono text-xs text-[var(--ink-faint)] tabular-nums"
+                >
                   {doc.date}
-                </span>
+                </time>
               </div>
               <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
                 {doc.description}

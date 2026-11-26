@@ -17,7 +17,8 @@ export const metadata: Metadata = buildPageMetadata({
   type: "article",
   image: DANOVA_REFORMA_DOC.ogImage,
   imageAlt: DANOVA_REFORMA_DOC.ogImageAlt,
-  publishedTime: DANOVA_REFORMA_DOC.isoDate,
+  publishedTime: DANOVA_REFORMA_DOC.publishedTime ?? DANOVA_REFORMA_DOC.isoDate,
+  modifiedTime: DANOVA_REFORMA_DOC.modifiedIsoDate,
 });
 
 export default async function DanovaReformaPage() {
@@ -44,7 +45,9 @@ export default async function DanovaReformaPage() {
           url: DANOVA_REFORMA_DOC.url,
           title: DANOVA_REFORMA_DOC.title,
           description: DANOVA_REFORMA_DOC.description,
-          datePublished: DANOVA_REFORMA_DOC.isoDate,
+          datePublished:
+            DANOVA_REFORMA_DOC.publishedTime ?? DANOVA_REFORMA_DOC.isoDate,
+          dateModified: DANOVA_REFORMA_DOC.modifiedIsoDate,
           image: DANOVA_REFORMA_DOC.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },
@@ -75,7 +78,9 @@ export default async function DanovaReformaPage() {
             <span aria-hidden="true">/</span>
             <span>Daniel Steigerwald</span>
             <span aria-hidden="true">/</span>
-            <span>{DANOVA_REFORMA_DOC.date}</span>
+            <time dateTime={DANOVA_REFORMA_DOC.isoDate}>
+              {DANOVA_REFORMA_DOC.date}
+            </time>
             <span aria-hidden="true">/</span>
             <span>cca {readingMinutes} min čtení</span>
           </div>
@@ -120,7 +125,10 @@ export default async function DanovaReformaPage() {
         </aside>
 
         {/* Continuation links */}
-        <aside className="no-print mt-12 border-t border-[var(--border-strong)] pt-8">
+        <nav
+          aria-label="Pokračujte hlouběji"
+          className="no-print mt-12 border-t border-[var(--border-strong)] pt-8"
+        >
           <p className="mb-4 font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
             Pokračujte hlouběji
           </p>
@@ -149,7 +157,7 @@ export default async function DanovaReformaPage() {
               </div>
             </Link>
           </div>
-        </aside>
+        </nav>
 
         <ArticleFooterCta />
       </article>

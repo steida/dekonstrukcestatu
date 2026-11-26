@@ -18,7 +18,8 @@ export const metadata: Metadata = buildPageMetadata({
   type: "article",
   image: PITVA_PAQ_MAIN.ogImage,
   imageAlt: PITVA_PAQ_MAIN.ogImageAlt,
-  publishedTime: PITVA_PAQ_MAIN.isoDate,
+  publishedTime: PITVA_PAQ_MAIN.publishedTime ?? PITVA_PAQ_MAIN.isoDate,
+  modifiedTime: PITVA_PAQ_MAIN.modifiedIsoDate,
 });
 
 export default async function PitvaPaqAuditPage() {
@@ -86,7 +87,8 @@ export default async function PitvaPaqAuditPage() {
           url: PITVA_PAQ_MAIN.url,
           title: PITVA_PAQ_MAIN.title,
           description: PITVA_PAQ_MAIN.description,
-          datePublished: PITVA_PAQ_MAIN.isoDate,
+          datePublished: PITVA_PAQ_MAIN.publishedTime ?? PITVA_PAQ_MAIN.isoDate,
+          dateModified: PITVA_PAQ_MAIN.modifiedIsoDate,
           image: PITVA_PAQ_MAIN.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },

@@ -16,7 +16,9 @@ export const metadata: Metadata = buildPageMetadata({
 interface MediaEntry {
   outlet: string;
   date: string;
+  dateIso: string;
   title: string;
+  titleLang?: string;
   href: string;
   note?: string;
   extras?: { label: string; href: string }[];
@@ -26,6 +28,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "DVTV",
     date: "23. 11. 2026",
+    dateIso: "2026-11-23",
     title:
       "Ostrý duel o daních: 30 miliard lze vybrat na nemovitostech, říká Vilím. Dopadne to na chudé, oponuje Steigerwald",
     href: "https://www.dvtv.cz/videos/ostry-duel-o-danich-30-miliard-lze-vybrat-na-nemovitostech-rika-vilim-dopadne-to-na-chude-oponuje-steigerwald",
@@ -40,6 +43,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "CryptoByte 2025",
     date: "zveřejněno 5. 6. 2025",
+    dateIso: "2025-06-05",
     title: "Daniel Steigerwald – Dekonstrukce státu",
     href: "https://www.youtube.com/watch?v=3HoOah2oke0",
     note: "Konferenční přednáška o složitosti státu a o tom, jak jej postupně dekonstruovat.",
@@ -47,6 +51,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "Kryptoplebs #1",
     date: "10. 3. 2025",
+    dateIso: "2025-03-10",
     title: "Stát nám nepatří a je třeba ho dekonstruovat",
     href: "https://www.youtube.com/watch?v=LgKVYDQW_OE",
     note: "Rozhovor s Janem Ebrem.",
@@ -54,6 +59,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "ChainCamp 2024",
     date: "zveřejněno 24. 10. 2024",
+    dateIso: "2024-10-24",
     title: "Emigrace je možnost, ale není to řešení",
     href: "https://www.youtube.com/watch?v=gpHkdjt66J0",
     note: "Proč útěk ze země neřeší příčinu složitosti státu.",
@@ -61,13 +67,16 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "BTC Prague 2024 Keynote (EN)",
     date: "zveřejněno 21. 6. 2024",
+    dateIso: "2024-06-21",
     title: "Bitcoin: The End Game",
+    titleLang: "en",
     href: "https://www.youtube.com/watch?v=PxHpruxr82Y",
     note: "Hlavní přednáška o zdravých penězích a motivacích států.",
   },
   {
     outlet: "BTC Prague 2023 (CZ)",
     date: "zveřejněno 26. 7. 2023",
+    dateIso: "2023-07-26",
     title: "Slabiny a rizika bitcoinu",
     href: "https://www.youtube.com/watch?v=45ympdflZjI",
     note: "Kritický pohled na limity a rizika Bitcoinu.",
@@ -75,6 +84,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "Letní škola Občanského institutu",
     date: "zveřejněno 6. 2. 2022",
+    dateIso: "2022-02-06",
     title: "Demonopolizace",
     href: "https://www.youtube.com/watch?v=uAfFLU-WvJo",
     note: "Přednáška o demonopolizaci státních agend.",
@@ -82,6 +92,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   {
     outlet: "ChainCamp 2020",
     date: "zveřejněno 28. 9. 2020",
+    dateIso: "2020-09-28",
     title: "Dekonstrukce státu",
     href: "https://www.youtube.com/watch?v=jclUOz9h4rc",
     note: "Úvodní přednáška představující myšlenku dekonstrukce státu.",
@@ -134,8 +145,12 @@ export default function MediaPage() {
                 <span className="font-semibold text-[var(--accent)]">
                   {item.outlet}
                 </span>
-                <span className="text-[var(--ink-faint)]">/</span>
-                <span className="text-[var(--ink-faint)]">{item.date}</span>
+                <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                  /
+                </span>
+                <time dateTime={item.dateIso} className="text-[var(--ink-faint)]">
+                  {item.date}
+                </time>
               </div>
               <a
                 href={item.href}
@@ -143,7 +158,9 @@ export default function MediaPage() {
                 rel="noopener noreferrer"
                 className="text-base font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
               >
-                {item.title} ↗
+                <span lang={item.titleLang}>{item.title}</span>{" "}
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (otevře se v novém okně)</span>
               </a>
               {(item.note || (item.extras && item.extras.length > 0)) && (
                 <p className="mt-1 text-sm text-[var(--ink-muted)]">
@@ -160,7 +177,11 @@ export default function MediaPage() {
                             rel="noopener noreferrer"
                             className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
                           >
-                            {extra.label} ↗
+                            {extra.label} <span aria-hidden="true">↗</span>
+                            <span className="sr-only">
+                              {" "}
+                              (otevře se v novém okně)
+                            </span>
                           </a>
                         </span>
                       ))}
@@ -174,7 +195,10 @@ export default function MediaPage() {
       </ol>
 
       {/* Bottom Speaker / Press CTA */}
-      <aside className="mt-12 flex flex-col justify-between gap-5 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center">
+      <aside
+        aria-label="Pozvání do médií a na přednášky"
+        className="mt-12 flex flex-col justify-between gap-5 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center"
+      >
         <div className="max-w-xl">
           <p className="font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
             Pozvání do médií a na přednášky
@@ -191,7 +215,7 @@ export default function MediaPage() {
             nebo se podívejte na připravené okruhy a bio v{" "}
             <Link
               href="/o-autorovi"
-              className="font-semibold text-[var(--accent)] hover:underline"
+              className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)] focus-visible:decoration-[var(--accent)]"
             >
               Press Kitu
             </Link>

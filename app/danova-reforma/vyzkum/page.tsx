@@ -11,7 +11,8 @@ export const metadata: Metadata = buildPageMetadata({
   description:
     "Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax v Česku, EU a světové praxi.",
   image: "/images/og-danova-reforma.png",
-  imageAlt: "Hloubkový výzkum Hall–Rabushka Flat Tax — 5 podkladových studií",
+  imageAlt:
+    "Daňová reforma podle Dekonstrukce státu — Pošlete finančáku pohlednici (Hall–Rabushka)",
 });
 
 export default function VyzkumIndexPage() {
@@ -82,9 +83,12 @@ export default function VyzkumIndexPage() {
                   >
                     Číst studii →
                   </Link>
-                  <span className="font-mono text-xs text-[var(--ink-faint)] tabular-nums">
+                  <time
+                    dateTime={study.isoDate}
+                    className="font-mono text-xs text-[var(--ink-faint)] tabular-nums"
+                  >
                     {study.date}
-                  </span>
+                  </time>
                 </div>
               </div>
             </article>

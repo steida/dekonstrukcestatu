@@ -31,7 +31,8 @@ export async function generateMetadata({
     type: "article",
     image: doc.ogImage,
     imageAlt: doc.ogImageAlt,
-    publishedTime: doc.isoDate,
+    publishedTime: doc.publishedTime ?? doc.isoDate,
+    modifiedTime: doc.modifiedIsoDate,
   });
 }
 
@@ -55,7 +56,8 @@ export default async function VyzkumStudyPage({
           url: doc.url,
           title: doc.title,
           description: doc.description,
-          datePublished: doc.isoDate,
+          datePublished: doc.publishedTime ?? doc.isoDate,
+          dateModified: doc.modifiedIsoDate,
           image: doc.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },

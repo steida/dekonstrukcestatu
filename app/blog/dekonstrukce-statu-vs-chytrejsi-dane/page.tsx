@@ -13,7 +13,9 @@ export const metadata: Metadata = buildPageMetadata({
   type: "article",
   image: SROVNANI_REFOREM_DOC.ogImage,
   imageAlt: SROVNANI_REFOREM_DOC.ogImageAlt,
-  publishedTime: SROVNANI_REFOREM_DOC.isoDate,
+  publishedTime:
+    SROVNANI_REFOREM_DOC.publishedTime ?? SROVNANI_REFOREM_DOC.isoDate,
+  modifiedTime: SROVNANI_REFOREM_DOC.modifiedIsoDate,
 });
 
 export default async function BlogSrovnaniReforemPage() {
@@ -30,7 +32,9 @@ export default async function BlogSrovnaniReforemPage() {
           url: SROVNANI_REFOREM_DOC.url,
           title: SROVNANI_REFOREM_DOC.title,
           description: SROVNANI_REFOREM_DOC.description,
-          datePublished: SROVNANI_REFOREM_DOC.isoDate,
+          datePublished:
+            SROVNANI_REFOREM_DOC.publishedTime ?? SROVNANI_REFOREM_DOC.isoDate,
+          dateModified: SROVNANI_REFOREM_DOC.modifiedIsoDate,
           image: SROVNANI_REFOREM_DOC.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },
@@ -50,7 +54,9 @@ export default async function BlogSrovnaniReforemPage() {
               Blog · Srovnání
             </span>
             <span aria-hidden="true">/</span>
-            <span>{SROVNANI_REFOREM_DOC.date}</span>
+            <time dateTime={SROVNANI_REFOREM_DOC.isoDate}>
+              {SROVNANI_REFOREM_DOC.date}
+            </time>
             <span aria-hidden="true">/</span>
             <span>cca {readingMinutes} min čtení</span>
           </div>

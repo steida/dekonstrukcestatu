@@ -78,7 +78,7 @@ const typographyStyles: Config = {
             },
           },
 
-          ":is(h2, h3, h4) a": {
+          ":is(h2, h3, h4, h5) a": {
             color: "inherit",
             textDecoration: "none",
             fontWeight: "inherit",
@@ -127,10 +127,18 @@ const typographyStyles: Config = {
             paddingLeft: "1.45rem",
             listStyleType: "square",
           },
+          "ul > li::marker": {
+            color: "var(--accent)",
+          },
           ol: {
             marginTop: "1em",
             marginBottom: "1em",
             paddingLeft: "1.45rem",
+            listStyleType: "decimal",
+          },
+          "ol > li::marker": {
+            color: "var(--ink-muted)",
+            fontVariantNumeric: "tabular-nums",
           },
           li: {
             marginTop: "0.4em",

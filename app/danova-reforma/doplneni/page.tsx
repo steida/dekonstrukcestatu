@@ -14,7 +14,8 @@ export const metadata: Metadata = buildPageMetadata({
   type: "article",
   image: DOPLNENI_DOC.ogImage,
   imageAlt: DOPLNENI_DOC.ogImageAlt,
-  publishedTime: DOPLNENI_DOC.isoDate,
+  publishedTime: DOPLNENI_DOC.publishedTime ?? DOPLNENI_DOC.isoDate,
+  modifiedTime: DOPLNENI_DOC.modifiedIsoDate,
 });
 
 export default async function DoplneniPage() {
@@ -39,7 +40,8 @@ export default async function DoplneniPage() {
           url: DOPLNENI_DOC.url,
           title: DOPLNENI_DOC.title,
           description: DOPLNENI_DOC.description,
-          datePublished: DOPLNENI_DOC.isoDate,
+          datePublished: DOPLNENI_DOC.publishedTime ?? DOPLNENI_DOC.isoDate,
+          dateModified: DOPLNENI_DOC.modifiedIsoDate,
           image: DOPLNENI_DOC.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },
@@ -58,7 +60,14 @@ export default async function DoplneniPage() {
               Doplnění #1–#9
             </span>
             <span aria-hidden="true">/</span>
-            <span>Aktualizováno {DOPLNENI_DOC.date}</span>
+            <span>
+              Aktualizováno{" "}
+              <time
+                dateTime={DOPLNENI_DOC.modifiedIsoDate ?? DOPLNENI_DOC.isoDate}
+              >
+                {DOPLNENI_DOC.modifiedDate ?? DOPLNENI_DOC.date}
+              </time>
+            </span>
             <span aria-hidden="true">/</span>
             <span>cca {readingMinutes} min čtení</span>
           </div>
@@ -76,20 +85,19 @@ export default async function DoplneniPage() {
             <p className="mb-3 font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
               Rychlý obsah (#1 až #{supplements.length})
             </p>
-            <ol className="space-y-2 text-sm leading-snug">
+            <ol className="space-y-1 text-sm leading-snug">
               {supplements.map((item) => (
-                <li key={item.id} className="flex items-baseline gap-2.5">
+                <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="shrink-0 font-mono text-xs font-semibold text-[var(--accent)] tabular-nums hover:underline"
+                    className="group flex min-h-7 items-baseline gap-2.5 py-1 text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
                   >
-                    #{item.id}
-                  </a>
-                  <a
-                    href={`#${item.id}`}
-                    className="text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
-                  >
-                    {item.text.replace(/^Doplnění\s+#\d+\s*[—–-]\s*/i, "")}
+                    <span className="shrink-0 font-mono text-xs font-semibold text-[var(--accent)] tabular-nums group-hover:underline">
+                      #{item.id}
+                    </span>
+                    <span>
+                      {item.text.replace(/^Doplnění\s+#\d+\s*[—–-]\s*/i, "")}
+                    </span>
                   </a>
                 </li>
               ))}

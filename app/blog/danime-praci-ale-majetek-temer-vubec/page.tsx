@@ -11,12 +11,14 @@ import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
   path: PITVA_PAQ_IROZHLAS.url,
-  title: PITVA_PAQ_IROZHLAS.seoTitle,
+  absoluteTitle: PITVA_PAQ_IROZHLAS.seoTitle,
   description: PITVA_PAQ_IROZHLAS.description,
   type: "article",
   image: PITVA_PAQ_IROZHLAS.ogImage,
   imageAlt: PITVA_PAQ_IROZHLAS.ogImageAlt,
-  publishedTime: PITVA_PAQ_IROZHLAS.isoDate,
+  publishedTime:
+    PITVA_PAQ_IROZHLAS.publishedTime ?? PITVA_PAQ_IROZHLAS.isoDate,
+  modifiedTime: PITVA_PAQ_IROZHLAS.modifiedIsoDate,
 });
 
 export default async function BlogDanimePraciAleMajetekTemerVubecPage() {
@@ -34,7 +36,9 @@ export default async function BlogDanimePraciAleMajetekTemerVubecPage() {
           url: PITVA_PAQ_IROZHLAS.url,
           title: PITVA_PAQ_IROZHLAS.title,
           description: PITVA_PAQ_IROZHLAS.description,
-          datePublished: PITVA_PAQ_IROZHLAS.isoDate,
+          datePublished:
+            PITVA_PAQ_IROZHLAS.publishedTime ?? PITVA_PAQ_IROZHLAS.isoDate,
+          dateModified: PITVA_PAQ_IROZHLAS.modifiedIsoDate,
           image: PITVA_PAQ_IROZHLAS.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },

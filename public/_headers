@@ -3,6 +3,32 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
+
+# Next.js static export RSC payload files (*.txt) should not be indexed.
+/*.txt
+  X-Robots-Tag: noindex
+
+# Public plain-text and feed files: explicit UTF-8 charset and indexable.
+/llms.txt
+  ! X-Robots-Tag
+  ! Content-Type
+  Content-Type: text/plain; charset=utf-8
+
+/llms-full.txt
+  ! X-Robots-Tag
+  ! Content-Type
+  Content-Type: text/plain; charset=utf-8
+
+/robots.txt
+  ! X-Robots-Tag
+  ! Content-Type
+  Content-Type: text/plain; charset=utf-8
+
+/rss.xml
+  ! Content-Type
+  Content-Type: application/rss+xml; charset=utf-8
 
 # Next.js puts a content hash in these paths.
 /_next/static/*

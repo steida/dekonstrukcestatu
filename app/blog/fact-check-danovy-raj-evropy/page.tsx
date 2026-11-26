@@ -16,7 +16,9 @@ export const metadata: Metadata = buildPageMetadata({
   type: "article",
   image: PITVA_PAQ_DANOVY_RAJ.ogImage,
   imageAlt: PITVA_PAQ_DANOVY_RAJ.ogImageAlt,
-  publishedTime: PITVA_PAQ_DANOVY_RAJ.isoDate,
+  publishedTime:
+    PITVA_PAQ_DANOVY_RAJ.publishedTime ?? PITVA_PAQ_DANOVY_RAJ.isoDate,
+  modifiedTime: PITVA_PAQ_DANOVY_RAJ.modifiedIsoDate,
 });
 
 export default async function BlogPitvaPaqDanovyRajEvropyPage() {
@@ -33,7 +35,9 @@ export default async function BlogPitvaPaqDanovyRajEvropyPage() {
           url: PITVA_PAQ_DANOVY_RAJ.url,
           title: PITVA_PAQ_DANOVY_RAJ.title,
           description: PITVA_PAQ_DANOVY_RAJ.description,
-          datePublished: PITVA_PAQ_DANOVY_RAJ.isoDate,
+          datePublished:
+            PITVA_PAQ_DANOVY_RAJ.publishedTime ?? PITVA_PAQ_DANOVY_RAJ.isoDate,
+          dateModified: PITVA_PAQ_DANOVY_RAJ.modifiedIsoDate,
           image: PITVA_PAQ_DANOVY_RAJ.ogImage,
           breadcrumbs: [
             { name: "Domů", path: "/" },

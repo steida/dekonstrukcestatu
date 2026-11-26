@@ -148,7 +148,8 @@ export default function OAutoroviPage() {
             rel="noopener noreferrer"
             className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)]"
           >
-            Evolu&nbsp;↗
+            Evolu&nbsp;<span aria-hidden="true">↗</span>
+            <span className="sr-only"> (otevře se v novém okně)</span>
           </a>
           , kde uživatel svá data fyzicky vlastní bez závislosti na cloudu. Časem mi
           došlo, že moji práci v obou oborech spojuje jediná věc —{" "}
@@ -194,25 +195,28 @@ export default function OAutoroviPage() {
             Zdroje, metodika a opravy
           </p>
           <p>
-            Všechny analýzy a fact-checky vycházejí z primárních PDF, dat
-            Eurostatu / DG TAXUD, OECD a MF ČR; kompletní zdrojové texty jsou
-            veřejně na{" "}
+            Analýzy a fact-checky vycházejí především z primárních PDF a dat
+            Eurostatu / DG TAXUD, OECD a MF ČR; sekundární zdroje (např. Tax
+            Foundation) jsou vždy výslovně uvedeny u konkrétního údaje.
+            Kompletní zdrojové texty jsou veřejně na{" "}
             <a
               href="https://github.com/steida/dekonstrukcestatu"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[var(--ink)] underline decoration-[var(--border-strong)] underline-offset-2 hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+              className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-2 hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
             >
-              GitHubu ↗
+              GitHubu <span aria-hidden="true">↗</span>
+              <span className="sr-only"> (otevře se v novém okně)</span>
             </a>
             . Najdete-li chybu nebo máte námitku, otevřete{" "}
             <a
               href="https://github.com/steida/dekonstrukcestatu/issues"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[var(--ink)] underline decoration-[var(--border-strong)] underline-offset-2 hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+              className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-2 hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
             >
-              GitHub Issue ↗
+              GitHub Issue <span aria-hidden="true">↗</span>
+              <span className="sr-only"> (otevře se v novém okně)</span>
             </a>{" "}
             nebo napište na{" "}
             <a
@@ -250,14 +254,15 @@ export default function OAutoroviPage() {
             href="https://x.com/steidacz"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-[var(--accent)] hover:underline"
+            className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)] focus-visible:decoration-[var(--accent)]"
           >
-            @steidacz ↗
+            @steidacz <span aria-hidden="true">↗</span>
+            <span className="sr-only"> (otevře se v novém okně)</span>
           </a>
           . Přehled vybraných debat a přednášek najdete v sekci{" "}
           <Link
             href="/media"
-            className="font-medium text-[var(--accent)] hover:underline"
+            className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)] focus-visible:decoration-[var(--accent)]"
           >
             Média
           </Link>
@@ -299,7 +304,10 @@ export default function OAutoroviPage() {
                 <span className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
                   Jednořádkový titulek (TV / podcast)
                 </span>
-                <CopyTextButton text={SHORT_CAPTION_BIO} />
+                <CopyTextButton
+                  text={SHORT_CAPTION_BIO}
+                  label="Zkopírovat titulek"
+                />
               </div>
               <p className="text-sm leading-relaxed text-[var(--ink)]">
                 {SHORT_CAPTION_BIO}
@@ -313,7 +321,7 @@ export default function OAutoroviPage() {
                 <span className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
                   Krátké bio na konferenci (~30 slov)
                 </span>
-                <CopyTextButton text={CONFERENCE_BIO} />
+                <CopyTextButton text={CONFERENCE_BIO} label="Zkopírovat bio" />
               </div>
               <p className="text-sm leading-relaxed text-[var(--ink)]">
                 {CONFERENCE_BIO}
@@ -376,7 +384,8 @@ export default function OAutoroviPage() {
                 rel="noopener noreferrer"
                 className="font-medium text-[var(--ink)] hover:text-[var(--accent)]"
               >
-                x.com/steidacz ↗
+                x.com/steidacz <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (otevře se v novém okně)</span>
               </a>
             </li>
             <li className="min-w-0">
@@ -389,7 +398,9 @@ export default function OAutoroviPage() {
                 rel="noopener noreferrer"
                 className="font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
               >
-                github.com/steida/dekonstrukcestatu ↗
+                github.com/steida/dekonstrukcestatu{" "}
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (otevře se v novém okně)</span>
               </a>
             </li>
             <li className="min-w-0">
@@ -400,7 +411,9 @@ export default function OAutoroviPage() {
                 rel="noopener noreferrer"
                 className="font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
               >
-                startovac.cz/projekty/kniha-dekonstrukce-statu ↗
+                startovac.cz/projekty/kniha-dekonstrukce-statu{" "}
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (otevře se v novém okně)</span>
               </a>
             </li>
             <li>
@@ -413,7 +426,8 @@ export default function OAutoroviPage() {
                 rel="noopener noreferrer"
                 className="font-medium text-[var(--ink)] hover:text-[var(--accent)]"
               >
-                evolu.dev ↗
+                evolu.dev <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (otevře se v novém okně)</span>
               </a>
             </li>
             <li>

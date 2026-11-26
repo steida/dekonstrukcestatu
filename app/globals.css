@@ -27,7 +27,7 @@
   --surface-elevated: #24211e;
   --ink: #ebe5da;
   --ink-muted: #a8a095;
-  --ink-faint: #948c82;
+  --ink-faint: #a0988d;
   --border: rgba(244, 239, 230, 0.13);
   --border-strong: rgba(244, 239, 230, 0.28);
   --accent: #ed7368;
@@ -86,10 +86,66 @@
     outline-offset: 2px;
   }
 
+  details > summary:focus-visible {
+    outline-offset: -3px;
+  }
+
   ::selection {
-    background-color: var(--accent-soft);
+    background-color: color-mix(in srgb, var(--accent) 22%, var(--bg));
     color: var(--ink);
   }
+
+  [class~="bg-[var(--ink)]"]::selection,
+  [class~="bg-[var(--ink)]"] ::selection {
+    background-color: var(--accent);
+    color: var(--bg);
+  }
+
+  [class~="bg-[var(--accent)]"]::selection,
+  [class~="bg-[var(--accent)]"] ::selection {
+    background-color: var(--ink);
+    color: var(--bg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Horizontal scroll shadow affordance */
+.scroll-fade-x {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(to right, var(--bg), var(--bg)),
+    linear-gradient(to right, var(--bg), var(--bg)),
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--ink) 14%, transparent),
+      transparent
+    ),
+    linear-gradient(
+      to left,
+      color-mix(in srgb, var(--ink) 14%, transparent),
+      transparent
+    );
+  background-position:
+    left center,
+    right center,
+    left center,
+    right center;
+  background-repeat: no-repeat;
+  background-size:
+    20px 100%,
+    20px 100%,
+    14px 100%,
+    14px 100%;
+  background-attachment: local, local, scroll, scroll;
 }
 
 /* Editorial prose enhancements */
@@ -112,6 +168,31 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background-color: var(--surface-elevated);
+  background-image:
+    linear-gradient(to right, var(--surface-elevated), var(--surface-elevated)),
+    linear-gradient(to right, var(--surface-elevated), var(--surface-elevated)),
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--ink) 14%, transparent),
+      transparent
+    ),
+    linear-gradient(
+      to left,
+      color-mix(in srgb, var(--ink) 14%, transparent),
+      transparent
+    );
+  background-position:
+    left center,
+    right center,
+    left center,
+    right center;
+  background-repeat: no-repeat;
+  background-size:
+    20px 100%,
+    20px 100%,
+    14px 100%,
+    14px 100%;
+  background-attachment: local, local, scroll, scroll;
 }
 
 .prose-ds .table-wrap table {
@@ -170,7 +251,7 @@
 }
 
 /* Heading autolink anchor (#) */
-.prose-ds :is(h2, h3, h4) {
+.prose-ds :is(h2, h3, h4, h5) {
   position: relative;
 }
 
@@ -185,7 +266,7 @@
   transition: opacity 150ms ease, color 150ms ease;
 }
 
-.prose-ds :is(h2, h3, h4):hover .heading-anchor,
+.prose-ds :is(h2, h3, h4, h5):hover .heading-anchor,
 .prose-ds .heading-anchor:focus-visible {
   opacity: 1;
 }
@@ -196,6 +277,11 @@
 
 @media (hover: none) {
   .prose-ds .heading-anchor {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
     opacity: 1;
   }
 }
@@ -206,8 +292,39 @@
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
-  padding: 0.65rem 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.65rem 0.4rem;
   margin: 1.25rem 0;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(to right, var(--bg), var(--bg)),
+    linear-gradient(to right, var(--bg), var(--bg)),
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--ink) 14%, transparent),
+      transparent
+    ),
+    linear-gradient(
+      to left,
+      color-mix(in srgb, var(--ink) 14%, transparent),
+      transparent
+    );
+  background-position:
+    left center,
+    right center,
+    left center,
+    right center;
+  background-repeat: no-repeat;
+  background-size:
+    20px 100%,
+    20px 100%,
+    14px 100%,
+    14px 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+.prose-ds .katex-display:focus-visible {
+  outline-offset: -2px;
 }
 
 .prose-ds .katex {
@@ -282,7 +399,38 @@
 
   .prose-ds .table-wrap {
     overflow: visible !important;
+    background-image: none !important;
     border: 1px solid #000000 !important;
+  }
+
+  .prose-ds .table-wrap table {
+    font-size: 8.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .prose-ds .table-wrap thead th,
+  .prose-ds .table-wrap tbody td {
+    min-width: 0 !important;
+    padding: 0.3rem 0.4rem !important;
+    white-space: normal !important;
+  }
+
+  .prose-ds .katex-display {
+    overflow: visible !important;
+    background-image: none !important;
+  }
+
+  /* Postcard-only print mode triggered by PrintPostcardsButton */
+  body[data-print-postcards="true"] main > div > :not(article),
+  body[data-print-postcards="true"] article > :not(.postcards-print) {
+    display: none !important;
+  }
+
+  body[data-print-postcards="true"] .postcards-print {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-top: none !important;
+    padding-top: 0 !important;
   }
 
   a {

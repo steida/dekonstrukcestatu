@@ -72,10 +72,15 @@ export default function BlogPage() {
         {/* Post 1 (newest): Srovnání obou daňových reforem za tři minuty */}
         <article className="pb-8">
           <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-            <span className="text-[var(--ink-faint)]">
+            <time
+              dateTime={SROVNANI_REFOREM_DOC.isoDate}
+              className="text-[var(--ink-faint)]"
+            >
               {SROVNANI_REFOREM_DOC.date}
+            </time>
+            <span aria-hidden="true" className="text-[var(--ink-faint)]">
+              /
             </span>
-            <span className="text-[var(--ink-faint)]">/</span>
             <span className="font-semibold text-[var(--accent)]">
               Srovnání
             </span>
@@ -116,10 +121,15 @@ export default function BlogPage() {
         {/* Post 2: Daniel Prokop na iROZHLASu */}
         <article className="py-8">
           <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-            <span className="text-[var(--ink-faint)]">
+            <time
+              dateTime={PITVA_PAQ_IROZHLAS.isoDate}
+              className="text-[var(--ink-faint)]"
+            >
               {PITVA_PAQ_IROZHLAS.date}
+            </time>
+            <span aria-hidden="true" className="text-[var(--ink-faint)]">
+              /
             </span>
-            <span className="text-[var(--ink-faint)]">/</span>
             <span className="font-semibold text-[var(--accent)]">
               Fact-check
             </span>
@@ -154,10 +164,15 @@ export default function BlogPage() {
         {/* Post 3: Audit Chytřejších daní (PAQ, CVF, IDEA) + 6-chapter audit */}
         <article className="py-8">
           <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-            <span className="text-[var(--ink-faint)]">
+            <time
+              dateTime={PITVA_PAQ_ESSAY.isoDate}
+              className="text-[var(--ink-faint)]"
+            >
               {PITVA_PAQ_ESSAY.date}
+            </time>
+            <span aria-hidden="true" className="text-[var(--ink-faint)]">
+              /
             </span>
-            <span className="text-[var(--ink-faint)]">/</span>
             <span className="font-semibold text-[var(--accent)]">
               Esej &amp; forenzní audit
             </span>
@@ -228,10 +243,15 @@ export default function BlogPage() {
         {/* Post 2: Fact-check Daňový ráj Evropy (11/2026) */}
         <article className="py-7">
           <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-            <span className="text-[var(--ink-faint)]">
+            <time
+              dateTime={PITVA_PAQ_DANOVY_RAJ.isoDate}
+              className="text-[var(--ink-faint)]"
+            >
               {PITVA_PAQ_DANOVY_RAJ.date}
+            </time>
+            <span aria-hidden="true" className="text-[var(--ink-faint)]">
+              /
             </span>
-            <span className="text-[var(--ink-faint)]">/</span>
             <span className="font-semibold text-[var(--ink-muted)]">
               Fact-check
             </span>

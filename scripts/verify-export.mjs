@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const WEB_ROOT = path.resolve(__dirname, "..");
 const OUT_DIR = path.join(WEB_ROOT, "out");
+const SITE_URL = "https://www.dekonstrukcestatu.cz";
 
 const EXPECTED_FILES = [
   "index.html",
@@ -126,10 +127,11 @@ function walkFiles(dir, extensions) {
   return results;
 }
 
-function resolveInternalHref(href) {
+function resolveInternalFile(href) {
   const clean = href.split("#")[0].split("?")[0];
   if (clean === "" || clean === "/") {
-    return fs.existsSync(path.join(OUT_DIR, "index.html"));
+    const idx = path.join(OUT_DIR, "index.html");
+    return fs.existsSync(idx) ? idx : null;
   }
   const rel = clean.replace(/^\/+/, "");
   const candidates = [
@@ -137,17 +139,78 @@ function resolveInternalHref(href) {
     path.join(OUT_DIR, `${rel}.html`),
     path.join(OUT_DIR, rel, "index.html"),
   ];
-  return candidates.some((c) => fs.existsSync(c));
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return c;
+  }
+  return null;
+}
+
+function normalizeUrl(url) {
+  return url.replace(/\/+$/, "");
+}
+
+function expectedCanonicalForRel(rel) {
+  if (rel === "index.html") return SITE_URL;
+  return `${SITE_URL}/${rel.replace(/\.html$/, "")}`;
+}
+
+/**
+ * Extract full inner HTML of every `<div class="prose prose-ds"...>...</div>`
+ * using balanced div depth counting so nested `.table-wrap` divs never truncate the scan.
+ */
+function extractProseBlocks(html) {
+  const blocks = [];
+  const openRe = /<div\b[^>]*\bclass="[^"]*\bprose-ds\b[^"]*"[^>]*>/g;
+  const tagRe = /<\/?div\b[^>]*>/gi;
+  let openMatch;
+  while ((openMatch = openRe.exec(html)) !== null) {
+    const start = openMatch.index + openMatch[0].length;
+    tagRe.lastIndex = start;
+    let depth = 1;
+    let end = html.length;
+    let tagMatch;
+    while ((tagMatch = tagRe.exec(html)) !== null) {
+      if (tagMatch[0].startsWith("</")) {
+        depth--;
+        if (depth === 0) {
+          end = tagMatch.index;
+          break;
+        }
+      } else if (!tagMatch[0].endsWith("/>")) {
+        depth++;
+      }
+    }
+    blocks.push(html.slice(start, end));
+    openRe.lastIndex = end;
+  }
+  return blocks;
 }
 
 const htmlFiles = walkFiles(OUT_DIR, [".html"]);
 const textFiles = walkFiles(OUT_DIR, [".html", ".txt", ".xml"]);
 let checkedLinkCount = 0;
+let checkedFragmentCount = 0;
+let checkedJsonLdCount = 0;
+
+// Pre-index all element IDs per HTML file for fragment anchor validation
+const htmlContents = new Map();
+const htmlIds = new Map();
+for (const filePath of htmlFiles) {
+  const content = fs.readFileSync(filePath, "utf8");
+  htmlContents.set(filePath, content);
+  const ids = new Set();
+  const idRe = /\bid="([^"]+)"/g;
+  let m;
+  while ((m = idRe.exec(content)) !== null) {
+    ids.add(m[1]);
+  }
+  htmlIds.set(filePath, ids);
+}
 
 // 2. Zero internal leaks across ALL HTML + TXT + XML files in out/
 for (const filePath of textFiles) {
   const rel = path.relative(OUT_DIR, filePath);
-  const content = fs.readFileSync(filePath, "utf8");
+  const content = htmlContents.get(filePath) ?? fs.readFileSync(filePath, "utf8");
   const contentLower = content.toLowerCase();
 
   for (const token of FORBIDDEN_INTERNAL_TOKENS) {
@@ -157,41 +220,118 @@ for (const filePath of textFiles) {
   }
 
   // Generic guard: zero local relative .md link targets in rendered HTML/TXT/XML
-  if (/(?:href="[^"]*\.md(?:#[^"]*)?"|\]\([^)\s]*\.md(?:#[^)\s]*)?\))/i.test(content)) {
+  if (
+    /(?:href="[^"]*\.md(?:#[^"]*)?"|\]\([^)\s]*\.md(?:#[^)\s]*)?\))/i.test(
+      content,
+    )
+  ) {
     errors.push(`Raw .md link leaked into out/${rel}`);
   }
 }
 
-// 3. Per-page link, SEO metadata, and KaTeX checks
+// 3. Per-page link, fragment anchor, SEO metadata, JSON-LD, and KaTeX checks
 for (const filePath of htmlFiles) {
   const rel = path.relative(OUT_DIR, filePath);
-  const content = fs.readFileSync(filePath, "utf8");
+  const content = htmlContents.get(filePath);
 
-  // 3a. Internal href="/..." links
-  const hrefRegex = /\bhref="(\/[^"]*)"/g;
+  // 3a. Internal href="/..." and same-page href="#..." links + fragment verification
+  const hrefRegex = /\bhref="((?:\/|#)[^"]*)"/g;
   let match;
   while ((match = hrefRegex.exec(content)) !== null) {
     const href = match[1];
-    if (href.startsWith("//")) continue;
+    if (href.startsWith("//") || href === "#") continue;
+
+    if (href.startsWith("#")) {
+      const frag = decodeURIComponent(href.slice(1));
+      checkedFragmentCount++;
+      if (!htmlIds.get(filePath).has(frag)) {
+        errors.push(`Broken same-page fragment in out/${rel}: href="${href}"`);
+      }
+      continue;
+    }
+
     checkedLinkCount++;
-    if (!resolveInternalHref(href)) {
+    const resolved = resolveInternalFile(href);
+    if (!resolved) {
       errors.push(`Broken internal link in out/${rel}: href="${href}"`);
+      continue;
+    }
+
+    const hashIdx = href.indexOf("#");
+    if (hashIdx !== -1 && resolved.endsWith(".html")) {
+      const frag = decodeURIComponent(href.slice(hashIdx + 1));
+      if (frag) {
+        checkedFragmentCount++;
+        const targetIds = htmlIds.get(resolved);
+        if (targetIds && !targetIds.has(frag)) {
+          errors.push(
+            `Broken internal fragment in out/${rel}: href="${href}" (missing id="${frag}" in out/${path.relative(OUT_DIR, resolved)})`,
+          );
+        }
+      }
     }
   }
 
-  // 3b. Zero KaTeX error spans anywhere
+  // 3b. Zero KaTeX error spans and zero decomposed Czech diacritics in MathML
   if (content.includes("katex-error")) {
     errors.push(`KaTeX error span found in out/${rel}`);
   }
+  if (content.includes('<mover accent="true"><mtext>')) {
+    errors.push(
+      `Decomposed KaTeX MathML accent (<mover accent="true"><mtext>) found in out/${rel}`,
+    );
+  }
 
-  // 3c. SEO / OG / Twitter metadata checks on every non-404 page
+  // 3c. Validate every JSON-LD script block parses cleanly
+  const jsonLdRe =
+    /<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi;
+  let ldMatch;
+  while ((ldMatch = jsonLdRe.exec(content)) !== null) {
+    checkedJsonLdCount++;
+    try {
+      JSON.parse(ldMatch[1]);
+    } catch (err) {
+      errors.push(
+        `Invalid JSON-LD in out/${rel}: ${err instanceof Error ? err.message : String(err)}`,
+      );
+    }
+  }
+
+  // 3d. SEO / OG / Twitter / noindex metadata checks on every non-404 page
   const isErrorPage = rel === "404.html" || rel === "_not-found.html";
   if (!isErrorPage) {
-    if (!content.includes('<link rel="canonical"')) {
+    const expectedUrl = expectedCanonicalForRel(rel);
+    const canonicalMatch = content.match(
+      /<link rel="canonical" href="([^"]*)"/,
+    );
+    const ogUrlMatch = content.match(
+      /<meta property="og:url" content="([^"]*)"/,
+    );
+    if (!canonicalMatch) {
       errors.push(`Missing <link rel="canonical"> in out/${rel}`);
+    } else if (normalizeUrl(canonicalMatch[1]) !== normalizeUrl(expectedUrl)) {
+      errors.push(
+        `Canonical mismatch in out/${rel}: got "${canonicalMatch[1]}", expected "${expectedUrl}"`,
+      );
+    }
+    if (!ogUrlMatch) {
+      errors.push(`Missing <meta property="og:url"> in out/${rel}`);
+    } else if (
+      canonicalMatch &&
+      normalizeUrl(ogUrlMatch[1]) !== normalizeUrl(canonicalMatch[1])
+    ) {
+      errors.push(
+        `og:url (${ogUrlMatch[1]}) !== canonical (${canonicalMatch[1]}) in out/${rel}`,
+      );
     }
     if (!content.includes('<meta property="og:image"')) {
       errors.push(`Missing <meta property="og:image"> in out/${rel}`);
+    }
+    if (!content.includes('<meta name="twitter:image:alt"')) {
+      errors.push(`Missing <meta name="twitter:image:alt"> in out/${rel}`);
+    }
+    if (/<meta name="robots" content="[^"]*noindex/i.test(content)) {
+      errors.push(`Unexpected noindex meta tag on indexable page out/${rel}`);
     }
     const twitterTitleMatch = content.match(
       /<meta name="twitter:title" content="([^"]*)"/,
@@ -226,8 +366,13 @@ const hr05Path = path.join(
   "danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady.html",
 );
 if (fs.existsSync(hr05Path)) {
-  const hr05 = fs.readFileSync(hr05Path, "utf8");
-  for (const expectedCurrency of ["6 200 USD", "16 500 USD", "9 500 USD", "25 500 USD"]) {
+  const hr05 = htmlContents.get(hr05Path);
+  for (const expectedCurrency of [
+    "6 200 USD",
+    "16 500 USD",
+    "9 500 USD",
+    "25 500 USD",
+  ]) {
     if (!hr05.includes(expectedCurrency)) {
       errors.push(
         `Currency value "${expectedCurrency}" missing or mangled in out/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady.html`,
@@ -245,9 +390,12 @@ if (fs.existsSync(hr05Path)) {
 if (fs.existsSync(path.join(OUT_DIR, "pitva-paq.html"))) {
   errors.push(`Legacy out/pitva-paq.html should not exist`);
 }
-const pitvaPath = path.join(OUT_DIR, "blog/zjednodusovaci-a-komplikatori/audit.html");
+const pitvaPath = path.join(
+  OUT_DIR,
+  "blog/zjednodusovaci-a-komplikatori/audit.html",
+);
 if (fs.existsSync(pitvaPath)) {
-  const pitva = fs.readFileSync(pitvaPath, "utf8");
+  const pitva = htmlContents.get(pitvaPath);
   if (!pitva.includes('class="table-wrap"')) {
     errors.push(
       `Expected class="table-wrap" missing in out/blog/zjednodusovaci-a-komplikatori/audit.html`,
@@ -270,7 +418,7 @@ if (fs.existsSync(pitvaPath)) {
 // 6. Verify Doplnění #1–#9 anchors in doplneni.html
 const doplneniPath = path.join(OUT_DIR, "danova-reforma/doplneni.html");
 if (fs.existsSync(doplneniPath)) {
-  const doplneni = fs.readFileSync(doplneniPath, "utf8");
+  const doplneni = htmlContents.get(doplneniPath);
   for (let n = 1; n <= 9; n++) {
     if (!doplneni.includes(`id="${n}"`) || !doplneni.includes(`href="#${n}"`)) {
       errors.push(
@@ -281,9 +429,12 @@ if (fs.existsSync(doplneniPath)) {
 }
 
 // 7. Verify /blog/zjednodusovaci-a-komplikatori links, clean prose & footer contact
-const paqClanekPath = path.join(OUT_DIR, "blog/zjednodusovaci-a-komplikatori.html");
+const paqClanekPath = path.join(
+  OUT_DIR,
+  "blog/zjednodusovaci-a-komplikatori.html",
+);
 if (fs.existsSync(paqClanekPath)) {
-  const paqClanek = fs.readFileSync(paqClanekPath, "utf8");
+  const paqClanek = htmlContents.get(paqClanekPath);
   if (!paqClanek.includes('href="/blog/zjednodusovaci-a-komplikatori/audit"')) {
     errors.push(
       `Missing link to /blog/zjednodusovaci-a-komplikatori/audit in out/blog/zjednodusovaci-a-komplikatori.html`,
@@ -301,97 +452,132 @@ if (fs.existsSync(paqClanekPath)) {
   }
 }
 
-// 7b. Verify zero raw uncleaned @handles inside rendered article prose
+// 7b. Verify zero raw uncleaned @handles across 100% of rendered article prose
 for (const filePath of htmlFiles) {
   const rel = path.relative(OUT_DIR, filePath);
-  const content = fs.readFileSync(filePath, "utf8");
-  const proseMatch = content.match(/<div class="prose prose-ds"[\s\S]*?<\/div>/g);
-  if (proseMatch) {
-    const proseText = proseMatch.join(" ").replace(/<[^>]+>/g, " ");
-    const rawHandles = proseText.match(/(?<![\w/.])@(?!steidacz\b)[A-Za-z0-9_]{3,15}\b/g);
+  const content = htmlContents.get(filePath);
+  const proseBlocks = extractProseBlocks(content);
+  if (proseBlocks.length > 0) {
+    const proseText = proseBlocks.join(" ").replace(/<[^>]+>/g, " ");
+    const rawHandles = proseText.match(
+      /(?<![\w/.])@(?!steidacz\b)[A-Za-z0-9_]{3,15}\b/g,
+    );
     if (rawHandles) {
-      errors.push(`Uncleaned raw @handle(s) ${rawHandles.join(", ")} in prose of out/${rel}`);
+      errors.push(
+        `Uncleaned raw @handle(s) ${rawHandles.join(", ")} in prose of out/${rel}`,
+      );
     }
   }
 }
 
-// 8. Verify contact email CTA on home page and in llms.txt + no duplicate title on /danova-reforma
+// 8. Verify contact email CTA on home page, no duplicate title, llms.txt, sitemap 1:1, RSS, and _headers
 const indexPath = path.join(OUT_DIR, "index.html");
 if (fs.existsSync(indexPath)) {
-  const indexHtml = fs.readFileSync(indexPath, "utf8");
+  const indexHtml = htmlContents.get(indexPath);
   if (!indexHtml.includes("mailto:daniel@steigerwald.cz")) {
-    errors.push(`Missing contact mailto:daniel@steigerwald.cz in out/index.html`);
+    errors.push(
+      `Missing contact mailto:daniel@steigerwald.cz in out/index.html`,
+    );
   }
 }
 const danovaPath = path.join(OUT_DIR, "danova-reforma.html");
 if (fs.existsSync(danovaPath)) {
-  const danovaHtml = fs.readFileSync(danovaPath, "utf8");
+  const danovaHtml = htmlContents.get(danovaPath);
   if (
     danovaHtml.includes(
       "<title>Daňová reforma podle Dekonstrukce státu | Dekonstrukce státu</title>",
     )
   ) {
-    errors.push(`Duplicate "Dekonstrukce státu" in <title> on out/danova-reforma.html`);
+    errors.push(
+      `Duplicate "Dekonstrukce státu" in <title> on out/danova-reforma.html`,
+    );
   }
 }
 const llmsPath = path.join(OUT_DIR, "llms.txt");
 if (fs.existsSync(llmsPath)) {
   const llmsTxt = fs.readFileSync(llmsPath, "utf8");
-  if (!llmsTxt.includes("daniel@steigerwald.cz")) {
-    errors.push(`Missing contact daniel@steigerwald.cz in out/llms.txt`);
-  }
-  if (!llmsTxt.includes("/blog/dekonstrukce-statu-vs-chytrejsi-dane")) {
-    errors.push(`Missing /blog/dekonstrukce-statu-vs-chytrejsi-dane in out/llms.txt`);
-  }
-  if (!llmsTxt.includes("/blog/danime-praci-ale-majetek-temer-vubec")) {
-    errors.push(`Missing /blog/danime-praci-ale-majetek-temer-vubec in out/llms.txt`);
-  }
-  if (!llmsTxt.includes("/blog/zjednodusovaci-a-komplikatori")) {
-    errors.push(`Missing /blog/zjednodusovaci-a-komplikatori in out/llms.txt`);
-  }
-  if (!llmsTxt.includes("/blog/fact-check-danovy-raj-evropy")) {
-    errors.push(`Missing /blog/fact-check-danovy-raj-evropy in out/llms.txt`);
-  }
-  if (!llmsTxt.includes("/danova-reforma/implementace-eu")) {
-    errors.push(`Missing /danova-reforma/implementace-eu in out/llms.txt`);
+  for (const required of [
+    "daniel@steigerwald.cz",
+    "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
+    "/blog/danime-praci-ale-majetek-temer-vubec",
+    "/blog/zjednodusovaci-a-komplikatori",
+    "/blog/fact-check-danovy-raj-evropy",
+    "/danova-reforma/implementace-eu",
+  ]) {
+    if (!llmsTxt.includes(required)) {
+      errors.push(`Missing ${required} in out/llms.txt`);
+    }
   }
 }
+
 const sitemapPath = path.join(OUT_DIR, "sitemap.xml");
 if (fs.existsSync(sitemapPath)) {
   const sitemapXml = fs.readFileSync(sitemapPath, "utf8");
-  if (!sitemapXml.includes("/blog/dekonstrukce-statu-vs-chytrejsi-dane")) {
-    errors.push(`Missing /blog/dekonstrukce-statu-vs-chytrejsi-dane in out/sitemap.xml`);
+  const sitemapUrls = new Set(
+    [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) =>
+      normalizeUrl(m[1].trim()),
+    ),
+  );
+  const expectedIndexableUrls = new Set(
+    EXPECTED_FILES.filter(
+      (rel) => rel.endsWith(".html") && rel !== "404.html",
+    ).map((rel) => normalizeUrl(expectedCanonicalForRel(rel))),
+  );
+  for (const expectedUrl of expectedIndexableUrls) {
+    if (!sitemapUrls.has(expectedUrl)) {
+      errors.push(`Missing URL in out/sitemap.xml: ${expectedUrl}`);
+    }
   }
-  if (!sitemapXml.includes("/blog/danime-praci-ale-majetek-temer-vubec")) {
-    errors.push(`Missing /blog/danime-praci-ale-majetek-temer-vubec in out/sitemap.xml`);
-  }
-  if (!sitemapXml.includes("/blog/zjednodusovaci-a-komplikatori")) {
-    errors.push(`Missing /blog/zjednodusovaci-a-komplikatori in out/sitemap.xml`);
-  }
-  if (!sitemapXml.includes("/blog/fact-check-danovy-raj-evropy")) {
-    errors.push(`Missing /blog/fact-check-danovy-raj-evropy in out/sitemap.xml`);
-  }
-  if (!sitemapXml.includes("/danova-reforma/implementace-eu")) {
-    errors.push(`Missing /danova-reforma/implementace-eu in out/sitemap.xml`);
+  for (const actualUrl of sitemapUrls) {
+    if (!expectedIndexableUrls.has(actualUrl)) {
+      errors.push(`Unexpected extra URL in out/sitemap.xml: ${actualUrl}`);
+    }
   }
 }
+
 const rssPath = path.join(OUT_DIR, "rss.xml");
 if (fs.existsSync(rssPath)) {
   const rssXml = fs.readFileSync(rssPath, "utf8");
-  if (!rssXml.includes("/blog/dekonstrukce-statu-vs-chytrejsi-dane")) {
-    errors.push(`Missing /blog/dekonstrukce-statu-vs-chytrejsi-dane in out/rss.xml`);
+  if (!rssXml.includes("<rss ") || !rssXml.includes("<channel>")) {
+    errors.push(`Invalid RSS root structure in out/rss.xml`);
   }
-  if (!rssXml.includes("/blog/danime-praci-ale-majetek-temer-vubec")) {
-    errors.push(`Missing /blog/danime-praci-ale-majetek-temer-vubec in out/rss.xml`);
+  const rssItems = rssXml.match(/<item>[\s\S]*?<\/item>/g) || [];
+  if (rssItems.length < 10) {
+    errors.push(`Too few <item> entries (${rssItems.length}) in out/rss.xml`);
   }
-  if (!rssXml.includes("/blog/zjednodusovaci-a-komplikatori")) {
-    errors.push(`Missing /blog/zjednodusovaci-a-komplikatori in out/rss.xml`);
+  for (const itemXml of rssItems) {
+    for (const tag of ["title", "link", "guid", "pubDate", "description"]) {
+      if (!new RegExp(`<${tag}\\b[^>]*>[^<]+</${tag}>`).test(itemXml)) {
+        errors.push(`Missing <${tag}> in an RSS item in out/rss.xml`);
+      }
+    }
   }
-  if (!rssXml.includes("/blog/fact-check-danovy-raj-evropy")) {
-    errors.push(`Missing /blog/fact-check-danovy-raj-evropy in out/rss.xml`);
+  for (const required of [
+    "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
+    "/blog/danime-praci-ale-majetek-temer-vubec",
+    "/blog/zjednodusovaci-a-komplikatori",
+    "/blog/fact-check-danovy-raj-evropy",
+    "/danova-reforma/implementace-eu",
+  ]) {
+    if (!rssXml.includes(required)) {
+      errors.push(`Missing ${required} in out/rss.xml`);
+    }
   }
-  if (!rssXml.includes("/danova-reforma/implementace-eu")) {
-    errors.push(`Missing /danova-reforma/implementace-eu in out/rss.xml`);
+}
+
+const headersPath = path.join(OUT_DIR, "_headers");
+if (fs.existsSync(headersPath)) {
+  const headersTxt = fs.readFileSync(headersPath, "utf8");
+  for (const required of [
+    "/llms.txt",
+    "/llms-full.txt",
+    "/robots.txt",
+    "Content-Type: text/plain; charset=utf-8",
+    "! X-Robots-Tag",
+  ]) {
+    if (!headersTxt.includes(required)) {
+      errors.push(`Missing "${required}" rule in out/_headers`);
+    }
   }
 }
 
@@ -404,5 +590,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `VERIFY OK: ${EXPECTED_FILES.length} expected files present, ${htmlFiles.length} HTML pages (+ sitemap/robots/rss/llms) scanned, ${checkedLinkCount} internal links verified, ${FORBIDDEN_INTERNAL_TOKENS.length} forbidden leak/hygiene patterns checked (0 hits), canonical/OG/Twitter tags verified, 0 KaTeX errors, Doplnění #1–#9, /blog/zjednodusovaci-a-komplikatori, currency & table-wrap checks passed.`,
+  `VERIFY OK: ${EXPECTED_FILES.length} expected files present, ${htmlFiles.length} HTML pages (+ sitemap/robots/rss/llms/_headers) scanned, ${checkedLinkCount} internal links & ${checkedFragmentCount} fragment anchors verified, ${checkedJsonLdCount} JSON-LD blocks valid, 0 forbidden leaks, 0 KaTeX errors/accents, full prose @handle scan passed.`,
 );
