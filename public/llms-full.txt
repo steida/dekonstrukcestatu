@@ -478,7 +478,7 @@ Nejjednodušší model placení daní, kterému by rozuměl opravdu každý, vyp
 
 **A ne — státu nebude chybět ani koruna (pokud si to voliči sami neodhlasují).** Tahle reforma velikost státu nemění: jen všechny dnešní skryté daně a odvody slije do jedné viditelné sazby **Y %**. Chcete dnešní 3bilionový stát? **Y %** bude vysoké. Chcete štíhlý stát? **Y %** bude nízké.
 
-Kdo chce co nejvíc ulevit chudým, zvedne spodní hranici **X**. Už samotná rovná sazba **Y %** přitom od lidí s vyšším příjmem vybere násobky v absolutních korunách — a spolu s nezdanitelným minimem **X** s příjmem roste nejen odvod v korunách, ale i efektivní procentní sazba. Dva parametry (**X** a **Y %**) tak bohatě stačí i těm největším přerozdělovačům (socialistům) ze všech.
+Kdo chce co nejvíc pomoct chudým, co nejvíc zvedne spodní hranici **X**. A stačí dva parametry (**X** a **Y %**) i těm největším přerozdělovačům (socialistům) ze všech.
 
 Tenhle model je krásně jednoduchý, avšak opomněli jsme jednu věc: **náklady**.
 
@@ -556,7 +556,7 @@ Namítnete: dnešní 3bilionový výběr daní a odvodů přece nejde rozpočít
 
 Kdybychom tenhle drahý přerozdělovací kolotoč vypnuli a každý si stáří, doktora i školu platil ze svých peněz napřímo, na samotné jádro státu — armádu, policii a soudy (bez obsluhy starých dluhů a silnic) — jde dnes jen zlomek, zhruba **3 tisíce Kč měsíčně na dospělého**. A to už „Spotify za stát“ najednou dává trochu smysl, ne?
 
-Jenže pozor — pamatujte na to, co jsme si řekli o pár řádků výš: **ani ankap nezaručuje, že lidé nebudou chtít „socialistický ankap“.** Většina lidí, myslím, nechce pevnou cenu za službu, ale chce, aby bohatí platili násobně víc korun (a ideálně i vyšší procento příjmu) — přijde jim to spravedlivé (*„Ať platí bohatí!“*).
+Jenže pozor — pamatujte na to, co jsme si řekli o pár řádků výš: **ani ankap nezaručuje, že lidé nebudou chtít „socialistický ankap“.** Většina lidí, myslím, chce, aby bohatí platili více — přijde jim to spravedlivé (*„Ať platí bohatí!“*).
 
 Pokud by na tom většina zákazníků opravdu trvala (třeba tím, že by platila jen firmám, které bohaté zatíží víc, a ostatní bojkotovala), tuhle penalizaci by nabízely všechny hlavní firmy. Proč? Bohatých zas tolik není. Stejně jako dnes většinu daní ve státě v součtu platí běžní lidé, i v ankapu rozhoduje kupní síla většiny — a u práva nebo bezpečnosti navíc funguje síťový efekt (bohatý si nekoupí oddělenou službu jen za plotem vlastní vily, potřebuje pravidla a bezpečí v celé společnosti kolem sebe). A v tu samou vteřinu by i ty soukromé firmy narazily na **úplně stejný problém s náklady** jako stát — a skončily by zpátky někde u dvou pohlednic Halla a Rabushky.
 
@@ -567,7 +567,7 @@ Pokud by na tom většina zákazníků opravdu trvala (třeba tím, že by plati
 Jak říkal Thomas Sowell: *neexistují řešení, jen trade-offy*. A na stole jsou nakonec jen dvě možnosti:
 
 1. **Dobrovolná platba za služby (jako Spotify) — nebo ve státě paušální poplatek (poll tax):** Lidé platí cenu služby a nepenalizují bohaté za úspěch — pak není co kontrolovat, odpadá finančák i řešení nákladů.
-2. **Většina chce, aby chudí neplatili nic a bohatí platili násobně víc:** Pak se minimálnímu oddělení podnikatelských nákladů od soukromé spotřeby matematicky nevyhneme — a nejméně škodlivá cesta jsou **dvě pohlednice a dva parametry** (Hall–Rabushka), kde bohatší už samotnou rovnou sazbou **Y %** platí násobky v absolutních korunách a díky minimu **X** jim roste i efektivní procentní zdanění.
+2. **Většina chce, aby bohatí platili víc a chudí nic:** Pak se minimálnímu oddělení podnikatelských nákladů od soukromé spotřeby matematicky nevyhneme — a nejméně škodlivá cesta jsou **dvě pohlednice a dva parametry** (Hall–Rabushka).
 
 Všechno ostatní — dnešní český slepenec, ale i 224stránkové návrhy na přelaďování sedmi různých daní, cenových map, dědictví, časových testů a speciálních výjimek — je jen drahé sociální inženýrství. Složitost v daních totiž neslouží chudým. Slouží hlavně k tomu, aby běžný člověk netušil, kolik mu stát skutečně bere.
 
