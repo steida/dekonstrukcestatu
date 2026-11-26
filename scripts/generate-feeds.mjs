@@ -48,7 +48,10 @@ function sanitizeForLlmsFull(raw, docUrl) {
           : label;
         return `[${cleanLabel}](${PUBLISHED_URL_MAP[base]})`;
       }
-      if (base === "Chytrejsi_dane_2025-1.pdf" || base === "Chytrejsi_dane_2025-1.txt") {
+      if (
+        base === "Chytrejsi_dane_2025-1.pdf" ||
+        base === "Chytrejsi_dane_2025-1.txt"
+      ) {
         return `[Chytřejší daně (PDF)](${PAQ_PUBLIC_PDF})`;
       }
       return label.replace(/^`|`$/g, "").replace(/\.(?:md|txt)$/i, "");
@@ -57,9 +60,18 @@ function sanitizeForLlmsFull(raw, docUrl) {
 
   out = out
     .replace(/file:\/\/\/[^\s)>\]]+/g, "")
-    .replace(/`?Chytrejsi_dane_2025-1\.txt`?/g, `[Chytřejší daně (PDF)](${PAQ_PUBLIC_PDF})`)
-    .replace(/`?clanek-dane-x\.md`?/g, `[Daňová reforma podle Dekonstrukce státu](${SITE_URL}/danova-reforma)`)
-    .replace(/`?clanek-dane-doplneni\.md`?/g, `[Doplnění #1–#9](${SITE_URL}/danova-reforma/doplneni)`)
+    .replace(
+      /`?Chytrejsi_dane_2025-1\.txt`?/g,
+      `[Chytřejší daně (PDF)](${PAQ_PUBLIC_PDF})`,
+    )
+    .replace(
+      /`?clanek-dane-x\.md`?/g,
+      `[Daňová reforma podle Dekonstrukce státu](${SITE_URL}/danova-reforma)`,
+    )
+    .replace(
+      /`?clanek-dane-doplneni\.md`?/g,
+      `[Doplnění #1–#9](${SITE_URL}/danova-reforma/doplneni)`,
+    )
     .replace(/`?(?:research\/)?(?:paq-audit\/)?[0-9]{2}-[\w-]+\.md`?/g, (m) => {
       const base = path.posix.basename(m.replace(/`/g, ""));
       return PUBLISHED_URL_MAP[base] || base.replace(/\.md$/, "");
@@ -71,59 +83,7 @@ function sanitizeForLlmsFull(raw, docUrl) {
   return out.trim();
 }
 
-const LLMS_TXT = `# Dekonstrukce státu
-
-> Nezávislý český think-tank Daniela Steigerwalda zaměřený na odstraňování složitosti státu, daňovou jednoduchost a institucionální reformy.
-
-Web: ${SITE_URL}
-Autor: Daniel Steigerwald — Programátor (Evolu) a zakladatel Dekonstrukce státu (${SITE_URL}/o-autorovi · https://x.com/steidacz)
-Kontakt (podcasty, debaty, přednášky): daniel@steigerwald.cz
-GitHub: https://github.com/steida/dekonstrukcestatu
-RSS: ${SITE_URL}/rss.xml
-Plný textový přehled: ${SITE_URL}/llms-full.txt
-
-## Hlavní stránky
-
-- [Úvod](${SITE_URL}): Představení think-tanku, výběr textů, rozhovory a podpora projektu.
-- [Publikace](${SITE_URL}/publikace): Hlavní programové a výzkumné publikace (Daňová reforma, 5 studií Hall–Rabushka, Manifest).
-- [Blog](${SITE_URL}/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy).
-- [O autorovi & Press Kit](${SITE_URL}/o-autorovi): Daniel Steigerwald — profil, témata pro debaty a podklady pro média.
-- [Média, rozhovory a přednášky](${SITE_URL}/media): Výběr debat a přednášek k dekonstrukci státu, daním a demonopolizaci.
-- [Manifest dekonstrukce státu (návrh)](${SITE_URL}/manifest): Základní esej o problému složitosti státu, jeho dekonstrukci a odpovědích v listárně.
-
-## Blog — Srovnání
-
-- [Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty](${SITE_URL}/blog/dekonstrukce-statu-vs-chytrejsi-dane): Férové tříminutové srovnání dvou pohlednic (Hall–Rabushka) a 224stránkové studie Chytřejší daně (PAQ Research, CVF a IDEA, 2025) — tabulka v 8 oblastech, shody i zásadní rozdíly.
-
-## Pitva studie PAQ Research, CVF a IDEA Chytřejší daně (224 stran)
-
-- [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
-- [Zjednodušovači, komplikátoři a 224 stran Chytřejších daní (hlavní esej)](${SITE_URL}/blog/zjednodusovaci-a-komplikatori): Čtivý esej o zbytečné složitosti v daních, švech mezi kapitolami studie Chytřejší daně, černé skříňce modelů a férovém účtu, kde mají autoři pravdu.
-- [Komplikátoři v praxi — hlavní forenzní syntéza (00)](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit): Kompletní šestikapitolová forenzní pitva studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025) se všemi tabulkami, výpočty, katalogem 12 chyb, 15 klíčovými citacemi a rozcestníkem na 46 ověřených citací v kapitolových auditech.
-  - [01 — Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy)
-  - [02 — Kapitola 2: Zdanění práce](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace)
-  - [03 — Kapitola 3: Zdanění spotřeby](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby)
-  - [04 — Kapitola 4: Zdanění majetku](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku)
-  - [05 — Kapitola 5: Zdanění zisků firem](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem)
-  - [06 — Kapitola 6: Metodika modelování, HDP a anatomie obskurantismu](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)
-- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](${SITE_URL}/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé.
-
-## Daňová reforma podle Dekonstrukce státu
-
-- [Daňová reforma podle Dekonstrukce státu](${SITE_URL}/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), systém podle modelu Hall–Rabushka Flat Tax a ankap okénko.
-- [Doplnění #1–#9 k článku Daňová reforma](${SITE_URL}/danova-reforma/doplneni): Průběžný archiv zpřesnění a odpovědí na námitky z diskuse (ztráty z odpisů, OSVČ, dvě pohlednice, dividendy, 15% DPH v EU, pojišťovny, kapitálové výnosy a rodiny s dětmi).
-- [Výzkum Hall–Rabushka (studie 01–05)](${SITE_URL}/danova-reforma/vyzkum): Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax.
-  - [01 — Přesná mechanika, okrajové případy a moderní varianty](${SITE_URL}/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady)
-  - [02 — Praxe ve světě, historie a empirické lekce](${SITE_URL}/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie)
-  - [03 — Česko, EU a makroekonomické propočty (2024–2026)](${SITE_URL}/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla)
-  - [04 — Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek](${SITE_URL}/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty)
-  - [05 — DPH, mezinárodní obchod a 5 „hacků“ na DPH](${SITE_URL}/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky)
-- [Daňová reforma: Realistická implementace pro Česko v rámci EU (rozpracovaný návrh)](${SITE_URL}/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (jednotná 15% DPH s dobrovolným hotovostním režimem do 2 mil. EUR / ~50 mil. Kč, minimální spotřební daně a 0 % u energií domácností, přechodová pravidla, soulad s právem EU/SZDZ a pojistky proti lobbistům).
-`;
-
-fs.writeFileSync(path.join(WEB_ROOT, "public/llms.txt"), LLMS_TXT, "utf8");
-
-// Generate public/llms-full.txt from sanitized flagship texts
+// Generate public/llms-full.txt from sanitized flagship texts (7 of 20 articles)
 const flagshipDocs = [
   {
     file: "content/blog/dekonstrukce-statu-vs-chytrejsi-dane.md",
@@ -138,32 +98,103 @@ const flagshipDocs = [
   {
     file: "content/blog/zjednodusovaci-a-komplikatori/index.md",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori`,
-    label: "Hlavní esej — Pitva Chytřejších daní",
+    label: "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní",
   },
   {
     file: "content/danova-reforma/index.md",
     url: `${SITE_URL}/danova-reforma`,
-    label: "Hlavní návrh — Daňová reforma podle Dekonstrukce státu",
+    label: "Daňová reforma podle Dekonstrukce státu",
   },
   {
     file: "content/danova-reforma/doplneni.md",
     url: `${SITE_URL}/danova-reforma/doplneni`,
-    label: "Doplnění #1–#9 k Daňové reformě",
+    label: "Doplnění k článku „Daňová reforma podle Dekonstrukce státu“",
   },
   {
     file: "content/blog/zjednodusovaci-a-komplikatori/audit.md",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit`,
-    label: "Kompletní šestikapitolová syntéza — Audit Chytřejších daní (PAQ, CVF, IDEA)",
+    label:
+      "Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)",
   },
   {
     file: "content/blog/fact-check-danovy-raj-evropy.md",
     url: `${SITE_URL}/blog/fact-check-danovy-raj-evropy`,
-    label: "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026)",
+    label: "Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)",
   },
 ];
 
+const TOTAL_ARTICLES = 20;
+
+const LLMS_TXT = `# Dekonstrukce státu
+
+> Nezávislý český think-tank Daniela Steigerwalda zaměřený na odstraňování složitosti státu, daňovou jednoduchost a institucionální reformy.
+
+- Web: ${SITE_URL}
+- Autor: Daniel Steigerwald — programátor (Evolu) a zakladatel Dekonstrukce státu (${SITE_URL}/o-autorovi · https://x.com/steidacz)
+- Kontakt (podcasty, debaty, přednášky): daniel@steigerwald.cz
+- GitHub: https://github.com/steida/dekonstrukcestatu
+- RSS: ${SITE_URL}/rss.xml
+- Výběr hlavních textů v plném znění (${flagshipDocs.length} z ${TOTAL_ARTICLES} článků): ${SITE_URL}/llms-full.txt
+
+## Hlavní stránky
+
+- [Úvod](${SITE_URL}): Představení think-tanku, výběr textů, rozhovory a podpora projektu.
+- [Publikace](${SITE_URL}/publikace): Hlavní programové a výzkumné publikace (Daňová reforma, 5 studií Hall–Rabushka, Manifest).
+- [Blog](${SITE_URL}/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy).
+- [O autorovi & Press Kit](${SITE_URL}/o-autorovi): Daniel Steigerwald — profil, témata pro debaty a podklady pro média.
+- [Média, rozhovory a přednášky](${SITE_URL}/media): Výběr debat a přednášek k dekonstrukci státu, daním a demonopolizaci.
+- [Manifest dekonstrukce státu (návrh)](${SITE_URL}/manifest): Základní esej o problému složitosti státu, jeho dekonstrukci a odpovědích v listárně.
+
+## Blog — Srovnání
+
+- [Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty](${SITE_URL}/blog/dekonstrukce-statu-vs-chytrejsi-dane): Férové tříminutové srovnání dvou pohlednic (Hall–Rabushka) a 224stránkové studie Chytřejší daně (PAQ Research, CVF a IDEA, 2025) — tabulka v 8 oblastech, shody i zásadní rozdíly.
+
+## Fact-checky PAQ Research (11/2026)
+
+- [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
+- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](${SITE_URL}/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) k ukazateli PAQ (bez OSVČ) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé (v celkovém ukazateli EK vč. OSVČ 17. z 27).
+
+## Pitva studie Chytřejší daně (PAQ Research, CVF a IDEA, 2025)
+
+- [Zjednodušovači, komplikátoři a 224 stran Chytřejších daní](${SITE_URL}/blog/zjednodusovaci-a-komplikatori): Hlavní esej o zbytečné složitosti v daních, švech mezi kapitolami studie Chytřejší daně, černé skříňce modelů a férovém účtu, kde mají autoři pravdu.
+- [Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit): Hlavní forenzní syntéza (00) se všemi tabulkami, výpočty, katalogem 12 chyb a rozcestníkem na ověřené citace v kapitolových auditech.
+  - [01 — Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy)
+  - [02 — Kapitola 2: Zdanění práce](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace)
+  - [03 — Kapitola 3: Zdanění spotřeby](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby)
+  - [04 — Kapitola 4: Zdanění majetku](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku)
+  - [05 — Kapitola 5: Zdanění zisků firem](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem)
+  - [06 — Kapitola 6: Metodika modelování, HDP, časové testy a anatomie obskurantismu](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)
+
+## Daňová reforma podle Dekonstrukce státu
+
+- [Daňová reforma podle Dekonstrukce státu](${SITE_URL}/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), systém podle modelu Hall–Rabushka Flat Tax a ankap okénko.
+- [Doplnění k článku „Daňová reforma podle Dekonstrukce státu“](${SITE_URL}/danova-reforma/doplneni): Průběžný archiv zpřesnění a odpovědí na námitky z diskuse (ztráty z odpisů, OSVČ, dvě pohlednice, dividendy, 15% DPH v EU, pojišťovny, kapitálové výnosy a rodiny s dětmi).
+- [Hloubkový výzkum Hall–Rabushka Flat Tax (studie 01–05)](${SITE_URL}/danova-reforma/vyzkum): Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax.
+  - [01 — Hall–Rabushka Flat Tax: Přesná mechanika, okrajové případy a moderní varianty](${SITE_URL}/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady)
+  - [02 — Hall–Rabushka Flat Tax a příbuzné daňové reformy v reálném světě: historie, data a empirické lekce](${SITE_URL}/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie)
+  - [03 — Hall–Rabushka Flat Tax v ČR a v EU: Makroekonomické propočty (2024–2026) a právní mantinely](${SITE_URL}/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla)
+  - [04 — Hall–Rabushka Flat Tax: Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek](${SITE_URL}/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty)
+  - [05 — Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH](${SITE_URL}/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky)
+- [Daňová reforma: Realistická implementace pro Česko v rámci EU](${SITE_URL}/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (orientační sazba Y ≈ 44–62 % při dnešním výběru daní a pojistného vedle 15% DPH s hotovostním režimem, minima spotřebních daní, právní mantinely (ES) č. 883/2004 a Pl. ÚS 8/07, přechodová pravidla a pojistky proti lobbistům).
+`;
+
+fs.writeFileSync(path.join(WEB_ROOT, "public/llms.txt"), LLMS_TXT, "utf8");
+
+// Dynamically count unique indexed site pages linked in llms.txt
+const escapedSite = SITE_URL.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const indexedPageCount = new Set(
+  [...LLMS_TXT.matchAll(new RegExp(`\\]\\((${escapedSite}(?:/[^)]*)?)\\)`, "g"))]
+    .map((m) => m[1])
+    .filter((u) => !/\.(?:xml|txt)$/i.test(u)),
+).size;
+
 const fullSections = [
-  `# Dekonstrukce státu — Plné znění hlavních textů (llms-full.txt)\n\nZdroj: ${SITE_URL}\nKompletní index (26 stránek): ${SITE_URL}/llms.txt\nAutor: Daniel Steigerwald (daniel@steigerwald.cz · https://x.com/steidacz)\n`,
+  `# Dekonstrukce státu — Výběr hlavních textů v plném znění (${flagshipDocs.length} z ${TOTAL_ARTICLES} článků)
+
+- Zdroj: ${SITE_URL}
+- Kompletní rozcestník všech ${indexedPageCount} stránek webu (včetně 6 kapitol auditu PAQ a 5 studií Hall–Rabushka): ${SITE_URL}/llms.txt
+- Autor: Daniel Steigerwald (daniel@steigerwald.cz · https://x.com/steidacz)
+`,
 ];
 
 for (const doc of flagshipDocs) {
@@ -173,9 +204,7 @@ for (const doc of flagshipDocs) {
     process.exit(1);
   }
   const cleaned = sanitizeForLlmsFull(fs.readFileSync(abs, "utf8"), doc.url);
-  fullSections.push(
-    `\n---\n\n<!-- ${doc.label} | ${doc.url} -->\n\nURL: ${doc.url}\n\n${cleaned}\n`,
-  );
+  fullSections.push(`\n---\n\nURL: ${doc.url}\n\n${cleaned}\n`);
 }
 
 fs.writeFileSync(
@@ -214,7 +243,7 @@ const RSS_ITEMS = [
     url: `${SITE_URL}/blog/fact-check-danovy-raj-evropy`,
     pubDate: "Wed, 25 Nov 2026 16:00:00 +0100",
     description:
-      "Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé; 82,1 % rozdílu uváděného PAQ přitom tvoří složka Stock of capital (hlavně nižší daně z držby majetku domácností i firem a absence daní z převodu a dědění, 0,44 vs. 2,07 % HDP).",
+      "Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) k ukazateli PAQ (bez OSVČ) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé (v celkovém ukazateli EK vč. OSVČ 17. z 27); 82,1 % rozdílu uváděného PAQ tvoří složka Stock of capital (0,44 vs. 2,07 % HDP).",
   },
   {
     title: "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní",
@@ -225,21 +254,64 @@ const RSS_ITEMS = [
   },
   {
     title:
-      "Komplikátoři v praxi: kompletní šestikapitolová pitva Chytřejších daní",
+      "Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit`,
     pubDate: "Wed, 25 Nov 2026 12:00:00 +0100",
     description:
-      "Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a 15 klíčových citací (46 v kapitolových auditech).",
+      "Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a ověřené citace v kapitolových auditech.",
+  },
+  {
+    title: "Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ",
+    url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy`,
+    pubDate: "Wed, 25 Nov 2026 11:55:00 +0100",
+    description:
+      "Audit kap. 1 studie Chytřejší daně (str. 1–66): proč zjednodušení ani transparentnost nejsou hlavním cílem reformy, desítky mechanismů a záplaty.",
+  },
+  {
+    title: "Kapitola 2: Zdanění práce",
+    url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace`,
+    pubDate: "Wed, 25 Nov 2026 11:50:00 +0100",
+    description:
+      "Audit kapitoly 2 (str. 67–97): parametrické záplaty místo sloučení odvodů, přifouknutá elasticita práce a klam nominální čisté mzdy.",
+  },
+  {
+    title: "Kapitola 3: Zdanění spotřeby",
+    url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby`,
+    pubDate: "Wed, 25 Nov 2026 11:45:00 +0100",
+    description:
+      "Audit kapitoly 3 (str. 98–135): regresivní daně z hříchu, výchovné sociální inženýrství, EET a inflační šok přenesený na domácnosti.",
+  },
+  {
+    title: "Kapitola 4: Zdanění majetku",
+    url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku`,
+    pubDate: "Wed, 25 Nov 2026 11:40:00 +0100",
+    description:
+      "Audit kapitoly 4 (str. 136–182): cenové mapy pozemků, nelikvidita vlastníků, 8 cenových skupin katastrálních území, dědická daň, daň z bohatství a exit tax.",
+  },
+  {
+    title: "Kapitola 5: Zdanění zisků firem",
+    url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem`,
+    pubDate: "Wed, 25 Nov 2026 11:35:00 +0100",
+    description:
+      "Audit kapitoly 5 (str. 183–202): dobrá obhajoba okamžitých odpisů zadušená byrokratickými výjimkami, stropy a etatistickým vybíráním vítězů.",
+  },
+  {
+    title:
+      "Kapitola 6: Metodika modelování, HDP, časové testy a anatomie obskurantismu",
+    url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus`,
+    pubDate: "Wed, 25 Nov 2026 11:30:00 +0100",
+    description:
+      "Audit příloh (str. 203–222): černá skříňka Oxford Economics, arbitrární volby, časové testy a křížové ověření tvrdých čísel studie.",
   },
   {
     title: "Daňová reforma: Realistická implementace pro Česko v rámci EU",
     url: `${SITE_URL}/danova-reforma/implementace-eu`,
     pubDate: "Wed, 25 Nov 2026 11:00:00 +0100",
     description:
-      "Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní (a 0 % u energií domácností) a pojistky.",
+      "Jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní, právní mantinely a pojistky.",
   },
   {
-    title: "Doplnění #1–#9 k článku Daňová reforma podle Dekonstrukce státu",
+    title: "Doplnění k článku „Daňová reforma podle Dekonstrukce státu“",
     url: `${SITE_URL}/danova-reforma/doplneni`,
     pubDate: "Wed, 25 Nov 2026 10:00:00 +0100",
     description:
@@ -258,6 +330,46 @@ const RSS_ITEMS = [
     pubDate: "Tue, 24 Nov 2026 12:00:00 +0100",
     description:
       "Pět odborných studií k modelu Hall–Rabushka Flat Tax: mechanika, světová praxe, makroekonomické propočty pro ČR v rámci EU, nejsilnější verze kritiky a audit 5 „hacků“ na DPH.",
+  },
+  {
+    title:
+      "Hall–Rabushka Flat Tax: Přesná mechanika, okrajové případy a moderní varianty",
+    url: `${SITE_URL}/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady`,
+    pubDate: "Tue, 24 Nov 2026 11:55:00 +0100",
+    description:
+      "Design R. Halla a A. Rabushky (1981–2007), neutralita Caryho Browna, přenos ztrát s úročením, benefity, penze a srovnání s X-Tax, DBCFT a estonskou DPT.",
+  },
+  {
+    title:
+      "Hall–Rabushka Flat Tax a příbuzné daňové reformy v reálném světě: historie, data a empirické lekce",
+    url: `${SITE_URL}/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie`,
+    pubDate: "Tue, 24 Nov 2026 11:50:00 +0100",
+    description:
+      "Slovensko 2004, Estonsko 1994–2026, Pobaltí, britské Full Expensing, Česko 2008 a empirická literatura o investicích a compliance nákladech.",
+  },
+  {
+    title:
+      "Hall–Rabushka Flat Tax v ČR a v EU: Makroekonomické propočty (2024–2026) a právní mantinely",
+    url: `${SITE_URL}/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla`,
+    pubDate: "Tue, 24 Nov 2026 11:45:00 +0100",
+    description:
+      "Makroekonomický propočet sazeb (X, Y %) pro 3bilionový český stát, 15% DPH, směrnice EU, OECD Pilíř 2, SZDZ, IRS Foreign Tax Credit a RUD.",
+  },
+  {
+    title:
+      "Hall–Rabushka Flat Tax: Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek",
+    url: `${SITE_URL}/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty`,
+    pubDate: "Tue, 24 Nov 2026 11:40:00 +0100",
+    description:
+      "Nejsilnější odborné námitky z ekonomické literatury, fiskální praxe, daňového práva i rakouské školy — 5 hlavních min a 15 nejtvrdších otázek.",
+  },
+  {
+    title:
+      "Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH",
+    url: `${SITE_URL}/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky`,
+    pubDate: "Tue, 24 Nov 2026 11:35:00 +0100",
+    description:
+      "Feldstein–Krugmanův test (Alza vs. Amazon, Škoda Auto), japonská lekce a audit 5 „hacků“ na DPH: proč v EU projde jen 15% DPH s hotovostním režimem.",
   },
   {
     title: "Manifest dekonstrukce státu (návrh)",
@@ -293,5 +405,5 @@ ${RSS_ITEMS.map(
 fs.writeFileSync(path.join(WEB_ROOT, "public/rss.xml"), rssXml, "utf8");
 
 console.log(
-  `Generated public/llms.txt, public/llms-full.txt (${flagshipDocs.length} flagship docs), and public/rss.xml from content/.`,
+  `Generated public/llms.txt (${indexedPageCount} indexed pages), public/llms-full.txt (${flagshipDocs.length}/${TOTAL_ARTICLES} flagship articles), and public/rss.xml (${RSS_ITEMS.length} items) from content/.`,
 );

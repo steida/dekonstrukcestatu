@@ -2,12 +2,12 @@
 
 > Nezávislý český think-tank Daniela Steigerwalda zaměřený na odstraňování složitosti státu, daňovou jednoduchost a institucionální reformy.
 
-Web: https://www.dekonstrukcestatu.cz
-Autor: Daniel Steigerwald — Programátor (Evolu) a zakladatel Dekonstrukce státu (https://www.dekonstrukcestatu.cz/o-autorovi · https://x.com/steidacz)
-Kontakt (podcasty, debaty, přednášky): daniel@steigerwald.cz
-GitHub: https://github.com/steida/dekonstrukcestatu
-RSS: https://www.dekonstrukcestatu.cz/rss.xml
-Plný textový přehled: https://www.dekonstrukcestatu.cz/llms-full.txt
+- Web: https://www.dekonstrukcestatu.cz
+- Autor: Daniel Steigerwald — programátor (Evolu) a zakladatel Dekonstrukce státu (https://www.dekonstrukcestatu.cz/o-autorovi · https://x.com/steidacz)
+- Kontakt (podcasty, debaty, přednášky): daniel@steigerwald.cz
+- GitHub: https://github.com/steida/dekonstrukcestatu
+- RSS: https://www.dekonstrukcestatu.cz/rss.xml
+- Výběr hlavních textů v plném znění (7 z 20 článků): https://www.dekonstrukcestatu.cz/llms-full.txt
 
 ## Hlavní stránky
 
@@ -22,27 +22,30 @@ Plný textový přehled: https://www.dekonstrukcestatu.cz/llms-full.txt
 
 - [Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty](https://www.dekonstrukcestatu.cz/blog/dekonstrukce-statu-vs-chytrejsi-dane): Férové tříminutové srovnání dvou pohlednic (Hall–Rabushka) a 224stránkové studie Chytřejší daně (PAQ Research, CVF a IDEA, 2025) — tabulka v 8 oblastech, shody i zásadní rozdíly.
 
-## Pitva studie PAQ Research, CVF a IDEA Chytřejší daně (224 stran)
+## Fact-checky PAQ Research (11/2026)
 
 - [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](https://www.dekonstrukcestatu.cz/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
-- [Zjednodušovači, komplikátoři a 224 stran Chytřejších daní (hlavní esej)](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori): Čtivý esej o zbytečné složitosti v daních, švech mezi kapitolami studie Chytřejší daně, černé skříňce modelů a férovém účtu, kde mají autoři pravdu.
-- [Komplikátoři v praxi — hlavní forenzní syntéza (00)](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit): Kompletní šestikapitolová forenzní pitva studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025) se všemi tabulkami, výpočty, katalogem 12 chyb, 15 klíčovými citacemi a rozcestníkem na 46 ověřených citací v kapitolových auditech.
+- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) k ukazateli PAQ (bez OSVČ) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé (v celkovém ukazateli EK vč. OSVČ 17. z 27).
+
+## Pitva studie Chytřejší daně (PAQ Research, CVF a IDEA, 2025)
+
+- [Zjednodušovači, komplikátoři a 224 stran Chytřejších daní](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori): Hlavní esej o zbytečné složitosti v daních, švech mezi kapitolami studie Chytřejší daně, černé skříňce modelů a férovém účtu, kde mají autoři pravdu.
+- [Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit): Hlavní forenzní syntéza (00) se všemi tabulkami, výpočty, katalogem 12 chyb a rozcestníkem na ověřené citace v kapitolových auditech.
   - [01 — Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy)
   - [02 — Kapitola 2: Zdanění práce](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace)
   - [03 — Kapitola 3: Zdanění spotřeby](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby)
   - [04 — Kapitola 4: Zdanění majetku](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku)
   - [05 — Kapitola 5: Zdanění zisků firem](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem)
-  - [06 — Kapitola 6: Metodika modelování, HDP a anatomie obskurantismu](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)
-- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé.
+  - [06 — Kapitola 6: Metodika modelování, HDP, časové testy a anatomie obskurantismu](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)
 
 ## Daňová reforma podle Dekonstrukce státu
 
 - [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma): Hlavní text — dvě pohlednice, dva parametry (X a Y %), systém podle modelu Hall–Rabushka Flat Tax a ankap okénko.
-- [Doplnění #1–#9 k článku Daňová reforma](https://www.dekonstrukcestatu.cz/danova-reforma/doplneni): Průběžný archiv zpřesnění a odpovědí na námitky z diskuse (ztráty z odpisů, OSVČ, dvě pohlednice, dividendy, 15% DPH v EU, pojišťovny, kapitálové výnosy a rodiny s dětmi).
-- [Výzkum Hall–Rabushka (studie 01–05)](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum): Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax.
-  - [01 — Přesná mechanika, okrajové případy a moderní varianty](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady)
-  - [02 — Praxe ve světě, historie a empirické lekce](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie)
-  - [03 — Česko, EU a makroekonomické propočty (2024–2026)](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla)
-  - [04 — Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty)
-  - [05 — DPH, mezinárodní obchod a 5 „hacků“ na DPH](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky)
-- [Daňová reforma: Realistická implementace pro Česko v rámci EU (rozpracovaný návrh)](https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (jednotná 15% DPH s dobrovolným hotovostním režimem do 2 mil. EUR / ~50 mil. Kč, minimální spotřební daně a 0 % u energií domácností, přechodová pravidla, soulad s právem EU/SZDZ a pojistky proti lobbistům).
+- [Doplnění k článku „Daňová reforma podle Dekonstrukce státu“](https://www.dekonstrukcestatu.cz/danova-reforma/doplneni): Průběžný archiv zpřesnění a odpovědí na námitky z diskuse (ztráty z odpisů, OSVČ, dvě pohlednice, dividendy, 15% DPH v EU, pojišťovny, kapitálové výnosy a rodiny s dětmi).
+- [Hloubkový výzkum Hall–Rabushka Flat Tax (studie 01–05)](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum): Pět hloubkových ekonomických, právních a historických studií k modelu Hall–Rabushka Flat Tax.
+  - [01 — Hall–Rabushka Flat Tax: Přesná mechanika, okrajové případy a moderní varianty](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady)
+  - [02 — Hall–Rabushka Flat Tax a příbuzné daňové reformy v reálném světě: historie, data a empirické lekce](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie)
+  - [03 — Hall–Rabushka Flat Tax v ČR a v EU: Makroekonomické propočty (2024–2026) a právní mantinely](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla)
+  - [04 — Hall–Rabushka Flat Tax: Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty)
+  - [05 — Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH](https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky)
+- [Daňová reforma: Realistická implementace pro Česko v rámci EU](https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu): Šest rozpracovaných okruhů pro realistické nasazení dvou pohlednic v rámci pravidel EU (orientační sazba Y ≈ 44–62 % při dnešním výběru daní a pojistného vedle 15% DPH s hotovostním režimem, minima spotřebních daní, právní mantinely (ES) č. 883/2004 a Pl. ÚS 8/07, přechodová pravidla a pojistky proti lobbistům).

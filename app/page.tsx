@@ -19,10 +19,20 @@ export const metadata: Metadata = buildPageMetadata({
   imageAlt: "Dekonstrukce státu — Nezávislý think-tank Daniela Steigerwalda",
 });
 
-const TOP_MEDIA = [
+const TOP_MEDIA: {
+  outlet: string;
+  date: string;
+  dateIso: string;
+  title: string;
+  titleLang?: string;
+  href: string;
+  note: string;
+  extras: { label: string; href: string }[];
+}[] = [
   {
     outlet: "DVTV",
     date: "23. 11. 2026",
+    dateIso: "2026-11-23",
     title:
       "Ostrý duel o daních: 30 miliard lze vybrat na nemovitostech, říká Vilím. Dopadne to na chudé, oponuje Steigerwald",
     href: "https://www.dvtv.cz/videos/ostry-duel-o-danich-30-miliard-lze-vybrat-na-nemovitostech-rika-vilim-dopadne-to-na-chude-oponuje-steigerwald",
@@ -37,6 +47,7 @@ const TOP_MEDIA = [
   {
     outlet: "CryptoByte 2025",
     date: "zveřejněno 5. 6. 2025",
+    dateIso: "2025-06-05",
     title: "Daniel Steigerwald – Dekonstrukce státu",
     href: "https://www.youtube.com/watch?v=3HoOah2oke0",
     note: "Přednáška o složitosti státu a o tom, jak jej postupně zjednodušovat.",
@@ -45,6 +56,7 @@ const TOP_MEDIA = [
   {
     outlet: "Kryptoplebs #1",
     date: "10. 3. 2025",
+    dateIso: "2025-03-10",
     title: "Stát nám nepatří a je třeba ho dekonstruovat",
     href: "https://www.youtube.com/watch?v=LgKVYDQW_OE",
     note: "Rozhovor s Janem Ebrem.",
@@ -53,6 +65,7 @@ const TOP_MEDIA = [
   {
     outlet: "ChainCamp 2024",
     date: "zveřejněno 24. 10. 2024",
+    dateIso: "2024-10-24",
     title: "Emigrace je možnost, ale není to řešení",
     href: "https://www.youtube.com/watch?v=gpHkdjt66J0",
     note: "Přednáška o tom, proč nestačí před složitým státem utéct.",
@@ -61,7 +74,9 @@ const TOP_MEDIA = [
   {
     outlet: "BTC Prague 2024 Keynote (EN)",
     date: "zveřejněno 21. 6. 2024",
+    dateIso: "2024-06-21",
     title: "Bitcoin: The End Game",
+    titleLang: "en",
     href: "https://www.youtube.com/watch?v=PxHpruxr82Y",
     note: "Zdravé peníze a motivace státu.",
     extras: [],
@@ -69,12 +84,13 @@ const TOP_MEDIA = [
   {
     outlet: "Letní škola Občanského institutu",
     date: "zveřejněno 6. 2. 2022",
+    dateIso: "2022-02-06",
     title: "Demonopolizace",
     href: "https://www.youtube.com/watch?v=uAfFLU-WvJo",
     note: "Přednáška o demonopolizaci státních agend.",
     extras: [],
   },
-] as const;
+];
 
 export default function HomePage() {
   return (
@@ -140,7 +156,7 @@ export default function HomePage() {
 
       {/* Publikace — flagship pillars of Dekonstrukce státu */}
       <section id="publikace" className="py-12">
-        <div className="mb-6 flex items-baseline justify-between gap-4 border-b border-[var(--border)] pb-3">
+        <div className="mb-6 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 border-b border-[var(--border)] pb-3">
           <div>
             <h2 className="text-xl font-bold tracking-tight text-[var(--ink)]">
               Publikace
@@ -151,15 +167,15 @@ export default function HomePage() {
           </div>
           <Link
             href="/publikace"
-            className="shrink-0 font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
+            className="font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
           >
-            Všechny publikace →
+            Všechny publikace <span aria-hidden="true">→</span>
           </Link>
         </div>
 
         <div className="space-y-5">
           {/* Flagship 1: Daňová reforma */}
-          <article className="group overflow-hidden rounded-[var(--radius)] border border-[var(--border)] border-t-2 border-t-[var(--ink)] bg-[var(--surface-elevated)] transition-colors hover:border-[var(--border-strong)] hover:border-t-[var(--ink)]">
+          <article className="group rounded-[var(--radius)] border border-[var(--border)] border-t-2 border-t-[var(--ink)] bg-[var(--surface-elevated)] transition-colors hover:border-[var(--border-strong)] hover:border-t-[var(--ink)]">
             <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]">
               <div className="flex flex-col justify-between p-6 sm:p-7">
                 <div>
@@ -167,8 +183,8 @@ export default function HomePage() {
                     <span className="font-semibold text-[var(--accent)]">
                       Publikace
                     </span>
-                    <span>/</span>
-                    <span>24. 11. 2026</span>
+                    <span aria-hidden="true">/</span>
+                    <time dateTime="2026-11-24">24. 11. 2026</time>
                   </div>
                   <h3 className="text-xl leading-snug font-bold tracking-tight text-[var(--ink)] sm:text-2xl">
                     <Link
@@ -238,7 +254,7 @@ export default function HomePage() {
                 <span className="font-semibold text-[var(--ink-muted)]">
                   Základní program
                 </span>
-                <span>/</span>
+                <span aria-hidden="true">/</span>
                 <span>Pracovní návrh</span>
               </div>
               <h3 className="text-lg font-bold tracking-tight text-[var(--ink)] sm:text-xl">
@@ -266,7 +282,7 @@ export default function HomePage() {
 
       {/* Blog — lighter editorial stream for essays, audits & commentaries */}
       <section id="blog" className="border-t border-[var(--border)] py-12">
-        <div className="mb-6 flex items-baseline justify-between gap-4">
+        <div className="mb-6 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
           <div>
             <h2 className="text-xl font-bold tracking-tight text-[var(--ink)]">
               Blog
@@ -276,12 +292,12 @@ export default function HomePage() {
               návrhům.
             </p>
           </div>
-          <div className="flex shrink-0 items-center gap-4">
+          <div className="flex items-center gap-4">
             <Link
               href="/blog"
               className="font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
             >
-              Vše na blogu →
+              Vše na blogu <span aria-hidden="true">→</span>
             </Link>
             <a
               href="/rss.xml"
@@ -295,8 +311,12 @@ export default function HomePage() {
         <ul className="divide-y divide-[var(--border)] border-y border-[var(--border)]">
           <li className="py-5">
             <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-              <span className="text-[var(--ink-faint)]">25. 11. 2026</span>
-              <span className="text-[var(--ink-faint)]">/</span>
+              <time dateTime="2026-11-25" className="text-[var(--ink-faint)]">
+                25. 11. 2026
+              </time>
+              <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                /
+              </span>
               <span className="font-semibold text-[var(--accent)]">
                 Srovnání
               </span>
@@ -338,8 +358,12 @@ export default function HomePage() {
 
           <li className="py-5">
             <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-              <span className="text-[var(--ink-faint)]">25. 11. 2026</span>
-              <span className="text-[var(--ink-faint)]">/</span>
+              <time dateTime="2026-11-25" className="text-[var(--ink-faint)]">
+                25. 11. 2026
+              </time>
+              <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                /
+              </span>
               <span className="font-semibold text-[var(--accent)]">
                 Fact-check
               </span>
@@ -375,8 +399,12 @@ export default function HomePage() {
 
           <li className="py-5">
             <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-              <span className="text-[var(--ink-faint)]">25. 11. 2026</span>
-              <span className="text-[var(--ink-faint)]">/</span>
+              <time dateTime="2026-11-25" className="text-[var(--ink-faint)]">
+                25. 11. 2026
+              </time>
+              <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                /
+              </span>
               <span className="font-semibold text-[var(--accent)]">
                 Esej &amp; audit
               </span>
@@ -418,8 +446,12 @@ export default function HomePage() {
 
           <li className="py-5">
             <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
-              <span className="text-[var(--ink-faint)]">25. 11. 2026</span>
-              <span className="text-[var(--ink-faint)]">/</span>
+              <time dateTime="2026-11-25" className="text-[var(--ink-faint)]">
+                25. 11. 2026
+              </time>
+              <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                /
+              </span>
               <span className="font-semibold text-[var(--ink-muted)]">
                 Fact-check
               </span>
@@ -435,9 +467,10 @@ export default function HomePage() {
             <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
               Ověření listopadové studie PAQ Research podle primárních dat
               Evropské komise, OECD a citovaných akademických studií: po
-              započtení firemní daně (DPPO) leží Česko i v přezdaněné EU přesně
-              na mediánu (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků
-              (~5,17 %) vybírá víc než všichni sousedé.
+              započtení firemní daně (DPPO) k ukazateli PAQ (bez OSVČ) leží
+              Česko i v přezdaněné EU přesně na mediánu (5,62 % HDP) a i bez
+              dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než
+              všichni sousedé (v celkovém ukazateli EK vč. OSVČ je ČR 17. z 27).
             </p>
             <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
               <Link
@@ -453,7 +486,7 @@ export default function HomePage() {
 
       {/* Rozhovory a přednášky — Curated TOP 6 */}
       <section className="border-t border-[var(--border)] py-12">
-        <div className="mb-6 flex items-baseline justify-between gap-4">
+        <div className="mb-6 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
           <h2 className="text-xl font-bold tracking-tight text-[var(--ink)]">
             Rozhovory a přednášky
           </h2>
@@ -461,7 +494,7 @@ export default function HomePage() {
             href="/media"
             className="font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
           >
-            Všechna vystoupení →
+            Všechna vystoupení <span aria-hidden="true">→</span>
           </Link>
         </div>
 
@@ -472,8 +505,12 @@ export default function HomePage() {
                 <span className="font-semibold text-[var(--accent)]">
                   {item.outlet}
                 </span>
-                <span className="text-[var(--ink-faint)]">/</span>
-                <span className="text-[var(--ink-faint)]">{item.date}</span>
+                <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                  /
+                </span>
+                <time dateTime={item.dateIso} className="text-[var(--ink-faint)]">
+                  {item.date}
+                </time>
               </div>
               <a
                 href={item.href}
@@ -481,7 +518,9 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="text-base font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
               >
-                {item.title} ↗
+                <span lang={item.titleLang}>{item.title}</span>{" "}
+                <span aria-hidden="true">↗</span>
+                <span className="sr-only"> (otevře se v novém okně)</span>
               </a>
               <p className="mt-1 text-sm text-[var(--ink-muted)]">
                 {item.note}
@@ -497,7 +536,11 @@ export default function HomePage() {
                           rel="noopener noreferrer"
                           className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
                         >
-                          {extra.label} ↗
+                          {extra.label} <span aria-hidden="true">↗</span>
+                          <span className="sr-only">
+                            {" "}
+                            (otevře se v novém okně)
+                          </span>
                         </a>
                       </span>
                     ))}
@@ -532,7 +575,7 @@ export default function HomePage() {
               . Připravené okruhy a krátké bio najdete v{" "}
               <Link
                 href="/o-autorovi"
-                className="font-medium text-[var(--accent)] hover:underline"
+                className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)] focus-visible:decoration-[var(--accent)]"
               >
                 Press Kitu
               </Link>
@@ -552,7 +595,8 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="font-mono text-xs text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
-              nebo @steidacz na X ↗
+              nebo @steidacz na X <span aria-hidden="true">↗</span>
+              <span className="sr-only"> (otevře se v novém okně)</span>
             </a>
           </div>
         </div>
@@ -566,6 +610,7 @@ export default function HomePage() {
               href="https://www.startovac.cz/projekty/kniha-dekonstrukce-statu"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Kniha Dekonstrukce státu na Startovači (otevře se v novém okně)"
               className="w-28 shrink-0 overflow-hidden rounded-[var(--radius)] border border-[var(--border-strong)] bg-[var(--surface)] transition-opacity hover:opacity-90"
             >
               <Image
@@ -595,7 +640,9 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="font-semibold break-words text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)]"
                 >
-                  startovac.cz/projekty/kniha-dekonstrukce-statu&#160;↗
+                  startovac.cz/projekty/kniha-dekonstrukce-statu&#160;
+                  <span aria-hidden="true">↗</span>
+                  <span className="sr-only"> (otevře se v novém okně)</span>
                 </a>
               </p>
             </div>
@@ -614,9 +661,10 @@ export default function HomePage() {
                   href="https://x.com/steidacz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[var(--ink)] underline decoration-[var(--border-strong)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
                 >
-                  x.com/steidacz ↗
+                  x.com/steidacz <span aria-hidden="true">↗</span>
+                  <span className="sr-only"> (otevře se v novém okně)</span>
                 </a>
                 <span className="ml-2 text-sm text-[var(--ink-muted)]">
                   — komentáře a diskuse
@@ -627,9 +675,11 @@ export default function HomePage() {
                   href="https://github.com/steida/dekonstrukcestatu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[var(--ink)] underline decoration-[var(--border-strong)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
                 >
-                  github.com/steida/dekonstrukcestatu ↗
+                  github.com/steida/dekonstrukcestatu{" "}
+                  <span aria-hidden="true">↗</span>
+                  <span className="sr-only"> (otevře se v novém okně)</span>
                 </a>
                 <span className="ml-2 text-sm text-[var(--ink-muted)]">
                   — otevřené zdrojové texty
@@ -638,7 +688,7 @@ export default function HomePage() {
               <li>
                 <a
                   href="/rss.xml"
-                  className="font-medium text-[var(--ink)] underline decoration-[var(--border-strong)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
                 >
                   RSS kanál
                 </a>
@@ -661,7 +711,7 @@ export default function HomePage() {
             Podpořte nezávislý výzkum
           </h2>
           <p className="mt-2 max-w-2xl text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
-            Dekonstrukce státu funguje bez jakýchkoli státních peněz (dotací,
+            Dekonstrukce státu funguje bez jakýchkoli peněz od státu (dotací,
             veřejných grantů i zakázek). Pokud vám texty a analýzy dávají smysl,
             můžete práci podpořit dobrovolným bankovním převodem.
           </p>

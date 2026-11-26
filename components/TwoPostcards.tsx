@@ -5,7 +5,7 @@ import { PrintPostcardsButton } from "./PrintPostcardsButton";
 export const TwoPostcards: FC = () => (
   <section
     aria-label="Celý daňový systém na dvě pohlednice"
-    className="my-10 border-y-2 border-[var(--ink)] py-7"
+    className="postcards-print my-10 border-y-2 border-[var(--ink)] py-7"
   >
     <div className="mb-5 flex flex-wrap items-baseline justify-between gap-3">
       <div>
@@ -20,19 +20,19 @@ export const TwoPostcards: FC = () => (
     </div>
 
     <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-      {/* Pohlednice 1 — Občané */}
+      {/* Pohlednice 1 — Člověk */}
       <div className="postcard-card flex flex-col justify-between rounded-[var(--radius)] border border-[var(--border-strong)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-5">
         <div>
           <div className="mb-4 flex items-start justify-between gap-3 border-b border-[var(--border)] pb-3">
             <div>
               <p className="font-mono text-[0.7rem] font-semibold tracking-wider text-[var(--accent)] uppercase">
-                Pohlednice 01 · Občané
+                Pohlednice 01 · Člověk
               </p>
               <h3 className="mt-0.5 text-base font-bold tracking-tight text-[var(--ink)]">
                 Mzdy a odměny
               </h3>
             </div>
-            <div className="shrink-0 rounded-[var(--radius-sm)] border border-dashed border-[var(--border-strong)] px-2 py-1 text-right font-mono text-[0.6rem] leading-tight tracking-wider text-[var(--ink-faint)] uppercase">
+            <div className="shrink-0 rounded-[var(--radius-sm)] border border-dashed border-[var(--border-strong)] px-2 py-1 text-right font-mono text-[0.7rem] leading-tight tracking-wider text-[var(--ink-faint)] uppercase">
               Finanční úřad
               <br />
               ČR
@@ -60,7 +60,7 @@ export const TwoPostcards: FC = () => (
                 navýšení <strong>X</strong> za každé dítě, viz{" "}
                 <Link
                   href="/danova-reforma/doplneni#9"
-                  className="underline decoration-[var(--border-strong)] underline-offset-2 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)] print:no-underline"
+                  className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/50 underline-offset-2 transition-colors hover:decoration-[var(--accent)] print:text-black print:no-underline"
                 >
                   Doplnění #9
                 </Link>
@@ -102,7 +102,7 @@ export const TwoPostcards: FC = () => (
                 Podnikání (cash flow)
               </h3>
             </div>
-            <div className="shrink-0 rounded-[var(--radius-sm)] border border-dashed border-[var(--border-strong)] px-2 py-1 text-right font-mono text-[0.6rem] leading-tight tracking-wider text-[var(--ink-faint)] uppercase">
+            <div className="shrink-0 rounded-[var(--radius-sm)] border border-dashed border-[var(--border-strong)] px-2 py-1 text-right font-mono text-[0.7rem] leading-tight tracking-wider text-[var(--ink-faint)] uppercase">
               Finanční úřad
               <br />
               ČR

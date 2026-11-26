@@ -26,7 +26,7 @@
       <link>https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy</link>
       <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy</guid>
       <pubDate>Wed, 25 Nov 2026 16:00:00 +0100</pubDate>
-      <description>Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé; 82,1 % rozdílu uváděného PAQ přitom tvoří složka Stock of capital (hlavně nižší daně z držby majetku domácností i firem a absence daní z převodu a dědění, 0,44 vs. 2,07 % HDP).</description>
+      <description>Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) k ukazateli PAQ (bez OSVČ) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé (v celkovém ukazateli EK vč. OSVČ 17. z 27); 82,1 % rozdílu uváděného PAQ tvoří složka Stock of capital (0,44 vs. 2,07 % HDP).</description>
     </item>
     <item>
       <title>Zjednodušovači, komplikátoři a 224 stran Chytřejších daní</title>
@@ -36,21 +36,63 @@
       <description>Proč 224stránková studie PAQ Research, CVF a IDEA místo přestavby daňového systému od základů lepí přes třicet nových záplat, kde se kapitoly perou samy se sebou, co ukazuje černá skříňka modelů — a v čem mají autoři pravdu.</description>
     </item>
     <item>
-      <title>Komplikátoři v praxi: kompletní šestikapitolová pitva Chytřejších daní</title>
+      <title>Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)</title>
       <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit</link>
       <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit</guid>
       <pubDate>Wed, 25 Nov 2026 12:00:00 +0100</pubDate>
-      <description>Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a 15 klíčových citací (46 v kapitolových auditech).</description>
+      <description>Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a ověřené citace v kapitolových auditech.</description>
+    </item>
+    <item>
+      <title>Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy</guid>
+      <pubDate>Wed, 25 Nov 2026 11:55:00 +0100</pubDate>
+      <description>Audit kap. 1 studie Chytřejší daně (str. 1–66): proč zjednodušení ani transparentnost nejsou hlavním cílem reformy, desítky mechanismů a záplaty.</description>
+    </item>
+    <item>
+      <title>Kapitola 2: Zdanění práce</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace</guid>
+      <pubDate>Wed, 25 Nov 2026 11:50:00 +0100</pubDate>
+      <description>Audit kapitoly 2 (str. 67–97): parametrické záplaty místo sloučení odvodů, přifouknutá elasticita práce a klam nominální čisté mzdy.</description>
+    </item>
+    <item>
+      <title>Kapitola 3: Zdanění spotřeby</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby</guid>
+      <pubDate>Wed, 25 Nov 2026 11:45:00 +0100</pubDate>
+      <description>Audit kapitoly 3 (str. 98–135): regresivní daně z hříchu, výchovné sociální inženýrství, EET a inflační šok přenesený na domácnosti.</description>
+    </item>
+    <item>
+      <title>Kapitola 4: Zdanění majetku</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku</guid>
+      <pubDate>Wed, 25 Nov 2026 11:40:00 +0100</pubDate>
+      <description>Audit kapitoly 4 (str. 136–182): cenové mapy pozemků, nelikvidita vlastníků, 8 cenových skupin katastrálních území, dědická daň, daň z bohatství a exit tax.</description>
+    </item>
+    <item>
+      <title>Kapitola 5: Zdanění zisků firem</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem</guid>
+      <pubDate>Wed, 25 Nov 2026 11:35:00 +0100</pubDate>
+      <description>Audit kapitoly 5 (str. 183–202): dobrá obhajoba okamžitých odpisů zadušená byrokratickými výjimkami, stropy a etatistickým vybíráním vítězů.</description>
+    </item>
+    <item>
+      <title>Kapitola 6: Metodika modelování, HDP, časové testy a anatomie obskurantismu</title>
+      <link>https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus</guid>
+      <pubDate>Wed, 25 Nov 2026 11:30:00 +0100</pubDate>
+      <description>Audit příloh (str. 203–222): černá skříňka Oxford Economics, arbitrární volby, časové testy a křížové ověření tvrdých čísel studie.</description>
     </item>
     <item>
       <title>Daňová reforma: Realistická implementace pro Česko v rámci EU</title>
       <link>https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu</link>
       <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu</guid>
       <pubDate>Wed, 25 Nov 2026 11:00:00 +0100</pubDate>
-      <description>Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní (a 0 % u energií domácností) a pojistky.</description>
+      <description>Jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní, právní mantinely a pojistky.</description>
     </item>
     <item>
-      <title>Doplnění #1–#9 k článku Daňová reforma podle Dekonstrukce státu</title>
+      <title>Doplnění k článku „Daňová reforma podle Dekonstrukce státu“</title>
       <link>https://www.dekonstrukcestatu.cz/danova-reforma/doplneni</link>
       <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/doplneni</guid>
       <pubDate>Wed, 25 Nov 2026 10:00:00 +0100</pubDate>
@@ -69,6 +111,41 @@
       <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum</guid>
       <pubDate>Tue, 24 Nov 2026 12:00:00 +0100</pubDate>
       <description>Pět odborných studií k modelu Hall–Rabushka Flat Tax: mechanika, světová praxe, makroekonomické propočty pro ČR v rámci EU, nejsilnější verze kritiky a audit 5 „hacků“ na DPH.</description>
+    </item>
+    <item>
+      <title>Hall–Rabushka Flat Tax: Přesná mechanika, okrajové případy a moderní varianty</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady</guid>
+      <pubDate>Tue, 24 Nov 2026 11:55:00 +0100</pubDate>
+      <description>Design R. Halla a A. Rabushky (1981–2007), neutralita Caryho Browna, přenos ztrát s úročením, benefity, penze a srovnání s X-Tax, DBCFT a estonskou DPT.</description>
+    </item>
+    <item>
+      <title>Hall–Rabushka Flat Tax a příbuzné daňové reformy v reálném světě: historie, data a empirické lekce</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie</guid>
+      <pubDate>Tue, 24 Nov 2026 11:50:00 +0100</pubDate>
+      <description>Slovensko 2004, Estonsko 1994–2026, Pobaltí, britské Full Expensing, Česko 2008 a empirická literatura o investicích a compliance nákladech.</description>
+    </item>
+    <item>
+      <title>Hall–Rabushka Flat Tax v ČR a v EU: Makroekonomické propočty (2024–2026) a právní mantinely</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla</guid>
+      <pubDate>Tue, 24 Nov 2026 11:45:00 +0100</pubDate>
+      <description>Makroekonomický propočet sazeb (X, Y %) pro 3bilionový český stát, 15% DPH, směrnice EU, OECD Pilíř 2, SZDZ, IRS Foreign Tax Credit a RUD.</description>
+    </item>
+    <item>
+      <title>Hall–Rabushka Flat Tax: Oponentní rozbor, nejsilnější verze kritiky a katalog 15 nejtvrdších námitek</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/08-hr-kritika-a-protiargumenty</guid>
+      <pubDate>Tue, 24 Nov 2026 11:40:00 +0100</pubDate>
+      <description>Nejsilnější odborné námitky z ekonomické literatury, fiskální praxe, daňového práva i rakouské školy — 5 hlavních min a 15 nejtvrdších otázek.</description>
+    </item>
+    <item>
+      <title>Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH</title>
+      <link>https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky</link>
+      <guid isPermaLink="true">https://www.dekonstrukcestatu.cz/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky</guid>
+      <pubDate>Tue, 24 Nov 2026 11:35:00 +0100</pubDate>
+      <description>Feldstein–Krugmanův test (Alza vs. Amazon, Škoda Auto), japonská lekce a audit 5 „hacků“ na DPH: proč v EU projde jen 15% DPH s hotovostním režimem.</description>
     </item>
     <item>
       <title>Manifest dekonstrukce státu (návrh)</title>

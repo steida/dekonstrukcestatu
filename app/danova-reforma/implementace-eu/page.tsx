@@ -8,7 +8,7 @@ import { buildPageMetadata } from "@/lib/metadata";
 const PAGE_URL = "/danova-reforma/implementace-eu";
 const PAGE_TITLE = "Daňová reforma: Realistická implementace pro Česko v rámci EU";
 const PAGE_DESC =
-  "Rozpracovaný návrh, jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní (a 0 % u energií domácností) a pojistky.";
+  "Jak převést dvě pohlednice (Hall–Rabushka) do praxe v EU: jednotná 15% DPH s hotovostním režimem, minima spotřebních daní, právní mantinely a pojistky.";
 
 export const metadata: Metadata = buildPageMetadata({
   path: PAGE_URL,
@@ -16,8 +16,10 @@ export const metadata: Metadata = buildPageMetadata({
   description: PAGE_DESC,
   type: "article",
   image: "/images/og-danova-reforma.png",
-  imageAlt: "Daňová reforma: Realistická implementace pro Česko v rámci EU",
-  publishedTime: "2026-11-25",
+  imageAlt:
+    "Daňová reforma podle Dekonstrukce státu — Pošlete finančáku pohlednici (Hall–Rabushka)",
+  publishedTime: "2026-11-25T11:00:00+01:00",
+  modifiedTime: "2026-11-26",
 });
 
 const ROADMAP_ITEMS = [
@@ -83,27 +85,54 @@ const ROADMAP_ITEMS = [
       <>
         Sloučení daní z příjmů (DPFO, DPPO) a sociálních i zdravotních odvodů do
         jednoho srozumitelného systému (<strong>X</strong> a{" "}
-        <strong>Y %</strong>) při úplném zrušení majetkových daní. Vše v souladu
-        s rozsudkem SDEU <em>Banca Popolare di Cremona</em> (C-475/03),
-        nařízením EU 883/2004 (koordinace sociálního zabezpečení), nálezem ÚS
-        Pl. ÚS 8/07 a čl. 31 Listiny; součástí je i přenastavení obecního
-        rozpočtového určení daní (RUD) po zrušení daně z nemovitostí.
+        <strong>Y %</strong>) při úplném zrušení majetkových daní. Návrh řeší
+        tři klíčové právní mantinely: (1) soulad s rozsudkem SDEU{" "}
+        <em>Banca Popolare di Cremona</em> (C-475/03) k čl. 401 směrnice o DPH;
+        (2) sladění s nařízením (ES) č. 883/2004 a judikaturou SDEU (C-34/98,
+        C-169/98, C-623/13 <em>de Ruyter</em>): osoby s formulářem A1 pojištěné
+        v jiném členském státě nesmějí platit účelovou pojistnou složku dvakrát
+        — zákon pro ně buď vyčlení sníženou sazbu <strong>Y</strong> bez
+        pojistné části, nebo u neúčelové obecné daně <strong>Y</strong> vyřeší
+        souběh zápočtem cizího povinného pojistného; (3) ústavní mantinel nálezu{" "}
+        <strong>Pl. ÚS 8/07</strong> (a čl. 31 Listiny): sloučením pojistného do
+        nezastropované sazby <strong>Y</strong> zaniká dnešní strop vyměřovacího
+        základu — návrh proto musí buď zachovat zásluhovou vazbu důchodu na
+        celkový příjem vykázaný na Pohlednici 1 (bez drastických redukčních
+        hranic), nebo provést postupný přechod k rovnému základnímu důchodu s
+        dlouhým přechodným obdobím pro dosavadní nároky. Součástí je i
+        přenastavení obecního rozpočtového určení daní (RUD) po zrušení daně z
+        nemovitostí (viz{" "}
+        <Link
+          href="/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla"
+          className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
+        >
+          studii 03
+        </Link>
+        ).
       </>
     ),
   },
   {
     code: "04",
-    title: "Přechodová pravidla pro firmy, úvěry a finanční sektor",
+    title: "Přechodová pravidla pro firmy, úvěry, finanční sektor a důchody",
     body: (
       <>
         Plynulý doběh starých odpisů a daňových ztrát, přechodové řešení
-        stávajících úvěrů a zdanění úrokového rozpětí bank a finančního sektoru
-        (viz{" "}
+        stávajících úvěrů, zdanění úrokového rozpětí bank a finančního sektoru a
+        přechodné období pro důchodové nároky získané podle dosavadního
+        pojistného (viz{" "}
         <Link
           href="/danova-reforma/vyzkum/05-hr-mechanika-a-okrajove-pripady"
           className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
         >
           studii 01
+        </Link>{" "}
+        a{" "}
+        <Link
+          href="/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla"
+          className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
+        >
+          studii 03
         </Link>
         ).
       </>
@@ -158,7 +187,8 @@ export default function ImplementaceEuPage() {
           url: PAGE_URL,
           title: PAGE_TITLE,
           description: PAGE_DESC,
-          datePublished: "2026-11-25",
+          datePublished: "2026-11-25T11:00:00+01:00",
+          dateModified: "2026-11-26",
           image: "/images/og-danova-reforma.png",
           breadcrumbs: [
             { name: "Domů", path: "/" },
@@ -179,7 +209,7 @@ export default function ImplementaceEuPage() {
             <span aria-hidden="true">/</span>
             <span>Daniel Steigerwald</span>
             <span aria-hidden="true">/</span>
-            <span>25. 11. 2026</span>
+            <time dateTime="2026-11-25">25. 11. 2026</time>
           </div>
           <h1 className="text-2xl leading-tight font-bold tracking-tight text-[var(--ink)] sm:text-4xl">
             {PAGE_TITLE}
@@ -204,6 +234,36 @@ export default function ImplementaceEuPage() {
           nikoli jako obhajobu DPH — cílem je vše povinné ořezat na nejnižší
           legální minimum.
         </p>
+
+        <aside
+          aria-label="Orientační sazba Y v EU-hybridu"
+          className="mt-6 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] px-5 py-4 text-sm leading-relaxed text-[var(--ink-muted)]"
+        >
+          <p className="font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
+            Orientační sazba Y % v EU-hybridu (vedle 15% DPH a spotřebních daní)
+          </p>
+          <p className="mt-1.5 text-[var(--ink)]">
+            Při dnešních daňových a pojistných příjmech (~3 bil. Kč, hotovostně
+            2 865 mld. Kč) vychází{" "}
+            <strong className="tabular-nums">Y ≈ 44–62 %</strong> podle výše
+            nezdanitelného minima <strong>X = 0–250 tis. Kč</strong> (konkrétně{" "}
+            <strong className="tabular-nums">53,4 %</strong> při{" "}
+            <strong>X = 150 tis. Kč</strong>, resp.{" "}
+            <strong className="tabular-nums">47–66 %</strong> na jednotné
+            3bilionové akruální bázi; detailní makropropočet viz{" "}
+            <Link
+              href="/danova-reforma/vyzkum/07-hr-cesko-eu-a-makro-cisla"
+              className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
+            >
+              studii 03
+            </Link>
+            ). Dlouhodobě udržitelná sazba{" "}
+            <strong className="tabular-nums">20–27 %</strong> vyžaduje postupné
+            zeštíhlení daňových a pojistných příjmů směrem k 1,5 bil. Kč (v
+            dlouhodobém ustáleném stavu po doběhu dnešních důchodových závazků) —
+            dvě pohlednice tuto skutečnou cenovku státu jen přestanou schovávat.
+          </p>
+        </aside>
 
         <section className="mt-10">
           <div className="mb-4 flex items-baseline justify-between gap-4 border-b border-[var(--border-strong)] pb-2">
@@ -238,7 +298,10 @@ export default function ImplementaceEuPage() {
         </section>
 
         {/* Cross-navigation back to existing materials */}
-        <aside className="no-print mt-12">
+        <nav
+          aria-label="Hotové podklady k tomuto návrhu"
+          className="no-print mt-12"
+        >
           <p className="mb-4 font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
             Hotové podklady k tomuto návrhu
           </p>
@@ -279,7 +342,7 @@ export default function ImplementaceEuPage() {
               </div>
             </Link>
           </div>
-        </aside>
+        </nav>
 
         <ArticleFooterCta />
       </article>
