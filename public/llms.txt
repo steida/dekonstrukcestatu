@@ -7,13 +7,13 @@
 - Kontakt (podcasty, debaty, přednášky): daniel@steigerwald.cz
 - GitHub: https://github.com/steida/dekonstrukcestatu
 - RSS: https://www.dekonstrukcestatu.cz/rss.xml
-- Výběr hlavních textů v plném znění (7 z 20 článků): https://www.dekonstrukcestatu.cz/llms-full.txt
+- Výběr hlavních textů v plném znění (8 z 21 článků): https://www.dekonstrukcestatu.cz/llms-full.txt
 
 ## Hlavní stránky
 
 - [Úvod](https://www.dekonstrukcestatu.cz): Představení think-tanku, výběr textů, rozhovory a podpora projektu.
 - [Publikace](https://www.dekonstrukcestatu.cz/publikace): Hlavní programové a výzkumné publikace (Daňová reforma, 5 studií Hall–Rabushka, Manifest).
-- [Blog](https://www.dekonstrukcestatu.cz/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy).
+- [Blog](https://www.dekonstrukcestatu.cz/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy, švarcsystém).
 - [O autorovi & Press Kit](https://www.dekonstrukcestatu.cz/o-autorovi): Daniel Steigerwald — profil, témata pro debaty a podklady pro média.
 - [Média, rozhovory a přednášky](https://www.dekonstrukcestatu.cz/media): Výběr debat a přednášek k dekonstrukci státu, daním a demonopolizaci.
 - [Manifest dekonstrukce státu (návrh)](https://www.dekonstrukcestatu.cz/manifest): Základní esej o problému složitosti státu, jeho dekonstrukci a odpovědích v listárně.
@@ -24,6 +24,7 @@
 
 ## Fact-checky PAQ Research (11/2026)
 
+- [Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ Research o švarcsystému](https://www.dekonstrukcestatu.cz/blog/fact-check-svarcsystem): Forenzní ověření studie PAQ Research o švarcsystému (15. 9. 2026, rev. 24. 9. 2026) proti sněmovnímu tisku ST 300/0, Eurostatu, rozsudku NSS 22 Ads 168/2025-51 i datům OECD — fantom „určené pracovní doby“, 10násobná chyba u HDP, chybné srovnání s EU a proč místo zákazů stačí dobrovolný zákoník práce a sjednocené daně na dvou pohlednicích.
 - [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](https://www.dekonstrukcestatu.cz/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
 - [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) k ukazateli PAQ (bez OSVČ) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé (v celkovém ukazateli EK vč. OSVČ 17. z 27).
 

@@ -11,6 +11,7 @@ const EXPECTED_FILES = [
   "index.html",
   "publikace.html",
   "blog.html",
+  "blog/fact-check-svarcsystem.html",
   "blog/dekonstrukce-statu-vs-chytrejsi-dane.html",
   "blog/danime-praci-ale-majetek-temer-vubec.html",
   "blog/zjednodusovaci-a-komplikatori.html",
@@ -46,6 +47,7 @@ const EXPECTED_FILES = [
   "images/og-srovnani-reforem.png",
   "images/og-irozhlas-prokop.png",
   "images/og-danovy-raj-evropy.png",
+  "images/og-svarcsystem.png",
   "images/logo.png",
   "images/danova-reforma-header.webp",
   "images/daniel-steigerwald.jpg",
@@ -88,6 +90,12 @@ const FORBIDDEN_INTERNAL_TOKENS = [
   "05-zdaneni-firem.md",
   "06-metodika-a-obskurantismus.md",
   "07-danovy-raj-evropy.md",
+  "01-archiv-a-grafy.md",
+  "02-statistika-a-data.md",
+  "03-pravo-a-eu.md",
+  "04-ekonomie-a-svetonazor.md",
+  "05-verifikace-a-verdikt.md",
+  "paq-svarcsystem-text.txt",
   "05-hr-mechanika-a-okrajove-pripady.md",
   "06-hr-praxe-ve-svete-a-historie.md",
   "07-hr-cesko-eu-a-makro-cisla.md",
@@ -498,6 +506,7 @@ if (fs.existsSync(llmsPath)) {
   const llmsTxt = fs.readFileSync(llmsPath, "utf8");
   for (const required of [
     "daniel@steigerwald.cz",
+    "/blog/fact-check-svarcsystem",
     "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
     "/blog/danime-praci-ale-majetek-temer-vubec",
     "/blog/zjednodusovaci-a-komplikatori",
@@ -553,6 +562,7 @@ if (fs.existsSync(rssPath)) {
     }
   }
   for (const required of [
+    "/blog/fact-check-svarcsystem",
     "/blog/dekonstrukce-statu-vs-chytrejsi-dane",
     "/blog/danime-praci-ale-majetek-temer-vubec",
     "/blog/zjednodusovaci-a-komplikatori",

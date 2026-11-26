@@ -311,6 +311,56 @@ export default function HomePage() {
         <ul className="divide-y divide-[var(--border)] border-y border-[var(--border)]">
           <li className="py-5">
             <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
+              <time dateTime="2026-11-26" className="text-[var(--ink-faint)]">
+                26. 11. 2026
+              </time>
+              <span aria-hidden="true" className="text-[var(--ink-faint)]">
+                /
+              </span>
+              <span className="font-semibold text-[var(--accent)]">
+                Fact-check
+              </span>
+            </div>
+            <h3 className="max-w-3xl text-lg leading-snug font-bold tracking-tight text-[var(--ink)]">
+              <Link
+                href="/blog/fact-check-svarcsystem"
+                className="transition-colors hover:text-[var(--accent)]"
+              >
+                Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ
+                Research o švarcsystému
+              </Link>
+            </h3>
+            <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
+              Celý zákoník práce může klidně zůstat — jen ať je dobrovolný.
+              Ověření zářijové studie PAQ Research o švarcsystému proti
+              sněmovnímu tisku ST 300/0, Eurostatu, rozsudku NSS i datům OECD:
+              fantom „určené pracovní doby“, 10násobná chyba u HDP a klec přes
+              41% daňového klínu s nejrigidnějším zákoníkem práce v OECD.
+            </p>
+            <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
+              <Link
+                href="/blog/fact-check-svarcsystem"
+                className="font-semibold text-[var(--accent)] hover:underline"
+              >
+                Číst fact-check →
+              </Link>
+              <Link
+                href="/danova-reforma"
+                className="transition-colors hover:text-[var(--accent)]"
+              >
+                Daňová reforma
+              </Link>
+              <Link
+                href="/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace"
+                className="transition-colors hover:text-[var(--accent)]"
+              >
+                Zdanění práce (audit 02)
+              </Link>
+            </div>
+          </li>
+
+          <li className="py-5">
+            <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
               <time dateTime="2026-11-25" className="text-[var(--ink-faint)]">
                 25. 11. 2026
               </time>

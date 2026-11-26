@@ -7,6 +7,7 @@ import {
   PITVA_PAQ_ESSAY,
   PITVA_PAQ_IROZHLAS,
   PITVA_PAQ_MAIN,
+  PITVA_PAQ_SVARCSYSTEM,
   SITE_URL,
   SROVNANI_REFOREM_DOC,
   VYZKUM_HR_STUDIES,
@@ -38,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         path: "/danova-reforma/implementace-eu",
         lastModified: "2026-11-26",
         priority: 0.85,
+      },
+      {
+        path: PITVA_PAQ_SVARCSYSTEM.url,
+        lastModified:
+          PITVA_PAQ_SVARCSYSTEM.modifiedIsoDate ?? PITVA_PAQ_SVARCSYSTEM.isoDate,
+        priority: 0.95,
       },
       {
         path: SROVNANI_REFOREM_DOC.url,

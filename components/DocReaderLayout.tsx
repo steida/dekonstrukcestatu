@@ -43,6 +43,7 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
   const followupSlugs = new Set([
     "fact-check-danovy-raj-evropy",
     "danime-praci-ale-majetek-temer-vubec",
+    "fact-check-svarcsystem",
   ]);
   const followupItems = hasLeadEssay
     ? remainingItems.filter((item) => followupSlugs.has(item.slug))

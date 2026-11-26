@@ -83,8 +83,14 @@ function sanitizeForLlmsFull(raw, docUrl) {
   return out.trim();
 }
 
-// Generate public/llms-full.txt from sanitized flagship texts (7 of 20 articles)
+// Generate public/llms-full.txt from sanitized flagship texts (8 of 21 articles)
 const flagshipDocs = [
+  {
+    file: "content/blog/fact-check-svarcsystem.md",
+    url: `${SITE_URL}/blog/fact-check-svarcsystem`,
+    label:
+      "Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ Research o švarcsystému",
+  },
   {
     file: "content/blog/dekonstrukce-statu-vs-chytrejsi-dane.md",
     url: `${SITE_URL}/blog/dekonstrukce-statu-vs-chytrejsi-dane`,
@@ -123,7 +129,7 @@ const flagshipDocs = [
   },
 ];
 
-const TOTAL_ARTICLES = 20;
+const TOTAL_ARTICLES = 21;
 
 const LLMS_TXT = `# Dekonstrukce státu
 
@@ -140,7 +146,7 @@ const LLMS_TXT = `# Dekonstrukce státu
 
 - [Úvod](${SITE_URL}): Představení think-tanku, výběr textů, rozhovory a podpora projektu.
 - [Publikace](${SITE_URL}/publikace): Hlavní programové a výzkumné publikace (Daňová reforma, 5 studií Hall–Rabushka, Manifest).
-- [Blog](${SITE_URL}/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy).
+- [Blog](${SITE_URL}/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy, švarcsystém).
 - [O autorovi & Press Kit](${SITE_URL}/o-autorovi): Daniel Steigerwald — profil, témata pro debaty a podklady pro média.
 - [Média, rozhovory a přednášky](${SITE_URL}/media): Výběr debat a přednášek k dekonstrukci státu, daním a demonopolizaci.
 - [Manifest dekonstrukce státu (návrh)](${SITE_URL}/manifest): Základní esej o problému složitosti státu, jeho dekonstrukci a odpovědích v listárně.
@@ -151,6 +157,7 @@ const LLMS_TXT = `# Dekonstrukce státu
 
 ## Fact-checky PAQ Research (11/2026)
 
+- [Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ Research o švarcsystému](${SITE_URL}/blog/fact-check-svarcsystem): Forenzní ověření studie PAQ Research o švarcsystému (15. 9. 2026, rev. 24. 9. 2026) proti sněmovnímu tisku ST 300/0, Eurostatu, rozsudku NSS 22 Ads 168/2025-51 i datům OECD — fantom „určené pracovní doby“, 10násobná chyba u HDP, chybné srovnání s EU a proč místo zákazů stačí dobrovolný zákoník práce a sjednocené daně na dvou pohlednicích.
 - [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
 - [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](${SITE_URL}/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) k ukazateli PAQ (bez OSVČ) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé (v celkovém ukazateli EK vč. OSVČ 17. z 27).
 
@@ -224,6 +231,14 @@ function escapeXml(str) {
 }
 
 const RSS_ITEMS = [
+  {
+    title:
+      "Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ Research o švarcsystému",
+    url: `${SITE_URL}/blog/fact-check-svarcsystem`,
+    pubDate: "Thu, 26 Nov 2026 21:00:00 +0100",
+    description:
+      "Fact-check studie PAQ Research o švarcsystému (15. 9. 2026, rev. 24. 9.): fantom „určené pracovní doby“ v ST 300/0, jablka s hruškami u OSVČ v EU, 10× chyba u HDP, přehlížená klec přes 41% daňového klínu s #1 nejrigidnějším zákoníkem práce v OECD — a proč stačí dobrovolný zákoník práce a dvě pohlednice.",
+  },
   {
     title: "Dekonstrukce státu vs. Chytřejší daně: srovnání za tři minuty",
     url: `${SITE_URL}/blog/dekonstrukce-statu-vs-chytrejsi-dane`,

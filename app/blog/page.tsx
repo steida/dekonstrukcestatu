@@ -7,6 +7,7 @@ import {
   PITVA_PAQ_ESSAY,
   PITVA_PAQ_IROZHLAS,
   PITVA_PAQ_MAIN,
+  PITVA_PAQ_SVARCSYSTEM,
   SITE_URL,
   SROVNANI_REFOREM_DOC,
 } from "@/lib/documents";
@@ -16,7 +17,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/blog",
   title: "Blog",
   description:
-    "Eseje, forenzní audity a fact-checky Dekonstrukce státu — včetně Chytřejších daní (PAQ, CVF, IDEA) a Daňového ráje Evropy PAQ Research.",
+    "Eseje, forenzní audity a fact-checky Dekonstrukce státu — Chytřejší daně, Daňový ráj Evropy i studie PAQ Research o švarcsystému.",
   image: "/images/og-default.png",
   imageAlt: "Blog — Dekonstrukce státu",
 });
@@ -69,8 +70,57 @@ export default function BlogPage() {
       </header>
 
       <div className="divide-y divide-[var(--border)] border-b border-[var(--border)]">
-        {/* Post 1 (newest): Srovnání obou daňových reforem za tři minuty */}
+        {/* Post 1 (newest): Fact-check studie PAQ Research o švarcsystému */}
         <article className="pb-8">
+          <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
+            <time
+              dateTime={PITVA_PAQ_SVARCSYSTEM.isoDate}
+              className="text-[var(--ink-faint)]"
+            >
+              {PITVA_PAQ_SVARCSYSTEM.date}
+            </time>
+            <span aria-hidden="true" className="text-[var(--ink-faint)]">
+              /
+            </span>
+            <span className="font-semibold text-[var(--accent)]">
+              Fact-check
+            </span>
+          </div>
+          <h2 className="max-w-3xl text-xl leading-snug font-bold tracking-tight text-[var(--ink)] sm:text-2xl">
+            <Link
+              href={PITVA_PAQ_SVARCSYSTEM.url}
+              className="transition-colors hover:text-[var(--accent)]"
+            >
+              {PITVA_PAQ_SVARCSYSTEM.title}
+            </Link>
+          </h2>
+          <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--ink-muted)]">
+            {PITVA_PAQ_SVARCSYSTEM.description}
+          </p>
+          <div className="mt-3.5 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
+            <Link
+              href={PITVA_PAQ_SVARCSYSTEM.url}
+              className="font-semibold text-[var(--accent)] hover:underline"
+            >
+              Číst fact-check →
+            </Link>
+            <Link
+              href="/danova-reforma"
+              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+            >
+              Daňová reforma
+            </Link>
+            <Link
+              href="/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace"
+              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+            >
+              Zdanění práce (audit 02)
+            </Link>
+          </div>
+        </article>
+
+        {/* Post 2: Srovnání obou daňových reforem za tři minuty */}
+        <article className="py-8">
           <div className="mb-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 font-mono text-xs uppercase tabular-nums">
             <time
               dateTime={SROVNANI_REFOREM_DOC.isoDate}

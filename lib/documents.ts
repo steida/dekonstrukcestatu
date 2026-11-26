@@ -265,12 +265,33 @@ export const PITVA_PAQ_IROZHLAS: DocMeta = {
   ogImageAlt: "„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)",
 };
 
+export const PITVA_PAQ_SVARCSYSTEM: DocMeta = {
+  slug: "fact-check-svarcsystem",
+  code: "09",
+  shortTitle: "Fact-check: Švarcsystém (PAQ)",
+  title:
+    "Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ Research o švarcsystému",
+  seoTitle: "Fact-check: Studie PAQ Research o švarcsystému",
+  description:
+    "Fact-check studie PAQ Research o švarcsystému: fantom „určené pracovní doby“, 10× chyba u HDP, data Eurostatu i proč stačí dobrovolný zákoník práce.",
+  filePath: "content/blog/fact-check-svarcsystem.md",
+  url: "/blog/fact-check-svarcsystem",
+  date: "26. 11. 2026",
+  isoDate: "2026-11-26",
+  publishedTime: "2026-11-26T21:00:00+01:00",
+  pages: "Studie PAQ 9/2026",
+  ogImage: "/images/og-svarcsystem.png",
+  ogImageAlt:
+    "Kolik andělů se vejde na špičku jehly: Fact-check studie PAQ Research o švarcsystému",
+};
+
 export const PITVA_PAQ_ALL: DocMeta[] = [
   PITVA_PAQ_ESSAY,
   PITVA_PAQ_MAIN,
   ...PITVA_PAQ_CHAPTERS,
   PITVA_PAQ_DANOVY_RAJ,
   PITVA_PAQ_IROZHLAS,
+  PITVA_PAQ_SVARCSYSTEM,
 ];
 
 export const VYZKUM_HR_STUDIES: DocMeta[] = [
