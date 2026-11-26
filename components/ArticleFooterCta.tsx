@@ -65,11 +65,11 @@ export const ArticleFooterCta: FC = () => (
     <div className="flex flex-col justify-between rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface-elevated)] p-5">
       <div>
         <p className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
-          Nezávislý výzkum bez dotací
+          Nezávislý výzkum bez státních peněz
         </p>
         <p className="mt-2 text-sm leading-relaxed text-[var(--ink-muted)]">
-          Projekt vzniká bez grantů a stranických peněz. Podpořit ho můžete
-          dobrovolným bankovním převodem.
+          Projekt vzniká bez jakýchkoli státních peněz (dotací, veřejných grantů
+          i zakázek). Podpořit ho můžete dobrovolným bankovním převodem.
         </p>
       </div>
       <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[var(--border)] pt-3 text-xs">

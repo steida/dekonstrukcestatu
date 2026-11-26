@@ -661,9 +661,9 @@ export default function HomePage() {
             Podpořte nezávislý výzkum
           </h2>
           <p className="mt-2 max-w-2xl text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
-            Dekonstrukce státu funguje bez dotací, grantů i státních zakázek.
-            Pokud vám texty a analýzy dávají smysl, můžete práci podpořit
-            dobrovolným bankovním převodem.
+            Dekonstrukce státu funguje bez jakýchkoli státních peněz (dotací,
+            veřejných grantů i zakázek). Pokud vám texty a analýzy dávají smysl,
+            můžete práci podpořit dobrovolným bankovním převodem.
           </p>
         </div>
 

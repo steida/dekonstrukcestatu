@@ -133,10 +133,11 @@ export default function OAutoroviPage() {
       <section className="max-w-3xl space-y-4 text-[1.0625rem] leading-[1.72] text-[var(--ink)]">
         <p>
           <strong>Dekonstrukci státu</strong> jsem založil a píšu jako 100%
-          nezávislý think&#8209;tank. Neberu žádné státní dotace, granty ani stranické
-          peníze — žiju z vlastní práce a dobrovolné podpory. Díky tomu si mohu
-          dovolit pojmenovat zbytečnou složitost, nefunkční motivace a metodické
-          chyby bez ohledu na to, z jakého politického tábora přicházejí.
+          nezávislý think&#8209;tank. Neberu žádné peníze od státu — žádné
+          dotace, veřejné granty ani státní zakázky. Žiju z vlastní práce a
+          dobrovolné podpory. Díky tomu si mohu dovolit pojmenovat zbytečnou
+          složitost, nefunkční motivace a metodické chyby bez ohledu na to, z
+          jakého politického tábora přicházejí.
         </p>
         <p>
           Vystudoval jsem ekonomii a více než dvacet let pracuji jako programátor.
