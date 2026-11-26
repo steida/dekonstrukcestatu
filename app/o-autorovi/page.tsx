@@ -205,15 +205,23 @@ export default function OAutoroviPage() {
             >
               GitHubu ↗
             </a>
-            . Najdete-li jakoukoli doloženou faktickou nebo početní chybu,
-            napište na{" "}
+            . Najdete-li chybu nebo máte námitku, otevřete{" "}
+            <a
+              href="https://github.com/steida/dekonstrukcestatu/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[var(--ink)] underline decoration-[var(--border-strong)] underline-offset-2 hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+            >
+              GitHub Issue ↗
+            </a>{" "}
+            nebo napište na{" "}
             <a
               href="mailto:daniel@steigerwald.cz"
               className="font-mono font-semibold text-[var(--ink)] underline decoration-[var(--accent)]/50 underline-offset-2 hover:text-[var(--accent)]"
             >
               daniel@steigerwald.cz
-            </a>{" "}
-            — každou prokázanou chybu veřejně a bez vytáček opravím.
+            </a>
+            .
           </p>
         </aside>
       </section>
