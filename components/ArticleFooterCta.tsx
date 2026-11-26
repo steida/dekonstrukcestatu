@@ -13,7 +13,7 @@ export const ArticleFooterCta: FC = () => (
         </p>
         <p className="mt-1.5 text-sm leading-relaxed text-[var(--ink-muted)]">
           Našli jste chybu nebo máte námitku? Celý obsah webu je na GitHubu —
-          otevřete issue nebo pošlete pull request.
+          otevřete issue.
         </p>
       </div>
       <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-2 border-t border-[var(--border)] pt-3 text-xs sm:border-t-0 sm:pt-0">
