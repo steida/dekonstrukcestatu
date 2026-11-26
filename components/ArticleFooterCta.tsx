@@ -3,9 +3,39 @@ import type { FC } from "react";
 
 export const ArticleFooterCta: FC = () => (
   <aside
-    aria-label="Kontakt a podpora výzkumu"
+    aria-label="Připomínky, kontakt a podpora výzkumu"
     className="no-print mt-12 grid grid-cols-1 gap-4 border-t-2 border-[var(--ink)] pt-8 sm:grid-cols-2"
   >
+    <div className="flex flex-col gap-3 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface-elevated)] p-5 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
+      <div className="min-w-0">
+        <p className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
+          Připomínky, námitky a opravy
+        </p>
+        <p className="mt-1.5 text-sm leading-relaxed text-[var(--ink-muted)]">
+          Našli jste chybu nebo máte námitku? Celý obsah webu je na GitHubu —
+          otevřete issue nebo pošlete pull request.
+        </p>
+      </div>
+      <div className="flex shrink-0 flex-wrap items-center gap-x-4 gap-y-2 border-t border-[var(--border)] pt-3 text-xs sm:border-t-0 sm:pt-0">
+        <a
+          href="https://github.com/steida/dekonstrukcestatu/issues/new"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-[var(--accent)] hover:underline"
+        >
+          Otevřít GitHub Issue →
+        </a>
+        <a
+          href="https://github.com/steida/dekonstrukcestatu/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-mono text-[var(--ink-muted)] underline decoration-[var(--border-strong)] underline-offset-3 hover:text-[var(--ink)]"
+        >
+          Všechny issues
+        </a>
+      </div>
+    </div>
+
     <div className="flex flex-col justify-between rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface-elevated)] p-5">
       <div>
         <p className="font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">

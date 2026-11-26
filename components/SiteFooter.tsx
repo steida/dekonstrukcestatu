@@ -55,6 +55,14 @@ export const SiteFooter: FC = () => (
             GitHub
           </a>
           <a
+            href="https://github.com/steida/dekonstrukcestatu/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[var(--accent)]"
+          >
+            Issues
+          </a>
+          <a
             href="/rss.xml"
             className="font-mono text-xs transition-colors hover:text-[var(--accent)]"
           >
