@@ -575,7 +575,7 @@ export default function HomePage() {
                 className="h-auto w-full object-cover"
               />
             </a>
-            <div>
+            <div className="min-w-0">
               <p className="mb-1.5 font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
                 Kniha
               </p>
@@ -592,7 +592,7 @@ export default function HomePage() {
                   href="https://www.startovac.cz/projekty/kniha-dekonstrukce-statu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)]"
+                  className="font-semibold break-words text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)]"
                 >
                   startovac.cz/projekty/kniha-dekonstrukce-statu&#160;↗
                 </a>

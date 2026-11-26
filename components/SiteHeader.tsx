@@ -31,7 +31,7 @@ export const SiteHeader: FC = () => (
 
     {/* Compact mobile navigation row (zero overflow on 360px–390px) */}
     <div className="border-t border-[var(--border)] md:hidden">
-      <div className="mx-auto max-w-5xl overflow-x-auto px-4 sm:px-6">
+      <div className="mx-auto max-w-5xl overflow-x-auto overscroll-x-contain px-4 sm:px-6">
         <SiteNav
           className="flex items-center justify-between gap-3 py-0 text-[0.8125rem]"
           linkClassName="py-2"

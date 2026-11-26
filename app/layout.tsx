@@ -55,13 +55,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex min-h-dvh flex-col bg-[var(--bg)] text-[var(--ink)]">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-[var(--ink)] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[var(--bg)]"
+          className="sr-only top-0 left-0 focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-[var(--ink)] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-[var(--bg)]"
         >
           Přeskočit na obsah
         </a>
         <Providers>
           <SiteHeader />
-          <main id="main-content" className="flex-1">
+          <main id="main-content" className="w-full min-w-0 flex-1">
             {children}
           </main>
           <SiteFooter />

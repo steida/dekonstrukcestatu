@@ -40,6 +40,9 @@
     background-color: var(--bg);
     color: var(--ink);
     font-size: 106.25%;
+    overflow-x: clip;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-family:
       ui-sans-serif,
       system-ui,
@@ -63,6 +66,8 @@
     background-color: var(--bg);
     color: var(--ink);
     min-height: 100dvh;
+    overflow-x: clip;
+    overflow-wrap: break-word;
   }
 
   /* Offset anchor scroll position for sticky header (2-row on mobile, 1-row on md+) */
@@ -89,13 +94,19 @@
 
 /* Editorial prose enhancements */
 .prose-ds {
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.prose-ds code {
+  overflow-wrap: anywhere;
 }
 
 .prose-ds .table-wrap {
   margin-top: 1.65rem;
   margin-bottom: 1.65rem;
+  max-width: 100%;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -183,13 +194,16 @@
 
 /* Math / KaTeX overflow safety */
 .prose-ds .katex-display {
+  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
   padding: 0.65rem 0.25rem;
   margin: 1.25rem 0;
 }
 
 .prose-ds .katex {
+  position: relative;
   font-size: 1.02em;
 }
 

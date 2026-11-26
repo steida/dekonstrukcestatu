@@ -370,7 +370,7 @@ export default function OAutoroviPage() {
                 x.com/steidacz ↗
               </a>
             </li>
-            <li>
+            <li className="min-w-0">
               <span className="text-[var(--ink-faint)]">
                 GitHub (Dekonstrukce státu):{" "}
               </span>
@@ -378,18 +378,18 @@ export default function OAutoroviPage() {
                 href="https://github.com/steida/dekonstrukcestatu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-[var(--ink)] hover:text-[var(--accent)]"
+                className="font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
               >
                 github.com/steida/dekonstrukcestatu ↗
               </a>
             </li>
-            <li>
+            <li className="min-w-0">
               <span className="text-[var(--ink-faint)]">Kniha (Startovač): </span>
               <a
                 href="https://www.startovac.cz/projekty/kniha-dekonstrukce-statu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-[var(--ink)] hover:text-[var(--accent)]"
+                className="font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
               >
                 startovac.cz/projekty/kniha-dekonstrukce-statu ↗
               </a>

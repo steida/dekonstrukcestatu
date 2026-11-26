@@ -49,7 +49,7 @@ export const TaxSubNav: FC<{ active: TaxSectionKey }> = ({ active }) => {
     >
       <ul
         ref={listRef}
-        className="-mb-px flex flex-nowrap gap-x-4 overflow-x-auto whitespace-nowrap text-sm sm:gap-x-5"
+        className="-mb-px flex flex-nowrap gap-x-4 overflow-x-auto overscroll-x-contain whitespace-nowrap text-sm sm:gap-x-5"
       >
         {TABS.map((tab) => {
           const isActive = tab.key === active;
