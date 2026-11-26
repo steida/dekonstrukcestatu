@@ -24,16 +24,16 @@ Plný textový přehled: https://www.dekonstrukcestatu.cz/llms-full.txt
 
 ## Pitva studie PAQ Research, CVF a IDEA Chytřejší daně (224 stran)
 
-- [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](https://www.dekonstrukcestatu.cz/blog/danime-praci-ale-majetek-temer-vubec): 48 vystoupení Daniela Prokopa v Českém rozhlase za 12 měsíců, vlastní týdenní pořad bez oponenta a fact-check 10 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
+- [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](https://www.dekonstrukcestatu.cz/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
 - [Zjednodušovači, komplikátoři a 224 stran Chytřejších daní (hlavní esej)](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori): Čtivý esej o zbytečné složitosti v daních, švech mezi kapitolami studie Chytřejší daně, černé skříňce modelů a férovém účtu, kde mají autoři pravdu.
-- [Komplikátoři v praxi — hlavní forenzní syntéza (00)](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit): Kompletní šestikapitolová forenzní pitva studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025) se všemi tabulkami, výpočty, katalogem 12 chyb a 46 ověřenými citacemi.
+- [Komplikátoři v praxi — hlavní forenzní syntéza (00)](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit): Kompletní šestikapitolová forenzní pitva studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025) se všemi tabulkami, výpočty, katalogem 12 chyb, 15 klíčovými citacemi a rozcestníkem na 46 ověřených citací v kapitolových auditech.
   - [01 — Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy)
   - [02 — Kapitola 2: Zdanění práce](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace)
   - [03 — Kapitola 3: Zdanění spotřeby](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby)
   - [04 — Kapitola 4: Zdanění majetku](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku)
   - [05 — Kapitola 5: Zdanění zisků firem](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem)
   - [06 — Kapitola 6: Metodika modelování, HDP a anatomie obskurantismu](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)
-- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. v EU) je Česko přesně na mediánu EU27.
+- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé.
 
 ## Daňová reforma podle Dekonstrukce státu
 

@@ -27,7 +27,9 @@ const ROADMAP_ITEMS = [
     body: (
       <>
         Minimum povolené směrnicí EU (jediná sazba bez snížených a nulových
-        sazeb — zůstanou jen povinná unijní osvobození dle čl. 132 a 135) a
+        sazeb — zůstanou jen povinná unijní osvobození: bez nároku na odpočet
+        dle čl. 132 a 135 a s nárokem na odpočet u vývozu a dodání do jiného
+        členského státu dle čl. 146 a 138) a
         zavedení v ČR dosud nevyužitého dobrovolného hotovostního režimu do
         50 mil. Kč (po konzultaci s Výborem pro DPH EU; viz{" "}
         <Link
@@ -70,12 +72,13 @@ const ROADMAP_ITEMS = [
     title: "Sloučení přímých daní a odvodů do dvou pohlednic",
     body: (
       <>
-        DPFO, DPPO, sociální i zdravotní odvody a majetkové daně v jednom
-        srozumitelném systému (<strong>X</strong> a <strong>Y %</strong>) v
-        souladu s rozsudkem SDEU <em>Banca Popolare di Cremona</em> (C-475/03) —
-        včetně souladu s nařízením EU 883/2004 (koordinace sociálního
-        zabezpečení), nálezem ÚS Pl. ÚS 8/07 a čl. 31 Listiny a přenastavení
-        obecního rozpočtového určení daní (RUD) po zrušení daně z nemovitostí.
+        Sloučení daní z příjmů (DPFO, DPPO) a sociálních i zdravotních odvodů do
+        jednoho srozumitelného systému (<strong>X</strong> a{" "}
+        <strong>Y %</strong>) při úplném zrušení majetkových daní. Vše v souladu
+        s rozsudkem SDEU <em>Banca Popolare di Cremona</em> (C-475/03),
+        nařízením EU 883/2004 (koordinace sociálního zabezpečení), nálezem ÚS
+        Pl. ÚS 8/07 a čl. 31 Listiny; součástí je i přenastavení obecního
+        rozpočtového určení daní (RUD) po zrušení daně z nemovitostí.
       </>
     ),
   },

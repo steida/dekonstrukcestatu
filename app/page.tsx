@@ -68,7 +68,7 @@ const TOP_MEDIA = [
   },
   {
     outlet: "Letní škola Občanského institutu",
-    date: "6. 2. 2022",
+    date: "zveřejněno 6. 2. 2022",
     title: "Demonopolizace",
     href: "https://www.youtube.com/watch?v=uAfFLU-WvJo",
     note: "Přednáška o demonopolizaci státních agend.",
@@ -353,9 +353,9 @@ export default function HomePage() {
               </Link>
             </h3>
             <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
-              48 vystoupení Daniela Prokopa v Českém rozhlase za 12 měsíců,
-              vlastní týdenní pořad bez oponenta a fact-check 10 klíčových
-              výroků z rozhovoru na iROZHLASu.
+              48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců,
+              pravidelný týdenní pořad bez oponenta a fact-check titulku a 9
+              klíčových výroků z rozhovoru na iROZHLASu.
             </p>
             <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
               <Link
@@ -390,9 +390,9 @@ export default function HomePage() {
               </Link>
             </h3>
             <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
-              Proč studie PAQ Research, CVF a IDEA místo refaktoringu starého
-              daňového kódu lepí přes třicet nových záplat, kde se kapitoly
-              perou samy se sebou — a v čem mají autoři pravdu.
+              Proč studie PAQ Research, CVF a IDEA místo přestavby starého
+              daňového systému od základů lepí přes třicet nových záplat, kde se
+              kapitoly perou samy se sebou — a v čem mají autoři pravdu.
             </p>
             <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
               <Link
@@ -435,8 +435,9 @@ export default function HomePage() {
             <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-[var(--ink-muted)]">
               Ověření listopadové studie PAQ Research podle primárních dat
               Evropské komise, OECD a citovaných akademických studií: po
-              započtení DPPO leží Česko i v přezdaněné EU přesně na mediánu
-              (5,62 % HDP; ~5,17 % bez dočasné WFT).
+              započtení firemní daně (DPPO) leží Česko i v přezdaněné EU přesně
+              na mediánu (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků
+              (~5,17 %) vybírá víc než všichni sousedé.
             </p>
             <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
               <Link

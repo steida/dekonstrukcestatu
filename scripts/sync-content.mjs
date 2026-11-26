@@ -47,7 +47,7 @@ const CONTENT_FILES = [
     dest: "content/pitva-paq/00-komplikatori-hlavni-pitva.md",
     url: "/blog/zjednodusovaci-a-komplikatori/audit",
     title:
-      "Komplikátoři v praxi: Kompletní šestikapitolová pitva studie Chytřejší daně",
+      "Komplikátoři v praxi: kompletní šestikapitolová pitva studie Chytřejší daně",
   },
   {
     src: "research/paq-audit/01-ramovani-a-alternativy.md",
@@ -236,16 +236,16 @@ Plný textový přehled: ${SITE_URL}/llms-full.txt
 
 ## Pitva studie PAQ Research, CVF a IDEA Chytřejší daně (224 stran)
 
-- [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec): 48 vystoupení Daniela Prokopa v Českém rozhlase za 12 měsíců, vlastní týdenní pořad bez oponenta a fact-check 10 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
+- [„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)](${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec): 48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).
 - [Zjednodušovači, komplikátoři a 224 stran Chytřejších daní (hlavní esej)](${SITE_URL}/blog/zjednodusovaci-a-komplikatori): Čtivý esej o zbytečné složitosti v daních, švech mezi kapitolami studie Chytřejší daně, černé skříňce modelů a férovém účtu, kde mají autoři pravdu.
-- [Komplikátoři v praxi — hlavní forenzní syntéza (00)](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit): Kompletní šestikapitolová forenzní pitva studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025) se všemi tabulkami, výpočty, katalogem 12 chyb a 46 ověřenými citacemi.
+- [Komplikátoři v praxi — hlavní forenzní syntéza (00)](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit): Kompletní šestikapitolová forenzní pitva studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025) se všemi tabulkami, výpočty, katalogem 12 chyb, 15 klíčovými citacemi a rozcestníkem na 46 ověřených citací v kapitolových auditech.
   - [01 — Kapitola 1: Rámování, „komplikátorství“ a slepé uličky alternativ](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy)
   - [02 — Kapitola 2: Zdanění práce](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace)
   - [03 — Kapitola 3: Zdanění spotřeby](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby)
   - [04 — Kapitola 4: Zdanění majetku](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku)
   - [05 — Kapitola 5: Zdanění zisků firem](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/05-zdaneni-firem)
   - [06 — Kapitola 6: Metodika modelování, HDP a anatomie obskurantismu](${SITE_URL}/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)
-- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](${SITE_URL}/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. v EU) je Česko přesně na mediánu EU27.
+- [Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)](${SITE_URL}/blog/fact-check-danovy-raj-evropy): Datové a metodologické ověření listopadové studie PAQ Research (2026) debatované v DVTV — po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je Česko přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé.
 
 ## Daňová reforma podle Dekonstrukce státu
 
@@ -344,29 +344,29 @@ const RSS_ITEMS = [
     url: `${SITE_URL}/blog/danime-praci-ale-majetek-temer-vubec`,
     pubDate: "Wed, 25 Nov 2026 20:00:00 +0100",
     description:
-      "48 vystoupení Daniela Prokopa v Českém rozhlase za 12 měsíců, vlastní týdenní pořad bez oponenta a fact-check 10 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).",
+      "48 záznamů Daniela Prokopa v Českém rozhlase za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).",
   },
   {
     title: "Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)",
     url: `${SITE_URL}/blog/fact-check-danovy-raj-evropy`,
     pubDate: "Wed, 25 Nov 2026 16:00:00 +0100",
     description:
-      "Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a 82,3 % rozdílu uváděného PAQ tvoří jen opakované daně ze samotné držby, převodu a dědění majetku.",
+      "Metodologické a datové ověření studie PAQ Research Daňový ráj Evropy (16. 11. 2026): po započtení DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) leží ČR přesně na mediánu EU27 (5,62 % HDP) a i bez dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než všichni sousedé; 82,3 % rozdílu uváděného PAQ přitom tvoří jen opakované daně ze samotné držby, převodu a dědění majetku.",
   },
   {
     title: "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori`,
     pubDate: "Wed, 25 Nov 2026 14:00:00 +0100",
     description:
-      "Proč 224stránková studie PAQ Research, CVF a IDEA místo refaktoringu lepí přes třicet nových záplat, kde se kapitoly perou samy se sebou, co ukazuje černá skříňka modelů — a v čem mají autoři pravdu.",
+      "Proč 224stránková studie PAQ Research, CVF a IDEA místo přestavby daňového systému od základů lepí přes třicet nových záplat, kde se kapitoly perou samy se sebou, co ukazuje černá skříňka modelů — a v čem mají autoři pravdu.",
   },
   {
     title:
-      "Komplikátoři v praxi: Kompletní šestikapitolová pitva Chytřejších daní",
+      "Komplikátoři v praxi: kompletní šestikapitolová pitva Chytřejších daní",
     url: `${SITE_URL}/blog/zjednodusovaci-a-komplikatori/audit`,
     pubDate: "Wed, 25 Nov 2026 12:00:00 +0100",
     description:
-      "Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a 46 doslovných citací.",
+      "Forenzní audit 224stránkové studie Chytřejší daně (PAQ Research / CVF / IDEA, 2025): všechny tabulky, výpočty, katalog 12 ověřených chyb a 15 klíčových citací (46 v kapitolových auditech).",
   },
   {
     title: "Daňová reforma: Realistická implementace pro Česko v rámci EU",
@@ -394,7 +394,7 @@ const RSS_ITEMS = [
     url: `${SITE_URL}/danova-reforma/vyzkum`,
     pubDate: "Tue, 24 Nov 2026 12:00:00 +0100",
     description:
-      "Pět odborných studií k modelu Hall–Rabushka Flat Tax: mechanika, světová praxe, makroekonomické propočty pro ČR v rámci EU, nejsilnější verze kritiky a 5 cest pro DPH.",
+      "Pět odborných studií k modelu Hall–Rabushka Flat Tax: mechanika, světová praxe, makroekonomické propočty pro ČR v rámci EU, nejsilnější verze kritiky a audit 5 „hacků“ na DPH.",
   },
   {
     title: "Manifest dekonstrukce státu (návrh)",

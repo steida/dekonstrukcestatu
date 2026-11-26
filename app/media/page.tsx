@@ -74,7 +74,7 @@ const CURATED_MEDIA: MediaEntry[] = [
   },
   {
     outlet: "Letní škola Občanského institutu",
-    date: "6. 2. 2022",
+    date: "zveřejněno 6. 2. 2022",
     title: "Demonopolizace",
     href: "https://www.youtube.com/watch?v=uAfFLU-WvJo",
     note: "Přednáška o demonopolizaci státních agend.",

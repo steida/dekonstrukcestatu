@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { FC } from "react";
 import { PrintPostcardsButton } from "./PrintPostcardsButton";
 
@@ -55,8 +56,15 @@ export const TwoPostcards: FC = () => (
                 <span className="mr-2 font-mono text-xs text-[var(--ink-faint)]">
                   2.
                 </span>
-                Odpočet nezdanitelného minima <strong>X</strong> (příp. +
-                {"\u00a0"}částka za každé dítě)
+                Odpočet nezdanitelného minima <strong>X</strong> (příp. navýšení{" "}
+                <strong>X</strong> za každé dítě, viz{" "}
+                <Link
+                  href="/danova-reforma/doplneni#9"
+                  className="underline decoration-[var(--border-strong)] underline-offset-2 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)] print:no-underline"
+                >
+                  Doplnění #9
+                </Link>
+                )
               </span>
               <span className="shrink-0 font-mono text-xs font-semibold text-[var(--ink)] tabular-nums">
                 − X

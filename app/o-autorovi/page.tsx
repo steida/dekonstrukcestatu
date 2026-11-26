@@ -166,7 +166,7 @@ export default function OAutoroviPage() {
           škáluje ve velkém.
         </p>
         <p>
-          Proto místo neškálovatelných utopií i dalších pětisetstránkových záplat
+          Proto místo neškálovatelných utopií i dalších záplat na stovky stran
           hledám konkrétní, civilizované kroky: čím začít a jak složitost státu
           ubírat vrstvu po vrstvě — od{" "}
           <Link
@@ -302,7 +302,7 @@ export default function OAutoroviPage() {
             <div>
               <div className="mb-3 flex items-center justify-between gap-3">
                 <span className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
-                  Krátké bio na konferenci (~35 slov)
+                  Krátké bio na konferenci (~30 slov)
                 </span>
                 <CopyTextButton text={CONFERENCE_BIO} />
               </div>

@@ -70,7 +70,7 @@ export const PITVA_PAQ_ESSAY: DocMeta = {
   title: "Zjednodušovači, komplikátoři a 224 stran Chytřejších daní",
   seoTitle: "Zjednodušovači, komplikátoři a Chytřejší daně",
   description:
-    "Proč 224stránková studie PAQ Research, CVF a IDEA místo refaktoringu lepí přes třicet záplat, kde se kapitoly perou a v čem mají autoři pravdu.",
+    "Proč 224stránková studie PAQ Research, CVF a IDEA místo zjednodušení od základů lepí přes třicet záplat, kde se kapitoly perou a v čem mají autoři pravdu.",
   filePath: "content/pitva-paq/clanek.md",
   url: "/blog/zjednodusovaci-a-komplikatori",
   date: "25. 11. 2026",
@@ -85,10 +85,10 @@ export const PITVA_PAQ_MAIN: DocMeta = {
   code: "00",
   shortTitle: "Hlavní syntéza",
   title:
-    "Komplikátoři v praxi: Šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)",
+    "Komplikátoři v praxi: šestikapitolová pitva studie Chytřejší daně (PAQ Research, CVF a IDEA)",
   seoTitle: "Pitva Chytřejších daní (PAQ, CVF, IDEA)",
   description:
-    "Forenzní audit 224stránkové studie Chytřejší daně (PAQ, CVF, IDEA): tabulky, výpočty, katalog 12 chyb, 46 ověřených citací a srovnání se dvěma pohlednicemi.",
+    "Forenzní audit 224stránkové studie Chytřejší daně (PAQ, CVF, IDEA): tabulky, výpočty, katalog 12 chyb, 15 klíčových citací (46 v kapitolových auditech) a srovnání se dvěma pohlednicemi.",
   filePath: "content/pitva-paq/00-komplikatori-hlavni-pitva.md",
   url: "/blog/zjednodusovaci-a-komplikatori/audit",
   date: "25. 11. 2026",
@@ -159,7 +159,7 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
     title: "Kapitola 4: Zdanění majetku",
     seoTitle: "Audit Chytřejších daní · Kap. 4: Majetek",
     description:
-      "Audit kapitoly 4 (str. 136–182): cenové mapy pozemků, nelikvidita vlastníků, 8 pásem katastrálních území, dědická daň, daň z bohatství a exit tax.",
+      "Audit kapitoly 4 (str. 136–182): cenové mapy pozemků, nelikvidita vlastníků, 8 cenových skupin katastrálních území, dědická daň, daň z bohatství a exit tax.",
     filePath: "content/pitva-paq/04-zdaneni-majetku.md",
     url: "/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku",
     date: "25. 11. 2026",
@@ -194,12 +194,12 @@ export const PITVA_PAQ_CHAPTERS: DocMeta[] = [
       "Kapitola 6: Metodika modelování, HDP, časové testy a anatomie obskurantismu",
     seoTitle: "Audit Chytřejších daní · Kap. 6: Metodika",
     description:
-      "Audit příloh (str. 203–223): černá skříňka Oxford Economics, arbitrární volby, časové testy a křížové ověření tvrdých čísel studie.",
+      "Audit příloh (str. 203–222): černá skříňka Oxford Economics, arbitrární volby, časové testy a křížové ověření tvrdých čísel studie.",
     filePath: "content/pitva-paq/06-metodika-a-obskurantismus.md",
     url: "/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus",
     date: "25. 11. 2026",
     isoDate: "2026-11-25",
-    pages: "str. 203–223",
+    pages: "str. 203–222",
     ogImage: "/images/og-pitva-paq.png",
     ogImageAlt:
       "Audit Chytřejších daní (PAQ, CVF, IDEA) — Kapitola 6: Metodika a obskurantismus",
@@ -213,7 +213,7 @@ export const PITVA_PAQ_DANOVY_RAJ: DocMeta = {
   title: "Fact-check studie PAQ Research „Daňový ráj Evropy“ (11/2026)",
   seoTitle: "Fact-check: Daňový ráj Evropy (PAQ 2026)",
   description:
-    "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026): s DPPO (4,46 % HDP, 5. v EU) je ČR na mediánu EU27 (5,62 % HDP; ~5,17 % bez WFT).",
+    "Fact-check studie PAQ Research Daňový ráj Evropy (11/2026): s DPPO (4,46 % HDP, 5. nejvyšší výběr v EU) je ČR přesně na mediánu EU27 (5,62 % HDP); i bez dočasné daně z neočekávaných zisků (~5,17 %) je nad všemi sousedy.",
   filePath: "content/pitva-paq/07-danovy-raj-evropy.md",
   url: "/blog/fact-check-danovy-raj-evropy",
   date: "25. 11. 2026",
@@ -230,7 +230,7 @@ export const PITVA_PAQ_IROZHLAS: DocMeta = {
   title: "„Daníme práci, ale majetek téměř vůbec?“ (fact-check iROZHLASu)",
   seoTitle: "Fact-check iROZHLASu: Daníme práci a majetek?",
   description:
-    "48 vystoupení Daniela Prokopa v ČRo za 12 měsíců, týdenní pořad bez oponenta a fact-check 10 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).",
+    "48 záznamů Daniela Prokopa v ČRo za 12 měsíců, pravidelný týdenní pořad bez oponenta a fact-check titulku a 9 klíčových výroků z rozhovoru na iROZHLASu (25. 11. 2026).",
   filePath: "content/pitva-paq/irozhlas-prokop.md",
   url: "/blog/danime-praci-ale-majetek-temer-vubec",
   date: "25. 11. 2026",
@@ -320,7 +320,7 @@ export const VYZKUM_HR_STUDIES: DocMeta[] = [
       "Hall–Rabushka, DPH a mezinárodní obchod: Feldstein–Krugmanův test a 5 „hacků“ na DPH",
     seoTitle: "Hall–Rabushka 05: DPH, obchod a 5 hacků",
     description:
-      "Feldstein–Krugmanův klam (Amazon vs. Alza, Škoda Auto) a 5 reálných cest, jak zjednodušit DPH v EU a WTO včetně japonské lekce a hotovostního režimu.",
+      "Feldstein–Krugmanův klam (Amazon vs. Alza, Škoda Auto), japonská lekce a audit 5 „hacků“ na DPH: proč v EU legálně projde jen „vykuchaná“ 15% DPH s hotovostním režimem.",
     filePath: "content/vyzkum/09-hr-dph-obchod-a-hacky.md",
     url: "/danova-reforma/vyzkum/09-hr-dph-obchod-a-hacky",
     date: "24. 11. 2026",
