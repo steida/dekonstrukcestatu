@@ -35,6 +35,31 @@
   --accent-soft: rgba(237, 115, 104, 0.12);
 }
 
+@media (prefers-contrast: more) {
+  :root {
+    --ink: #000000;
+    --ink-muted: #26231f;
+    --ink-faint: #3b3732;
+    --border: rgba(0, 0, 0, 0.35);
+    --border-strong: rgba(0, 0, 0, 0.65);
+    --accent: #8c1212;
+    --accent-hover: #690c0c;
+  }
+
+  .dark {
+    --bg: #0c0b0a;
+    --surface: #171513;
+    --surface-elevated: #201d1a;
+    --ink: #ffffff;
+    --ink-muted: #ded8cd;
+    --ink-faint: #cbc3b7;
+    --border: rgba(255, 255, 255, 0.32);
+    --border-strong: rgba(255, 255, 255, 0.62);
+    --accent: #ff8e83;
+    --accent-hover: #ffaaa1;
+  }
+}
+
 @layer base {
   html {
     background-color: var(--bg);
@@ -335,6 +360,34 @@
 /* Tabular numbers utility */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
+}
+
+/* Windows High Contrast / Forced Colors accessibility */
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .scroll-fade-x,
+  .prose-ds .table-wrap,
+  .prose-ds .katex-display {
+    background-image: none !important;
+  }
+
+  button,
+  [role="button"],
+  .postcard-card,
+  .toc-box,
+  [class~="bg-[var(--accent)]"],
+  [class~="bg-[var(--ink)]"] {
+    border: 1px solid CanvasText;
+  }
+
+  a[aria-current="page"],
+  a[aria-current="true"] {
+    border-color: Highlight;
+  }
 }
 
 /* Print stylesheet: crisp black-on-white editorial print */

@@ -57,7 +57,7 @@ export const TableOfContents: FC<{
         aria-label={label}
         className="border-t border-[var(--border)] px-4 py-3.5"
       >
-        <ol className="space-y-1.5 leading-snug">
+        <ol className="space-y-1 leading-snug">
           {groups.map(({ item, children }) => (
             <li
               key={item.id}
@@ -69,12 +69,12 @@ export const TableOfContents: FC<{
             >
               <a
                 href={`#${item.id}`}
-                className="inline-block py-0.5 transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 {item.text}
               </a>
               {children.length > 0 && (
-                <ol className="mt-1 space-y-1 pl-4">
+                <ol className="mt-0.5 space-y-0.5 pl-4">
                   {children.map((sub) => (
                     <li
                       key={sub.id}
@@ -82,7 +82,7 @@ export const TableOfContents: FC<{
                     >
                       <a
                         href={`#${sub.id}`}
-                        className="inline-block py-0.5 transition-colors hover:text-[var(--accent)]"
+                        className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
                       >
                         {sub.text}
                       </a>

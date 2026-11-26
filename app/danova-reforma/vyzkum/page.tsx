@@ -76,12 +76,12 @@ export default function VyzkumIndexPage() {
                 <p className="mt-2 text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
                   {study.description}
                 </p>
-                <div className="mt-3 flex items-center gap-4 text-sm">
+                <div className="mt-2.5 flex items-center gap-4 text-sm">
                   <Link
                     href={study.url}
-                    className="font-semibold text-[var(--accent)] hover:underline"
+                    className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
                   >
-                    Číst studii →
+                    Číst studii <span aria-hidden="true">→</span>
                   </Link>
                   <time
                     dateTime={study.isoDate}

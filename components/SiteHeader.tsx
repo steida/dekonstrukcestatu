@@ -10,7 +10,7 @@ export const SiteHeader: FC = () => (
     <div className="mx-auto flex h-13 max-w-5xl items-center justify-between gap-4 px-4 sm:px-6 md:h-14">
       <Link
         href="/"
-        className="group flex shrink-0 items-center gap-2.5 text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
+        className="group flex min-h-9 shrink-0 items-center gap-2.5 py-1.5 text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
       >
         <LogoMark className="h-5 w-5 shrink-0 text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]" />
         <span className="text-sm font-semibold tracking-tight sm:text-base">
@@ -20,7 +20,10 @@ export const SiteHeader: FC = () => (
 
       {/* Desktop navigation + theme toggle */}
       <div className="flex shrink-0 items-center gap-4">
-        <SiteNav className="hidden items-center gap-5 text-sm md:flex" />
+        <SiteNav
+          className="hidden items-center gap-5 text-sm md:flex"
+          linkClassName="inline-flex min-h-7 items-center py-1"
+        />
         <span
           className="hidden h-4 w-px bg-[var(--border)] md:block"
           aria-hidden="true"

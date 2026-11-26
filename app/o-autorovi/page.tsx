@@ -355,9 +355,9 @@ export default function OAutoroviPage() {
           <a
             href="/images/daniel-steigerwald-press.jpg"
             download="daniel-steigerwald.jpg"
-            className="inline-flex shrink-0 items-center justify-center rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-4 py-2 font-mono text-xs font-semibold tracking-wide text-[var(--bg)] transition-colors hover:bg-[var(--accent)] hover:border-[var(--accent)]"
+            className="inline-flex min-h-9 shrink-0 items-center justify-center gap-1 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-4 py-2 font-mono text-xs font-semibold tracking-wide text-[var(--bg)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)]"
           >
-            Stáhnout JPG ↓
+            Stáhnout JPG <span aria-hidden="true">↓</span>
           </a>
         </div>
 
@@ -366,12 +366,12 @@ export default function OAutoroviPage() {
           <h3 className="mb-3 font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
             Přímé kontakty a odkazy
           </h3>
-          <ul className="grid grid-cols-1 gap-x-8 gap-y-2.5 text-sm sm:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
             <li>
               <span className="text-[var(--ink-faint)]">E-mail: </span>
               <a
                 href="mailto:daniel@steigerwald.cz"
-                className="font-mono font-semibold text-[var(--accent)] hover:underline"
+                className="inline-block py-1 font-mono font-semibold text-[var(--accent)] hover:underline"
               >
                 daniel@steigerwald.cz
               </a>
@@ -382,7 +382,7 @@ export default function OAutoroviPage() {
                 href="https://x.com/steidacz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-[var(--ink)] hover:text-[var(--accent)]"
+                className="inline-block py-1 font-medium text-[var(--ink)] hover:text-[var(--accent)]"
               >
                 x.com/steidacz <span aria-hidden="true">↗</span>
                 <span className="sr-only"> (otevře se v novém okně)</span>
@@ -396,7 +396,7 @@ export default function OAutoroviPage() {
                 href="https://github.com/steida/dekonstrukcestatu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
+                className="inline-block py-1 font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
               >
                 github.com/steida/dekonstrukcestatu{" "}
                 <span aria-hidden="true">↗</span>
@@ -409,7 +409,7 @@ export default function OAutoroviPage() {
                 href="https://www.startovac.cz/projekty/kniha-dekonstrukce-statu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
+                className="inline-block py-1 font-medium break-words text-[var(--ink)] hover:text-[var(--accent)]"
               >
                 startovac.cz/projekty/kniha-dekonstrukce-statu{" "}
                 <span aria-hidden="true">↗</span>
@@ -424,7 +424,7 @@ export default function OAutoroviPage() {
                 href="https://www.evolu.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-[var(--ink)] hover:text-[var(--accent)]"
+                className="inline-block py-1 font-medium text-[var(--ink)] hover:text-[var(--accent)]"
               >
                 evolu.dev <span aria-hidden="true">↗</span>
                 <span className="sr-only"> (otevře se v novém okně)</span>
@@ -434,9 +434,9 @@ export default function OAutoroviPage() {
               <span className="text-[var(--ink-faint)]">Podpora výzkumu: </span>
               <Link
                 href="/#podpora"
-                className="font-mono font-medium text-[var(--ink)] hover:text-[var(--accent)] tabular-nums"
+                className="inline-block py-1 font-mono font-medium text-[var(--ink)] hover:text-[var(--accent)] tabular-nums"
               >
-                1000701012/3030 →
+                1000701012/3030 <span aria-hidden="true">→</span>
               </Link>
             </li>
           </ul>

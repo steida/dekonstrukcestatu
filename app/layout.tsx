@@ -61,7 +61,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </a>
         <Providers>
           <SiteHeader />
-          <main id="main-content" className="w-full min-w-0 flex-1">
+          <main
+            id="main-content"
+            tabIndex={-1}
+            className="w-full min-w-0 flex-1 focus:outline-none"
+          >
             {children}
           </main>
           <SiteFooter />

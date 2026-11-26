@@ -133,7 +133,7 @@ export default function HomePage() {
               href="/o-autorovi"
               className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)]"
             >
-              O autorovi &amp; Press Kit →
+              O autorovi &amp; Press Kit <span aria-hidden="true">→</span>
             </Link>
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/publikace"
-            className="font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
+            className="inline-flex min-h-7 items-center gap-1 py-1 font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
           >
             Všechny publikace <span aria-hidden="true">→</span>
           </Link>
@@ -202,28 +202,28 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="mt-5 flex flex-wrap items-center gap-x-3.5 gap-y-1.5 border-t border-[var(--border)] pt-4 text-[0.8125rem]">
+                <div className="mt-5 flex flex-wrap items-center gap-x-3.5 gap-y-1 border-t border-[var(--border)] pt-3.5 text-[0.8125rem]">
                   <Link
                     href="/danova-reforma"
-                    className="font-semibold text-[var(--accent)] hover:underline"
+                    className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
                   >
-                    Číst publikaci →
+                    Číst publikaci <span aria-hidden="true">→</span>
                   </Link>
                   <Link
                     href="/danova-reforma/doplneni"
-                    className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+                    className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
                   >
                     Doplnění #1–#9
                   </Link>
                   <Link
                     href="/danova-reforma/vyzkum"
-                    className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+                    className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
                   >
                     Studie (01–05)
                   </Link>
                   <Link
                     href="/danova-reforma/implementace-eu"
-                    className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+                    className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
                   >
                     Implementace v EU
                   </Link>
@@ -260,7 +260,7 @@ export default function HomePage() {
               <h3 className="text-lg font-bold tracking-tight text-[var(--ink)] sm:text-xl">
                 <Link
                   href="/manifest"
-                  className="transition-colors hover:text-[var(--accent)]"
+                  className="inline-block py-0.5 transition-colors hover:text-[var(--accent)]"
                 >
                   Manifest dekonstrukce státu
                 </Link>
@@ -272,9 +272,9 @@ export default function HomePage() {
             </div>
             <Link
               href="/manifest"
-              className="shrink-0 text-sm font-semibold text-[var(--accent)] hover:underline"
+              className="inline-flex min-h-7 shrink-0 items-center gap-1 py-1 text-sm font-semibold text-[var(--accent)] hover:underline"
             >
-              Číst manifest →
+              Číst manifest <span aria-hidden="true">→</span>
             </Link>
           </article>
         </div>
@@ -295,13 +295,13 @@ export default function HomePage() {
           <div className="flex items-center gap-4">
             <Link
               href="/blog"
-              className="font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
             >
               Vše na blogu <span aria-hidden="true">→</span>
             </Link>
             <a
               href="/rss.xml"
-              className="font-mono text-xs font-medium tracking-wider text-[var(--ink-muted)] uppercase transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 min-w-7 items-center justify-center px-1 py-1 font-mono text-xs font-medium tracking-wider text-[var(--ink-muted)] uppercase transition-colors hover:text-[var(--accent)]"
             >
               RSS
             </a>
@@ -337,22 +337,22 @@ export default function HomePage() {
               fantom „určené pracovní doby“, 10násobná chyba u HDP a klec přes
               41% daňového klínu s nejrigidnějším zákoníkem práce v OECD.
             </p>
-            <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-0.5 text-xs text-[var(--ink-muted)]">
               <Link
                 href="/blog/fact-check-svarcsystem"
-                className="font-semibold text-[var(--accent)] hover:underline"
+                className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
               >
-                Číst fact-check →
+                Číst fact-check <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/danova-reforma"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Daňová reforma
               </Link>
               <Link
                 href="/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Zdanění práce (audit 02)
               </Link>
@@ -384,22 +384,22 @@ export default function HomePage() {
               daní (PAQ Research, CVF a IDEA): tabulka v 8 oblastech, shody i
               zásadní rozdíly.
             </p>
-            <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-0.5 text-xs text-[var(--ink-muted)]">
               <Link
                 href="/blog/dekonstrukce-statu-vs-chytrejsi-dane"
-                className="font-semibold text-[var(--accent)] hover:underline"
+                className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
               >
-                Číst srovnání →
+                Číst srovnání <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/danova-reforma"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Daňová reforma
               </Link>
               <Link
                 href="/blog/zjednodusovaci-a-komplikatori"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Pitva Chytřejších daní
               </Link>
@@ -431,16 +431,16 @@ export default function HomePage() {
               pravidelný týdenní pořad bez oponenta a fact-check titulku a 9
               klíčových výroků z rozhovoru na iROZHLASu.
             </p>
-            <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-0.5 text-xs text-[var(--ink-muted)]">
               <Link
                 href="/blog/danime-praci-ale-majetek-temer-vubec"
-                className="font-semibold text-[var(--accent)] hover:underline"
+                className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
               >
-                Číst fact-check →
+                Číst fact-check <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/blog/fact-check-danovy-raj-evropy"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Podkladový fact-check
               </Link>
@@ -472,22 +472,22 @@ export default function HomePage() {
               daňového systému od základů lepí přes třicet nových záplat, kde se
               kapitoly perou samy se sebou — a v čem mají autoři pravdu.
             </p>
-            <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-0.5 text-xs text-[var(--ink-muted)]">
               <Link
                 href="/blog/zjednodusovaci-a-komplikatori"
-                className="font-semibold text-[var(--accent)] hover:underline"
+                className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
               >
-                Číst esej →
+                Číst esej <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/blog/zjednodusovaci-a-komplikatori/audit"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Forenzní audit (00–06)
               </Link>
               <Link
                 href="/blog/zjednodusovaci-a-komplikatori/audit#katalog-12-chyb"
-                className="transition-colors hover:text-[var(--accent)]"
+                className="inline-flex min-h-7 items-center py-1 transition-colors hover:text-[var(--accent)]"
               >
                 Katalog 12 ověřených chyb
               </Link>
@@ -522,12 +522,12 @@ export default function HomePage() {
               dočasné daně z neočekávaných zisků (~5,17 %) vybírá víc než
               všichni sousedé (v celkovém ukazateli EK vč. OSVČ je ČR 17. z 27).
             </p>
-            <div className="mt-2.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ink-muted)]">
+            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-0.5 text-xs text-[var(--ink-muted)]">
               <Link
                 href="/blog/fact-check-danovy-raj-evropy"
-                className="font-semibold text-[var(--accent)] hover:underline"
+                className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
               >
-                Číst fact-check →
+                Číst fact-check <span aria-hidden="true">→</span>
               </Link>
             </div>
           </li>
@@ -542,7 +542,7 @@ export default function HomePage() {
           </h2>
           <Link
             href="/media"
-            className="font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
+            className="inline-flex min-h-7 items-center gap-1 py-1 font-mono text-xs font-medium tracking-wider text-[var(--accent)] uppercase hover:underline"
           >
             Všechna vystoupení <span aria-hidden="true">→</span>
           </Link>
@@ -566,7 +566,7 @@ export default function HomePage() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
+                className="inline-block py-1 text-base font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
               >
                 <span lang={item.titleLang}>{item.title}</span>{" "}
                 <span aria-hidden="true">↗</span>
@@ -643,7 +643,7 @@ export default function HomePage() {
               href="https://x.com/steidacz"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-mono text-xs text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               nebo @steidacz na X <span aria-hidden="true">↗</span>
               <span className="sr-only"> (otevře se v novém okně)</span>
@@ -705,13 +705,13 @@ export default function HomePage() {
             <h2 className="text-xl font-bold tracking-tight text-[var(--ink)]">
               Sledovat a číst zdroje
             </h2>
-            <ul className="mt-3 space-y-2.5 text-[0.9375rem]">
+            <ul className="mt-3 space-y-1 text-[0.9375rem]">
               <li>
                 <a
                   href="https://x.com/steidacz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  className="inline-block py-1 font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
                 >
                   x.com/steidacz <span aria-hidden="true">↗</span>
                   <span className="sr-only"> (otevře se v novém okně)</span>
@@ -725,7 +725,7 @@ export default function HomePage() {
                   href="https://github.com/steida/dekonstrukcestatu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  className="inline-block py-1 font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
                 >
                   github.com/steida/dekonstrukcestatu{" "}
                   <span aria-hidden="true">↗</span>
@@ -738,7 +738,7 @@ export default function HomePage() {
               <li>
                 <a
                   href="/rss.xml"
-                  className="font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
+                  className="inline-block py-1 font-medium text-[var(--ink)] underline decoration-[var(--ink-muted)] underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
                 >
                   RSS kanál
                 </a>

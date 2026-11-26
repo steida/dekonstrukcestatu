@@ -76,15 +76,16 @@ export default async function BlogSrovnaniReforemPage() {
         >
           <Link
             href="/blog"
-            className="font-semibold text-[var(--accent)] hover:underline"
+            className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
           >
-            ← Zpět na blog
+            <span aria-hidden="true">←</span> Zpět na blog
           </Link>
           <Link
             href="/danova-reforma"
-            className="font-semibold text-[var(--accent)] hover:underline"
+            className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
           >
-            Daňová reforma podle Dekonstrukce státu →
+            Daňová reforma podle Dekonstrukce státu{" "}
+            <span aria-hidden="true">→</span>
           </Link>
         </nav>
 

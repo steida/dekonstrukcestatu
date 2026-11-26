@@ -61,7 +61,7 @@ export const CopyTextButton: FC<{ text: string; label?: string }> = ({
       <button
         type="button"
         onClick={handleCopy}
-        className="cursor-pointer rounded-[var(--radius-sm)] border border-[var(--border-strong)] bg-[var(--bg)] px-2.5 py-1 font-mono text-[0.7rem] font-medium text-[var(--ink)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+        className="inline-flex min-h-7 cursor-pointer items-center rounded-[var(--radius-sm)] border border-[var(--border-strong)] bg-[var(--bg)] px-2.5 py-1 font-mono text-[0.7rem] font-medium text-[var(--ink)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
       >
         {status === "copied" ? (
           <>

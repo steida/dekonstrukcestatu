@@ -48,7 +48,7 @@ export default function BlogPage() {
           </p>
           <a
             href="/rss.xml"
-            className="rounded-[var(--radius-sm)] border border-[var(--border-strong)] px-2.5 py-1 font-mono text-xs text-[var(--ink-muted)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            className="inline-flex min-h-7 items-center rounded-[var(--radius-sm)] border border-[var(--border-strong)] px-2.5 py-1 font-mono text-xs text-[var(--ink-muted)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
           >
             RSS kanál
           </a>
@@ -97,22 +97,22 @@ export default function BlogPage() {
           <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--ink-muted)]">
             {PITVA_PAQ_SVARCSYSTEM.description}
           </p>
-          <div className="mt-3.5 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
+          <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
             <Link
               href={PITVA_PAQ_SVARCSYSTEM.url}
-              className="font-semibold text-[var(--accent)] hover:underline"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
             >
-              Číst fact-check →
+              Číst fact-check <span aria-hidden="true">→</span>
             </Link>
             <Link
               href="/danova-reforma"
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Daňová reforma
             </Link>
             <Link
               href="/blog/zjednodusovaci-a-komplikatori/02-zdaneni-prace"
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Zdanění práce (audit 02)
             </Link>
@@ -146,22 +146,22 @@ export default function BlogPage() {
           <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--ink-muted)]">
             {SROVNANI_REFOREM_DOC.description}
           </p>
-          <div className="mt-3.5 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
+          <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
             <Link
               href={SROVNANI_REFOREM_DOC.url}
-              className="font-semibold text-[var(--accent)] hover:underline"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
             >
-              Číst srovnání →
+              Číst srovnání <span aria-hidden="true">→</span>
             </Link>
             <Link
               href="/danova-reforma"
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Daňová reforma
             </Link>
             <Link
               href={PITVA_PAQ_ESSAY.url}
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Pitva Chytřejších daní
             </Link>
@@ -195,16 +195,16 @@ export default function BlogPage() {
           <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--ink-muted)]">
             {PITVA_PAQ_IROZHLAS.description}
           </p>
-          <div className="mt-3.5 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
+          <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
             <Link
               href={PITVA_PAQ_IROZHLAS.url}
-              className="font-semibold text-[var(--accent)] hover:underline"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
             >
-              Číst fact-check →
+              Číst fact-check <span aria-hidden="true">→</span>
             </Link>
             <Link
               href={PITVA_PAQ_DANOVY_RAJ.url}
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Podkladový fact-check: Daňový ráj Evropy
             </Link>
@@ -238,22 +238,22 @@ export default function BlogPage() {
           <p className="mt-2 max-w-3xl text-[0.95rem] leading-relaxed text-[var(--ink-muted)]">
             {PITVA_PAQ_ESSAY.description}
           </p>
-          <div className="mt-3.5 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm">
+          <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
             <Link
               href={PITVA_PAQ_ESSAY.url}
-              className="font-semibold text-[var(--accent)] hover:underline"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
             >
-              Číst esej →
+              Číst esej <span aria-hidden="true">→</span>
             </Link>
             <Link
               href={PITVA_PAQ_MAIN.url}
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Hlavní forenzní syntéza (00)
             </Link>
             <Link
               href={`${PITVA_PAQ_MAIN.url}#katalog-12-chyb`}
-              className="text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-7 items-center py-1 text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
             >
               Katalog 12 ověřených chyb
             </Link>
@@ -317,12 +317,12 @@ export default function BlogPage() {
           <p className="mt-2 max-w-3xl text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
             {PITVA_PAQ_DANOVY_RAJ.description}
           </p>
-          <div className="mt-3 text-sm">
+          <div className="mt-2.5 text-sm">
             <Link
               href={PITVA_PAQ_DANOVY_RAJ.url}
-              className="font-semibold text-[var(--accent)] hover:underline"
+              className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
             >
-              Číst fact-check →
+              Číst fact-check <span aria-hidden="true">→</span>
             </Link>
           </div>
         </article>

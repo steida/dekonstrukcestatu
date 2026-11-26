@@ -51,7 +51,8 @@ export default async function PitvaPaqAuditPage() {
           href="/blog/zjednodusovaci-a-komplikatori"
           className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
         >
-          Zjednodušovači, komplikátoři a 224 stran Chytřejších daní →
+          Zjednodušovači, komplikátoři a 224 stran Chytřejších daní{" "}
+          <span aria-hidden="true">→</span>
         </Link>
       </p>
       <p>
@@ -62,7 +63,8 @@ export default async function PitvaPaqAuditPage() {
           href="#katalog-12-chyb"
           className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
         >
-          Přeskočit na katalog 12 ověřených chyb v PDF ↓
+          Přeskočit na katalog 12 ověřených chyb v PDF{" "}
+          <span aria-hidden="true">↓</span>
         </a>
       </p>
       <p>
@@ -73,7 +75,8 @@ export default async function PitvaPaqAuditPage() {
           href="/blog/fact-check-danovy-raj-evropy"
           className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
         >
-          Fact-check: Daňový ráj Evropy (PAQ, 11/2026) →
+          Fact-check: Daňový ráj Evropy (PAQ, 11/2026){" "}
+          <span aria-hidden="true">→</span>
         </Link>
       </p>
     </aside>

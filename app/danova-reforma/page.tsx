@@ -120,7 +120,8 @@ export default async function DanovaReformaPage() {
             href="/danova-reforma/implementace-eu"
             className="font-semibold text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-2 hover:decoration-[var(--accent)]"
           >
-            Realistická implementace pro Česko v rámci EU →
+            Realistická implementace pro Česko v rámci EU{" "}
+            <span aria-hidden="true">→</span>
           </Link>
         </aside>
 
@@ -141,7 +142,8 @@ export default async function DanovaReformaPage() {
                 Doplnění #1–#9
               </div>
               <div className="mt-1 text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]">
-                Odpovědi na námitky z diskuse →
+                Odpovědi na námitky z diskuse{" "}
+                <span aria-hidden="true">→</span>
               </div>
             </Link>
 
@@ -153,7 +155,7 @@ export default async function DanovaReformaPage() {
                 5 podkladových studií
               </div>
               <div className="mt-1 text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]">
-                Výzkum Hall–Rabushka (01–05) →
+                Výzkum Hall–Rabushka (01–05) <span aria-hidden="true">→</span>
               </div>
             </Link>
           </div>

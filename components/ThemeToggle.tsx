@@ -13,7 +13,7 @@ export const ThemeToggle: FC = () => {
 
   const isDark = mounted && resolvedTheme === "dark";
   const otherTheme = resolvedTheme === "dark" ? "light" : "dark";
-  const label = !mounted
+  const tooltip = !mounted
     ? "Přepnout světlý a tmavý režim"
     : isDark
       ? "Přepnout na světlý režim"
@@ -23,9 +23,9 @@ export const ThemeToggle: FC = () => {
     <button
       type="button"
       onClick={() => setTheme(otherTheme)}
-      aria-label={label}
+      aria-label="Tmavý režim"
       aria-pressed={mounted ? isDark : undefined}
-      title={label}
+      title={tooltip}
       className="no-print inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-[var(--radius-sm)] border border-transparent text-[var(--ink-muted)] transition hover:border-[var(--border)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
     >
       {/* Sun icon shown in light mode */}

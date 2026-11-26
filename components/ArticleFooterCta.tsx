@@ -21,7 +21,7 @@ export const ArticleFooterCta: FC = () => (
           href="https://github.com/steida/dekonstrukcestatu/issues/new"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex min-h-7 items-center py-1 font-semibold text-[var(--accent)] hover:underline"
+          className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
         >
           Otevřít GitHub Issue <span aria-hidden="true">→</span>
           <span className="sr-only"> (otevře se v novém okně)</span>
@@ -57,7 +57,7 @@ export const ArticleFooterCta: FC = () => (
         </a>
         <Link
           href="/o-autorovi"
-          className="inline-flex min-h-7 items-center py-1 font-medium text-[var(--accent)] hover:underline"
+          className="inline-flex min-h-7 items-center gap-1 py-1 font-medium text-[var(--accent)] hover:underline"
         >
           O autorovi &amp; Press Kit <span aria-hidden="true">→</span>
         </Link>
@@ -80,7 +80,7 @@ export const ArticleFooterCta: FC = () => (
         </span>
         <Link
           href="/#podpora"
-          className="inline-flex min-h-7 items-center py-1 font-medium text-[var(--accent)] hover:underline"
+          className="inline-flex min-h-7 items-center gap-1 py-1 font-medium text-[var(--accent)] hover:underline"
         >
           QR Platba a údaje <span aria-hidden="true">→</span>
         </Link>

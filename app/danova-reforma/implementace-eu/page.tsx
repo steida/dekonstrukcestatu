@@ -314,7 +314,8 @@ export default function ImplementaceEuPage() {
                 První principy
               </div>
               <div className="mt-1 text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]">
-                ← Daňová reforma (dvě pohlednice)
+                <span aria-hidden="true">←</span> Daňová reforma (dvě
+                pohlednice)
               </div>
             </Link>
 
@@ -326,7 +327,8 @@ export default function ImplementaceEuPage() {
                 Doplnění #1–#9
               </div>
               <div className="mt-1 text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]">
-                Zpřesnění a odpovědi z diskuse →
+                Zpřesnění a odpovědi z diskuse{" "}
+                <span aria-hidden="true">→</span>
               </div>
             </Link>
 
@@ -338,7 +340,7 @@ export default function ImplementaceEuPage() {
                 Studie 01–05
               </div>
               <div className="mt-1 text-sm font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]">
-                Výzkum Hall–Rabushka →
+                Výzkum Hall–Rabushka <span aria-hidden="true">→</span>
               </div>
             </Link>
           </div>

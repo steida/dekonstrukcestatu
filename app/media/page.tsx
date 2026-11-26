@@ -156,7 +156,7 @@ export default function MediaPage() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
+                className="inline-block py-1 text-base font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
               >
                 <span lang={item.titleLang}>{item.title}</span>{" "}
                 <span aria-hidden="true">↗</span>
@@ -224,9 +224,9 @@ export default function MediaPage() {
         </div>
         <Link
           href="/o-autorovi"
-          className="shrink-0 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-4 py-2.5 font-mono text-xs font-semibold text-[var(--bg)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)]"
+          className="inline-flex shrink-0 items-center justify-center gap-1 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-4 py-2.5 font-mono text-xs font-semibold text-[var(--bg)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)]"
         >
-          O autorovi &amp; Press Kit →
+          O autorovi &amp; Press Kit <span aria-hidden="true">→</span>
         </Link>
       </aside>
     </div>

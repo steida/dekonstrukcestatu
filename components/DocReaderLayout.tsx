@@ -71,7 +71,7 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
               {seriesIndexHref && (
                 <Link
                   href={seriesIndexHref}
-                  className="font-mono text-xs text-[var(--accent)] hover:underline focus-visible:outline-offset-[-2px]"
+                  className="inline-flex min-h-7 items-center px-1 py-1 font-mono text-xs text-[var(--accent)] hover:underline focus-visible:outline-offset-[-2px]"
                 >
                   Přehled
                 </Link>
@@ -369,7 +369,7 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                   className="group rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface-elevated)] p-4 transition-colors hover:border-[var(--accent)]"
                 >
                   <div className="mb-1 font-mono text-xs text-[var(--ink-faint)] uppercase">
-                    ← Předchozí
+                    <span aria-hidden="true">←</span> Předchozí
                   </div>
                   <div className="text-sm font-semibold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                     {prev.code ? `${prev.code} — ` : ""}
@@ -386,7 +386,7 @@ export const DocReaderLayout: FC<DocReaderLayoutProps> = ({
                   className="group rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface-elevated)] p-4 text-left transition-colors hover:border-[var(--accent)] sm:text-right"
                 >
                   <div className="mb-1 font-mono text-xs text-[var(--ink-faint)] uppercase">
-                    Další →
+                    Další <span aria-hidden="true">→</span>
                   </div>
                   <div className="text-sm font-semibold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                     {next.code ? `${next.code} — ` : ""}

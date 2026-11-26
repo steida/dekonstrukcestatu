@@ -67,7 +67,10 @@ export const SiteFooter: FC = () => (
             Issues
             <span className="sr-only"> (otevře se v novém okně)</span>
           </a>
-          <a href="/rss.xml" className={MONO_LINK_CLASS}>
+          <a
+            href="/rss.xml"
+            className={`${MONO_LINK_CLASS} min-w-7 justify-center px-1`}
+          >
             RSS
           </a>
           <a href="/llms.txt" className={MONO_LINK_CLASS}>

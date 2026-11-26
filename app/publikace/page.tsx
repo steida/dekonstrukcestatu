@@ -99,9 +99,10 @@ export default function PublikacePage() {
               <h3 className="text-base font-bold tracking-tight text-[var(--ink)]">
                 <Link
                   href="/danova-reforma/vyzkum"
-                  className="transition-colors hover:text-[var(--accent)]"
+                  className="inline-block py-1 transition-colors hover:text-[var(--accent)]"
                 >
-                  Hloubkový výzkum Hall–Rabushka Flat Tax (studie 01–05) →
+                  Hloubkový výzkum Hall–Rabushka Flat Tax (studie 01–05){" "}
+                  <span aria-hidden="true">→</span>
                 </Link>
               </h3>
             </div>
@@ -141,7 +142,7 @@ export default function PublikacePage() {
           <h3 className="text-lg font-bold tracking-tight text-[var(--ink)]">
             <Link
               href="/manifest"
-              className="transition-colors hover:text-[var(--accent)]"
+              className="inline-block py-0.5 transition-colors hover:text-[var(--accent)]"
             >
               Manifest dekonstrukce státu
             </Link>
@@ -171,9 +172,10 @@ export default function PublikacePage() {
               <h3 className="text-base font-bold tracking-tight text-[var(--ink)]">
                 <Link
                   href="/danova-reforma/implementace-eu"
-                  className="transition-colors hover:text-[var(--accent)]"
+                  className="inline-block py-1 transition-colors hover:text-[var(--accent)]"
                 >
-                  Daňová reforma: Implementace pro Česko v rámci EU →
+                  Daňová reforma: Implementace pro Česko v rámci EU{" "}
+                  <span aria-hidden="true">→</span>
                 </Link>
               </h3>
               <span className="shrink-0 font-mono text-xs font-semibold text-[var(--accent)] uppercase">

@@ -116,15 +116,16 @@ export default async function DoplneniPage() {
         >
           <Link
             href="/danova-reforma"
-            className="font-semibold text-[var(--accent)] hover:underline"
+            className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
           >
-            ← Zpět na hlavní článek
+            <span aria-hidden="true">←</span> Zpět na hlavní článek
           </Link>
           <Link
             href="/danova-reforma/vyzkum"
-            className="font-semibold text-[var(--accent)] hover:underline"
+            className="inline-flex min-h-7 items-center gap-1 py-1 font-semibold text-[var(--accent)] hover:underline"
           >
-            Hloubkový výzkum Hall–Rabushka (01–05) →
+            Hloubkový výzkum Hall–Rabushka (01–05){" "}
+            <span aria-hidden="true">→</span>
           </Link>
         </nav>
 
