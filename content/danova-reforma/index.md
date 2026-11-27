@@ -27,7 +27,7 @@ Nejjednodušší model placení daní, kterému by rozuměl opravdu každý, vyp
 
 Člověk dostane peníze — do určité částky **X** ročně neplatí nic, a z každé koruny nad ní je „boháč“ a odvede **Y %** státu. Nic jiného neexistuje. Žádná firemní daň (firma je právní fikce, existují jen lidé¹), žádná DPH, žádné rádoby „pojistné“, žádná daň z práva na život (nemovitosti, majetek), ze smrti (dědická), z nemoci (tabák), z radosti ze života (alkohol) a už vůbec ne daň z toho, že jsi blbec, který neumí optimalizovat.
 
-**A ne — státu nebude chybět ani koruna (pokud si to voliči sami neodhlasují).** Tahle reforma velikost státu nemění: jen všechny dnešní skryté daně a odvody slije do jedné viditelné sazby **Y %**. Chcete dnešní 3bilionový stát? **Y %** bude vysoké. Chcete štíhlý stát? **Y %** bude nízké.
+**A ne — státu nebude chybět ani koruna.** Tahle reforma velikost státu nemění: jen všechny dnešní skryté daně a odvody slije do jedné viditelné sazby **Y %**. Chcete dnešní 3bilionový stát? **Y %** bude vysoké. Chcete štíhlý stát? **Y %** bude nízké.
 
 Kdo chce co nejvíc pomoct chudým, co nejvíc zvedne spodní hranici **X**. A stačí dva parametry (**X** a **Y %**) i těm největším přerozdělovačům (socialistům) ze všech.
 
