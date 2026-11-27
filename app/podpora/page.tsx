@@ -147,12 +147,12 @@ export default function PodporaPage() {
           </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
             <li>
-              Čas na hloubkový výzkum, ověřování primárních dat (Eurostat, OECD,
-              MF ČR, zákony) a psaní nových publikací i knihy.
+              Čas na hloubkový výzkum, ověřování primárních dat a psaní nových
+              publikací i knihy.
             </li>
             <li>
-              Otevřený web bez reklam, paywallů a státních grantů — všechny texty
-              jsou veřejně dostupné pod MIT licencí na{" "}
+              Otevřený web — všechny texty jsou veřejně dostupné pod licencí CC
+              BY 4.0 na{" "}
               <a
                 href="https://github.com/steida/dekonstrukcestatu"
                 target="_blank"
@@ -164,10 +164,7 @@ export default function PodporaPage() {
               </a>
               .
             </li>
-            <li>
-              Plnou nezávislost — žádné závazky vůči politikům, ministerstvům ani
-              zájmovým skupinám.
-            </li>
+            <li>Plnou nezávislost.</li>
           </ul>
 
           <p className="mt-6 text-sm text-[var(--ink-muted)]">

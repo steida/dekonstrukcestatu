@@ -599,56 +599,6 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-
-        {/* Kontakt — podcasty, debaty a přednášky */}
-        <div
-          id="kontakt"
-          className="mt-8 flex scroll-mt-24 flex-col justify-between gap-5 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center"
-        >
-          <div className="max-w-xl">
-            <p className="font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
-              Kontakt — podcasty a přednášky
-            </p>
-            <h3 className="mt-1.5 text-lg font-bold tracking-tight text-[var(--ink)]">
-              Pozvání do podcastu nebo na přednášku
-            </h3>
-            <p className="mt-2 text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
-              Chcete mě pozvat do podcastu, na debatu nebo domluvit přednášku na
-              téma dekonstrukce státu a daňové reformy? Napište mi přímo na{" "}
-              <a
-                href="mailto:daniel@steigerwald.cz"
-                className="font-medium text-[var(--ink)] underline decoration-[var(--accent)]/50 underline-offset-3 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)]"
-              >
-                daniel@steigerwald.cz
-              </a>
-              . Připravené okruhy a krátké bio najdete v{" "}
-              <Link
-                href="/o-autorovi"
-                className="font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-3 hover:decoration-[var(--accent)] focus-visible:decoration-[var(--accent)]"
-              >
-                Press Kitu
-              </Link>
-              .
-            </p>
-          </div>
-          <div className="flex shrink-0 flex-col items-start gap-2 sm:items-end">
-            <a
-              href="mailto:daniel@steigerwald.cz"
-              className="inline-flex items-center justify-center rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-4 py-2.5 font-mono text-xs font-semibold text-[var(--bg)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)]"
-            >
-              daniel@steigerwald.cz
-            </a>
-            <a
-              href="https://x.com/steidacz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-7 items-center gap-1 py-1 font-mono text-xs text-[var(--ink-muted)] transition-colors hover:text-[var(--accent)]"
-            >
-              nebo @steidacz na X <span aria-hidden="true">↗</span>
-              <span className="sr-only"> (otevře se v novém okně)</span>
-            </a>
-          </div>
-        </div>
       </section>
 
       {/* Kniha & odkazy */}

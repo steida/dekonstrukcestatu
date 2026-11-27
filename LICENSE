@@ -1,6 +1,21 @@
+# Licence — Dekonstrukce státu
+
+Tento repozitář používá duální licenci podle typu obsahu:
+
+1. **Texty, publikace, studie a autorský obsah** (`content/`, texty stránek a podklady pro média):
+   **Creative Commons Attribution 4.0 International (CC BY 4.0)**
+   https://creativecommons.org/licenses/by/4.0/deed.cs
+
+   Texty můžete volně sdílet, citovat, překládat i dál využívat (včetně komerčního užití), pokud uvedete autora (*Daniel Steigerwald — Dekonstrukce státu*), odkaz na původní zdroj a jasně označíte případné úpravy.
+
+2. **Zdrojový kód webu** (`app/`, `components/`, `lib/`, `scripts/` a konfigurace):
+   **MIT License** (viz níže).
+
+---
+
 MIT License
 
-Copyright (c) 2024 Daniel Steigerwald
+Copyright (c) 2024–2026 Daniel Steigerwald
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

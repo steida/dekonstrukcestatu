@@ -479,14 +479,16 @@ for (const filePath of htmlFiles) {
   }
 }
 
-// 8. Verify contact email CTA on home page, no duplicate title, llms.txt, sitemap 1:1, RSS, and _headers
-const indexPath = path.join(OUT_DIR, "index.html");
-if (fs.existsSync(indexPath)) {
-  const indexHtml = htmlContents.get(indexPath);
-  if (!indexHtml.includes("mailto:daniel@steigerwald.cz")) {
-    errors.push(
-      `Missing contact mailto:daniel@steigerwald.cz in out/index.html`,
-    );
+// 8. Verify contact email on author/support pages, no duplicate title, llms.txt, sitemap 1:1, RSS, and _headers
+for (const contactFile of ["o-autorovi.html", "podpora.html"]) {
+  const contactPath = path.join(OUT_DIR, contactFile);
+  if (fs.existsSync(contactPath)) {
+    const contactHtml = htmlContents.get(contactPath);
+    if (!contactHtml.includes("mailto:daniel@steigerwald.cz")) {
+      errors.push(
+        `Missing contact mailto:daniel@steigerwald.cz in out/${contactFile}`,
+      );
+    }
   }
 }
 const danovaPath = path.join(OUT_DIR, "danova-reforma.html");

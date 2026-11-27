@@ -14,7 +14,6 @@ const NAV_ITEMS = [
   { href: "/media", label: "Média", match: ["/media"] },
   { href: "/o-autorovi", label: "O autorovi", match: ["/o-autorovi"] },
   { href: "/podpora", label: "Podpora", match: ["/podpora"] },
-  { href: "/#kontakt", label: "Kontakt", match: [] },
 ] as const;
 
 export const SiteNav: FC<{ className?: string; linkClassName?: string }> = ({
