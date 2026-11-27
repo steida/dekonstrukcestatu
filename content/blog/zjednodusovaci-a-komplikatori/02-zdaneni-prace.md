@@ -4,7 +4,7 @@
 > **Hlavní závěr:** Místo sloučení tří paralelních odvodů — daně z příjmů fyzických osob (DPFO), sociálního pojistného (SP) a zdravotního pojistného (ZP) — do jedné sazby lepí návrh 11 nových parametrických mechanik, fakticky likviduje paušální daň pro většinu jejích 120 tis. uživatelů a nad 4× průměrnou mzdu skokově zvedá mezní sazbu specialistů o 12,3 procentního bodu (p. b.; zatímco v pásmu 3×–4× klesá o 5,3 p. b.) — přičemž miliardové administrativní náklady pro osoby samostatně výdělečně činné (OSVČ) nekvantifikuje vůbec.
 > **Kde pokračovat:** Koncepci jediné sazby nad nezdanitelným minimem (Pohlednice 1) nabízí [Daňová reforma podle Dekonstrukce státu](/danova-reforma); přehled celého auditu přináší [hlavní pitva](/blog/zjednodusovaci-a-komplikatori/audit) a pokračování [audit Kapitoly 3 (Zdanění spotřeby)](/blog/zjednodusovaci-a-komplikatori/03-zdaneni-spotreby).
 
-*Konvence stránkování a archivní verze: V textu jsou uváděna výhradně tištěná čísla stran v patičce studie (tištěné str. 67–97 = PDF str. 68–98). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; SHA-256 PDF: `43fde4b2...e08a7`, plný otisk v [hlavní pitvě](/blog/zjednodusovaci-a-komplikatori/audit)).*
+*Konvence stránkování a archivní verze: V textu jsou uváděna výhradně tištěná čísla stran v patičce studie (tištěné str. 67–97 = PDF str. 68–98). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; [archiv v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)).*
 
 ---
 

@@ -13,7 +13,7 @@ Jednotliví tržní ekonomové jako Lukáš Kovanda nebo Aleš Rod se v ČRo jak
 
 Daniel Prokop umí daňovou debatu vyvolat a má velký dosah — to mu upřít nelze. Pokud ale médium placené povinnými poplatky všech občanů dává tolik prostoru jednomu pohledu na daně, dejte pro jednou prostor i oponentům. Tohle už není veřejná debata, nýbrž one-man show.
 
-Ve středu 25. 11. 2026 vyšel na iROZHLASu psaný výtah z dalšího dílu — bez oponenta, bez jediného grafu a bez odkazu na zmiňovanou studii PAQ: [Daníme práci, ale majetek téměř vůbec. Česko je v tom výjimečné, říká sociolog Prokop](https://www.irozhlas.cz/ekonomika/danime-praci-ale-majetek-temer-vubec-cesko-je-v-tom-vyjimecne-rika-sociolog_2611251700_mst). Níže beru redakční titulek a každý klíčový výrok po řadě.
+Ve středu 25. 11. 2026 vyšel na iROZHLASu psaný výtah z dalšího dílu — bez oponenta, bez jediného grafu a bez odkazu na zmiňovanou studii PAQ: [Daníme práci, ale majetek téměř vůbec. Česko je v tom výjimečné, říká sociolog Prokop](https://www.irozhlas.cz/ekonomika/danime-praci-ale-majetek-temer-vubec-cesko-je-v-tom-vyjimecne-rika-sociolog_2611251700_mst) ([archiv](https://web.archive.org/web/20261127203146/https://www.irozhlas.cz/ekonomika/danime-praci-ale-majetek-temer-vubec-cesko-je-v-tom-vyjimecne-rika-sociolog_2611251700_mst)). Níže beru redakční titulek a každý klíčový výrok po řadě.
 
 ---
 
@@ -136,7 +136,7 @@ Přesně obráceně: švarcsystém i dohody nevznikají z „jedné velké daně
 
 ---
 
-Desítka „menších“ daní neslouží chudým — slouží hlavně k tomu, aby běžný člověk neviděl skutečnou cenovku státu. Kompletní data a primární zdroje (včetně archivních otisků) najdete ve [Fact-checku studie Daňový ráj Evropy](/blog/fact-check-danovy-raj-evropy), jednoduchou alternativu na dvou pohlednicích v textu [Daňová reforma podle Dekonstrukce státu](/danova-reforma) — a má nabídka na férovou debatu v Českém rozhlase platí ([O autorovi](/o-autorovi), [daniel@steigerwald.cz](mailto:daniel@steigerwald.cz)).
+Desítka „menších“ daní neslouží chudým — slouží hlavně k tomu, aby běžný člověk neviděl skutečnou cenovku státu. Kompletní data a primární zdroje (včetně archivních odkazů v Internet Archive) najdete ve [Fact-checku studie Daňový ráj Evropy](/blog/fact-check-danovy-raj-evropy), jednoduchou alternativu na dvou pohlednicích v textu [Daňová reforma podle Dekonstrukce státu](/danova-reforma) — a má nabídka na férovou debatu v Českém rozhlase platí ([O autorovi](/o-autorovi), [daniel@steigerwald.cz](mailto:daniel@steigerwald.cz)).
 
 ---
 

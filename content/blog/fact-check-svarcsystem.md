@@ -126,32 +126,11 @@ Na straně daní pak přestat lepit záplaty (viz [audit Kapitoly 2 *Chytřejš�
 
 ---
 
-## Primární zdroje a archivní SHA-256 otisky
+## Primární zdroje
 
-1. **PAQ Research:** [*Vláda chystá legalizaci více než 70 % švarcsystému* (15. 9. / rev. 24. 9. 2026)](https://www.paqresearch.cz/post/vlada-chysta-legalizaci-vice-nez-70-svarcsystemu-zavadi-jednu-z-nejderavejsi-definic-v-eu/); [*Rovnější zdanění OSVČ* (17. 6. 2025)](https://www.paqresearch.cz/content/files/2025/06/PAQ_OSVC_Studie-3.pdf); [*Chytřejší daně* (2025)](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)
-2. **Poslanecká sněmovna ČR:** [ST 300/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=300) a [ST 301/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=301) (8. 9. 2026), [PN č. 2296](https://www.psp.cz/sqw/text/orig2.sqw?idd=282557) (2. 11. 2026), [PN č. 2562](https://www.psp.cz/sqw/text/orig2.sqw?idd=283304) (25. 11. 2026)
-3. **Soudy, EU a zahraniční právo:** NSS [22 Ads 168/2025-51](https://vyhledavac.nssoud.cz/DokumentOriginal/Html/747652) (`IV. ÚS 393/26`); [Směrnice (EU) 2024/2831](https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=CELEX:32024L2831); PL [*Kodeks pracy* čl. 22 § 1](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU19740240141/U/D19740141Lj.pdf); BE [*Arbeidsrelatiewet*](https://werk.belgie.be/nl/themas/arbeidsovereenkomsten/arbeidsrelatiewet-aard-van-de-arbeidsrelatie-loontrekkende); DE [§ 611a BGB](https://www.gesetze-im-internet.de/bgb/__611a.html); SK [NIP SR](https://www.ip.gov.sk/inspektorat-prace-nitra/domov/zmena-pojmu-zavislej-prace-od-1-1-2026.html); [ČMKOS (31. 8. 2026)](https://www.cmkos.cz/24670/ico-misto-pracovni-smlouvy-miliardy-v-ohrozeni-odpoved-ma-prinest-vlada-ne-vira-lobbistu/)
+1. **PAQ Research:** [*Vláda chystá legalizaci více než 70 % švarcsystému* (15. 9. / rev. 24. 9. 2026)](https://www.paqresearch.cz/post/vlada-chysta-legalizaci-vice-nez-70-svarcsystemu-zavadi-jednu-z-nejderavejsi-definic-v-eu/) ([archiv](https://web.archive.org/web/20261002040419/https://www.paqresearch.cz/post/vlada-chysta-legalizaci-vice-nez-70-svarcsystemu-zavadi-jednu-z-nejderavejsi-definic-v-eu/)); [*Rovnější zdanění OSVČ* (17. 6. 2025)](https://www.paqresearch.cz/content/files/2025/06/PAQ_OSVC_Studie-3.pdf) ([archiv](https://web.archive.org/web/20261127203152/https://www.paqresearch.cz/content/files/2025/06/PAQ_OSVC_Studie-3.pdf)); [*Chytřejší daně* (2025)](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf) ([archiv](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf))
+2. **Poslanecká sněmovna ČR:** [ST 300/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=300) ([archiv](https://web.archive.org/web/20261013193356/https://www.psp.cz/sqw/historie.sqw?o=10&t=300)) a [ST 301/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=301) ([archiv](https://web.archive.org/web/20261002190552/https://www.psp.cz/sqw/historie.sqw?o=10&t=301)) (8. 9. 2026), [PN č. 2296](https://www.psp.cz/sqw/text/orig2.sqw?idd=282557) (2. 11. 2026), [PN č. 2562](https://www.psp.cz/sqw/text/orig2.sqw?idd=283304) (25. 11. 2026)
+3. **Soudy, EU a zahraniční právo:** NSS [22 Ads 168/2025-51](https://vyhledavac.nssoud.cz/DokumentOriginal/Html/747652) ([archiv](https://web.archive.org/web/20251210135226/https://vyhledavac.nssoud.cz/DokumentOriginal/Html/747652), `IV. ÚS 393/26`); [Směrnice (EU) 2024/2831](https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=CELEX:32024L2831); PL [*Kodeks pracy* čl. 22 § 1](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU19740240141/U/D19740240141Lj.pdf); BE [*Arbeidsrelatiewet*](https://werk.belgie.be/nl/themas/arbeidsovereenkomsten/arbeidsrelatiewet-aard-van-de-arbeidsrelatie-loontrekkende); DE [§ 611a BGB](https://www.gesetze-im-internet.de/bgb/__611a.html); SK [NIP SR](https://www.ip.gov.sk/inspektorat-prace-nitra/domov/zmena-pojmu-zavislej-prace-od-1-1-2026.html); [ČMKOS (31. 8. 2026)](https://www.cmkos.cz/24670/ico-misto-pracovni-smlouvy-miliardy-v-ohrozeni-odpoved-ma-prinest-vlada-ne-vira-lobbistu/) ([archiv](https://web.archive.org/web/20260831103122/https://www.cmkos.cz/24670/ico-misto-pracovni-smlouvy-miliardy-v-ohrozeni-odpoved-ma-prinest-vlada-ne-vira-lobbistu/))
 4. **Data a literatura:** [ČSSZ (CSV počty OSVČ)](https://data.cssz.cz/dump/prehled-o-celkovem-poctu-osvc-v-cr.csv); Eurostat API (`lfsa_egaps`, `lfsa_esgan2`, `lfsa_egan2`, `nama_10_pe`); OECD *Taxing Wages 2026*, *EPL v4*, [*Economic Surveys: Czechia 2025*](https://doi.org/10.1787/7a70af5c-en); Milanez & Bratta (2019, *OECD Tax WP No. 41*); Román, Congregado & Millán (2011, *SBE*); Williams, Llobera & Horodnic (2020, EC)
 
-| Archivovaný soubor (26. 11. 2026) | Ověřený SHA-256 otisk |
-| :--- | :--- |
-| `paq-svarcsystem.html` | `9924c249d7ced42265cac0893c20ffd42439e4f801040f5cdf7e15111eeac5c4` |
-| `graf-1.png` | `e83b35493dff941133cf5cf1dd937aa3c6d97b457da88606f1dc0b03245e2d2c` |
-| `graf-2.png` | `02815d0d7b2250eb66ad6fea051112a8e1a23241206ef1a8fca3cdd0a366829f` |
-| `graf-3.png` | `83180bc3a812a6d141dbb3ee32ef9a4f78d04de22feddac28e69a418e5b2671f` |
-| `graf-5.png` | `5526d1939bef6a16ab56ee841a738f39f3b481138ab0153d54186596d3450b37` |
-| `graf-6.png` | `094b5a09c6f4ce7671f79ccfa4eaaed094b9d6a1eae347233a733a8c42053816` |
-| `graf-7.png` | `9b74178a8449f66e8729f214210fa13c0b9b16caf00fb99c66445b74f9605677` |
-| `graf-8.png` | `3f4e4cd9ab4fcccf15b797fac4d574b0374450b206545a021296ce58e19df40e` |
-| `PAQ_OSVC_Studie-3.pdf` | `61bf09a566d2f36b4b8cae6164d51d1ffcf22539d08d8e49d85724abb9b18e48` |
-| `Chytrejsi_dane_2025-1.pdf` | `43fde4b2c96bda9c0858bdea88250e6ff35e63887a240774297c4b6b48ae08a7` |
-| `psp-tisk-300-0-cely.pdf` | `7944026d9a7bf8378b51926976dc382c1eaddb570e9d7e45bb59d4426f928ef2` |
-| `psp-tisk-301-0-cely.pdf` | `d7e9ab6a086eec2fa20391c1213568263bce3c2727c61007f32cd66a099d0fcd` |
-| `pn-2562.docx` | `1a30ade9142f289ea749b0992509a888f850e65e9fde9f94340584d948d6c163` |
-| `pn-2296.docx` | `e2616374c16e5bd921957a03c0f6258cf2913fa0657091c0afd050c145b8d307` |
-| `nss-747652.html` | `6e0a7265a3b17df698a3aec9dcdd282ac62d5facbec6435d438b975be2b2fe56` |
-| `eu-dir-2024-2831-txt-cs.html` | `2cc84875334b98e1b6ae781b4f83fb612f2b8c596327fd88722e0dc41bbf434f` |
-| `poland-kodeks-pracy-DU-1974-141.pdf` | `4d144f74cc0eef5955de363669f835e03aa85adeded533220beaf104ce11c8e5` |
-| `cmkos-24670.html` | `33f921bebb10dc571c9240975cb4ebf93a16aebc20cdbed5bbc9342dd0d7833c` |
-
-*Archivní otisky podkladů PAQ Research, grafů, sněmovních tisků i zahraničních předpisů byly ověřeny dne 26. 11. 2026 proti veřejným zdrojům; živá data ČSSZ, Eurostatu a OECD byla stažena k témuž dni.*
+*Primární podklady PAQ Research, sněmovní tisky, zahraniční předpisy i živá data ČSSZ, Eurostatu a OECD byly ověřeny dne 26. 11. 2026; archivní kopie klíčových článků a PDF jsou odkázány přes Internet Archive.*

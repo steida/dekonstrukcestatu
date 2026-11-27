@@ -4,7 +4,7 @@
 > **Hlavní závěr:** Kapitola 5 správně obhajuje 100% okamžité odpisy, ale udusí je britským vrstvením výjimek, zvýšením daně z příjmů právnických osob (DPPO) na 22–23 % (dvojí zdanění dividend 33,70–34,55 %), zamlčeným daňovým zvýhodněním dluhu a novou vrstvou posuzování výzkumu a vývoje (VaV) u Technologické agentury ČR (TAČR) — při nulové zmínce o estonském modelu i Hall–Rabushkově cash-flow dani.
 > **Kde pokračovat:** Koncepční alternativu rozebírá [Daňová reforma podle Dekonstrukce státu](/danova-reforma) a mezinárodní zkušenosti UK *Full Expensing* a estonské *Distributed Profit Tax* [studie Praxe ve světě a historie](/danova-reforma/vyzkum/06-hr-praxe-ve-svete-a-historie); celkový přehled přináší [hlavní pitva](/blog/zjednodusovaci-a-komplikatori/audit) a pokračování [audit Kapitoly 6 (Metodika)](/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus).
 
-*Konvence stránkování a archivní verze: Odkazy `str. XX` uvádějí tištěné číslo strany v patičce publikace (číslo strany v PDF je o 1 vyšší kvůli obálce). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; SHA-256 PDF: `43fde4b2...e08a7`, plný otisk v [hlavní pitvě](/blog/zjednodusovaci-a-komplikatori/audit)).*
+*Konvence stránkování a archivní verze: Odkazy `str. XX` uvádějí tištěné číslo strany v patičce publikace (číslo strany v PDF je o 1 vyšší kvůli obálce). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; [archiv v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)).*
 
 ---
 

@@ -31,7 +31,7 @@ Dekonstrukce státu staví na opačném principu: neříká občanům, kolik pen
 
 - **[Daňová reforma podle Dekonstrukce státu](/danova-reforma)** — první principy dvou pohlednic a proč stačí parametry **X** a **Y %**.
 - **[Implementace pro Česko v rámci EU](/danova-reforma/implementace-eu)** — jak dvě pohlednice postavit vedle vynucené 15% DPH a unijních minim.
-- **[Zjednodušovači, komplikátoři a 224 stran Chytřejších daní](/blog/zjednodusovaci-a-komplikatori)** — rozbor studie PAQ Research, CVF a IDEA a kompletní [šestikapitolový audit](/blog/zjednodusovaci-a-komplikatori/audit) (včetně archivního otisku PDF).
+- **[Zjednodušovači, komplikátoři a 224 stran Chytřejších daní](/blog/zjednodusovaci-a-komplikatori)** — rozbor studie PAQ Research, CVF a IDEA a kompletní [šestikapitolový audit](/blog/zjednodusovaci-a-komplikatori/audit) (včetně archivní kopie PDF v Internet Archive).
 - **[Fact-check studie Daňový ráj Evropy](/blog/fact-check-danovy-raj-evropy)** — data Evropské komise o skutečném zdanění kapitálu a majetku v Česku.
 
 ---

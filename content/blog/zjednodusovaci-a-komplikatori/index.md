@@ -135,4 +135,4 @@ Nechci však, aby to vyznělo, že autoři jsou nějací lajdáci. To si nemysl�
 
 Hlavní syntézu — se všemi tabulkami, výpočty, katalogem chyb a 15 klíčovými citacemi (s rozcestníkem na 46 ověřených citací s přesnými čísly stran v šesti kapitolových auditech) — najdete na [dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit).
 
-*Archivní otisk ověřované verze: `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; bajtově totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026) — SHA-256: `43fde4b2c96bda9c0858bdea88250e6ff35e63887a240774297c4b6b48ae08a7`.*
+*Ověřovaná verze: `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026) — [archivní kopie v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf).*

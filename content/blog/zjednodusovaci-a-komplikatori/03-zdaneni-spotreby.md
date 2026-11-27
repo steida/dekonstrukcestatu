@@ -4,7 +4,7 @@
 > **Hlavní závěr:** Přestože studie sama podle vlastního korunového měřítka odmítá sníženou sazbu DPH jako nástroj podpory zranitelných domácností, návrh rozevře útes DPH na 10 % vs. 21 %, buduje celní aparát na tiché víno a novou daňovou evidenci slazených nápojů i umělých sladidel a vrací elektronickou evidenci tržeb (EET) s doporučením převzít ze zahraničí její uplatnění „v plném rozsahu sektorů, nejen pohostinství“ — a při výpočtu výnosu +68 mld. Kč pracuje s nulovou změnou chování spotřebitelů.
 > **Kde pokračovat:** Jednoduchou alternativu bez paternalistických výjimek přibližuje [Daňová reforma podle Dekonstrukce státu](/danova-reforma); kontext celé studie shrnuje [hlavní pitva](/blog/zjednodusovaci-a-komplikatori/audit) a pokračování najdete v [auditu Kapitoly 4 (Zdanění majetku)](/blog/zjednodusovaci-a-komplikatori/04-zdaneni-majetku).
 
-*Konvence stránkování a archivní verze: Odkazy `str. XX` uvádějí tištěné číslo strany v patičce publikace (číslo strany v PDF je o 1 vyšší kvůli obálce). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; SHA-256 PDF: `43fde4b2...e08a7`, plný otisk v [hlavní pitvě](/blog/zjednodusovaci-a-komplikatori/audit)).*
+*Konvence stránkování a archivní verze: Odkazy `str. XX` uvádějí tištěné číslo strany v patičce publikace (číslo strany v PDF je o 1 vyšší kvůli obálce). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; [archiv v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)).*
 
 ---
 

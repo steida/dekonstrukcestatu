@@ -137,35 +137,14 @@ Na straně daní pak přestat lepit záplaty (viz [audit Kapitoly 2 *Chytřejš�
 
 ---
 
-## Primární zdroje a archivní SHA-256 otisky
+## Primární zdroje
 
-1. **PAQ Research:** [*Vláda chystá legalizaci více než 70 % švarcsystému* (15. 9. / rev. 24. 9. 2026)](https://www.paqresearch.cz/post/vlada-chysta-legalizaci-vice-nez-70-svarcsystemu-zavadi-jednu-z-nejderavejsi-definic-v-eu/); [*Rovnější zdanění OSVČ* (17. 6. 2025)](https://www.paqresearch.cz/content/files/2025/06/PAQ_OSVC_Studie-3.pdf); [*Chytřejší daně* (2025)](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)
-2. **Poslanecká sněmovna ČR:** [ST 300/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=300) a [ST 301/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=301) (8. 9. 2026), [PN č. 2296](https://www.psp.cz/sqw/text/orig2.sqw?idd=282557) (2. 11. 2026), [PN č. 2562](https://www.psp.cz/sqw/text/orig2.sqw?idd=283304) (25. 11. 2026)
-3. **Soudy, EU a zahraniční právo:** NSS [22 Ads 168/2025-51](https://vyhledavac.nssoud.cz/DokumentOriginal/Html/747652) (`IV. ÚS 393/26`); [Směrnice (EU) 2024/2831](https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=CELEX:32024L2831); PL [*Kodeks pracy* čl. 22 § 1](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU19740240141/U/D19740141Lj.pdf); BE [*Arbeidsrelatiewet*](https://werk.belgie.be/nl/themas/arbeidsovereenkomsten/arbeidsrelatiewet-aard-van-de-arbeidsrelatie-loontrekkende); DE [§ 611a BGB](https://www.gesetze-im-internet.de/bgb/__611a.html); SK [NIP SR](https://www.ip.gov.sk/inspektorat-prace-nitra/domov/zmena-pojmu-zavislej-prace-od-1-1-2026.html); [ČMKOS (31. 8. 2026)](https://www.cmkos.cz/24670/ico-misto-pracovni-smlouvy-miliardy-v-ohrozeni-odpoved-ma-prinest-vlada-ne-vira-lobbistu/)
+1. **PAQ Research:** [*Vláda chystá legalizaci více než 70 % švarcsystému* (15. 9. / rev. 24. 9. 2026)](https://www.paqresearch.cz/post/vlada-chysta-legalizaci-vice-nez-70-svarcsystemu-zavadi-jednu-z-nejderavejsi-definic-v-eu/) ([archiv](https://web.archive.org/web/20261002040419/https://www.paqresearch.cz/post/vlada-chysta-legalizaci-vice-nez-70-svarcsystemu-zavadi-jednu-z-nejderavejsi-definic-v-eu/)); [*Rovnější zdanění OSVČ* (17. 6. 2025)](https://www.paqresearch.cz/content/files/2025/06/PAQ_OSVC_Studie-3.pdf) ([archiv](https://web.archive.org/web/20261127203152/https://www.paqresearch.cz/content/files/2025/06/PAQ_OSVC_Studie-3.pdf)); [*Chytřejší daně* (2025)](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf) ([archiv](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf))
+2. **Poslanecká sněmovna ČR:** [ST 300/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=300) ([archiv](https://web.archive.org/web/20261013193356/https://www.psp.cz/sqw/historie.sqw?o=10&t=300)) a [ST 301/0](https://www.psp.cz/sqw/historie.sqw?o=10&t=301) ([archiv](https://web.archive.org/web/20261002190552/https://www.psp.cz/sqw/historie.sqw?o=10&t=301)) (8. 9. 2026), [PN č. 2296](https://www.psp.cz/sqw/text/orig2.sqw?idd=282557) (2. 11. 2026), [PN č. 2562](https://www.psp.cz/sqw/text/orig2.sqw?idd=283304) (25. 11. 2026)
+3. **Soudy, EU a zahraniční právo:** NSS [22 Ads 168/2025-51](https://vyhledavac.nssoud.cz/DokumentOriginal/Html/747652) ([archiv](https://web.archive.org/web/20251210135226/https://vyhledavac.nssoud.cz/DokumentOriginal/Html/747652), `IV. ÚS 393/26`); [Směrnice (EU) 2024/2831](https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=CELEX:32024L2831); PL [*Kodeks pracy* čl. 22 § 1](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU19740240141/U/D19740240141Lj.pdf); BE [*Arbeidsrelatiewet*](https://werk.belgie.be/nl/themas/arbeidsovereenkomsten/arbeidsrelatiewet-aard-van-de-arbeidsrelatie-loontrekkende); DE [§ 611a BGB](https://www.gesetze-im-internet.de/bgb/__611a.html); SK [NIP SR](https://www.ip.gov.sk/inspektorat-prace-nitra/domov/zmena-pojmu-zavislej-prace-od-1-1-2026.html); [ČMKOS (31. 8. 2026)](https://www.cmkos.cz/24670/ico-misto-pracovni-smlouvy-miliardy-v-ohrozeni-odpoved-ma-prinest-vlada-ne-vira-lobbistu/) ([archiv](https://web.archive.org/web/20260831103122/https://www.cmkos.cz/24670/ico-misto-pracovni-smlouvy-miliardy-v-ohrozeni-odpoved-ma-prinest-vlada-ne-vira-lobbistu/))
 4. **Data a literatura:** [ČSSZ (CSV počty OSVČ)](https://data.cssz.cz/dump/prehled-o-celkovem-poctu-osvc-v-cr.csv); Eurostat API (`lfsa_egaps`, `lfsa_esgan2`, `lfsa_egan2`, `nama_10_pe`); OECD *Taxing Wages 2026*, *EPL v4*, [*Economic Surveys: Czechia 2025*](https://doi.org/10.1787/7a70af5c-en); Milanez & Bratta (2019, *OECD Tax WP No. 41*); Román, Congregado & Millán (2011, *SBE*); Williams, Llobera & Horodnic (2020, EC)
 
-| Archivovaný soubor (26. 11. 2026) | Ověřený SHA-256 otisk |
-| :--- | :--- |
-| `paq-svarcsystem.html` | `9924c249d7ced42265cac0893c20ffd42439e4f801040f5cdf7e15111eeac5c4` |
-| `graf-1.png` | `e83b35493dff941133cf5cf1dd937aa3c6d97b457da88606f1dc0b03245e2d2c` |
-| `graf-2.png` | `02815d0d7b2250eb66ad6fea051112a8e1a23241206ef1a8fca3cdd0a366829f` |
-| `graf-3.png` | `83180bc3a812a6d141dbb3ee32ef9a4f78d04de22feddac28e69a418e5b2671f` |
-| `graf-5.png` | `5526d1939bef6a16ab56ee841a738f39f3b481138ab0153d54186596d3450b37` |
-| `graf-6.png` | `094b5a09c6f4ce7671f79ccfa4eaaed094b9d6a1eae347233a733a8c42053816` |
-| `graf-7.png` | `9b74178a8449f66e8729f214210fa13c0b9b16caf00fb99c66445b74f9605677` |
-| `graf-8.png` | `3f4e4cd9ab4fcccf15b797fac4d574b0374450b206545a021296ce58e19df40e` |
-| `PAQ_OSVC_Studie-3.pdf` | `61bf09a566d2f36b4b8cae6164d51d1ffcf22539d08d8e49d85724abb9b18e48` |
-| `Chytrejsi_dane_2025-1.pdf` | `43fde4b2c96bda9c0858bdea88250e6ff35e63887a240774297c4b6b48ae08a7` |
-| `psp-tisk-300-0-cely.pdf` | `7944026d9a7bf8378b51926976dc382c1eaddb570e9d7e45bb59d4426f928ef2` |
-| `psp-tisk-301-0-cely.pdf` | `d7e9ab6a086eec2fa20391c1213568263bce3c2727c61007f32cd66a099d0fcd` |
-| `pn-2562.docx` | `1a30ade9142f289ea749b0992509a888f850e65e9fde9f94340584d948d6c163` |
-| `pn-2296.docx` | `e2616374c16e5bd921957a03c0f6258cf2913fa0657091c0afd050c145b8d307` |
-| `nss-747652.html` | `6e0a7265a3b17df698a3aec9dcdd282ac62d5facbec6435d438b975be2b2fe56` |
-| `eu-dir-2024-2831-txt-cs.html` | `2cc84875334b98e1b6ae781b4f83fb612f2b8c596327fd88722e0dc41bbf434f` |
-| `poland-kodeks-pracy-DU-1974-141.pdf` | `4d144f74cc0eef5955de363669f835e03aa85adeded533220beaf104ce11c8e5` |
-| `cmkos-24670.html` | `33f921bebb10dc571c9240975cb4ebf93a16aebc20cdbed5bbc9342dd0d7833c` |
-
-*Archivní otisky podkladů PAQ Research, grafů, sněmovních tisků i zahraničních předpisů byly ověřeny dne 26. 11. 2026 proti veřejným zdrojům; živá data ČSSZ, Eurostatu a OECD byla stažena k témuž dni.*
+*Primární podklady PAQ Research, sněmovní tisky, zahraniční předpisy i živá data ČSSZ, Eurostatu a OECD byly ověřeny dne 26. 11. 2026; archivní kopie klíčových článků a PDF jsou odkázány přes Internet Archive.*
 
 
 ---
@@ -205,7 +184,7 @@ Dekonstrukce státu staví na opačném principu: neříká občanům, kolik pen
 
 - **[Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma)** — první principy dvou pohlednic a proč stačí parametry **X** a **Y %**.
 - **[Implementace pro Česko v rámci EU](https://www.dekonstrukcestatu.cz/danova-reforma/implementace-eu)** — jak dvě pohlednice postavit vedle vynucené 15% DPH a unijních minim.
-- **[Zjednodušovači, komplikátoři a 224 stran Chytřejších daní](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori)** — rozbor studie PAQ Research, CVF a IDEA a kompletní [šestikapitolový audit](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit) (včetně archivního otisku PDF).
+- **[Zjednodušovači, komplikátoři a 224 stran Chytřejších daní](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori)** — rozbor studie PAQ Research, CVF a IDEA a kompletní [šestikapitolový audit](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit) (včetně archivní kopie PDF v Internet Archive).
 - **[Fact-check studie Daňový ráj Evropy](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy)** — data Evropské komise o skutečném zdanění kapitálu a majetku v Česku.
 
 ---
@@ -242,7 +221,7 @@ Jednotliví tržní ekonomové jako Lukáš Kovanda nebo Aleš Rod se v ČRo jak
 
 Daniel Prokop umí daňovou debatu vyvolat a má velký dosah — to mu upřít nelze. Pokud ale médium placené povinnými poplatky všech občanů dává tolik prostoru jednomu pohledu na daně, dejte pro jednou prostor i oponentům. Tohle už není veřejná debata, nýbrž one-man show.
 
-Ve středu 25. 11. 2026 vyšel na iROZHLASu psaný výtah z dalšího dílu — bez oponenta, bez jediného grafu a bez odkazu na zmiňovanou studii PAQ: [Daníme práci, ale majetek téměř vůbec. Česko je v tom výjimečné, říká sociolog Prokop](https://www.irozhlas.cz/ekonomika/danime-praci-ale-majetek-temer-vubec-cesko-je-v-tom-vyjimecne-rika-sociolog_2611251700_mst). Níže beru redakční titulek a každý klíčový výrok po řadě.
+Ve středu 25. 11. 2026 vyšel na iROZHLASu psaný výtah z dalšího dílu — bez oponenta, bez jediného grafu a bez odkazu na zmiňovanou studii PAQ: [Daníme práci, ale majetek téměř vůbec. Česko je v tom výjimečné, říká sociolog Prokop](https://www.irozhlas.cz/ekonomika/danime-praci-ale-majetek-temer-vubec-cesko-je-v-tom-vyjimecne-rika-sociolog_2611251700_mst) ([archiv](https://web.archive.org/web/20261127203146/https://www.irozhlas.cz/ekonomika/danime-praci-ale-majetek-temer-vubec-cesko-je-v-tom-vyjimecne-rika-sociolog_2611251700_mst)). Níže beru redakční titulek a každý klíčový výrok po řadě.
 
 ---
 
@@ -365,7 +344,7 @@ Přesně obráceně: švarcsystém i dohody nevznikají z „jedné velké daně
 
 ---
 
-Desítka „menších“ daní neslouží chudým — slouží hlavně k tomu, aby běžný člověk neviděl skutečnou cenovku státu. Kompletní data a primární zdroje (včetně archivních otisků) najdete ve [Fact-checku studie Daňový ráj Evropy](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy), jednoduchou alternativu na dvou pohlednicích v textu [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma) — a má nabídka na férovou debatu v Českém rozhlase platí ([O autorovi](https://www.dekonstrukcestatu.cz/o-autorovi), [daniel@steigerwald.cz](mailto:daniel@steigerwald.cz)).
+Desítka „menších“ daní neslouží chudým — slouží hlavně k tomu, aby běžný člověk neviděl skutečnou cenovku státu. Kompletní data a primární zdroje (včetně archivních odkazů v Internet Archive) najdete ve [Fact-checku studie Daňový ráj Evropy](https://www.dekonstrukcestatu.cz/blog/fact-check-danovy-raj-evropy), jednoduchou alternativu na dvou pohlednicích v textu [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma) — a má nabídka na férovou debatu v Českém rozhlase platí ([O autorovi](https://www.dekonstrukcestatu.cz/o-autorovi), [daniel@steigerwald.cz](mailto:daniel@steigerwald.cz)).
 
 ---
 
@@ -531,7 +510,7 @@ Nechci však, aby to vyznělo, že autoři jsou nějací lajdáci. To si nemysl�
 
 Hlavní syntézu — se všemi tabulkami, výpočty, katalogem chyb a 15 klíčovými citacemi (s rozcestníkem na 46 ověřených citací s přesnými čísly stran v šesti kapitolových auditech) — najdete na [dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit).
 
-*Archivní otisk ověřované verze: `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; bajtově totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026) — SHA-256: `43fde4b2c96bda9c0858bdea88250e6ff35e63887a240774297c4b6b48ae08a7`.*
+*Ověřovaná verze: `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026) — [archivní kopie v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf).*
 
 
 ---
@@ -823,7 +802,7 @@ URL: https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit
 > **Hlavní závěr:** Místo zjednodušení systém přidává přes 30 nových daní, pásem, cenových skupin, kontrolních aparátů a navazujících záplat a zvedá hrubé zdanění zhruba o 80 mld. Kč (čistě po automatické valorizaci důchodů o 73 mld. Kč). Za cenu zhoršení administrativy přitom slibuje jen +0,44 až +0,71 % HDP za deset let — a samotné PDF obsahuje řadu metodických zkreslení i 12 ověřených početních, právních, faktických a redakčních chyb.
 > **Kde pokračovat:** Koncepční alternativu na dvou pohlednicích představuje [Daňová reforma podle Dekonstrukce státu](https://www.dekonstrukcestatu.cz/danova-reforma); hlubší ponor nabízejí samostatné audity jednotlivých kapitol v [rozcestníku na konci textu](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/audit#8-rozcestník-kompletní-knihovna-6-kapitolových-auditů) ([Kapitola 1](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/01-ramovani-a-alternativy) až [Kapitola 6](https://www.dekonstrukcestatu.cz/blog/zjednodusovaci-a-komplikatori/06-metodika-a-obskurantismus)).
 
-*Konvence stránkování, ověření a archivní verze: Veškeré odkazy `str. XX` uvádějí tištěné číslo strany v patičce publikace (číslo strany v PDF je o 1 vyšší kvůli obálce). Všechny doslovné citace, číselné součty a tabulkové anomálie prošly křížovým ověřením přímo proti originálnímu PDF `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; bajtově totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026; SHA-256: `43fde4b2c96bda9c0858bdea88250e6ff35e63887a240774297c4b6b48ae08a7`) a sesterské studii `PAQ_Nemovitosti_Studie.pdf` („Chytřejší zdanění nemovitostí“, 115 str.; SHA-256: `82ebf819e610d8dcea04b5da90a49b8cc0bd2484b694f67ffdf7e6815d1ee675`).*
+*Konvence stránkování, ověření a archivní verze: Veškeré odkazy `str. XX` uvádějí tištěné číslo strany v patičce publikace (číslo strany v PDF je o 1 vyšší kvůli obálce). Všechny doslovné citace, číselné součty a tabulkové anomálie prošly křížovým ověřením přímo proti originálnímu PDF `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026; [archiv v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)) a sesterské studii `PAQ_Nemovitosti_Studie.pdf` („Chytřejší zdanění nemovitostí“, 115 str.; [archiv v Internet Archive](https://web.archive.org/web/20250422002907/https://www.paqresearch.cz/content/files/2025/04/PAQ_Nemovitosti_Studie.pdf)).*
 
 *Používané zkratky: `DPFO` — daň z příjmů fyzických osob; `DPPO` — daň z příjmů právnických osob; `DNV` — daň z nemovitých věcí; `DPH` — daň z přidané hodnoty; `SP` / `ZP` — sociální a zdravotní pojistné; `HPP` / `DPP` / `DPČ` — hlavní pracovní poměr / dohoda o provedení práce / dohoda o pracovní činnosti; `OSVČ` — osoba samostatně výdělečně činná; `VaV` — výzkum a vývoj; `KÚ` — katastrální území; `RUD` — rozpočtové určení daní; `SRÚ` / `FSD` / `EU-SILC` — šetření ČSÚ o výdajích, majetku a příjmech domácností; `LVT` — daň z hodnoty pozemku; `EATR` — efektivní průměrná daňová sazba; `p. b.` — procentní bod.*
 
@@ -1289,9 +1268,9 @@ Dokonce i mainstreamová OECD, jejíž data PAQ používá, v plném znění [*H
 
 ## 5. Primární zdroje
 
-1. **PAQ Research (16. 11. 2026, akt. 19. 11. 2026):** [*Daňový ráj Evropy. Kapitál a majetek na rozdíl od práce takřka nedaníme*](https://www.paqresearch.cz/post/kapital-majetek/)
+1. **PAQ Research (16. 11. 2026, akt. 19. 11. 2026):** [*Daňový ráj Evropy. Kapitál a majetek na rozdíl od práce takřka nedaníme*](https://www.paqresearch.cz/post/kapital-majetek/) ([archiv](https://web.archive.org/web/20261127203111/https://www.paqresearch.cz/post/kapital-majetek/))
 2. **PAQ Research (2026):** [Datová příloha srovnání 32 zemí (Google Sheets)](https://docs.google.com/spreadsheets/d/1_2-fut5plsRD8-iAx5NWx3f-kDPgYjXjH7vB2xLJ914/edit?gid=116646897#gid=116646897)
-3. **PAQ Research (3. 6. 2026, P. Vilím & M. Žůček):** [*Česko vybírá na daních v přepočtu o 135 až 198 miliard méně než podobné země*](https://www.paqresearch.cz/post/vyber-dane-srovnani/)
+3. **PAQ Research (3. 6. 2026, P. Vilím & M. Žůček):** [*Česko vybírá na daních v přepočtu o 135 až 198 miliard méně než podobné země*](https://www.paqresearch.cz/post/vyber-dane-srovnani/) ([archiv](https://web.archive.org/web/20260813155622/https://www.paqresearch.cz/post/vyber-dane-srovnani/))
 4. **Evropská komise — DG TAXUD (2026):** [*Data on Taxation Trends (2026 edition, data za 2024)*](https://taxation-customs.ec.europa.eu/taxation-1/economic-analysis-taxation/data-taxation-trends_en) *(soubory `Part2_country_profiles.xlsx`, `Taxes on capital`, `Effective tax rates`, `Implicit tax rates`; doplněno o Eurostat `gov_10a_main` a `nasa_10_f_bs`)*
 5. **Evropská komise (3. 6. 2026):** [*2026 Country Report – Czechia*, `SWD(2026) 203 final`](https://economy-finance.ec.europa.eu/document/download/3f5af374-4872-4b57-ac99-8507c5420083_en?filename=CZ_SWD_2026_203_1_EN_autre_document_travail_service_part1_v3.pdf#page=47) *(Table A3.1, str. 46; Table A6.2, str. 73)*
 6. **Ministerstvo financí ČR (21. a 30. 9. 2026):** [*Vláda se dohodla na podobě rozpočtu, MF nyní připraví finální dokumentaci (návrh SR 2027)*](https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-se-dohodla-na-podobe-rozpoctu-mf-nyni-pripra-65253)
@@ -1306,4 +1285,4 @@ Dokonce i mainstreamová OECD, jejíž data PAQ používá, v plném znění [*H
 15. **Bock, C. & Watzinger, M. (2019 / DP 2017):** [*The Capital Gains Tax: A Curse but Also a Blessing for Venture Capital Investment*, *Journal of Small Business Management*, 57(4), 1200–1231 (CRC TRR 190 DP No. 30)](https://rationality-and-competition.de/wp-content/uploads/discussion_paper/30.pdf)
 16. **Ring, M. A. K., Seim, D. G. & Zucman, G. (červenec 2026):** [*Personal Holding Companies, Tax Progressivity, and Inequality*, NBER Working Paper No. 35534](https://www.nber.org/papers/w35534)
 
-*Archivní otisky ověřovaných podkladů PAQ Research (SHA-256): `paqresearch.cz/post/kapital-majetek/` (zveřejněno 16. 11. 2026, upraveno 19. 11. 2026, archivováno 26. 11. 2026) HTML `39e8ecb0cbfe85fa587c96bf67b5df3e7a51e924919c06bce51952408f170575`, tabulka 32 zemí CSV `e4b320e955a01932366d6b507ded5d5946349d1c32752e0474866b0abfaa092a` (XLSX `8275f90f84ac1e46065085465515d52646af30f8a4eb00a2d6f46d30daa2ae4c`); `paqresearch.cz/post/vyber-dane-srovnani/` (zveřejněno 3. 6. 2026, upraveno 10. 6. 2026, archivováno 26. 11. 2026) HTML `97d3a2d20f736ab1641707fa795e278eec8f5f503d7fd4ffbf3ae7f76bc5633f`; `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; bajtově totožné na `paqresearch.cz` i `chytrejsidane.cz` ke dni 26. 11. 2026) `43fde4b2c96bda9c0858bdea88250e6ff35e63887a240774297c4b6b48ae08a7`.*
+*Primární podklady PAQ Research byly ověřeny dne 26. 11. 2026 (včetně studie [*Chytřejší daně*](https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf), [archiv v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)).*

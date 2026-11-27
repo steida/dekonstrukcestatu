@@ -4,7 +4,7 @@
 > **Hlavní závěr:** Technická příloha odhaluje, že titulkové závěry studie drží pohromadě díky řadě jednosměrných a sporných metodických voleb — včetně chybějících zhruba 0,9–1,1 bil. Kč příjmů ve jmenovateli (0,9 bil. při srovnání čistého imputovaného nájemného s čistým; 1,1 bil. podle vlastní tabulky studie `T6.1.8.A`), alokace +9 mld. Kč bytové daně akcionářům a vynulování všech +113 mld. Kč daňových šoků ze spotřeby a majetku v modelu HDP. Řemeslnou úroveň přílohy dokresluje i chyba o 429,3 mld. Kč v tabulce `T6.1.6`.
 > **Kde pokračovat:** Souhrnný přehled všech šesti kapitol i katalog 12 chyb nabízí [hlavní pitva](/blog/zjednodusovaci-a-komplikatori/audit); transparentní dvoupohlednicovou alternativu představuje [Daňová reforma podle Dekonstrukce státu](/danova-reforma).
 
-*Konvence stránkování a archivní verze: Všechny odkazy `str. XX` uvádějí tištěné číslo strany v patičce studie (strana v souboru PDF je o 1 vyšší, tedy tištěná str. 203 = strana 204 v PDF). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; SHA-256 PDF: `43fde4b2...e08a7`, plný otisk v [hlavní pitvě](/blog/zjednodusovaci-a-komplikatori/audit)).*
+*Konvence stránkování a archivní verze: Všechny odkazy `str. XX` uvádějí tištěné číslo strany v patičce studie (strana v souboru PDF je o 1 vyšší, tedy tištěná str. 203 = strana 204 v PDF). Ověřovaná verze `Chytrejsi_dane_2025-1.pdf` (říjen 2025, 224 str.; [archiv v Internet Archive](https://web.archive.org/web/20251105062343/https://www.paqresearch.cz/content/files/2025/10/Chytrejsi_dane_2025-1.pdf)).*
 
 ---
 
