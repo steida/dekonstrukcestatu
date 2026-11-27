@@ -49,6 +49,7 @@ const EXPECTED_FILES = [
   "images/og-irozhlas-prokop.png",
   "images/og-danovy-raj-evropy.png",
   "images/og-svarcsystem.png",
+  "images/og-podpora.png",
   "images/logo.png",
   "images/danova-reforma-header.webp",
   "images/daniel-steigerwald.jpg",

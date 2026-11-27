@@ -11,8 +11,9 @@ export const metadata: Metadata = buildPageMetadata({
   title: "Podpora",
   description:
     "Podpořte nezávislý výzkum think-tanku Dekonstrukce státu. Fungujeme bez jakýchkoli státních dotací, grantů i zakázek — dobrovolný bankovní převod a QR Platba.",
-  image: "/images/og-default.png",
-  imageAlt: "Podpořte Dekonstrukci státu — 0 Kč ze státních peněz",
+  image: "/images/og-podpora.png",
+  imageAlt:
+    "Podpořte Dekonstrukci státu — 0 Kč od státu, účet 1000701012/3030 a QR Platba",
 });
 
 export default function PodporaPage() {
