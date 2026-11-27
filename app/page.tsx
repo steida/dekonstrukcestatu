@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CopyTextButton } from "@/components/CopyTextButton";
 import {
   AUTHOR_PERSON_LD,
   JsonLd,
@@ -604,7 +603,7 @@ export default function HomePage() {
         {/* Kontakt — podcasty, debaty a přednášky */}
         <div
           id="kontakt"
-          className="mt-8 flex flex-col justify-between gap-5 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center"
+          className="mt-8 flex scroll-mt-24 flex-col justify-between gap-5 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center"
         >
           <div className="max-w-xl">
             <p className="font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
@@ -751,68 +750,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Podpora (strictly bank transfer + QR Platba) */}
-      <section id="podpora" className="border-t-2 border-[var(--ink)] pt-12">
-        <div className="mb-6">
-          <p className="mb-1.5 font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
-            Dobrovolná podpora
-          </p>
-          <h2 className="text-xl font-bold tracking-tight text-[var(--ink)]">
-            Podpořte nezávislý výzkum
-          </h2>
-          <p className="mt-2 max-w-2xl text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
-            Dekonstrukce státu funguje bez jakýchkoli peněz od státu (dotací,
-            veřejných grantů i zakázek). Pokud vám texty a analýzy dávají smysl,
-            můžete práci podpořit dobrovolným bankovním převodem.
-          </p>
-        </div>
-
-        <div className="flex flex-col justify-between gap-6 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center sm:p-7">
-          <div className="min-w-0 space-y-2">
-            <p className="font-mono text-xs font-semibold tracking-wider text-[var(--ink-faint)] uppercase">
-              Bankovní účet (CZK)
+      {/* Podpora — compact CTA linking to dedicated /podpora page */}
+      <section
+        id="podpora"
+        className="scroll-mt-24 border-t-2 border-[var(--ink)] pt-12"
+      >
+        <div className="flex flex-col justify-between gap-5 rounded-[var(--radius)] border border-[var(--border)] border-l-4 border-l-[var(--accent)] bg-[var(--surface-elevated)] p-6 sm:flex-row sm:items-center sm:p-7">
+          <div className="max-w-xl">
+            <p className="font-mono text-xs font-semibold tracking-wider text-[var(--accent)] uppercase">
+              Dobrovolná podpora · 0 Kč od státu
             </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <p className="font-mono text-2xl font-bold tracking-tight text-[var(--ink)] tabular-nums">
-                1000701012/3030
-              </p>
-              <CopyTextButton text="1000701012/3030" label="Zkopírovat účet" />
-            </div>
-            <dl className="space-y-1.5 pt-1 text-sm text-[var(--ink-muted)]">
-              <div className="flex flex-wrap gap-x-2">
-                <dt className="text-[var(--ink-faint)]">Majitel účtu:</dt>
-                <dd className="text-[var(--ink)]">
-                  Daniel Steigerwald (soukromý účet)
-                </dd>
-              </div>
-              <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <dt className="text-[var(--ink-faint)]">IBAN:</dt>
-                <dd className="flex flex-wrap items-center gap-2 font-mono text-xs leading-5 text-[var(--ink)] tabular-nums">
-                  <span>CZ36 3030 0000 0010 0070 1012</span>
-                  <CopyTextButton
-                    text="CZ36 3030 0000 0010 0070 1012"
-                    label="Zkopírovat IBAN"
-                  />
-                </dd>
-              </div>
-              <div className="flex flex-wrap gap-x-2">
-                <dt className="text-[var(--ink-faint)]">Poznámka:</dt>
-                <dd className="text-[var(--ink)]">Dekonstrukce státu</dd>
-              </div>
-            </dl>
-            <p className="pt-1 font-mono text-xs text-[var(--ink-faint)]">
-              Air Bank · QR Platba (SPAYD)
+            <h2 className="mt-1.5 text-xl font-bold tracking-tight text-[var(--ink)]">
+              Podpořte nezávislý výzkum
+            </h2>
+            <p className="mt-2 text-[0.9375rem] leading-relaxed text-[var(--ink-muted)]">
+              Dekonstrukce státu funguje bez jakýchkoli peněz od státu (dotací,
+              veřejných grantů i zakázek). Pokud vám texty a analýzy dávají
+              smysl, můžete mou práci podpořit dobrovolným příspěvkem.
             </p>
           </div>
-          <div className="shrink-0 self-start rounded-[var(--radius)] border border-black/15 bg-white p-2.5 sm:self-center">
-            <Image
-              src="/images/qr-podpora.png"
-              alt="QR Platba pro bankovní účet 1000701012/3030"
-              width={156}
-              height={156}
-              className="block h-[156px] w-[156px]"
-            />
-          </div>
+          <Link
+            href="/podpora"
+            className="inline-flex min-h-10 shrink-0 items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-5 py-2.5 font-mono text-xs font-semibold tracking-wide text-[var(--bg)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)]"
+          >
+            Podpořit mou práci <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </section>
     </div>

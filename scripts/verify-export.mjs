@@ -26,6 +26,7 @@ const EXPECTED_FILES = [
   "manifest.html",
   "o-autorovi.html",
   "media.html",
+  "podpora.html",
   "danova-reforma.html",
   "danova-reforma/doplneni.html",
   "danova-reforma/implementace-eu.html",

@@ -433,7 +433,7 @@ export default function OAutoroviPage() {
             <li>
               <span className="text-[var(--ink-faint)]">Podpora výzkumu: </span>
               <Link
-                href="/#podpora"
+                href="/podpora"
                 className="inline-block py-1 font-mono font-medium text-[var(--ink)] hover:text-[var(--accent)] tabular-nums"
               >
                 1000701012/3030 <span aria-hidden="true">→</span>

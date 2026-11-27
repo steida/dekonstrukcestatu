@@ -149,6 +149,7 @@ const LLMS_TXT = `# Dekonstrukce státu
 - [Blog](${SITE_URL}/blog): Eseje, forenzní audity a fact-checky (Chytřejší daně, Daňový ráj Evropy, švarcsystém).
 - [O autorovi & Press Kit](${SITE_URL}/o-autorovi): Daniel Steigerwald — profil, témata pro debaty a podklady pro média.
 - [Média, rozhovory a přednášky](${SITE_URL}/media): Výběr debat a přednášek k dekonstrukci státu, daním a demonopolizaci.
+- [Podpora](${SITE_URL}/podpora): Dobrovolná podpora nezávislého výzkumu bez státních peněz (bankovní převod, QR Platba).
 - [Manifest dekonstrukce státu (návrh)](${SITE_URL}/manifest): Základní esej o problému složitosti státu, jeho dekonstrukci a odpovědích v listárně.
 
 ## Blog — Srovnání

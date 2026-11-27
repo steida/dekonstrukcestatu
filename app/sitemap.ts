@@ -80,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { path: "/manifest", lastModified: "2020-09-01", priority: 0.8 },
       { path: "/o-autorovi", lastModified: "2026-11-26", priority: 0.8 },
       { path: "/media", lastModified: "2026-11-26", priority: 0.8 },
+      { path: "/podpora", lastModified: "2026-11-27", priority: 0.8 },
     ];
 
   const entries: MetadataRoute.Sitemap = staticRoutes.map((item) => ({

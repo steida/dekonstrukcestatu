@@ -34,7 +34,7 @@ export const SiteFooter: FC = () => (
           <Link href="/o-autorovi" className={LINK_CLASS}>
             O autorovi
           </Link>
-          <Link href="/#podpora" className={LINK_CLASS}>
+          <Link href="/podpora" className={LINK_CLASS}>
             Podpora
           </Link>
           <a href="mailto:daniel@steigerwald.cz" className={MONO_LINK_CLASS}>

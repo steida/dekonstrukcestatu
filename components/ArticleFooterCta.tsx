@@ -79,7 +79,7 @@ export const ArticleFooterCta: FC = () => (
           1000701012/3030
         </span>
         <Link
-          href="/#podpora"
+          href="/podpora"
           className="inline-flex min-h-7 items-center gap-1 py-1 font-medium text-[var(--accent)] hover:underline"
         >
           QR Platba a údaje <span aria-hidden="true">→</span>

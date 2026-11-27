@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { href: "/blog", label: "Blog", match: ["/blog"] },
   { href: "/media", label: "Média", match: ["/media"] },
   { href: "/o-autorovi", label: "O autorovi", match: ["/o-autorovi"] },
+  { href: "/podpora", label: "Podpora", match: ["/podpora"] },
   { href: "/#kontakt", label: "Kontakt", match: [] },
 ] as const;
 
